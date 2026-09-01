@@ -1,0 +1,363 @@
+/*
+  22 DÍAS PARA NOSOTROS
+  ---------------------
+  Fecha de inicio: 1 de septiembre de 2026
+  Aniversario:     22 de septiembre de 2026
+
+  IMPORTANTE:
+  El sistema calcula el día usando la fecha de Ecuador
+  (America/Guayaquil), no la hora local del servidor.
+*/
+
+const START_DATE = "2026-09-01";
+const ANNIVERSARY_DATE = "2026-09-22";
+const TOTAL_DAYS = 22;
+
+const surprises = [
+  {
+    icon: "❤️",
+    title: "Una razón para sonreír",
+    text: `Hoy comienza nuestra cuenta regresiva. No necesito una fecha especial para recordarte cuánto significas para mí. Pero quiero aprovechar estos 22 días para dejarte pequeños pedacitos de todo lo que siento por ti.`
+  },
+  {
+    icon: "📸",
+    title: "Un recuerdo nuestro",
+    text: `Aquí puedes escribir la historia detrás de una de tus fotos favoritas juntos. Por ejemplo: "Ese día quizá parecía uno más, pero ahora es uno de esos recuerdos que guardo con muchísimo cariño."`,
+    image: "images/foto01.jpg"
+  },
+  {
+    icon: "💕",
+    title: "Tres cosas que amo de ti",
+    text: `1. Tu forma de hacerme sonreír.<br><br>2. La manera en que haces especiales los momentos sencillos.<br><br>3. Simplemente, la persona que eres.`
+  },
+  {
+    icon: "🎵",
+    title: "Nuestra canción",
+    text: `Hoy quiero que escuches nuestra canción y recuerdes algún momento que hayamos vivido juntos. ❤️<br><br><strong>Tip:</strong> coloca tu canción en <em>music/nuestra-cancion.mp3</em> y usa el botón ♫ de la esquina.`
+  },
+  {
+    icon: "🥰",
+    title: "Un momento que nunca olvido",
+    text: `Escribe aquí un momento específico que hayas vivido con ella y explica por qué fue importante para ti.`
+  },
+  {
+    icon: "💌",
+    title: "Una pequeña carta",
+    text: `A veces no digo todo lo que siento, pero quiero que sepas que cada momento contigo ocupa un lugar especial en mi corazón. Gracias por estar en mi vida.`
+  },
+  {
+    icon: "😂",
+    title: "Nuestro momento más gracioso",
+    text: `Aquí coloca esa anécdota que cada vez que recuerdan los hace reír. Las historias pequeñas también terminan convirtiéndose en nuestros recuerdos favoritos.`
+  },
+  {
+    icon: "🎟️",
+    title: "Cupón para ti",
+    text: `<div class="quote">🎟️ CUPÓN ESPECIAL<br><br>Vale por un abrazo largo, una cita y todo el tiempo que quieras conmigo. ❤️</div>`
+  },
+  {
+    icon: "🌹",
+    title: "Lo que admiro de ti",
+    text: `Escribe aquí 3 o 4 cualidades que realmente admires de ella. Este detalle funciona mejor cuando son cosas muy específicas y personales.`
+  },
+  {
+    icon: "✨",
+    title: "Si pudiera volver al principio...",
+    text: `Si pudiera regresar al momento en que comenzó nuestra historia, volvería a elegir conocerte, volvería a elegir cada conversación y volvería a elegirte a ti.`
+  },
+  {
+    icon: "📷",
+    title: "Otra foto, otro recuerdo",
+    text: `Agrega aquí otra foto importante y cuenta brevemente qué sentías ese día.`,
+    image: "images/foto02.jpg"
+  },
+  {
+    icon: "💭",
+    title: "12 cosas que quiero vivir contigo",
+    text: `1. Viajar juntos.<br>2. Conocer lugares nuevos.<br>3. Celebrar muchos aniversarios.<br>4. Reírnos hasta que nos duela el estómago.<br>5. Tener más fotografías juntos.<br>6. Crear nuevas tradiciones.<br>7. Apoyarnos en nuestros sueños.<br>8. Ver amaneceres juntos.<br>9. Celebrar nuestros logros.<br>10. Superar los días difíciles.<br>11. Seguir aprendiendo del otro.<br>12. Seguir escogiendo estar juntos. ❤️`
+  },
+  {
+    icon: "🌙",
+    title: "Si estuvieras aquí...",
+    text: `Si estuvieras aquí ahora mismo, probablemente no necesitaría decir demasiado. Solo quisiera tenerte cerca, abrazarte y disfrutar uno de esos momentos sencillos que terminan siendo los más importantes.`
+  },
+  {
+    icon: "💗",
+    title: "Lo que me haces sentir",
+    text: `Escribe aquí, con tus propias palabras, cómo cambia tu día cuando estás con ella. Hazlo personal: habla de algo que solo ustedes dos entienden.`
+  },
+  {
+    icon: "🎶",
+    title: "Una playlist para nosotros",
+    text: `Puedes reemplazar este texto por 5 canciones que representen diferentes momentos de su relación.`
+  },
+  {
+    icon: "📝",
+    title: "Una promesa",
+    text: `No prometo que todos los días serán perfectos. Sí quiero prometerte que seguiré valorando nuestra historia, escuchándote y cuidando cada momento que construyamos juntos.`
+  },
+  {
+    icon: "🌟",
+    title: "Lo que quiero que nunca olvides",
+    text: `<div class="quote">Nunca olvides que eres importante para mí. Incluso en los días en que no pueda estar cerca, quiero que recuerdes que tienes un lugar enorme en mi corazón.</div>`
+  },
+  {
+    icon: "📸",
+    title: "Un recuerdo que quiero repetir",
+    text: `Coloca aquí una foto o historia de algo que te gustaría volver a vivir con ella.`,
+    image: "images/foto03.jpg"
+  },
+  {
+    icon: "❤️",
+    title: "Ya casi llega nuestro día",
+    text: `Faltan muy pocos días. Gracias por haber llegado hasta aquí conmigo. Mañana habrá otro pequeño detalle para ti.`
+  },
+  {
+    icon: "💌",
+    title: "La víspera",
+    text: `Mañana es nuestro día. Pero quería que supieras algo: para mí, nuestra historia no se celebra solamente en una fecha. Se celebra en cada conversación, cada abrazo, cada risa y cada momento en que seguimos eligiéndonos.`
+  },
+  {
+    icon: "🥹",
+    title: "Mañana...",
+    text: `Mañana llega el día 22. Guarda este momento, porque todo lo que hemos preparado hasta aquí nos lleva a nuestra sorpresa final. ❤️`
+  },
+  {
+    icon: "💖",
+    title: "Feliz aniversario, mi amor",
+    text: `<img src="images/foto-final.jpg" alt="Nuestro recuerdo"><div class="quote">Hoy, 22 de septiembre, celebro nuestra historia.<br><br>Gracias por cada momento, por cada sonrisa y por formar parte de mi vida.<br><br>Si pudiera volver al principio, volvería a elegirte.<br><br><strong>Feliz aniversario. Te amo. ❤️</strong></div>`
+  }
+];
+
+// Devuelve la fecha actual de Ecuador como YYYY-MM-DD.
+function getEcuadorDate() {
+  const formatter = new Intl.DateTimeFormat("en-CA", {
+    timeZone: "America/Guayaquil",
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit"
+  });
+  return formatter.format(new Date());
+}
+
+function dateToUTC(dateString) {
+  const [y, m, d] = dateString.split("-").map(Number);
+  return Date.UTC(y, m - 1, d);
+}
+
+function getCurrentDay() {
+  const today = getEcuadorDate();
+  const difference = Math.floor(
+    (dateToUTC(today) - dateToUTC(START_DATE)) / 86400000
+  );
+  return Math.min(Math.max(difference + 1, 0), TOTAL_DAYS);
+}
+
+function getAnniversaryDateUTC() {
+  return dateToUTC(ANNIVERSARY_DATE);
+}
+
+function updateCountdown() {
+  const now = new Date();
+  const anniversary = new Date(getAnniversaryDateUTC());
+
+  const diff = anniversary.getTime() - now.getTime();
+
+  if (diff <= 0) {
+    document.getElementById("countdown-label").textContent = "❤️ Hoy es nuestro día ❤️";
+    document.getElementById("days").textContent = "00";
+    document.getElementById("hours").textContent = "00";
+    document.getElementById("minutes").textContent = "00";
+    document.getElementById("seconds").textContent = "00";
+    return;
+  }
+
+  const days = Math.floor(diff / 86400000);
+  const hours = Math.floor((diff % 86400000) / 3600000);
+  const minutes = Math.floor((diff % 3600000) / 60000);
+  const seconds = Math.floor((diff % 60000) / 1000);
+
+  document.getElementById("days").textContent = String(days).padStart(2, "0");
+  document.getElementById("hours").textContent = String(hours).padStart(2, "0");
+  document.getElementById("minutes").textContent = String(minutes).padStart(2, "0");
+  document.getElementById("seconds").textContent = String(seconds).padStart(2, "0");
+}
+
+function renderCalendar() {
+  const calendar = document.getElementById("calendar");
+  const currentDay = getCurrentDay();
+
+  if (currentDay === 0) {
+    document.getElementById("status-text").textContent =
+      "La cuenta regresiva comienza el 1 de septiembre ❤️";
+  } else if (currentDay >= TOTAL_DAYS) {
+    document.getElementById("status-text").textContent =
+      "Hoy es nuestro día. ❤️";
+  } else {
+    document.getElementById("status-text").textContent =
+      `Hoy está disponible el detalle del día ${currentDay}. Los demás se desbloquearán automáticamente.`;
+  }
+
+  calendar.innerHTML = "";
+
+  for (let day = 1; day <= TOTAL_DAYS; day++) {
+    const unlocked = day <= currentDay;
+    const isToday = day === currentDay;
+
+    const card = document.createElement("button");
+    card.className = `day-card ${unlocked ? "unlocked" : "locked"} ${isToday ? "today" : ""}`;
+
+    const date = new Date(dateToUTC(START_DATE) + (day - 1) * 86400000);
+    const dateText = date.toLocaleDateString("es-EC", {
+      day: "numeric",
+      month: "short",
+      timeZone: "UTC"
+    });
+
+    if (unlocked) {
+      card.innerHTML = `
+        <span class="day-number">Día ${String(day).padStart(2, "0")}</span>
+        <span class="day-date">${dateText}</span>
+        <div class="day-icon">${surprises[day - 1].icon}</div>
+        <div class="day-title">${surprises[day - 1].title}</div>
+      `;
+      card.onclick = () => openSurprise(day);
+    } else {
+      card.innerHTML = `
+        <span class="day-number">Día ${String(day).padStart(2, "0")}</span>
+        <span class="day-date">${dateText}</span>
+        <div class="day-icon">🔒</div>
+        <div class="day-title">Todavía no...</div>
+        <span class="lock">♥</span>
+      `;
+      card.onclick = () => showLockedMessage(day);
+    }
+
+    calendar.appendChild(card);
+  }
+}
+
+function openSurprise(day) {
+  const currentDay = getCurrentDay();
+
+  if (day > currentDay) {
+    showLockedMessage(day);
+    return;
+  }
+
+  const surprise = surprises[day - 1];
+
+  document.getElementById("modal-day").textContent =
+    `Día ${String(day).padStart(2, "0")} · ${getDayLabel(day)}`;
+  document.getElementById("modal-title").textContent = surprise.title;
+  document.getElementById("modal-icon").textContent = surprise.icon;
+
+  let body = surprise.text;
+
+  if (surprise.image) {
+    body = `<img src="${surprise.image}" alt="Recuerdo del día ${day}" onerror="this.style.display='none'">` + body;
+  }
+
+  document.getElementById("modal-body").innerHTML = body;
+
+  const modal = document.getElementById("modal");
+  modal.classList.add("open");
+  modal.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+
+  if (day === 22) {
+    createHearts(28);
+  }
+}
+
+function showLockedMessage(day) {
+  const date = new Date(dateToUTC(START_DATE) + (day - 1) * 86400000);
+  const dateText = date.toLocaleDateString("es-EC", {
+    day: "numeric",
+    month: "long",
+    timeZone: "UTC"
+  });
+
+  document.getElementById("modal-day").textContent = "🔒 Sorpresa bloqueada";
+  document.getElementById("modal-icon").textContent = "🤫";
+  document.getElementById("modal-title").textContent = "Todavía no...";
+  document.getElementById("modal-body").innerHTML =
+    `Este detalle está reservado para el <strong>${dateText}</strong>.<br><br>Ten paciencia, mi amor. ❤️<br><br><em>Las sorpresas bonitas también necesitan esperar su momento.</em>`;
+
+  const modal = document.getElementById("modal");
+  modal.classList.add("open");
+  modal.setAttribute("aria-hidden", "false");
+  document.body.style.overflow = "hidden";
+}
+
+function getDayLabel(day) {
+  if (day === 22) return "Nuestro día";
+  if (day === getCurrentDay()) return "Disponible hoy";
+  return "Un recuerdo para ti";
+}
+
+function closeModal() {
+  const modal = document.getElementById("modal");
+  modal.classList.remove("open");
+  modal.setAttribute("aria-hidden", "true");
+  document.body.style.overflow = "";
+}
+
+function scrollToCalendar() {
+  document.getElementById("calendar-section").scrollIntoView({
+    behavior: "smooth"
+  });
+}
+
+function createHearts(amount = 8) {
+  const container = document.getElementById("hearts");
+
+  for (let i = 0; i < amount; i++) {
+    const heart = document.createElement("span");
+    heart.className = "floating-heart";
+    heart.textContent = Math.random() > .25 ? "♥" : "❤";
+    heart.style.left = `${Math.random() * 100}%`;
+    heart.style.fontSize = `${12 + Math.random() * 22}px`;
+    heart.style.animationDuration = `${5 + Math.random() * 7}s`;
+    heart.style.animationDelay = `${Math.random() * 2}s`;
+    container.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 14000);
+  }
+}
+
+function startHeartAnimation() {
+  setInterval(() => createHearts(1), 1800);
+}
+
+async function toggleMusic() {
+  const audio = document.getElementById("bg-music");
+  const button = document.getElementById("music-btn");
+
+  try {
+    if (audio.paused) {
+      await audio.play();
+      button.textContent = "❚❚";
+      button.title = "Pausar música";
+    } else {
+      audio.pause();
+      button.textContent = "♫";
+      button.title = "Reproducir música";
+    }
+  } catch (error) {
+    alert("Primero coloca tu canción en la carpeta music/nuestra-cancion.mp3");
+  }
+}
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") closeModal();
+});
+
+renderCalendar();
+updateCountdown();
+startHeartAnimation();
+setInterval(updateCountdown, 1000);
+
+// Si la página permanece abierta cuando cambia el día,
+// se actualiza automáticamente el calendario.
+setInterval(renderCalendar, 30000);
