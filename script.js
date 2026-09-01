@@ -4,14 +4,25 @@
   Fecha de inicio: 1 de septiembre de 2026
   Aniversario:     22 de septiembre de 2026
 
-  IMPORTANTE:
-  El sistema calcula el día usando la fecha de Ecuador
-  (America/Guayaquil), no la hora local del servidor.
+  ZONA HORARIA:
+  Quito, Ecuador = UTC-5
+  America/Guayaquil
+
+  El calendario se desbloquea según la fecha de Quito.
+  El contador llega exactamente a cero a las
+  00:00:00 del 22 de septiembre de 2026 en Quito.
 */
 
 const START_DATE = "2026-09-01";
 const ANNIVERSARY_DATE = "2026-09-22";
 const TOTAL_DAYS = 22;
+
+const ECUADOR_TIME_ZONE = "America/Guayaquil";
+
+
+// ==========================================
+// SORPRESAS
+// ==========================================
 
 const surprises = [
   {
@@ -129,234 +140,614 @@ const surprises = [
   }
 ];
 
-// Devuelve la fecha actual de Ecuador como YYYY-MM-DD.
+
+// ==========================================
+// FECHA ACTUAL DE ECUADOR
+// ==========================================
+
 function getEcuadorDate() {
   const formatter = new Intl.DateTimeFormat("en-CA", {
-    timeZone: "America/Guayaquil",
+    timeZone: ECUADOR_TIME_ZONE,
     year: "numeric",
     month: "2-digit",
     day: "2-digit"
   });
+
   return formatter.format(new Date());
 }
 
+
+// ==========================================
+// CONVERTIR FECHA YYYY-MM-DD A UTC
+// ==========================================
+
 function dateToUTC(dateString) {
   const [y, m, d] = dateString.split("-").map(Number);
+
   return Date.UTC(y, m - 1, d);
 }
 
+
+// ==========================================
+// DÍA ACTUAL DEL CALENDARIO
+// ==========================================
+
 function getCurrentDay() {
   const today = getEcuadorDate();
+
   const difference = Math.floor(
     (dateToUTC(today) - dateToUTC(START_DATE)) / 86400000
   );
-  return Math.min(Math.max(difference + 1, 0), TOTAL_DAYS);
+
+  return Math.min(
+    Math.max(difference + 1, 0),
+    TOTAL_DAYS
+  );
 }
 
-function getAnniversaryDateUTC() {
-  return dateToUTC(ANNIVERSARY_DATE);
+
+// ==========================================
+// FECHA EXACTA DEL ANIVERSARIO
+// ==========================================
+//
+// Quito = UTC-5
+//
+// 22/09/2026 00:00:00 Quito
+// equivale a
+// 22/09/2026 05:00:00 UTC
+//
+// Por eso utilizamos explícitamente -05:00.
+//
+
+function getAnniversaryDate() {
+  return new Date(
+    `${ANNIVERSARY_DATE}T00:00:00-05:00`
+  );
 }
+
+
+// ==========================================
+// CONTADOR REGRESIVO
+// ==========================================
 
 function updateCountdown() {
+
   const now = new Date();
-  const anniversary = new Date(getAnniversaryDateUTC());
+
+  const anniversary = getAnniversaryDate();
 
   const diff = anniversary.getTime() - now.getTime();
 
+
+  // ========================================
+  // YA LLEGÓ EL ANIVERSARIO
+  // ========================================
+
   if (diff <= 0) {
-    document.getElementById("countdown-label").textContent = "❤️ Hoy es nuestro día ❤️";
+
+    document.getElementById("countdown-label").textContent =
+      "❤️ Hoy es nuestro día ❤️";
+
     document.getElementById("days").textContent = "00";
     document.getElementById("hours").textContent = "00";
     document.getElementById("minutes").textContent = "00";
     document.getElementById("seconds").textContent = "00";
+
     return;
   }
 
-  const days = Math.floor(diff / 86400000);
-  const hours = Math.floor((diff % 86400000) / 3600000);
-  const minutes = Math.floor((diff % 3600000) / 60000);
-  const seconds = Math.floor((diff % 60000) / 1000);
 
-  document.getElementById("days").textContent = String(days).padStart(2, "0");
-  document.getElementById("hours").textContent = String(hours).padStart(2, "0");
-  document.getElementById("minutes").textContent = String(minutes).padStart(2, "0");
-  document.getElementById("seconds").textContent = String(seconds).padStart(2, "0");
+  // ========================================
+  // CALCULAR TIEMPO RESTANTE
+  // ========================================
+
+  const days = Math.floor(
+    diff / 86400000
+  );
+
+  const hours = Math.floor(
+    (diff % 86400000) / 3600000
+  );
+
+  const minutes = Math.floor(
+    (diff % 3600000) / 60000
+  );
+
+  const seconds = Math.floor(
+    (diff % 60000) / 1000
+  );
+
+
+  // ========================================
+  // MOSTRAR CONTADOR
+  // ========================================
+
+  document.getElementById("days").textContent =
+    String(days).padStart(2, "0");
+
+  document.getElementById("hours").textContent =
+    String(hours).padStart(2, "0");
+
+  document.getElementById("minutes").textContent =
+    String(minutes).padStart(2, "0");
+
+  document.getElementById("seconds").textContent =
+    String(seconds).padStart(2, "0");
 }
 
+
+// ==========================================
+// RENDERIZAR CALENDARIO
+// ==========================================
+
 function renderCalendar() {
+
   const calendar = document.getElementById("calendar");
+
   const currentDay = getCurrentDay();
 
+
+  // ========================================
+  // MENSAJE DE ESTADO
+  // ========================================
+
   if (currentDay === 0) {
+
     document.getElementById("status-text").textContent =
       "La cuenta regresiva comienza el 1 de septiembre ❤️";
+
   } else if (currentDay >= TOTAL_DAYS) {
+
     document.getElementById("status-text").textContent =
       "Hoy es nuestro día. ❤️";
+
   } else {
+
     document.getElementById("status-text").textContent =
       `Hoy está disponible el detalle del día ${currentDay}. Los demás se desbloquearán automáticamente.`;
   }
 
+
   calendar.innerHTML = "";
 
-  for (let day = 1; day <= TOTAL_DAYS; day++) {
+
+  // ========================================
+  // CREAR LOS 22 DÍAS
+  // ========================================
+
+  for (
+    let day = 1;
+    day <= TOTAL_DAYS;
+    day++
+  ) {
+
     const unlocked = day <= currentDay;
+
     const isToday = day === currentDay;
 
-    const card = document.createElement("button");
-    card.className = `day-card ${unlocked ? "unlocked" : "locked"} ${isToday ? "today" : ""}`;
 
-    const date = new Date(dateToUTC(START_DATE) + (day - 1) * 86400000);
-    const dateText = date.toLocaleDateString("es-EC", {
-      day: "numeric",
-      month: "short",
-      timeZone: "UTC"
-    });
+    const card = document.createElement("button");
+
+    card.className =
+      `day-card ${
+        unlocked ? "unlocked" : "locked"
+      } ${
+        isToday ? "today" : ""
+      }`;
+
+
+    // ======================================
+    // FECHA DEL DÍA
+    // ======================================
+
+    const date = new Date(
+      dateToUTC(START_DATE) +
+      (day - 1) * 86400000
+    );
+
+
+    const dateText =
+      date.toLocaleDateString("es-EC", {
+        day: "numeric",
+        month: "short",
+        timeZone: "UTC"
+      });
+
+
+    // ======================================
+    // DÍA DESBLOQUEADO
+    // ======================================
 
     if (unlocked) {
+
       card.innerHTML = `
-        <span class="day-number">Día ${String(day).padStart(2, "0")}</span>
-        <span class="day-date">${dateText}</span>
-        <div class="day-icon">${surprises[day - 1].icon}</div>
-        <div class="day-title">${surprises[day - 1].title}</div>
+        <span class="day-number">
+          Día ${String(day).padStart(2, "0")}
+        </span>
+
+        <span class="day-date">
+          ${dateText}
+        </span>
+
+        <div class="day-icon">
+          ${surprises[day - 1].icon}
+        </div>
+
+        <div class="day-title">
+          ${surprises[day - 1].title}
+        </div>
       `;
-      card.onclick = () => openSurprise(day);
+
+      card.onclick = () =>
+        openSurprise(day);
+
+
+    // ======================================
+    // DÍA BLOQUEADO
+    // ======================================
+
     } else {
+
       card.innerHTML = `
-        <span class="day-number">Día ${String(day).padStart(2, "0")}</span>
-        <span class="day-date">${dateText}</span>
-        <div class="day-icon">🔒</div>
-        <div class="day-title">Todavía no...</div>
-        <span class="lock">♥</span>
+        <span class="day-number">
+          Día ${String(day).padStart(2, "0")}
+        </span>
+
+        <span class="day-date">
+          ${dateText}
+        </span>
+
+        <div class="day-icon">
+          🔒
+        </div>
+
+        <div class="day-title">
+          Todavía no...
+        </div>
+
+        <span class="lock">
+          ♥
+        </span>
       `;
-      card.onclick = () => showLockedMessage(day);
+
+      card.onclick = () =>
+        showLockedMessage(day);
     }
+
 
     calendar.appendChild(card);
   }
 }
 
+
+// ==========================================
+// ABRIR SORPRESA
+// ==========================================
+
 function openSurprise(day) {
+
   const currentDay = getCurrentDay();
 
+
   if (day > currentDay) {
+
     showLockedMessage(day);
+
     return;
   }
 
-  const surprise = surprises[day - 1];
+
+  const surprise =
+    surprises[day - 1];
+
 
   document.getElementById("modal-day").textContent =
     `Día ${String(day).padStart(2, "0")} · ${getDayLabel(day)}`;
-  document.getElementById("modal-title").textContent = surprise.title;
-  document.getElementById("modal-icon").textContent = surprise.icon;
+
+
+  document.getElementById("modal-title").textContent =
+    surprise.title;
+
+
+  document.getElementById("modal-icon").textContent =
+    surprise.icon;
+
 
   let body = surprise.text;
 
+
   if (surprise.image) {
-    body = `<img src="${surprise.image}" alt="Recuerdo del día ${day}" onerror="this.style.display='none'">` + body;
+
+    body =
+      `<img src="${surprise.image}" alt="Recuerdo del día ${day}" onerror="this.style.display='none'">`
+      + body;
   }
 
-  document.getElementById("modal-body").innerHTML = body;
 
-  const modal = document.getElementById("modal");
+  document.getElementById("modal-body").innerHTML =
+    body;
+
+
+  const modal =
+    document.getElementById("modal");
+
+
   modal.classList.add("open");
-  modal.setAttribute("aria-hidden", "false");
-  document.body.style.overflow = "hidden";
+
+  modal.setAttribute(
+    "aria-hidden",
+    "false"
+  );
+
+  document.body.style.overflow =
+    "hidden";
+
 
   if (day === 22) {
+
     createHearts(28);
   }
 }
 
+
+// ==========================================
+// MENSAJE DÍA BLOQUEADO
+// ==========================================
+
 function showLockedMessage(day) {
-  const date = new Date(dateToUTC(START_DATE) + (day - 1) * 86400000);
-  const dateText = date.toLocaleDateString("es-EC", {
-    day: "numeric",
-    month: "long",
-    timeZone: "UTC"
-  });
 
-  document.getElementById("modal-day").textContent = "🔒 Sorpresa bloqueada";
-  document.getElementById("modal-icon").textContent = "🤫";
-  document.getElementById("modal-title").textContent = "Todavía no...";
+  const date = new Date(
+    dateToUTC(START_DATE) +
+    (day - 1) * 86400000
+  );
+
+
+  const dateText =
+    date.toLocaleDateString("es-EC", {
+      day: "numeric",
+      month: "long",
+      timeZone: "UTC"
+    });
+
+
+  document.getElementById("modal-day").textContent =
+    "🔒 Sorpresa bloqueada";
+
+
+  document.getElementById("modal-icon").textContent =
+    "🤫";
+
+
+  document.getElementById("modal-title").textContent =
+    "Todavía no...";
+
+
   document.getElementById("modal-body").innerHTML =
-    `Este detalle está reservado para el <strong>${dateText}</strong>.<br><br>Ten paciencia, mi amor. ❤️<br><br><em>Las sorpresas bonitas también necesitan esperar su momento.</em>`;
+    `Este detalle está reservado para el <strong>${dateText}</strong>.<br><br>
+    Ten paciencia, mi amor. ❤️<br><br>
+    <em>Las sorpresas bonitas también necesitan esperar su momento.</em>`;
 
-  const modal = document.getElementById("modal");
+
+  const modal =
+    document.getElementById("modal");
+
+
   modal.classList.add("open");
-  modal.setAttribute("aria-hidden", "false");
-  document.body.style.overflow = "hidden";
+
+  modal.setAttribute(
+    "aria-hidden",
+    "false"
+  );
+
+  document.body.style.overflow =
+    "hidden";
 }
 
+
+// ==========================================
+// ETIQUETA DEL DÍA
+// ==========================================
+
 function getDayLabel(day) {
-  if (day === 22) return "Nuestro día";
-  if (day === getCurrentDay()) return "Disponible hoy";
+
+  if (day === 22)
+    return "Nuestro día";
+
+  if (day === getCurrentDay())
+    return "Disponible hoy";
+
   return "Un recuerdo para ti";
 }
 
+
+// ==========================================
+// CERRAR MODAL
+// ==========================================
+
 function closeModal() {
-  const modal = document.getElementById("modal");
+
+  const modal =
+    document.getElementById("modal");
+
+
   modal.classList.remove("open");
-  modal.setAttribute("aria-hidden", "true");
+
+  modal.setAttribute(
+    "aria-hidden",
+    "true"
+  );
+
   document.body.style.overflow = "";
 }
 
+
+// ==========================================
+// IR AL CALENDARIO
+// ==========================================
+
 function scrollToCalendar() {
-  document.getElementById("calendar-section").scrollIntoView({
+
+  document.getElementById(
+    "calendar-section"
+  ).scrollIntoView({
     behavior: "smooth"
   });
 }
 
-function createHearts(amount = 8) {
-  const container = document.getElementById("hearts");
 
-  for (let i = 0; i < amount; i++) {
-    const heart = document.createElement("span");
-    heart.className = "floating-heart";
-    heart.textContent = Math.random() > .25 ? "♥" : "❤";
-    heart.style.left = `${Math.random() * 100}%`;
-    heart.style.fontSize = `${12 + Math.random() * 22}px`;
-    heart.style.animationDuration = `${5 + Math.random() * 7}s`;
-    heart.style.animationDelay = `${Math.random() * 2}s`;
+// ==========================================
+// CORAZONES
+// ==========================================
+
+function createHearts(amount = 8) {
+
+  const container =
+    document.getElementById("hearts");
+
+
+  for (
+    let i = 0;
+    i < amount;
+    i++
+  ) {
+
+    const heart =
+      document.createElement("span");
+
+
+    heart.className =
+      "floating-heart";
+
+
+    heart.textContent =
+      Math.random() > .25
+        ? "♥"
+        : "❤";
+
+
+    heart.style.left =
+      `${Math.random() * 100}%`;
+
+
+    heart.style.fontSize =
+      `${12 + Math.random() * 22}px`;
+
+
+    heart.style.animationDuration =
+      `${5 + Math.random() * 7}s`;
+
+
+    heart.style.animationDelay =
+      `${Math.random() * 2}s`;
+
+
     container.appendChild(heart);
 
-    setTimeout(() => heart.remove(), 14000);
+
+    setTimeout(
+      () => heart.remove(),
+      14000
+    );
   }
 }
+
+
+// ==========================================
+// ANIMACIÓN DE CORAZONES
+// ==========================================
 
 function startHeartAnimation() {
-  setInterval(() => createHearts(1), 1800);
+
+  setInterval(
+    () => createHearts(1),
+    1800
+  );
 }
 
+
+// ==========================================
+// MÚSICA
+// ==========================================
+
 async function toggleMusic() {
-  const audio = document.getElementById("bg-music");
-  const button = document.getElementById("music-btn");
+
+  const audio =
+    document.getElementById("bg-music");
+
+  const button =
+    document.getElementById("music-btn");
+
 
   try {
+
     if (audio.paused) {
+
       await audio.play();
+
       button.textContent = "❚❚";
-      button.title = "Pausar música";
+
+      button.title =
+        "Pausar música";
+
     } else {
+
       audio.pause();
+
       button.textContent = "♫";
-      button.title = "Reproducir música";
+
+      button.title =
+        "Reproducir música";
     }
+
   } catch (error) {
-    alert("Primero coloca tu canción en la carpeta music/nuestra-cancion.mp3");
+
+    alert(
+      "Primero coloca tu canción en la carpeta music/nuestra-cancion.mp3"
+    );
   }
 }
 
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") closeModal();
-});
+
+// ==========================================
+// TECLA ESCAPE
+// ==========================================
+
+document.addEventListener(
+  "keydown",
+  (event) => {
+
+    if (event.key === "Escape") {
+
+      closeModal();
+    }
+  }
+);
+
+
+// ==========================================
+// INICIAR PÁGINA
+// ==========================================
 
 renderCalendar();
+
 updateCountdown();
+
 startHeartAnimation();
-setInterval(updateCountdown, 1000);
+
+
+// Actualizar contador cada segundo
+setInterval(
+  updateCountdown,
+  1000
+);
+
+
+// Si la página permanece abierta cuando
+// cambia el día, actualizar calendario.
+setInterval(
+  renderCalendar,
+  30000
+);
 
 // Si la página permanece abierta cuando cambia el día,
 // se actualiza automáticamente el calendario.
