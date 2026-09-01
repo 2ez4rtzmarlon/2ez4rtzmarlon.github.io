@@ -17,7 +17,7 @@ const surprises = [
   {
     icon: "❤️",
     title: "Una razón para sonreír",
-    text: `Hoy comienza nuestra cuenta regresiva. No necesito una fecha especial para recordarte cuánto significas para mí. Pero quiero aprovechar estos 22 días para dejarte pequeños pedacitos de todo lo que siento por ti.`
+    text: `Hoy comienza nuestra cuenta regresiva. No necesito una fecha especial para recordarte cuánto significas para mí. Pero quiero aprovechar estos 22 días para dejarte pequeños pedacitos de todo lo que siento por ti y nuestra historia.`
   },
   {
     icon: "📸",
