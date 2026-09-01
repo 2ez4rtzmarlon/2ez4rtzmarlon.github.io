@@ -173,16 +173,27 @@ function dateToUTC(dateString) {
 // ==========================================
 
 function getCurrentDay() {
+  // 🔐 MODO DE PRUEBA
+  // Ejemplo: ?preview=22
+  const params = new URLSearchParams(window.location.search);
+  const previewDay = Number(params.get("preview"));
+
+  if (
+    Number.isInteger(previewDay) &&
+    previewDay >= 1 &&
+    previewDay <= TOTAL_DAYS
+  ) {
+    return previewDay;
+  }
+
+  // 📅 FUNCIONAMIENTO NORMAL
   const today = getEcuadorDate();
 
   const difference = Math.floor(
     (dateToUTC(today) - dateToUTC(START_DATE)) / 86400000
   );
 
-  return Math.min(
-    Math.max(difference + 1, 0),
-    TOTAL_DAYS
-  );
+  return Math.min(Math.max(difference + 1, 0), TOTAL_DAYS);
 }
 
 
