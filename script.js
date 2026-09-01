@@ -38,8 +38,8 @@ const surprises = [
   },
   {
     icon: "💕",
-    title: "Tres cosas que amo de ti",
-    text: `1. Tu forma de hacerme sonreír.<br><br>2. La manera en que haces especiales los momentos sencillos.<br><br>3. Simplemente, la persona que eres.`
+    title: "Siete cosas que amo de ti",
+    text: `1. Amo que te guste el fútbol porque me encanta compartir contigo esa pasión y sufrir por el nachito.<br><br>2. Amo lo cariñosa que eres con los animales porque demuestra el bonito corazón que tienes.<br><br>3. Me encanta lo cariñosa que eres conmigo, cada abrazo, cada palabra y cada pequeño detalle tuyo significa muchísimo para mí.<br><br>4. Amo tu sentido del humor, especialmente esos chistes de doble sentido que terminan haciéndonos reír juntos.<br><br>5. Amo tu belleza y no solamente por lo hermosa que eres físicamente, sino por la forma en que tu personalidad hace que seas todavía más especial. <br><br>6 Amo la buena madre que eres porque admiro la dedicación, el amor y la paciencia que tienes. <br><br>7. Amo que seas tú, porque entre tantas personas en el mundo, tuve la suerte de encontrarte y poder compartir mi vida contigo.`
   },
   {
     icon: "🎵",
