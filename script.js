@@ -34,7 +34,7 @@ const surprises = [
     icon: "📸",
     title: "Un recuerdo nuestro",
     text: `Aquí puedes escribir la historia detrás de una de tus fotos favoritas juntos. Por ejemplo: "Ese día quizá parecía uno más, pero ahora es uno de esos recuerdos que guardo con muchísimo cariño."`,
-    image: "images/foto01.jpg"
+    image: "images/foto01.jpeg"
   },
   {
     icon: "💕",
