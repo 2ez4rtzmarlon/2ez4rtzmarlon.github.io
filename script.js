@@ -34,7 +34,18 @@ const surprises = [
     icon: "📸",
     title: "Un recuerdo nuestro",
     text: ` "Ese día me hiciste muy feliz, gracias por formar parte de mi vida y gracias por hacer mi cumpleaños más especial junto a ti."`,
-    image: "images/foto01.jpeg"
+    images: [
+  "images/foto01.jpeg",
+  "images/foto02.jpeg",
+  "images/foto03.jpeg",
+  "images/foto04.jpeg",
+  "images/foto05.jpeg",
+  "images/foto06.jpeg",
+  "images/foto07.jpeg",
+  "images/foto08.jpeg",
+  "images/foto09.jpeg",
+  "images/foto10.jpeg"
+]
   },
   {
     icon: "💕",
