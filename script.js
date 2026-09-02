@@ -532,6 +532,79 @@ function openSurprise(day) {
   }
 }
 
+// 🎠 Cambiar foto del carrusel
+function changeCarousel(direction) {
+
+  if (!window.currentCarouselImages) {
+    return;
+  }
+
+  const total = window.currentCarouselImages.length;
+
+  window.currentCarouselIndex += direction;
+
+  // Si llega al final, vuelve al principio
+  if (window.currentCarouselIndex >= total) {
+    window.currentCarouselIndex = 0;
+  }
+
+  // Si retrocede desde la primera, va a la última
+  if (window.currentCarouselIndex < 0) {
+    window.currentCarouselIndex = total - 1;
+  }
+
+  updateCarousel();
+}
+
+
+// 📸 Ir directamente a una foto
+function goToCarousel(index) {
+
+  if (!window.currentCarouselImages) {
+    return;
+  }
+
+  window.currentCarouselIndex = index;
+
+  updateCarousel();
+}
+
+
+// 🔄 Actualizar carrusel
+function updateCarousel() {
+
+  const image = document.getElementById("carousel-image");
+  const counter = document.getElementById("carousel-counter");
+  const dots = document.querySelectorAll(".carousel-dot");
+
+  if (!image) {
+    return;
+  }
+
+  const index = window.currentCarouselIndex;
+  const images = window.currentCarouselImages;
+
+  // Pequeña animación
+  image.classList.remove("carousel-fade");
+
+  void image.offsetWidth;
+
+  image.src = images[index];
+
+  image.alt = `Recuerdo ${index + 1}`;
+
+  image.classList.add("carousel-fade");
+
+  // Contador
+  if (counter) {
+    counter.textContent = `${index + 1} / ${images.length}`;
+  }
+
+  // Puntos
+  dots.forEach((dot, i) => {
+    dot.classList.toggle("active", i === index);
+  });
+}
 
 // ==========================================
 // MENSAJE DÍA BLOQUEADO
