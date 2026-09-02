@@ -459,3 +459,192 @@ h1 span {
     padding: 40px 22px 25px;
   }
 }
+/* =========================================
+   CARRUSEL DE FOTOS
+   ========================================= */
+
+.photo-carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  margin: 20px auto 8px;
+}
+
+.carousel-image-container {
+  width: 100%;
+  max-width: 500px;
+  height: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 15px;
+  background: #f8f8f8;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 15px;
+}
+
+
+/* Botones anterior / siguiente */
+
+.carousel-button {
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(255, 105, 145, 0.9);
+  color: white;
+
+  font-size: 35px;
+  line-height: 35px;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.carousel-button:hover {
+  transform: scale(1.1);
+  background: rgba(220, 60, 110, 1);
+}
+
+.carousel-button:active {
+  transform: scale(0.95);
+}
+
+
+/* Contador */
+
+.carousel-counter {
+  text-align: center;
+  margin-top: 10px;
+
+  font-size: 14px;
+  font-weight: bold;
+
+  opacity: 0.75;
+}
+
+
+/* Puntos */
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 7px;
+
+  margin: 12px 0 20px;
+}
+
+.carousel-dot {
+  width: 9px;
+  height: 9px;
+
+  padding: 0;
+  border: none;
+
+  border-radius: 50%;
+
+  background: #ddd;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
+}
+
+.carousel-dot:hover {
+  transform: scale(1.2);
+}
+
+.carousel-dot.active {
+  background: #e75480;
+  transform: scale(1.3);
+}
+
+
+/* Animación al cambiar foto */
+
+.carousel-fade {
+  animation: carouselFade 0.35s ease;
+}
+
+@keyframes carouselFade {
+
+  from {
+    opacity: 0;
+    transform: scale(0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+}
+
+
+/* Texto debajo del álbum */
+
+.surprise-text {
+  margin-top: 15px;
+
+  line-height: 1.7;
+
+  text-align: center;
+}
+
+
+/* =========================================
+   VERSIÓN PARA CELULAR
+   ========================================= */
+
+@media (max-width: 600px) {
+
+  .photo-carousel {
+    gap: 5px;
+  }
+
+  .carousel-image-container {
+    height: 300px;
+  }
+
+  .carousel-button {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
+
+    font-size: 28px;
+  }
+
+  .carousel-dots {
+    gap: 5px;
+  }
+
+  .carousel-dot {
+    width: 7px;
+    height: 7px;
+  }
+
+}
