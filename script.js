@@ -33,7 +33,7 @@ const surprises = [
   {
     icon: "📸",
     title: "Un recuerdo nuestro",
-    text: ` "Ese día me hiciste muy feliz, gracias por formar parte de mi vida"`,
+    text: ` "Ese día me hiciste muy feliz, gracias por formar parte de mi vida y gracias por hacer mi cumpleaños más especial junto a ti."`,
     image: "images/foto01.jpeg"
   },
   {
@@ -44,12 +44,12 @@ const surprises = [
   {
     icon: "🎵",
     title: "Nuestra canción",
-    text: `Hoy quiero que escuches nuestra canción y recuerdes algún momento que hayamos vivido juntos. ❤️<br><br><strong>Tip:</strong> coloca tu canción en <em>music/nuestra-cancion.mp3</em> y usa el botón ♫ de la esquina.`
+    text: `Hoy quiero que escuches nuestra canción y recuerdes algún momento que hayamos vivido juntos. ❤️<br><br><strong>Tip:</strong> coloca tu canción en <em>music/musica01.mp3</em> y usa el botón ♫ de la esquina.`
   },
   {
     icon: "🥰",
     title: "Un momento que nunca olvido",
-    text: `Escribe aquí un momento específico que hayas vivido con ella y explica por qué fue importante para ti.`
+    text: `Hay varios momentos que hemos compartido, desde perdernos en el sur hasta pasar 2 o 3 días perdidos juntos, pero me gusta recordar mucho como emzo todo, con unos deberes, las notitas pequeñas hasta llegar a darte clases donde empezamos algo que sigue hasta ahora.`
   },
   {
     icon: "💌",
@@ -59,17 +59,17 @@ const surprises = [
   {
     icon: "😂",
     title: "Nuestro momento más gracioso",
-    text: `Aquí coloca esa anécdota que cada vez que recuerdan los hace reír. Las historias pequeñas también terminan convirtiéndose en nuestros recuerdos favoritos.`
+    text: `Igual hay muchos jajaja pero me gusta cuando ibamos jugando con una piedrita por toda la amazonas hasta llegar a la zona para seguir tomando.`
   },
   {
     icon: "🎟️",
     title: "Cupón para ti",
-    text: `<div class="quote">🎟️ CUPÓN ESPECIAL<br><br>Vale por un abrazo largo, una cita y todo el tiempo que quieras conmigo. ❤️</div>`
+    text: `<div class="quote">🎟️ CUPÓN ESPECIAL<br><br>Vale por una una cita y un viaje juntos amor. ❤️</div>`
   },
   {
     icon: "🌹",
     title: "Lo que admiro de ti",
-    text: `Escribe aquí 3 o 4 cualidades que realmente admires de ella. Este detalle funciona mejor cuando son cosas muy específicas y personales.`
+    text: `1. Admiro lo inteligente que eres.<br><br>2. Admiro tu fuerza y como enfrentas los problemas.<br><br>2. Admiro tu dedicacion y esfuerzo por cumplir tus metas.`
   },
   {
     icon: "✨",
