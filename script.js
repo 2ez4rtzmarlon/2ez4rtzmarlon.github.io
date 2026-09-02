@@ -44,7 +44,7 @@ const surprises = [
   {
     icon: "🎵",
     title: "Nuestra canción",
-    text: `Hoy quiero que escuches nuestra canción y recuerdes algún momento que hayamos vivido juntos. ❤️<br><br><strong>Tip:</strong> coloca tu canción en <em>music/musica01.mp3</em> y usa el botón ♫ de la esquina.`
+    text: `Hoy quiero que escuches nuestra canción y recuerdes lo importante que eres para mi vida y de que manera eres importante para mí. ❤️<br><br><strong>Tip:</strong>usa el botón ♫ de la esquina.`
   },
   {
     icon: "🥰",
