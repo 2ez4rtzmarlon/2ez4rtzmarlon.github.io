@@ -436,66 +436,98 @@ function renderCalendar() {
 // ==========================================
 
 function openSurprise(day) {
-
   const currentDay = getCurrentDay();
 
-
   if (day > currentDay) {
-
     showLockedMessage(day);
-
     return;
   }
 
-
-  const surprise =
-    surprises[day - 1];
-
+  const surprise = surprises[day - 1];
 
   document.getElementById("modal-day").textContent =
     `Día ${String(day).padStart(2, "0")} · ${getDayLabel(day)}`;
 
-
   document.getElementById("modal-title").textContent =
     surprise.title;
-
 
   document.getElementById("modal-icon").textContent =
     surprise.icon;
 
+  let body = "";
 
-  let body = surprise.text;
+  // 🎠 CARRUSEL DE IMÁGENES
+  if (surprise.images && surprise.images.length > 0) {
 
+    body += `
+      <div class="photo-carousel">
 
-  if (surprise.image) {
+        <button 
+          class="carousel-button carousel-prev"
+          onclick="changeCarousel(-1)"
+          aria-label="Foto anterior">
+          ‹
+        </button>
 
-    body =
-      `<img src="${surprise.image}" alt="Recuerdo del día ${day}" onerror="this.style.display='none'">`
-      + body;
+        <div class="carousel-image-container">
+          <img
+            id="carousel-image"
+            src="${surprise.images[0]}"
+            alt="Recuerdo 1"
+          >
+        </div>
+
+        <button 
+          class="carousel-button carousel-next"
+          onclick="changeCarousel(1)"
+          aria-label="Foto siguiente">
+          ›
+        </button>
+
+      </div>
+
+      <div class="carousel-counter">
+        <span id="carousel-counter">1 / ${surprise.images.length}</span>
+      </div>
+
+      <div class="carousel-dots" id="carousel-dots">
+    `;
+
+    surprise.images.forEach((image, index) => {
+      body += `
+        <button
+          class="carousel-dot ${index === 0 ? "active" : ""}"
+          onclick="goToCarousel(${index})"
+          aria-label="Ir a foto ${index + 1}">
+        </button>
+      `;
+    });
+
+    body += `
+      </div>
+    `;
+
+    // Guardamos las imágenes para poder navegar
+    window.currentCarouselImages = surprise.images;
+    window.currentCarouselIndex = 0;
   }
 
+  body += `
+    <div class="surprise-text">
+      ${surprise.text}
+    </div>
+  `;
 
-  document.getElementById("modal-body").innerHTML =
-    body;
+  document.getElementById("modal-body").innerHTML = body;
 
-
-  const modal =
-    document.getElementById("modal");
-
+  const modal = document.getElementById("modal");
 
   modal.classList.add("open");
+  modal.setAttribute("aria-hidden", "false");
 
-  modal.setAttribute(
-    "aria-hidden",
-    "false"
-  );
-
-  document.body.style.overflow =
-    "hidden";
-
+  document.body.style.overflow = "hidden";
 
   if (day === 22) {
-
     createHearts(28);
   }
 }
