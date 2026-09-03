@@ -354,11 +354,19 @@ h1 span {
 }
 
 .modal-body img {
-  width: 100%;
-  max-height: 330px;
-  object-fit: cover;
+  width: auto;
+  height: auto;
+
+  max-width: 100%;
+  max-height: 65vh;
+
+  object-fit: contain;
+
   border-radius: 20px;
-  margin: 10px 0 20px;
+
+  margin: 10px auto 20px;
+
+  display: block;
 }
 
 .modal-body .quote {
@@ -472,29 +480,44 @@ h1 span {
   margin: 20px auto 8px;
 }
 
+/* Contenedor de la imagen */
 .carousel-image-container {
   width: 100%;
-  max-width: 500px;
-  height: 380px;
+  max-width: 650px;
+  max-height: 65vh;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   overflow: hidden;
-  border-radius: 15px;
+
+  border-radius: 18px;
   background: #f8f8f8;
+
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
+/* Imagen del carrusel */
 .carousel-image-container img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
   display: block;
-  border-radius: 15px;
+
+  width: auto;
+  height: auto;
+
+  max-width: 100%;
+  max-height: 65vh;
+
+  object-fit: contain;
+
+  border-radius: 18px;
+
+  margin: 0;
 }
 
-
-/* Botones anterior / siguiente */
+/* =========================================
+   BOTONES ANTERIOR / SIGUIENTE
+   ========================================= */
 
 .carousel-button {
   width: 45px;
@@ -519,6 +542,8 @@ h1 span {
   transition:
     transform 0.2s ease,
     background 0.2s ease;
+
+  flex-shrink: 0;
 }
 
 .carousel-button:hover {
@@ -530,8 +555,9 @@ h1 span {
   transform: scale(0.95);
 }
 
-
-/* Contador */
+/* =========================================
+   CONTADOR
+   ========================================= */
 
 .carousel-counter {
   text-align: center;
@@ -543,8 +569,9 @@ h1 span {
   opacity: 0.75;
 }
 
-
-/* Puntos */
+/* =========================================
+   PUNTOS
+   ========================================= */
 
 .carousel-dots {
   display: flex;
@@ -583,15 +610,15 @@ h1 span {
   transform: scale(1.3);
 }
 
-
-/* Animación al cambiar foto */
+/* =========================================
+   ANIMACIÓN AL CAMBIAR FOTO
+   ========================================= */
 
 .carousel-fade {
   animation: carouselFade 0.35s ease;
 }
 
 @keyframes carouselFade {
-
   from {
     opacity: 0;
     transform: scale(0.97);
@@ -601,12 +628,32 @@ h1 span {
     opacity: 1;
     transform: scale(1);
   }
-
 }
 
+/* =========================================
+   TEXTO DEL CARRUSEL
+   ========================================= */
 
-/* Texto debajo del álbum */
+.photo-description {
+  width: 100%;
+  max-width: 650px;
 
+  margin: 15px auto 20px;
+  padding: 15px 20px;
+
+  text-align: center;
+
+  line-height: 1.6;
+  font-size: 0.98rem;
+
+  color: var(--text);
+
+  background: rgba(255, 255, 255, 0.75);
+
+  border-radius: 15px;
+}
+
+/* Texto general de la sorpresa */
 .surprise-text {
   margin-top: 15px;
 
@@ -615,6 +662,61 @@ h1 span {
   text-align: center;
 }
 
+/* =========================================
+   IMAGEN ÚNICA
+   ========================================= */
+
+.single-photo {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 10px auto 20px;
+
+  overflow: hidden;
+}
+
+.single-photo .surprise-image {
+  display: block;
+
+  width: auto;
+  height: auto;
+
+  max-width: 100%;
+  max-height: 65vh;
+
+  object-fit: contain;
+
+  border-radius: 18px;
+
+  margin: 0 auto;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================================
+   FOTO FINAL
+   ========================================= */
+
+.final-photo {
+  display: block;
+
+  width: auto;
+  height: auto;
+
+  max-width: 100%;
+  max-height: 65vh;
+
+  object-fit: contain;
+
+  margin: 0 auto 25px;
+
+  border-radius: 20px;
+
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.18);
+}
 
 /* =========================================
    VERSIÓN PARA CELULAR
@@ -623,11 +725,21 @@ h1 span {
 @media (max-width: 600px) {
 
   .photo-carousel {
-    gap: 5px;
+    gap: 4px;
   }
 
   .carousel-image-container {
-    height: 300px;
+    max-width: calc(100vw - 100px);
+    max-height: 55vh;
+
+    border-radius: 14px;
+  }
+
+  .carousel-image-container img {
+    max-width: 100%;
+    max-height: 55vh;
+
+    border-radius: 14px;
   }
 
   .carousel-button {
@@ -636,6 +748,7 @@ h1 span {
     min-width: 38px;
 
     font-size: 28px;
+    line-height: 28px;
   }
 
   .carousel-dots {
@@ -647,4 +760,14 @@ h1 span {
     height: 7px;
   }
 
+  .photo-description {
+    font-size: 0.92rem;
+    padding: 12px 15px;
+  }
+
+  .single-photo .surprise-image,
+  .final-photo {
+    max-height: 55vh;
+    border-radius: 14px;
+  }
 }
