@@ -61,7 +61,7 @@ const surprises = [
     icon: "🥰",
     title: "Un momento que nunca olvido",
     text: `Hay varios momentos que hemos compartido, desde perdernos en el sur hasta pasar 2 o 3 días perdidos juntos, pero me gusta recordar mucho como emzo todo, con unos deberes, las notitas pequeñas hasta llegar a darte clases donde empezamos algo que sigue hasta ahora.`,
-    image: "images/foto11.png"
+    image: "images/foto11.jpeg"
   },
   {
     icon: "💌",
