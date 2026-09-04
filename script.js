@@ -147,12 +147,14 @@ const surprises = [
     text: `
       Hoy quiero que escuches nuestra canción y recuerdes
       lo importante que eres para mi vida y de qué manera
-      eres importante para mí. ❤️
+      eres importante para mí, gracias por compartir tus gustos
+      y hacerme recordarte a ti en cada segundo de la canción,
+      antes de darle play piensa en algo lindo que hemos vivido, te amo. ❤️
 
       <br><br>
 
       <strong>Tip:</strong>
-      usa el botón ♫ de la esquina.
+      usa el botón ♫ de la esquina y ahora cada día puedes escucharla.
     `
   },
 
