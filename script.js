@@ -154,7 +154,7 @@ const surprises = [
       <br><br>
 
       <strong>Tip:</strong>
-      usa el botón ♫ de la esquina y ahora cada día puedes escucharla.
+      Cierra y usa el botón ♫ de abajo en la esquina derecha y ahora cada día puedes escucharla.
     `
   },
 
