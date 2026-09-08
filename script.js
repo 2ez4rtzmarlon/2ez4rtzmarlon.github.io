@@ -260,23 +260,74 @@ const surprises = [
   // =======================================================
 
   {
-    icon: "🌹",
+  icon: "🌻",
+  title: "Lo que nunca te digo suficiente",
+  slides: [
+    {
+      title: "Gracias por hacerme reír",
+      text: `
+        Incluso cuando no estoy teniendo un buen día,
+        siempre encuentras alguna manera de sacarme una sonrisa.
+        <br><br>
+        Me encanta esa parte de ti que convierte
+        cualquier momento sencillo en algo especial. ❤️
+      `
+    },
 
-    title: "Lo que admiro de ti",
+    {
+      title: "Gracias por escucharme",
+      text: `
+        Gracias por escuchar mis historias,
+        mis problemas, mis ideas y hasta mis cosas sin sentido.
+        <br><br>
+        Saber que puedo hablar contigo y sentirme escuchado
+        significa muchísimo para mí. 💕
+      `
+    },
 
-    text: `
-      1. Admiro lo inteligente que eres.
+    {
+      title: "Gracias por confiar en mí",
+      text: `
+        Gracias por confiar en mí,
+        por contarme tus cosas y por dejarme conocer
+        cada vez más de ti.
+        <br><br>
+        Quiero seguir siendo esa persona
+        en la que puedas confiar. 🤍
+      `
+    },
 
-      <br><br>
+    {
+      title: "Gracias por dejarme formar parte de tu vida",
+      text: `
+        Gracias por dejarme compartir contigo
+        tantos momentos, aventuras, risas y recuerdos.
+        <br><br>
+        Me hace feliz saber que nuestras vidas
+        se encontraron y que ahora tenemos
+        nuestra propia historia. 🥹❤️
+      `
+    },
 
-      2. Admiro tu fuerza y cómo enfrentas los problemas.
+    {
+      title: "Lo que nunca te digo suficiente",
+      text: `
+        Quizá no te lo diga todos los días,
+        pero hay muchas cosas que siento por ti
+        que nunca quiero que olvides.
+        <br><br>
 
-      <br><br>
+        Gracias por estar,
+        gracias por quererme,
+        gracias por hacerme parte de tu mundo
+        y gracias por ser tú.
+        <br><br>
 
-      3. Admiro tu dedicación y esfuerzo por cumplir tus metas.
-    `
-  },
-
+        <strong>Te quiero muchísimo. 🌻❤️</strong>
+      `
+    }
+  ]
+},
 
   // =======================================================
   // DÍA 10
