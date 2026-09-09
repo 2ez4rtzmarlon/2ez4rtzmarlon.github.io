@@ -284,8 +284,8 @@ const surprises = [
         title: "Gracias por escucharme",
 
         text: `
-          Gracias por escuchar mis historias,
-          mis problemas, mis ideas y hasta mis cosas sin sentido.
+          Gracias por escuchar mis historias del fútbol, de lo que me gusta,
+          mis problemas, mis sueños y hasta mis cosas sin sentido o palabras inventadas.
 
           <br><br>
 
@@ -342,7 +342,7 @@ const surprises = [
           <br><br>
 
           <strong>
-            Te quiero muchísimo. 🌻❤️
+            Te amo mucho con montón. 🌻❤️
           </strong>
         `
       }
