@@ -367,7 +367,7 @@ const surprises = [
       <div class="day10-photo-wrapper">
 
         <img
-          src="images/dia10.jpg"
+          src="images/dia10.jpeg"
           alt="Un recuerdo nuestro"
           class="day10-photo"
         >
