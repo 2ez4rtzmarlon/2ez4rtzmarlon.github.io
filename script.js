@@ -2318,8 +2318,3 @@ setInterval(
   renderCalendar,
   30000
 );
-
-setInterval(
-  renderCalendar,
-  30000
-);
