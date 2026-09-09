@@ -949,3 +949,425 @@ h1 span {
     font-size: 60px;
   }
 }
+/* ==========================================================
+   🌻 CARRUSEL DE CONFESIONES - DÍA 9
+   ========================================================== */
+
+.text-carousel {
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  margin: 10px auto 15px;
+
+  position: relative;
+}
+
+
+/* ==========================================================
+   TARJETA
+   ========================================================== */
+
+.text-carousel-card {
+
+  position: relative;
+
+  width: min(100%, 560px);
+
+  min-height: 300px;
+
+  overflow: hidden;
+
+  border-radius: 24px;
+
+  padding: 40px 45px;
+
+  background:
+
+    linear-gradient(
+      145deg,
+      #fffdf9,
+      #fff8e8
+    );
+
+  border: 1px solid rgba(
+    226,
+    183,
+    78,
+    0.25
+  );
+
+  box-shadow:
+
+    0 15px 35px
+    rgba(90, 55, 20, 0.10);
+
+}
+
+
+/* ==========================================================
+   GIRASOLES GRANDES
+   ========================================================== */
+
+.text-carousel-flower {
+
+  position: absolute;
+
+  font-size: 55px;
+
+  z-index: 1;
+
+  pointer-events: none;
+
+  filter:
+    drop-shadow(
+      0 5px 5px
+      rgba(80, 50, 20, 0.12)
+    );
+
+}
+
+
+/* Girasol arriba izquierda */
+
+.flower-one {
+
+  top: -10px;
+
+  left: -8px;
+
+  transform:
+    rotate(-20deg);
+
+}
+
+
+/* Girasol abajo derecha */
+
+.flower-two {
+
+  bottom: -14px;
+
+  right: -8px;
+
+  transform:
+    rotate(18deg);
+
+}
+
+
+/* ==========================================================
+   GIRASOL PEQUEÑO
+   ========================================================== */
+
+.text-carousel-small-flower {
+
+  position: absolute;
+
+  top: 22px;
+
+  right: 35px;
+
+  font-size: 28px;
+
+  transform:
+    rotate(12deg);
+
+  opacity: 0.85;
+
+}
+
+
+/* ==========================================================
+   NÚMERO
+   ========================================================== */
+
+.text-carousel-number {
+
+  position: absolute;
+
+  top: 18px;
+
+  right: 18px;
+
+  z-index: 3;
+
+  padding: 6px 12px;
+
+  border-radius: 20px;
+
+  background:
+    rgba(
+      255,
+      215,
+      110,
+      0.25
+    );
+
+  color: #9b6b18;
+
+  font-size: 13px;
+
+  font-weight: 600;
+
+}
+
+
+/* ==========================================================
+   CONTENIDO
+   ========================================================== */
+
+.text-carousel-content {
+
+  position: relative;
+
+  z-index: 2;
+
+  text-align: center;
+
+  max-width: 480px;
+
+  margin: auto;
+
+}
+
+
+/* ==========================================================
+   ICONO
+   ========================================================== */
+
+.text-carousel-icon {
+
+  font-size: 38px;
+
+  margin-bottom: 8px;
+
+}
+
+
+/* ==========================================================
+   TÍTULO
+   ========================================================== */
+
+.text-carousel-content h3 {
+
+  margin: 8px 0 18px;
+
+  color: #603b2d;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size: 25px;
+
+  line-height: 1.25;
+
+}
+
+
+/* ==========================================================
+   TEXTO
+   ========================================================== */
+
+.text-carousel-message {
+
+  color: #5b4740;
+
+  font-size: 16px;
+
+  line-height: 1.75;
+
+}
+
+
+/* ==========================================================
+   CORAZÓN
+   ========================================================== */
+
+.text-carousel-heart {
+
+  margin-top: 18px;
+
+  font-size: 27px;
+
+  color: #d98a9b;
+
+  animation:
+    confessionHeart 2s
+    ease-in-out infinite;
+
+}
+
+
+@keyframes confessionHeart {
+
+  0%,
+  100% {
+
+    transform:
+      scale(1);
+
+  }
+
+  50% {
+
+    transform:
+      scale(1.18);
+
+  }
+
+}
+
+
+/* ==========================================================
+   ANIMACIÓN AL CAMBIAR
+   ========================================================== */
+
+.text-carousel-animation {
+
+  animation:
+    confessionAppear
+    0.45s
+    ease;
+
+}
+
+
+@keyframes confessionAppear {
+
+  from {
+
+    opacity: 0;
+
+    transform:
+      translateX(20px);
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform:
+      translateX(0);
+
+  }
+
+}
+
+
+/* ==========================================================
+   ÚLTIMA CONFESIÓN
+   ========================================================== */
+
+.text-carousel-message strong {
+
+  color: #a66b18;
+
+  font-size: 19px;
+
+}
+
+
+/* ==========================================================
+   PUNTOS
+   ========================================================== */
+
+.text-carousel-dots {
+
+  margin-top: 8px;
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE
+   ========================================================== */
+
+@media (
+  max-width: 600px
+) {
+
+  .text-carousel {
+
+    gap: 5px;
+
+  }
+
+
+  .text-carousel-card {
+
+    min-height: 330px;
+
+    padding:
+      42px 25px;
+
+    border-radius: 20px;
+
+  }
+
+
+  .text-carousel-content h3 {
+
+    font-size: 22px;
+
+  }
+
+
+  .text-carousel-message {
+
+    font-size: 15px;
+
+    line-height: 1.65;
+
+  }
+
+
+  .text-carousel-flower {
+
+    font-size: 42px;
+
+  }
+
+
+  .flower-one {
+
+    top: -8px;
+
+    left: -8px;
+
+  }
+
+
+  .flower-two {
+
+    bottom: -10px;
+
+    right: -8px;
+
+  }
+
+
+  .text-carousel-small-flower {
+
+    font-size: 22px;
+
+    right: 25px;
+
+  }
+
+
+  .text-carousel-icon {
+
+    font-size: 32px;
+
+  }
+
+}
