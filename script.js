@@ -267,10 +267,9 @@ const surprises = [
       title: "Gracias por hacerme reír",
       text: `
         Incluso cuando no estoy teniendo un buen día,
-        siempre encuentras alguna manera de sacarme una sonrisa.
+        siempre encuentras alguna forma de sacarme una sonrisa.
         <br><br>
-        Me encanta esa parte de ti que convierte
-        cualquier momento sencillo en algo especial. ❤️
+        Gracias por hacerme sentir especial. ❤️
       `
     },
 
