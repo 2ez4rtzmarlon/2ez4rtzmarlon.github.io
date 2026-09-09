@@ -39,14 +39,16 @@ const surprises = [
 
   {
     icon: "❤️",
-
     title: "Una razón para sonreír",
-
     text: `
       Hoy comienza nuestra cuenta regresiva.
 
+      <br><br>
+
       No necesito una fecha especial para recordarte cuánto
       significas para mí.
+
+      <br><br>
 
       Pero quiero aprovechar estos 22 días para dejarte
       pequeños pedacitos de todo lo que siento por ti
@@ -61,17 +63,17 @@ const surprises = [
 
   {
     icon: "📸",
-
     title: "Varios recuerdos juntos",
 
     text: `
       Gracias por compartir un poquito de tu tiempo junto a mí.
 
+      <br><br>
+
       Espero poder seguir viviendo varias cosas junto a ti
       y que nunca terminen las fotos oficiales. ❤️
     `,
 
-    // Carrusel sencillo
     images: [
       "images/foto01.jpeg",
       "images/foto02.jpeg",
@@ -93,7 +95,6 @@ const surprises = [
 
   {
     icon: "💕",
-
     title: "Siete cosas que amo de ti",
 
     text: `
@@ -141,7 +142,6 @@ const surprises = [
 
   {
     icon: "🎵",
-
     title: "Nuestra canción",
 
     text: `
@@ -154,7 +154,8 @@ const surprises = [
       <br><br>
 
       <strong>Tip:</strong>
-      Cierra y usa el botón ♫ de abajo en la esquina derecha y ahora cada día puedes escucharla.
+      Cierra y usa el botón ♫ de abajo en la esquina derecha
+      y ahora cada día puedes escucharla.
     `
   },
 
@@ -165,7 +166,6 @@ const surprises = [
 
   {
     icon: "🥰",
-
     title: "Un momento que nunca olvido",
 
     text: `
@@ -177,12 +177,13 @@ const surprises = [
 
       Pero me gusta recordar mucho cómo empezó todo:
 
+      <br><br>
+
       con unos deberes, las notitas pequeñas,
       hasta llegar a darte clases donde empezamos algo
       que sigue hasta ahora. ❤️
     `,
 
-    // FOTO INDIVIDUAL
     image: "images/foto11.jpeg"
   },
 
@@ -193,7 +194,6 @@ const surprises = [
 
   {
     icon: "💌",
-
     title: "Una pequeña carta",
 
     text: `
@@ -214,11 +214,12 @@ const surprises = [
 
   {
     icon: "😂",
-
     title: "Nuestro momento más gracioso",
 
     text: `
       Igual hay muchos jajaja.
+
+      <br><br>
 
       Pero me gusta cuando íbamos jugando con una piedrita
       por toda la Amazonas hasta llegar a la zona para
@@ -238,7 +239,6 @@ const surprises = [
 
   {
     icon: "🎟️",
-
     title: "Cupón para ti",
 
     text: `
@@ -260,73 +260,96 @@ const surprises = [
   // =======================================================
 
   {
-  icon: "🌻",
-  title: "Lo que nunca te digo suficiente",
-  slides: [
-    {
-      title: "Gracias por hacerme reír",
-      text: `
-        Incluso cuando no estoy teniendo un buen día,
-        siempre encuentras alguna forma de sacarme una sonrisa.
-        <br><br>
-        Gracias por hacerme sentir especial. ❤️
-      `
-    },
+    icon: "🌻",
+    title: "Lo que nunca te digo suficiente",
 
-    {
-      title: "Gracias por escucharme",
-      text: `
-        Gracias por escuchar mis historias,
-        mis problemas, mis ideas y hasta mis cosas sin sentido.
-        <br><br>
-        Saber que puedo hablar contigo y sentirme escuchado
-        significa muchísimo para mí. 💕
-      `
-    },
+    textCarousel: true,
 
-    {
-      title: "Gracias por confiar en mí",
-      text: `
-        Gracias por confiar en mí,
-        por contarme tus cosas y por dejarme conocer
-        cada vez más de ti.
-        <br><br>
-        Quiero seguir siendo esa persona
-        en la que puedas confiar. 🤍
-      `
-    },
+    slides: [
 
-    {
-      title: "Gracias por dejarme formar parte de tu vida",
-      text: `
-        Gracias por dejarme compartir contigo
-        tantos momentos, aventuras, risas y recuerdos.
-        <br><br>
-        Me hace feliz saber que nuestras vidas
-        se encontraron y que ahora tenemos
-        nuestra propia historia. 🥹❤️
-      `
-    },
+      {
+        title: "Gracias por hacerme reír",
 
-    {
-      title: "Lo que nunca te digo suficiente",
-      text: `
-        Quizá no te lo diga todos los días,
-        pero hay muchas cosas que siento por ti
-        que nunca quiero que olvides.
-        <br><br>
+        text: `
+          Incluso cuando no estoy teniendo un buen día,
+          siempre encuentras alguna forma de sacarme una sonrisa.
 
-        Gracias por estar,
-        gracias por quererme,
-        gracias por hacerme parte de tu mundo
-        y gracias por ser tú.
-        <br><br>
+          <br><br>
 
-        <strong>Te quiero muchísimo. 🌻❤️</strong>
-      `
-    }
-  ]
-},
+          Gracias por hacerme sentir especial. ❤️
+        `
+      },
+
+      {
+        title: "Gracias por escucharme",
+
+        text: `
+          Gracias por escuchar mis historias,
+          mis problemas, mis ideas y hasta mis cosas sin sentido.
+
+          <br><br>
+
+          Saber que puedo hablar contigo y sentirme escuchado
+          significa muchísimo para mí. 💕
+        `
+      },
+
+      {
+        title: "Gracias por confiar en mí",
+
+        text: `
+          Gracias por confiar en mí,
+          por contarme tus cosas y por dejarme conocer
+          cada vez más de ti.
+
+          <br><br>
+
+          Quiero seguir siendo esa persona
+          en la que puedas confiar. 🤍
+        `
+      },
+
+      {
+        title: "Gracias por dejarme formar parte de tu vida",
+
+        text: `
+          Gracias por dejarme compartir contigo
+          tantos momentos, aventuras, risas y recuerdos.
+
+          <br><br>
+
+          Me hace feliz saber que nuestras vidas
+          se encontraron y que ahora tenemos
+          nuestra propia historia. 🥹❤️
+        `
+      },
+
+      {
+        title: "Lo que nunca te digo suficiente",
+
+        text: `
+          Quizá no te lo diga todos los días,
+          pero hay muchas cosas que siento por ti
+          que nunca quiero que olvides.
+
+          <br><br>
+
+          Gracias por estar,
+          gracias por quererme,
+          gracias por hacerme parte de tu mundo
+          y gracias por ser tú.
+
+          <br><br>
+
+          <strong>
+            Te quiero muchísimo. 🌻❤️
+          </strong>
+        `
+      }
+
+    ]
+  },
+
 
   // =======================================================
   // DÍA 10
@@ -334,7 +357,6 @@ const surprises = [
 
   {
     icon: "✨",
-
     title: "Si pudiera volver al principio...",
 
     text: `
@@ -355,11 +377,12 @@ const surprises = [
 
   {
     icon: "📷",
-
     title: "Otra foto, otro recuerdo",
 
     text: `
       Cada fotografía guarda un momento.
+
+      <br><br>
 
       Y cada momento contigo se convierte
       en un recuerdo que quiero conservar.
@@ -375,7 +398,6 @@ const surprises = [
 
   {
     icon: "💭",
-
     title: "12 cosas que quiero vivir contigo",
 
     text: `
@@ -434,7 +456,6 @@ const surprises = [
 
   {
     icon: "🌙",
-
     title: "Si estuvieras aquí...",
 
     text: `
@@ -456,7 +477,6 @@ const surprises = [
 
   {
     icon: "💗",
-
     title: "Lo que me haces sentir",
 
     text: `
@@ -477,7 +497,6 @@ const surprises = [
 
   {
     icon: "🎶",
-
     title: "Una playlist para nosotros",
 
     text: `
@@ -493,7 +512,6 @@ const surprises = [
 
   {
     icon: "📝",
-
     title: "Una promesa",
 
     text: `
@@ -513,7 +531,6 @@ const surprises = [
 
   {
     icon: "🌟",
-
     title: "Lo que quiero que nunca olvides",
 
     text: `
@@ -538,7 +555,6 @@ const surprises = [
 
   {
     icon: "📸",
-
     title: "Un recuerdo que quiero repetir",
 
     text: `
@@ -559,7 +575,6 @@ const surprises = [
 
   {
     icon: "❤️",
-
     title: "Ya casi llega nuestro día",
 
     text: `
@@ -582,7 +597,6 @@ const surprises = [
 
   {
     icon: "💌",
-
     title: "La víspera",
 
     text: `
@@ -612,7 +626,6 @@ const surprises = [
 
   {
     icon: "🥹",
-
     title: "Mañana...",
 
     text: `
@@ -637,7 +650,6 @@ const surprises = [
 
   {
     icon: "💖",
-
     title: "Feliz aniversario, mi amor",
 
     text: `
@@ -680,8 +692,6 @@ const surprises = [
 // VARIABLES DEL CARRUSEL
 // =========================================================
 
-// Aquí guardaremos los elementos del carrusel actual.
-// Siempre trabajaremos internamente con "slides".
 window.currentCarouselSlides = [];
 window.currentCarouselIndex = 0;
 
@@ -693,13 +703,10 @@ window.currentCarouselIndex = 0;
 function getEcuadorDate() {
 
   const formatter = new Intl.DateTimeFormat("en-CA", {
-
     timeZone: ECUADOR_TIME_ZONE,
-
     year: "numeric",
     month: "2-digit",
     day: "2-digit"
-
   });
 
   return formatter.format(new Date());
@@ -729,21 +736,11 @@ function dateToUTC(dateString) {
 
 function getCurrentDay() {
 
-  // =====================================================
-  // MODO DE PRUEBA
-  //
-  // Ejemplo:
-  //
-  // ?preview=22
-  //
-  // =====================================================
-
   const params =
     new URLSearchParams(window.location.search);
 
   const previewDay =
     Number(params.get("preview"));
-
 
   if (
     Number.isInteger(previewDay) &&
@@ -754,11 +751,6 @@ function getCurrentDay() {
     return previewDay;
 
   }
-
-
-  // =====================================================
-  // FUNCIONAMIENTO NORMAL
-  // =====================================================
 
   const today =
     getEcuadorDate();
@@ -774,7 +766,6 @@ function getCurrentDay() {
 
     );
 
-
   return Math.min(
 
     Math.max(
@@ -785,6 +776,7 @@ function getCurrentDay() {
     TOTAL_DAYS
 
   );
+
 }
 
 
@@ -818,10 +810,6 @@ function updateCountdown() {
     now.getTime();
 
 
-  // =====================================================
-  // YA LLEGÓ EL ANIVERSARIO
-  // =====================================================
-
   if (diff <= 0) {
 
     document.getElementById(
@@ -829,41 +817,30 @@ function updateCountdown() {
     ).textContent =
       "❤️ Hoy es nuestro día ❤️";
 
-
     document.getElementById(
       "days"
     ).textContent = "00";
-
 
     document.getElementById(
       "hours"
     ).textContent = "00";
 
-
     document.getElementById(
       "minutes"
     ).textContent = "00";
-
 
     document.getElementById(
       "seconds"
     ).textContent = "00";
 
-
     return;
-
   }
 
-
-  // =====================================================
-  // CALCULAR TIEMPO RESTANTE
-  // =====================================================
 
   const days =
     Math.floor(
       diff / 86400000
     );
-
 
   const hours =
     Math.floor(
@@ -871,13 +848,11 @@ function updateCountdown() {
       3600000
     );
 
-
   const minutes =
     Math.floor(
       (diff % 3600000) /
       60000
     );
-
 
   const seconds =
     Math.floor(
@@ -886,27 +861,20 @@ function updateCountdown() {
     );
 
 
-  // =====================================================
-  // MOSTRAR CONTADOR
-  // =====================================================
-
   document.getElementById(
     "days"
   ).textContent =
     String(days).padStart(2, "0");
-
 
   document.getElementById(
     "hours"
   ).textContent =
     String(hours).padStart(2, "0");
 
-
   document.getElementById(
     "minutes"
   ).textContent =
     String(minutes).padStart(2, "0");
-
 
   document.getElementById(
     "seconds"
@@ -923,18 +891,11 @@ function updateCountdown() {
 function renderCalendar() {
 
   const calendar =
-    document.getElementById(
-      "calendar"
-    );
-
+    document.getElementById("calendar");
 
   const currentDay =
     getCurrentDay();
 
-
-  // =====================================================
-  // MENSAJE DE ESTADO
-  // =====================================================
 
   if (currentDay === 0) {
 
@@ -969,10 +930,6 @@ function renderCalendar() {
   calendar.innerHTML = "";
 
 
-  // =====================================================
-  // CREAR LOS 22 DÍAS
-  // =====================================================
-
   for (
     let day = 1;
     day <= TOTAL_DAYS;
@@ -982,15 +939,12 @@ function renderCalendar() {
     const unlocked =
       day <= currentDay;
 
-
     const isToday =
       day === currentDay;
 
 
     const card =
-      document.createElement(
-        "button"
-      );
+      document.createElement("button");
 
 
     card.className =
@@ -1004,10 +958,6 @@ function renderCalendar() {
           : ""
       }`;
 
-
-    // ===================================================
-    // FECHA DEL DÍA
-    // ===================================================
 
     const date =
       new Date(
@@ -1032,10 +982,6 @@ function renderCalendar() {
         }
       );
 
-
-    // ===================================================
-    // DÍA DESBLOQUEADO
-    // ===================================================
 
     if (unlocked) {
 
@@ -1064,11 +1010,6 @@ function renderCalendar() {
         () => openSurprise(day);
 
     }
-
-
-    // ===================================================
-    // DÍA BLOQUEADO
-    // ===================================================
 
     else {
 
@@ -1111,105 +1052,63 @@ function renderCalendar() {
 
 
 // =========================================================
-// NORMALIZAR IMÁGENES
-// =========================================================
-//
-// Esta función convierte:
-//
-// image
-//
-// images
-//
-// slides
-//
-// en un único formato:
-//
-// [
-//   {
-//      image: "...",
-//      text: "..."
-//   }
-// ]
-//
-// Así todo el carrusel funciona igual.
+// NORMALIZAR SLIDES
 // =========================================================
 
 function normalizeSlides(surprise) {
 
-  // =====================================================
-  // OPCIÓN 1
-  //
-  // slides: [
-  //   {
-  //      image: "...",
-  //      text: "..."
-  //   }
-  // ]
-  //
-  // =====================================================
+  // -------------------------------------------------------
+  // SLIDES PERSONALIZADOS
+  // -------------------------------------------------------
 
   if (
-    Array.isArray(
-      surprise.slides
-    ) &&
+    Array.isArray(surprise.slides) &&
     surprise.slides.length > 0
   ) {
 
-    return surprise.slides.map(
-      slide => ({
+    return surprise.slides.map(slide => ({
 
-        image:
-          slide.image,
+      image:
+        slide.image || null,
 
-        text:
-          slide.text || ""
+      title:
+        slide.title || "",
 
-      })
-    );
+      text:
+        slide.text || ""
+
+    }));
 
   }
 
 
-  // =====================================================
-  // OPCIÓN 2
-  //
-  // images: [
-  //    "...",
-  //    "..."
-  // ]
-  //
-  // =====================================================
+  // -------------------------------------------------------
+  // CARRUSEL DE IMÁGENES
+  // -------------------------------------------------------
 
   if (
-    Array.isArray(
-      surprise.images
-    ) &&
+    Array.isArray(surprise.images) &&
     surprise.images.length > 0
   ) {
 
-    return surprise.images.map(
-      image => ({
+    return surprise.images.map(image => ({
 
-        image: image,
+      image: image,
 
-        text: ""
+      title: "",
 
-      })
-    );
+      text: ""
+
+    }));
 
   }
 
 
-  // =====================================================
-  // OPCIÓN 3
-  //
-  // image: "..."
-  //
-  // =====================================================
+  // -------------------------------------------------------
+  // UNA SOLA IMAGEN
+  // -------------------------------------------------------
 
-  if (
-    surprise.image
-  ) {
+  if (surprise.image) {
 
     return [
 
@@ -1217,6 +1116,8 @@ function normalizeSlides(surprise) {
 
         image:
           surprise.image,
+
+        title: "",
 
         text: ""
 
@@ -1226,10 +1127,6 @@ function normalizeSlides(surprise) {
 
   }
 
-
-  // =====================================================
-  // SIN IMAGEN
-  // =====================================================
 
   return [];
 
@@ -1246,10 +1143,6 @@ function openSurprise(day) {
     getCurrentDay();
 
 
-  // =====================================================
-  // SEGURIDAD
-  // =====================================================
-
   if (day > currentDay) {
 
     showLockedMessage(day);
@@ -1262,10 +1155,6 @@ function openSurprise(day) {
   const surprise =
     surprises[day - 1];
 
-
-  // =====================================================
-  // DATOS DEL MODAL
-  // =====================================================
 
   document.getElementById(
     "modal-day"
@@ -1288,17 +1177,11 @@ function openSurprise(day) {
   let body = "";
 
 
-  // =====================================================
-  // PREPARAR IMÁGENES
-  // =====================================================
-
   const slides =
     normalizeSlides(
       surprise
     );
 
-
-  // Guardamos las imágenes actuales
 
   window.currentCarouselSlides =
     slides;
@@ -1308,17 +1191,139 @@ function openSurprise(day) {
 
 
   // =====================================================
-  // SI HAY IMÁGENES
+  // CARRUSEL DE TEXTO - DÍA 9
   // =====================================================
 
   if (
+    surprise.textCarousel &&
     slides.length > 0
   ) {
 
+    body += `
 
-    // ===================================================
+      <div class="text-carousel">
+
+        <button
+          class="carousel-button carousel-prev"
+          onclick="changeTextCarousel(-1)"
+          aria-label="Confesión anterior"
+        >
+          ‹
+        </button>
+
+
+        <div class="text-carousel-card">
+
+          <div class="text-carousel-flower flower-one">
+            🌻
+          </div>
+
+          <div class="text-carousel-flower flower-two">
+            🌻
+          </div>
+
+          <div class="text-carousel-small-flower flower-three">
+            🌻
+          </div>
+
+          <div class="text-carousel-small-flower flower-four">
+            🌼
+          </div>
+
+
+          <div class="text-carousel-number">
+            <span id="text-carousel-counter">
+              1 / ${slides.length}
+            </span>
+          </div>
+
+
+          <div class="text-carousel-content">
+
+            <div class="text-carousel-icon">
+              💛
+            </div>
+
+            <h3 id="text-carousel-title">
+              ${slides[0].title}
+            </h3>
+
+            <div
+              id="text-carousel-text"
+              class="text-carousel-message"
+            >
+              ${slides[0].text}
+            </div>
+
+            <div class="text-carousel-heart">
+              ♡
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <button
+          class="carousel-button carousel-next"
+          onclick="changeTextCarousel(1)"
+          aria-label="Siguiente confesión"
+        >
+          ›
+        </button>
+
+      </div>
+
+
+      <div class="carousel-dots text-carousel-dots">
+    `;
+
+
+    slides.forEach(
+      (slide, index) => {
+
+        body += `
+
+          <button
+            class="
+              carousel-dot
+              ${
+                index === 0
+                  ? "active"
+                  : ""
+              }
+            "
+            onclick="goToTextCarousel(${index})"
+            aria-label="Ir a confesión ${index + 1}"
+          >
+          </button>
+
+        `;
+
+      }
+    );
+
+
+    body += `
+
+      </div>
+
+    `;
+
+  }
+
+
+  // =====================================================
+  // CARRUSEL NORMAL DE FOTOS
+  // =====================================================
+
+  else if (
+    slides.length > 0
+  ) {
+
+    // ---------------------------------------------------
     // UNA SOLA IMAGEN
-    // ===================================================
+    // ---------------------------------------------------
 
     if (
       slides.length === 1
@@ -1339,8 +1344,6 @@ function openSurprise(day) {
       `;
 
 
-      // Si existe descripción individual
-
       if (
         slides[0].text
       ) {
@@ -1360,9 +1363,9 @@ function openSurprise(day) {
     }
 
 
-    // ===================================================
+    // ---------------------------------------------------
     // CARRUSEL
-    // ===================================================
+    // ---------------------------------------------------
 
     else {
 
@@ -1417,10 +1420,6 @@ function openSurprise(day) {
       `;
 
 
-      // =================================================
-      // DOTS
-      // =================================================
-
       slides.forEach(
         (slide, index) => {
 
@@ -1450,23 +1449,13 @@ function openSurprise(day) {
 
         </div>
 
-      `;
-
-
-      // =================================================
-      // DESCRIPCIÓN DE LA FOTO
-      // =================================================
-
-      body += `
 
         <div
           id="carousel-description"
           class="photo-description"
         >
 
-          ${
-            slides[0].text || ""
-          }
+          ${slides[0].text || ""}
 
         </div>
 
@@ -1482,7 +1471,8 @@ function openSurprise(day) {
   // =====================================================
 
   if (
-    surprise.text
+    surprise.text &&
+    !surprise.textCarousel
   ) {
 
     body += `
@@ -1574,10 +1564,6 @@ function changeCarousel(
     direction;
 
 
-  // =====================================================
-  // VOLVER AL PRINCIPIO
-  // =====================================================
-
   if (
     window.currentCarouselIndex >= total
   ) {
@@ -1586,10 +1572,6 @@ function changeCarousel(
 
   }
 
-
-  // =====================================================
-  // IR A LA ÚLTIMA
-  // =====================================================
 
   if (
     window.currentCarouselIndex < 0
@@ -1645,7 +1627,7 @@ function goToCarousel(
 
 
 // =========================================================
-// ACTUALIZAR CARRUSEL
+// ACTUALIZAR CARRUSEL DE FOTOS
 // =========================================================
 
 function updateCarousel() {
@@ -1670,7 +1652,7 @@ function updateCarousel() {
 
   const dots =
     document.querySelectorAll(
-      ".carousel-dot"
+      ".carousel-dots .carousel-dot"
     );
 
 
@@ -1704,9 +1686,9 @@ function updateCarousel() {
   }
 
 
-  // =====================================================
+  // -------------------------------------------------------
   // ANIMACIÓN
-  // =====================================================
+  // -------------------------------------------------------
 
   image.classList.remove(
     "carousel-fade"
@@ -1716,9 +1698,9 @@ function updateCarousel() {
   void image.offsetWidth;
 
 
-  // =====================================================
+  // -------------------------------------------------------
   // CAMBIAR IMAGEN
-  // =====================================================
+  // -------------------------------------------------------
 
   image.src =
     currentSlide.image;
@@ -1733,9 +1715,9 @@ function updateCarousel() {
   );
 
 
-  // =====================================================
+  // -------------------------------------------------------
   // CONTADOR
-  // =====================================================
+  // -------------------------------------------------------
 
   if (
     counter
@@ -1747,9 +1729,9 @@ function updateCarousel() {
   }
 
 
-  // =====================================================
+  // -------------------------------------------------------
   // DESCRIPCIÓN
-  // =====================================================
+  // -------------------------------------------------------
 
   if (
     description
@@ -1761,9 +1743,9 @@ function updateCarousel() {
   }
 
 
-  // =====================================================
+  // -------------------------------------------------------
   // DOTS
-  // =====================================================
+  // -------------------------------------------------------
 
   dots.forEach(
     (dot, i) => {
@@ -1771,6 +1753,193 @@ function updateCarousel() {
       dot.classList.toggle(
         "active",
         i === index
+      );
+
+    }
+  );
+
+}
+
+
+// =========================================================
+// CARRUSEL DE CONFESIONES - DÍA 9
+// =========================================================
+
+function changeTextCarousel(
+  direction
+) {
+
+  if (
+    !window.currentCarouselSlides ||
+    window.currentCarouselSlides.length <= 1
+  ) {
+
+    return;
+
+  }
+
+
+  const total =
+    window.currentCarouselSlides.length;
+
+
+  window.currentCarouselIndex +=
+    direction;
+
+
+  if (
+    window.currentCarouselIndex >= total
+  ) {
+
+    window.currentCarouselIndex = 0;
+
+  }
+
+
+  if (
+    window.currentCarouselIndex < 0
+  ) {
+
+    window.currentCarouselIndex =
+      total - 1;
+
+  }
+
+
+  updateTextCarousel();
+
+}
+
+
+// =========================================================
+// IR A UNA CONFESIÓN
+// =========================================================
+
+function goToTextCarousel(
+  index
+) {
+
+  if (
+    !window.currentCarouselSlides ||
+    window.currentCarouselSlides.length === 0
+  ) {
+
+    return;
+
+  }
+
+
+  if (
+    index < 0 ||
+    index >=
+      window.currentCarouselSlides.length
+  ) {
+
+    return;
+
+  }
+
+
+  window.currentCarouselIndex =
+    index;
+
+
+  updateTextCarousel();
+
+}
+
+
+// =========================================================
+// ACTUALIZAR CONFESIÓN
+// =========================================================
+
+function updateTextCarousel() {
+
+  const title =
+    document.getElementById(
+      "text-carousel-title"
+    );
+
+
+  const text =
+    document.getElementById(
+      "text-carousel-text"
+    );
+
+
+  const counter =
+    document.getElementById(
+      "text-carousel-counter"
+    );
+
+
+  const dots =
+    document.querySelectorAll(
+      ".text-carousel-dots .carousel-dot"
+    );
+
+
+  const slide =
+    window.currentCarouselSlides[
+      window.currentCarouselIndex
+    ];
+
+
+  if (
+    !slide ||
+    !title ||
+    !text
+  ) {
+
+    return;
+
+  }
+
+
+  const content =
+    document.querySelector(
+      ".text-carousel-content"
+    );
+
+
+  if (content) {
+
+    content.classList.remove(
+      "text-carousel-animation"
+    );
+
+    void content.offsetWidth;
+
+    content.classList.add(
+      "text-carousel-animation"
+    );
+
+  }
+
+
+  title.textContent =
+    slide.title || "";
+
+
+  text.innerHTML =
+    slide.text || "";
+
+
+  if (counter) {
+
+    counter.textContent =
+      `${window.currentCarouselIndex + 1} / ${window.currentCarouselSlides.length}`;
+
+  }
+
+
+  dots.forEach(
+    (dot, index) => {
+
+      dot.classList.toggle(
+        "active",
+        index ===
+        window.currentCarouselIndex
       );
 
     }
@@ -1964,6 +2133,11 @@ function createHearts(
     );
 
 
+  if (!container) {
+    return;
+  }
+
+
   for (
     let i = 0;
     i < amount;
@@ -2049,6 +2223,11 @@ async function toggleMusic() {
     );
 
 
+  if (!audio || !button) {
+    return;
+  }
+
+
   try {
 
     if (
@@ -2057,10 +2236,8 @@ async function toggleMusic() {
 
       await audio.play();
 
-
       button.textContent =
         "❚❚";
-
 
       button.title =
         "Pausar música";
@@ -2071,10 +2248,8 @@ async function toggleMusic() {
 
       audio.pause();
 
-
       button.textContent =
         "♫";
-
 
       button.title =
         "Reproducir música";
@@ -2138,11 +2313,11 @@ setInterval(
 // =========================================================
 // ACTUALIZAR CALENDARIO CADA 30 SEGUNDOS
 // =========================================================
-//
-// IMPORTANTE:
-// Solo dejamos UN intervalo.
-// En tu código anterior estaba repetido.
-// =========================================================
+
+setInterval(
+  renderCalendar,
+  30000
+);
 
 setInterval(
   renderCalendar,
