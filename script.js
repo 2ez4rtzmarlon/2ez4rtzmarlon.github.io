@@ -352,23 +352,68 @@ const surprises = [
 
 
   // =======================================================
-  // DÍA 10
-  // =======================================================
+// DÍA 10
+// =======================================================
 
-  {
-    icon: "✨",
-    title: "Si pudiera volver al principio...",
+{
+  icon: "✨",
 
-    text: `
-      Si pudiera regresar al momento en que comenzó nuestra historia,
-      volvería a elegir conocerte.
+  title: "Si pudiera volver al principio...",
 
-      <br><br>
+  text: `
 
-      Volvería a elegir cada conversación
-      y volvería a elegirte a ti. ❤️
-    `
-  },
+    <div class="day10-polaroid">
+
+      <div class="day10-photo-wrapper">
+
+        <img
+          src="images/dia10.jpg"
+          alt="Un recuerdo nuestro"
+          class="day10-photo"
+        >
+
+      </div>
+
+      <div class="day10-photo-caption">
+        Un momento que parecía sencillo...
+      </div>
+
+    </div>
+
+
+    <div class="day10-message">
+
+      <p>
+        Si pudiera regresar al momento en que comenzó
+        nuestra historia, volvería a elegir conocerte.
+      </p>
+
+      <p>
+        Volvería a elegir cada conversación,
+        cada detalle y cada momento que poco a poco
+        nos fue acercando.
+      </p>
+
+      <p>
+        Quizá en ese momento no sabía todo lo que
+        vendría después, pero ahora sé que conocerte
+        fue una de las cosas más bonitas que me pudo pasar.
+      </p>
+
+      <p class="day10-final-message">
+        Y sí… volvería a elegirte. ❤️
+      </p>
+
+    </div>
+
+
+    <div class="day10-sunflower-message">
+      🌻 Algunas historias empiezan sin saber
+      lo importantes que llegarán a ser.
+    </div>
+
+  `
+},
 
 
   // =======================================================
