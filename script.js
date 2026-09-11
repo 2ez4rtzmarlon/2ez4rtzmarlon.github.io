@@ -416,26 +416,28 @@ const surprises = [
 },
 
 
-  // =======================================================
-  // DÍA 11
-  // =======================================================
+ // =======================================================
+// DÍA 11
+// =======================================================
 
-  {
-    icon: "📷",
-    title: "Otra foto, otro recuerdo",
+{
+  icon: "🔎",
 
-    text: `
-      Cada fotografía guarda un momento.
+  title: "Encuentra nuestros nombres",
 
-      <br><br>
+  wordSearch: true,
 
-      Y cada momento contigo se convierte
-      en un recuerdo que quiero conservar.
-    `,
-
-    image: "images/foto02.jpg"
-  },
-
+  words: [
+    "MARLON",
+    "ANDREA",
+    "ALMA",
+    "MARALU",
+    "MUU",
+    "SULLY",
+    "LUXANDER",
+    "LOKI"
+  ]
+},
 
   // =======================================================
   // DÍA 12
