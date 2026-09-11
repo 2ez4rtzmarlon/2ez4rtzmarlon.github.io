@@ -40,6 +40,7 @@ const surprises = [
   {
     icon: "❤️",
     title: "Una razón para sonreír",
+
     text: `
       Hoy comienza nuestra cuenta regresiva.
 
@@ -352,92 +353,93 @@ const surprises = [
 
 
   // =======================================================
-// DÍA 10
-// =======================================================
+  // DÍA 10
+  // =======================================================
 
-{
-  icon: "✨",
+  {
+    icon: "✨",
 
-  title: "Si pudiera volver al principio...",
+    title: "Si pudiera volver al principio...",
 
-  text: `
+    text: `
 
-    <div class="day10-polaroid">
+      <div class="day10-polaroid">
 
-      <div class="day10-photo-wrapper">
+        <div class="day10-photo-wrapper">
 
-        <img
-          src="images/dia10.jpeg"
-          alt="Un recuerdo nuestro"
-          class="day10-photo"
-        >
+          <img
+            src="images/dia10.jpeg"
+            alt="Un recuerdo nuestro"
+            class="day10-photo"
+          >
+
+        </div>
+
+        <div class="day10-photo-caption">
+          Un momento que parecía sencillo...
+        </div>
 
       </div>
 
-      <div class="day10-photo-caption">
-        Un momento que parecía sencillo...
+
+      <div class="day10-message">
+
+        <p>
+          Si pudiera regresar al momento en que comenzó
+          nuestra historia, volvería a elegir conocerte.
+        </p>
+
+        <p>
+          Volvería a elegir cada conversación,
+          cada detalle y cada momento que poco a poco
+          nos fue acercando.
+        </p>
+
+        <p>
+          Quizá en ese momento no sabía todo lo que
+          vendría después, pero ahora sé que conocerte
+          fue una de las cosas más bonitas que me pudo pasar.
+        </p>
+
+        <p class="day10-final-message">
+          Y sí… volvería a elegirte. ❤️
+        </p>
+
       </div>
 
-    </div>
+
+      <div class="day10-sunflower-message">
+        🌻 Algunas historias empiezan sin saber
+        lo importantes que llegarán a ser.
+      </div>
+
+    `
+  },
 
 
-    <div class="day10-message">
+  // =======================================================
+  // DÍA 11
+  // =======================================================
 
-      <p>
-        Si pudiera regresar al momento en que comenzó
-        nuestra historia, volvería a elegir conocerte.
-      </p>
+  {
+    icon: "🔎",
 
-      <p>
-        Volvería a elegir cada conversación,
-        cada detalle y cada momento que poco a poco
-        nos fue acercando.
-      </p>
+    title: "Encuentra nuestros nombres",
 
-      <p>
-        Quizá en ese momento no sabía todo lo que
-        vendría después, pero ahora sé que conocerte
-        fue una de las cosas más bonitas que me pudo pasar.
-      </p>
+    wordSearch: true,
 
-      <p class="day10-final-message">
-        Y sí… volvería a elegirte. ❤️
-      </p>
+    words: [
+      "MARLON",
+      "ANDREA",
+      "ALMA",
+      "MARALU",
+      "MUU",
+      "SULLY",
+      "LUXANDER",
+      "LOKI"
+    ]
+  },
 
-    </div>
-
-
-    <div class="day10-sunflower-message">
-      🌻 Algunas historias empiezan sin saber
-      lo importantes que llegarán a ser.
-    </div>
-
-  `
-},
-
-
- // =======================================================
-// DÍA 11
-// =======================================================
-
-{
-  icon: "🔎",
-
-  title: "Encuentra nuestros nombres",
-
-  wordSearch: true,
-
-  words: [
-    "MARLON",
-    "ANDREA",
-    "ALMA",
-    "MARALU",
-    "MUU",
-    "SULLY",
-    "LUXANDER",
-    "LOKI"
-  ]
-},
 
   // =======================================================
   // DÍA 12
@@ -749,14 +751,20 @@ window.currentCarouselIndex = 0;
 
 function getEcuadorDate() {
 
-  const formatter = new Intl.DateTimeFormat("en-CA", {
-    timeZone: ECUADOR_TIME_ZONE,
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit"
-  });
+  const formatter = new Intl.DateTimeFormat(
+    "en-CA",
+    {
+      timeZone: ECUADOR_TIME_ZONE,
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit"
+    }
+  );
 
-  return formatter.format(new Date());
+  return formatter.format(
+    new Date()
+  );
+
 }
 
 
@@ -764,16 +772,21 @@ function getEcuadorDate() {
 // CONVERTIR FECHA YYYY-MM-DD A UTC
 // =========================================================
 
-function dateToUTC(dateString) {
+function dateToUTC(
+  dateString
+) {
 
   const [y, m, d] =
-    dateString.split("-").map(Number);
+    dateString
+      .split("-")
+      .map(Number);
 
   return Date.UTC(
     y,
     m - 1,
     d
   );
+
 }
 
 
@@ -784,10 +797,15 @@ function dateToUTC(dateString) {
 function getCurrentDay() {
 
   const params =
-    new URLSearchParams(window.location.search);
+    new URLSearchParams(
+      window.location.search
+    );
 
   const previewDay =
-    Number(params.get("preview"));
+    Number(
+      params.get("preview")
+    );
+
 
   if (
     Number.isInteger(previewDay) &&
@@ -799,8 +817,10 @@ function getCurrentDay() {
 
   }
 
+
   const today =
     getEcuadorDate();
+
 
   const difference =
     Math.floor(
@@ -812,6 +832,7 @@ function getCurrentDay() {
       ) / 86400000
 
     );
+
 
   return Math.min(
 
@@ -857,30 +878,39 @@ function updateCountdown() {
     now.getTime();
 
 
-  if (diff <= 0) {
+  if (
+    diff <= 0
+  ) {
 
     document.getElementById(
       "countdown-label"
     ).textContent =
       "❤️ Hoy es nuestro día ❤️";
 
+
     document.getElementById(
       "days"
-    ).textContent = "00";
+    ).textContent =
+      "00";
 
     document.getElementById(
       "hours"
-    ).textContent = "00";
+    ).textContent =
+      "00";
 
     document.getElementById(
       "minutes"
-    ).textContent = "00";
+    ).textContent =
+      "00";
 
     document.getElementById(
       "seconds"
-    ).textContent = "00";
+    ).textContent =
+      "00";
+
 
     return;
+
   }
 
 
@@ -889,17 +919,20 @@ function updateCountdown() {
       diff / 86400000
     );
 
+
   const hours =
     Math.floor(
       (diff % 86400000) /
       3600000
     );
 
+
   const minutes =
     Math.floor(
       (diff % 3600000) /
       60000
     );
+
 
   const seconds =
     Math.floor(
@@ -911,22 +944,37 @@ function updateCountdown() {
   document.getElementById(
     "days"
   ).textContent =
-    String(days).padStart(2, "0");
+    String(days).padStart(
+      2,
+      "0"
+    );
+
 
   document.getElementById(
     "hours"
   ).textContent =
-    String(hours).padStart(2, "0");
+    String(hours).padStart(
+      2,
+      "0"
+    );
+
 
   document.getElementById(
     "minutes"
   ).textContent =
-    String(minutes).padStart(2, "0");
+    String(minutes).padStart(
+      2,
+      "0"
+    );
+
 
   document.getElementById(
     "seconds"
   ).textContent =
-    String(seconds).padStart(2, "0");
+    String(seconds).padStart(
+      2,
+      "0"
+    );
 
 }
 
@@ -938,13 +986,18 @@ function updateCountdown() {
 function renderCalendar() {
 
   const calendar =
-    document.getElementById("calendar");
+    document.getElementById(
+      "calendar"
+    );
+
 
   const currentDay =
     getCurrentDay();
 
 
-  if (currentDay === 0) {
+  if (
+    currentDay === 0
+  ) {
 
     document.getElementById(
       "status-text"
@@ -974,7 +1027,8 @@ function renderCalendar() {
   }
 
 
-  calendar.innerHTML = "";
+  calendar.innerHTML =
+    "";
 
 
   for (
@@ -986,12 +1040,15 @@ function renderCalendar() {
     const unlocked =
       day <= currentDay;
 
+
     const isToday =
       day === currentDay;
 
 
     const card =
-      document.createElement("button");
+      document.createElement(
+        "button"
+      );
 
 
     card.className =
@@ -1030,7 +1087,9 @@ function renderCalendar() {
       );
 
 
-    if (unlocked) {
+    if (
+      unlocked
+    ) {
 
       card.innerHTML = `
 
@@ -1054,7 +1113,8 @@ function renderCalendar() {
 
 
       card.onclick =
-        () => openSurprise(day);
+        () =>
+          openSurprise(day);
 
     }
 
@@ -1086,12 +1146,15 @@ function renderCalendar() {
 
 
       card.onclick =
-        () => showLockedMessage(day);
+        () =>
+          showLockedMessage(day);
 
     }
 
 
-    calendar.appendChild(card);
+    calendar.appendChild(
+      card
+    );
 
   }
 
@@ -1102,60 +1165,63 @@ function renderCalendar() {
 // NORMALIZAR SLIDES
 // =========================================================
 
-function normalizeSlides(surprise) {
-
-  // -------------------------------------------------------
-  // SLIDES PERSONALIZADOS
-  // -------------------------------------------------------
+function normalizeSlides(
+  surprise
+) {
 
   if (
-    Array.isArray(surprise.slides) &&
+    Array.isArray(
+      surprise.slides
+    ) &&
     surprise.slides.length > 0
   ) {
 
-    return surprise.slides.map(slide => ({
+    return surprise.slides.map(
+      slide => ({
 
-      image:
-        slide.image || null,
+        image:
+          slide.image || null,
 
-      title:
-        slide.title || "",
+        title:
+          slide.title || "",
 
-      text:
-        slide.text || ""
+        text:
+          slide.text || ""
 
-    }));
+      })
+    );
 
   }
 
 
-  // -------------------------------------------------------
-  // CARRUSEL DE IMÁGENES
-  // -------------------------------------------------------
-
   if (
-    Array.isArray(surprise.images) &&
+    Array.isArray(
+      surprise.images
+    ) &&
     surprise.images.length > 0
   ) {
 
-    return surprise.images.map(image => ({
+    return surprise.images.map(
+      image => ({
 
-      image: image,
+        image:
+          image,
 
-      title: "",
+        title:
+          "",
 
-      text: ""
+        text:
+          ""
 
-    }));
+      })
+    );
 
   }
 
 
-  // -------------------------------------------------------
-  // UNA SOLA IMAGEN
-  // -------------------------------------------------------
-
-  if (surprise.image) {
+  if (
+    surprise.image
+  ) {
 
     return [
 
@@ -1164,9 +1230,11 @@ function normalizeSlides(surprise) {
         image:
           surprise.image,
 
-        title: "",
+        title:
+          "",
 
-        text: ""
+        text:
+          ""
 
       }
 
@@ -1184,15 +1252,21 @@ function normalizeSlides(surprise) {
 // ABRIR SORPRESA
 // =========================================================
 
-function openSurprise(day) {
+function openSurprise(
+  day
+) {
 
   const currentDay =
     getCurrentDay();
 
 
-  if (day > currentDay) {
+  if (
+    day > currentDay
+  ) {
 
-    showLockedMessage(day);
+    showLockedMessage(
+      day
+    );
 
     return;
 
@@ -1200,7 +1274,9 @@ function openSurprise(day) {
 
 
   const surprise =
-    surprises[day - 1];
+    surprises[
+      day - 1
+    ];
 
 
   document.getElementById(
@@ -1221,7 +1297,8 @@ function openSurprise(day) {
     surprise.icon;
 
 
-  let body = "";
+  let body =
+    "";
 
 
   const slides =
@@ -1232,6 +1309,7 @@ function openSurprise(day) {
 
   window.currentCarouselSlides =
     slides;
+
 
   window.currentCarouselIndex =
     0;
@@ -1279,9 +1357,13 @@ function openSurprise(day) {
 
 
           <div class="text-carousel-number">
-            <span id="text-carousel-counter">
+
+            <span
+              id="text-carousel-counter"
+            >
               1 / ${slides.length}
             </span>
+
           </div>
 
 
@@ -1291,7 +1373,9 @@ function openSurprise(day) {
               💛
             </div>
 
-            <h3 id="text-carousel-title">
+            <h3
+              id="text-carousel-title"
+            >
               ${slides[0].title}
             </h3>
 
@@ -1327,7 +1411,10 @@ function openSurprise(day) {
 
 
     slides.forEach(
-      (slide, index) => {
+      (
+        slide,
+        index
+      ) => {
 
         body += `
 
@@ -1361,16 +1448,140 @@ function openSurprise(day) {
 
 
   // =====================================================
+  // SOPA DE LETRAS - DÍA 11
+  // =====================================================
+
+  if (
+    surprise.wordSearch
+  ) {
+
+    body += `
+
+      <div class="word-search-wrapper">
+
+        <div class="word-search-intro">
+
+          <div class="word-search-sunflowers">
+            🌻 🌻 🌻
+          </div>
+
+          <p class="word-search-instruction">
+            Hay 8 palabras escondidas.
+            Encuéntralas todas y descubre
+            el mensaje final. ❤️
+          </p>
+
+        </div>
+
+
+        <div class="word-search-counter">
+
+          <span id="word-search-found">
+            0
+          </span>
+
+          <span>
+            /
+          </span>
+
+          <span id="word-search-total">
+            ${surprise.words.length}
+          </span>
+
+          <span class="word-search-counter-label">
+            encontradas
+          </span>
+
+        </div>
+
+
+        <div
+          id="word-search-word-list"
+          class="word-search-word-list"
+        >
+        </div>
+
+
+        <div class="word-search-board-container">
+
+          <div
+            id="word-search-board"
+            class="word-search-board"
+            aria-label="Sopa de letras"
+          >
+          </div>
+
+        </div>
+
+
+        <div class="word-search-help">
+
+          💡 Selecciona la primera y la última
+          letra de cada palabra.
+
+        </div>
+
+
+        <div
+          id="word-search-success"
+          class="word-search-success"
+          style="display:none;"
+        >
+
+          <div class="success-sunflowers">
+            🌻 🌻 🌻
+          </div>
+
+          <div class="success-heart">
+            ❤️
+          </div>
+
+          <h3>
+            ¡Encontraste todas!
+          </h3>
+
+          <p>
+            Entre todos estos nombres,
+            recuerdos y pequeños pedacitos
+            de nuestra historia,
+            hay algo que quiero que nunca olvides.
+          </p>
+
+          <p>
+
+            <strong>
+              Tú eres una de las partes
+              más bonitas de mi vida.
+            </strong>
+
+          </p>
+
+          <p>
+            Gracias por compartir conmigo
+            tantos momentos y por formar
+            parte de mi historia.
+          </p>
+
+          <div class="success-final-message">
+            Te amo, Andrea. ❤️🌻
+          </div>
+
+        </div>
+
+      </div>
+
+    `;
+
+  }
+
+
+  // =====================================================
   // CARRUSEL NORMAL DE FOTOS
   // =====================================================
 
   else if (
     slides.length > 0
   ) {
-
-    // ---------------------------------------------------
-    // UNA SOLA IMAGEN
-    // ---------------------------------------------------
 
     if (
       slides.length === 1
@@ -1409,10 +1620,6 @@ function openSurprise(day) {
 
     }
 
-
-    // ---------------------------------------------------
-    // CARRUSEL
-    // ---------------------------------------------------
 
     else {
 
@@ -1468,7 +1675,10 @@ function openSurprise(day) {
 
 
       slides.forEach(
-        (slide, index) => {
+        (
+          slide,
+          index
+        ) => {
 
           body += `
 
@@ -1571,6 +1781,22 @@ function openSurprise(day) {
 
 
   // =====================================================
+  // INICIAR SOPA DE LETRAS
+  // =====================================================
+
+  if (
+    surprise.wordSearch
+  ) {
+
+    setTimeout(
+      initializeWordSearch,
+      100
+    );
+
+  }
+
+
+  // =====================================================
   // CORAZONES DEL DÍA 22
   // =====================================================
 
@@ -1578,7 +1804,9 @@ function openSurprise(day) {
     day === 22
   ) {
 
-    createHearts(28);
+    createHearts(
+      28
+    );
 
   }
 
@@ -1612,10 +1840,12 @@ function changeCarousel(
 
 
   if (
-    window.currentCarouselIndex >= total
+    window.currentCarouselIndex >=
+    total
   ) {
 
-    window.currentCarouselIndex = 0;
+    window.currentCarouselIndex =
+      0;
 
   }
 
@@ -1733,10 +1963,6 @@ function updateCarousel() {
   }
 
 
-  // -------------------------------------------------------
-  // ANIMACIÓN
-  // -------------------------------------------------------
-
   image.classList.remove(
     "carousel-fade"
   );
@@ -1744,10 +1970,6 @@ function updateCarousel() {
 
   void image.offsetWidth;
 
-
-  // -------------------------------------------------------
-  // CAMBIAR IMAGEN
-  // -------------------------------------------------------
 
   image.src =
     currentSlide.image;
@@ -1762,10 +1984,6 @@ function updateCarousel() {
   );
 
 
-  // -------------------------------------------------------
-  // CONTADOR
-  // -------------------------------------------------------
-
   if (
     counter
   ) {
@@ -1775,10 +1993,6 @@ function updateCarousel() {
 
   }
 
-
-  // -------------------------------------------------------
-  // DESCRIPCIÓN
-  // -------------------------------------------------------
 
   if (
     description
@@ -1790,12 +2004,11 @@ function updateCarousel() {
   }
 
 
-  // -------------------------------------------------------
-  // DOTS
-  // -------------------------------------------------------
-
   dots.forEach(
-    (dot, i) => {
+    (
+      dot,
+      i
+    ) => {
 
       dot.classList.toggle(
         "active",
@@ -1835,10 +2048,12 @@ function changeTextCarousel(
 
 
   if (
-    window.currentCarouselIndex >= total
+    window.currentCarouselIndex >=
+    total
   ) {
 
-    window.currentCarouselIndex = 0;
+    window.currentCarouselIndex =
+      0;
 
   }
 
@@ -1949,13 +2164,17 @@ function updateTextCarousel() {
     );
 
 
-  if (content) {
+  if (
+    content
+  ) {
 
     content.classList.remove(
       "text-carousel-animation"
     );
 
+
     void content.offsetWidth;
+
 
     content.classList.add(
       "text-carousel-animation"
@@ -1972,7 +2191,9 @@ function updateTextCarousel() {
     slide.text || "";
 
 
-  if (counter) {
+  if (
+    counter
+  ) {
 
     counter.textContent =
       `${window.currentCarouselIndex + 1} / ${window.currentCarouselSlides.length}`;
@@ -1981,16 +2202,1237 @@ function updateTextCarousel() {
 
 
   dots.forEach(
-    (dot, index) => {
+    (
+      dot,
+      index
+    ) => {
 
       dot.classList.toggle(
         "active",
         index ===
-        window.currentCarouselIndex
+          window.currentCarouselIndex
       );
 
     }
   );
+
+}
+
+
+// =========================================================
+// 🔎 SOPA DE LETRAS - DÍA 11
+// =========================================================
+
+window.wordSearchState =
+  null;
+
+
+const WORD_SEARCH_DIRECTIONS = [
+
+  { row: 0, col: 1 },
+  { row: 0, col: -1 },
+
+  { row: 1, col: 0 },
+  { row: -1, col: 0 },
+
+  { row: 1, col: 1 },
+  { row: 1, col: -1 },
+
+  { row: -1, col: 1 },
+  { row: -1, col: -1 }
+
+];
+
+
+// =========================================================
+// GENERAR SOPA DE LETRAS
+// =========================================================
+
+function generateWordSearch(
+  words,
+  size = 12
+) {
+
+  const cleanWords =
+    words
+      .map(
+        word =>
+          word
+            .toUpperCase()
+            .normalize("NFD")
+            .replace(
+              /[\u0300-\u036f]/g,
+              ""
+            )
+            .replace(
+              /[^A-Z]/g,
+              ""
+            )
+      )
+      .filter(
+        word =>
+          word.length > 0 &&
+          word.length <= size
+      );
+
+
+  const board =
+    Array.from(
+      {
+        length: size
+      },
+      () =>
+        Array(size).fill("")
+    );
+
+
+  const placements =
+    {};
+
+
+  function shuffledDirections() {
+
+    return [
+      ...WORD_SEARCH_DIRECTIONS
+    ].sort(
+      () =>
+        Math.random() -
+        0.5
+    );
+
+  }
+
+
+  const sortedWords =
+    [
+      ...cleanWords
+    ].sort(
+      (
+        a,
+        b
+      ) =>
+        b.length -
+        a.length
+    );
+
+
+  sortedWords.forEach(
+    word => {
+
+      let placed =
+        false;
+
+
+      for (
+        let attempt = 0;
+        attempt < 1500 &&
+        !placed;
+        attempt++
+      ) {
+
+        const direction =
+          shuffledDirections()[0];
+
+
+        const startRow =
+          Math.floor(
+            Math.random() *
+            size
+          );
+
+
+        const startCol =
+          Math.floor(
+            Math.random() *
+            size
+          );
+
+
+        const endRow =
+          startRow +
+          direction.row *
+          (word.length - 1);
+
+
+        const endCol =
+          startCol +
+          direction.col *
+          (word.length - 1);
+
+
+        if (
+          endRow < 0 ||
+          endRow >= size ||
+          endCol < 0 ||
+          endCol >= size
+        ) {
+
+          continue;
+
+        }
+
+
+        let valid =
+          true;
+
+
+        for (
+          let i = 0;
+          i < word.length;
+          i++
+        ) {
+
+          const row =
+            startRow +
+            direction.row *
+            i;
+
+
+          const col =
+            startCol +
+            direction.col *
+            i;
+
+
+          const current =
+            board[row][col];
+
+
+          if (
+            current !== "" &&
+            current !== word[i]
+          ) {
+
+            valid =
+              false;
+
+            break;
+
+          }
+
+        }
+
+
+        if (!valid) {
+
+          continue;
+
+        }
+
+
+        const cells =
+          [];
+
+
+        for (
+          let i = 0;
+          i < word.length;
+          i++
+        ) {
+
+          const row =
+            startRow +
+            direction.row *
+            i;
+
+
+          const col =
+            startCol +
+            direction.col *
+            i;
+
+
+          board[row][col] =
+            word[i];
+
+
+          cells.push(
+            `${row}-${col}`
+          );
+
+        }
+
+
+        placements[word] =
+          cells;
+
+
+        placed =
+          true;
+
+      }
+
+    }
+  );
+
+
+  const letters =
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+
+  for (
+    let row = 0;
+    row < size;
+    row++
+  ) {
+
+    for (
+      let col = 0;
+      col < size;
+      col++
+    ) {
+
+      if (
+        board[row][col] === ""
+      ) {
+
+        board[row][col] =
+          letters[
+            Math.floor(
+              Math.random() *
+              letters.length
+            )
+          ];
+
+      }
+
+    }
+
+  }
+
+
+  return {
+
+    board,
+
+    placements,
+
+    words:
+      cleanWords,
+
+    size
+
+  };
+
+}
+
+
+// =========================================================
+// INICIALIZAR SOPA
+// =========================================================
+
+function initializeWordSearch() {
+
+  const surprise =
+    surprises[10];
+
+
+  if (
+    !surprise ||
+    !surprise.wordSearch
+  ) {
+
+    return;
+
+  }
+
+
+  const boardElement =
+    document.getElementById(
+      "word-search-board"
+    );
+
+
+  const listElement =
+    document.getElementById(
+      "word-search-word-list"
+    );
+
+
+  if (
+    !boardElement ||
+    !listElement
+  ) {
+
+    return;
+
+  }
+
+
+  const state =
+    generateWordSearch(
+      surprise.words,
+      12
+    );
+
+
+  window.wordSearchState = {
+
+    ...state,
+
+    selectedStart:
+      null,
+
+    foundWords:
+      new Set()
+
+  };
+
+
+  renderWordSearchBoard();
+
+  renderWordSearchWordList();
+
+  updateWordSearchCounter();
+
+}
+
+
+// =========================================================
+// RENDERIZAR TABLERO
+// =========================================================
+
+function renderWordSearchBoard() {
+
+  const boardElement =
+    document.getElementById(
+      "word-search-board"
+    );
+
+
+  const state =
+    window.wordSearchState;
+
+
+  if (
+    !boardElement ||
+    !state
+  ) {
+
+    return;
+
+  }
+
+
+  boardElement.innerHTML =
+    "";
+
+
+  boardElement.style.gridTemplateColumns =
+    `repeat(${state.size}, 1fr)`;
+
+
+  for (
+    let row = 0;
+    row < state.size;
+    row++
+  ) {
+
+    for (
+      let col = 0;
+      col < state.size;
+      col++
+    ) {
+
+      const cell =
+        document.createElement(
+          "button"
+        );
+
+
+      cell.type =
+        "button";
+
+
+      cell.className =
+        "word-search-cell";
+
+
+      cell.textContent =
+        state.board[row][col];
+
+
+      cell.dataset.row =
+        row;
+
+
+      cell.dataset.col =
+        col;
+
+
+      cell.setAttribute(
+        "aria-label",
+        `Fila ${row + 1}, columna ${col + 1}, letra ${state.board[row][col]}`
+      );
+
+
+      cell.addEventListener(
+        "click",
+        () =>
+          handleWordSearchCell(
+            row,
+            col
+          )
+      );
+
+
+      boardElement.appendChild(
+        cell
+      );
+
+    }
+
+  }
+
+}
+
+
+// =========================================================
+// LISTA DE PALABRAS
+// =========================================================
+
+function renderWordSearchWordList() {
+
+  const listElement =
+    document.getElementById(
+      "word-search-word-list"
+    );
+
+
+  const state =
+    window.wordSearchState;
+
+
+  if (
+    !listElement ||
+    !state
+  ) {
+
+    return;
+
+  }
+
+
+  listElement.innerHTML =
+    "";
+
+
+  state.words.forEach(
+    word => {
+
+      const item =
+        document.createElement(
+          "div"
+        );
+
+
+      item.className =
+        "word-search-word";
+
+
+      item.dataset.word =
+        word;
+
+
+      item.innerHTML = `
+
+        <span class="word-search-word-icon">
+          🌻
+        </span>
+
+        <span class="word-search-word-text">
+          ${word}
+        </span>
+
+        <span class="word-search-word-check">
+          ✓
+        </span>
+
+      `;
+
+
+      listElement.appendChild(
+        item
+      );
+
+    }
+  );
+
+}
+
+
+// =========================================================
+// MANEJAR SELECCIÓN
+// =========================================================
+
+function handleWordSearchCell(
+  row,
+  col
+) {
+
+  const state =
+    window.wordSearchState;
+
+
+  if (!state) {
+
+    return;
+
+  }
+
+
+  // -------------------------------------------------------
+  // PRIMERA LETRA
+  // -------------------------------------------------------
+
+  if (
+    !state.selectedStart
+  ) {
+
+    state.selectedStart = {
+
+      row,
+      col
+
+    };
+
+
+    clearWordSearchSelection();
+
+
+    const cell =
+      getWordSearchCell(
+        row,
+        col
+      );
+
+
+    if (
+      cell
+    ) {
+
+      cell.classList.add(
+        "word-search-selected"
+      );
+
+    }
+
+
+    return;
+
+  }
+
+
+  // -------------------------------------------------------
+  // SEGUNDA LETRA
+  // -------------------------------------------------------
+
+  const start =
+    state.selectedStart;
+
+
+  const selectedCells =
+    getCellsBetween(
+      start.row,
+      start.col,
+      row,
+      col
+    );
+
+
+  if (
+    selectedCells.length === 0
+  ) {
+
+    state.selectedStart = {
+
+      row,
+      col
+
+    };
+
+
+    clearWordSearchSelection();
+
+
+    const cell =
+      getWordSearchCell(
+        row,
+        col
+      );
+
+
+    if (
+      cell
+    ) {
+
+      cell.classList.add(
+        "word-search-selected"
+      );
+
+    }
+
+
+    return;
+
+  }
+
+
+  const selectedWord =
+    selectedCells
+      .map(
+        cell =>
+          state.board[
+            cell.row
+          ][
+            cell.col
+          ]
+      )
+      .join("");
+
+
+  const reversedWord =
+    selectedWord
+      .split("")
+      .reverse()
+      .join("");
+
+
+  let foundWord =
+    null;
+
+
+  state.words.forEach(
+    word => {
+
+      if (
+        state.foundWords.has(
+          word
+        )
+      ) {
+
+        return;
+
+      }
+
+
+      if (
+        word === selectedWord ||
+        word === reversedWord
+      ) {
+
+        foundWord =
+          word;
+
+      }
+
+    }
+  );
+
+
+  if (
+    foundWord
+  ) {
+
+    markFoundWord(
+      selectedCells,
+      foundWord
+    );
+
+  }
+
+  else {
+
+    showInvalidWord();
+
+  }
+
+
+  state.selectedStart =
+    null;
+
+}
+
+
+// =========================================================
+// OBTENER CELDAS
+// =========================================================
+
+function getCellsBetween(
+  startRow,
+  startCol,
+  endRow,
+  endCol
+) {
+
+  const rowDifference =
+    endRow -
+    startRow;
+
+
+  const colDifference =
+    endCol -
+    startCol;
+
+
+  const rowStep =
+    rowDifference === 0
+      ? 0
+      : rowDifference > 0
+        ? 1
+        : -1;
+
+
+  const colStep =
+    colDifference === 0
+      ? 0
+      : colDifference > 0
+        ? 1
+        : -1;
+
+
+  const straightLine =
+    rowDifference === 0 ||
+    colDifference === 0 ||
+    Math.abs(
+      rowDifference
+    ) ===
+      Math.abs(
+        colDifference
+      );
+
+
+  if (
+    !straightLine
+  ) {
+
+    return [];
+
+  }
+
+
+  const steps =
+    Math.max(
+      Math.abs(
+        rowDifference
+      ),
+      Math.abs(
+        colDifference
+      )
+    );
+
+
+  const cells =
+    [];
+
+
+  for (
+    let i = 0;
+    i <= steps;
+    i++
+  ) {
+
+    cells.push({
+
+      row:
+        startRow +
+        rowStep *
+        i,
+
+      col:
+        startCol +
+        colStep *
+        i
+
+    });
+
+  }
+
+
+  return cells;
+
+}
+
+
+// =========================================================
+// MARCAR PALABRA
+// =========================================================
+
+function markFoundWord(
+  cells,
+  word
+) {
+
+  const state =
+    window.wordSearchState;
+
+
+  if (!state) {
+
+    return;
+
+  }
+
+
+  state.foundWords.add(
+    word
+  );
+
+
+  cells.forEach(
+    (
+      {
+        row,
+        col
+      }
+    ) => {
+
+      const element =
+        getWordSearchCell(
+          row,
+          col
+        );
+
+
+      if (
+        element
+      ) {
+
+        element.classList.remove(
+          "word-search-selected"
+        );
+
+
+        element.classList.add(
+          "word-search-found"
+        );
+
+
+        createWordSearchSparkle(
+          element
+        );
+
+      }
+
+    }
+  );
+
+
+  const wordElement =
+    document.querySelector(
+      `.word-search-word[data-word="${word}"]`
+    );
+
+
+  if (
+    wordElement
+  ) {
+
+    wordElement.classList.add(
+      "found"
+    );
+
+  }
+
+
+  updateWordSearchCounter();
+
+
+  if (
+    state.foundWords.size ===
+    state.words.length
+  ) {
+
+    setTimeout(
+      showWordSearchSuccess,
+      500
+    );
+
+  }
+
+}
+
+
+// =========================================================
+// ACTUALIZAR CONTADOR
+// =========================================================
+
+function updateWordSearchCounter() {
+
+  const found =
+    document.getElementById(
+      "word-search-found"
+    );
+
+
+  const state =
+    window.wordSearchState;
+
+
+  if (
+    found &&
+    state
+  ) {
+
+    found.textContent =
+      state.foundWords.size;
+
+  }
+
+}
+
+
+// =========================================================
+// LIMPIAR SELECCIÓN
+// =========================================================
+
+function clearWordSearchSelection() {
+
+  document
+    .querySelectorAll(
+      ".word-search-selected"
+    )
+    .forEach(
+      cell => {
+
+        cell.classList.remove(
+          "word-search-selected"
+        );
+
+      }
+    );
+
+}
+
+
+// =========================================================
+// PALABRA INCORRECTA
+// =========================================================
+
+function showInvalidWord() {
+
+  const board =
+    document.getElementById(
+      "word-search-board"
+    );
+
+
+  if (
+    !board
+  ) {
+
+    return;
+
+  }
+
+
+  board.classList.remove(
+    "word-search-invalid"
+  );
+
+
+  void board.offsetWidth;
+
+
+  board.classList.add(
+    "word-search-invalid"
+  );
+
+
+  clearWordSearchSelection();
+
+
+  setTimeout(
+    () => {
+
+      board.classList.remove(
+        "word-search-invalid"
+      );
+
+    },
+    500
+  );
+
+}
+
+
+// =========================================================
+// OBTENER CELDA
+// =========================================================
+
+function getWordSearchCell(
+  row,
+  col
+) {
+
+  return document.querySelector(
+    `.word-search-cell[data-row="${row}"][data-col="${col}"]`
+  );
+
+}
+
+
+// =========================================================
+// DESTELLO
+// =========================================================
+
+function createWordSearchSparkle(
+  element
+) {
+
+  if (
+    !element
+  ) {
+
+    return;
+
+  }
+
+
+  const sparkle =
+    document.createElement(
+      "span"
+    );
+
+
+  sparkle.className =
+    "word-search-sparkle";
+
+
+  sparkle.textContent =
+    "✨";
+
+
+  element.appendChild(
+    sparkle
+  );
+
+
+  setTimeout(
+    () =>
+      sparkle.remove(),
+    800
+  );
+
+}
+
+
+// =========================================================
+// MENSAJE FINAL
+// =========================================================
+
+function showWordSearchSuccess() {
+
+  const success =
+    document.getElementById(
+      "word-search-success"
+    );
+
+
+  if (
+    !success
+  ) {
+
+    return;
+
+  }
+
+
+  success.style.display =
+    "block";
+
+
+  setTimeout(
+    () => {
+
+      success.classList.add(
+        "show"
+      );
+
+    },
+    50
+  );
+
+
+  createHearts(
+    18
+  );
+
+
+  createSunflowerCelebration();
+
+}
+
+
+// =========================================================
+// CELEBRACIÓN
+// =========================================================
+
+function createSunflowerCelebration() {
+
+  const container =
+    document.getElementById(
+      "hearts"
+    );
+
+
+  if (
+    !container
+  ) {
+
+    return;
+
+  }
+
+
+  for (
+    let i = 0;
+    i < 10;
+    i++
+  ) {
+
+    const flower =
+      document.createElement(
+        "span"
+      );
+
+
+    flower.className =
+      "floating-sunflower";
+
+
+    flower.textContent =
+      "🌻";
+
+
+    flower.style.left =
+      `${Math.random() * 100}%`;
+
+
+    flower.style.fontSize =
+      `${18 + Math.random() * 18}px`;
+
+
+    flower.style.animationDuration =
+      `${5 + Math.random() * 5}s`;
+
+
+    flower.style.animationDelay =
+      `${Math.random() * 1.5}s`;
+
+
+    container.appendChild(
+      flower
+    );
+
+
+    setTimeout(
+      () =>
+        flower.remove(),
+      12000
+    );
+
+  }
 
 }
 
@@ -2159,7 +3601,8 @@ function scrollToCalendar() {
     "calendar-section"
   ).scrollIntoView({
 
-    behavior: "smooth"
+    behavior:
+      "smooth"
 
   });
 
@@ -2180,8 +3623,12 @@ function createHearts(
     );
 
 
-  if (!container) {
+  if (
+    !container
+  ) {
+
     return;
+
   }
 
 
@@ -2229,7 +3676,8 @@ function createHearts(
 
 
     setTimeout(
-      () => heart.remove(),
+      () =>
+        heart.remove(),
       14000
     );
 
@@ -2245,7 +3693,8 @@ function createHearts(
 function startHeartAnimation() {
 
   setInterval(
-    () => createHearts(1),
+    () =>
+      createHearts(1),
     1800
   );
 
@@ -2270,8 +3719,13 @@ async function toggleMusic() {
     );
 
 
-  if (!audio || !button) {
+  if (
+    !audio ||
+    !button
+  ) {
+
     return;
+
   }
 
 
@@ -2283,8 +3737,10 @@ async function toggleMusic() {
 
       await audio.play();
 
+
       button.textContent =
         "❚❚";
+
 
       button.title =
         "Pausar música";
@@ -2295,8 +3751,10 @@ async function toggleMusic() {
 
       audio.pause();
 
+
       button.textContent =
         "♫";
+
 
       button.title =
         "Reproducir música";
@@ -2305,7 +3763,9 @@ async function toggleMusic() {
 
   }
 
-  catch (error) {
+  catch (
+    error
+  ) {
 
     alert(
       "Primero coloca tu canción en la carpeta music/nuestra-cancion.mp3"
@@ -2322,10 +3782,13 @@ async function toggleMusic() {
 
 document.addEventListener(
   "keydown",
-  (event) => {
+  (
+    event
+  ) => {
 
     if (
-      event.key === "Escape"
+      event.key ===
+      "Escape"
     ) {
 
       closeModal();
