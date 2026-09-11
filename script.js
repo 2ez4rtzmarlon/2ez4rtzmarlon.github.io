@@ -9,10 +9,6 @@
   Zona horaria:
   Quito, Ecuador = UTC-5
   America/Guayaquil
-
-  El calendario se desbloquea según la fecha de Quito.
-  El contador llega exactamente a cero a las
-  00:00:00 del 22 de septiembre de 2026 en Quito.
 */
 
 
@@ -148,15 +144,26 @@ const surprises = [
     text: `
       Hoy quiero que escuches nuestra canción y recuerdes
       lo importante que eres para mi vida y de qué manera
-      eres importante para mí, gracias por compartir tus gustos
-      y hacerme recordarte a ti en cada segundo de la canción,
-      antes de darle play piensa en algo lindo que hemos vivido, te amo. ❤️
+      eres importante para mí.
+
+      <br><br>
+
+      Gracias por compartir tus gustos y hacerme recordarte
+      a ti en cada segundo de la canción.
+
+      <br><br>
+
+      Antes de darle play piensa en algo lindo que hemos vivido.
+
+      <br><br>
+
+      Te amo. ❤️
 
       <br><br>
 
       <strong>Tip:</strong>
-      Cierra y usa el botón ♫ de abajo en la esquina derecha
-      y ahora cada día puedes escucharla.
+      Usa el botón ♫ de abajo en la esquina derecha
+      para escucharla.
     `
   },
 
@@ -285,8 +292,9 @@ const surprises = [
         title: "Gracias por escucharme",
 
         text: `
-          Gracias por escuchar mis historias del fútbol, de lo que me gusta,
-          mis problemas, mis sueños y hasta mis cosas sin sentido o palabras inventadas.
+          Gracias por escuchar mis historias del fútbol,
+          de lo que me gusta, mis problemas, mis sueños
+          y hasta mis cosas sin sentido o palabras inventadas.
 
           <br><br>
 
@@ -441,314 +449,304 @@ const surprises = [
   },
 
 
- // =======================================================
-// DÍA 12
-// =======================================================
+  // =======================================================
+  // DÍA 12
+  // PASAPORTE INTERACTIVO
+  // =======================================================
 
-{
-  icon: "✈️",
+  {
+    icon: "✈️",
 
-  title: "Pasaporte para nuestro futuro",
+    title: "Pasaporte para nuestro futuro",
 
-  passport: true,
+    passport: true,
 
-  destinations: [
+    destinations: [
 
-    {
-      number: "01",
-      icon: "✈️",
-      title: "Viajar juntos",
-      stamp: "DESTINO: AVENTURA",
+      {
+        number: "01",
+        icon: "✈️",
+        title: "Viajar juntos",
+        stamp: "DESTINO: AVENTURA",
 
-      text: `
-        Quiero conocer nuevos lugares contigo,
-        perdernos un poquito, descubrir algo inesperado
-        y terminar diciendo:
+        text: `
+          Quiero conocer nuevos lugares contigo,
+          perdernos un poquito, descubrir algo inesperado
+          y terminar diciendo:
 
-        <br><br>
+          <br><br>
 
-        <strong>
-          "Valió la pena venir."
-        </strong>
-      `
-    },
+          <strong>
+            "Valió la pena venir."
+          </strong>
+        `
+      },
 
+      {
+        number: "02",
+        icon: "🗺️",
+        title: "Conocer lugares nuevos",
+        stamp: "NUEVO DESTINO ❤️",
 
-    {
-      number: "02",
-      icon: "🗺️",
-      title: "Conocer lugares nuevos",
-      stamp: "NUEVO DESTINO ❤️",
+        text: `
+          Quiero que algún día podamos mirar un mapa
+          y decir:
 
-      text: `
-        Quiero que algún día podamos mirar un mapa
-        y decir:
+          <br><br>
 
-        <br><br>
+          <strong>
+            "Aquí todavía no hemos estado."
+          </strong>
 
-        <strong>
-          "Aquí todavía no hemos estado."
-        </strong>
+          <br><br>
 
-        <br><br>
+          Y convertirlo en nuestro próximo plan.
+        `
+      },
 
-        Y convertirlo en nuestro próximo plan.
-      `
-    },
+      {
+        number: "03",
+        icon: "❤️",
+        title: "Celebrar muchos aniversarios",
+        stamp: "AÑO 01 ❤️",
 
+        text: `
+          No quiero que este sea nuestro único aniversario especial.
 
-    {
-      number: "03",
-      icon: "❤️",
-      title: "Celebrar muchos aniversarios",
-      stamp: "AÑO 01 ❤️",
+          <br><br>
 
-      text: `
-        No quiero que este sea nuestro único aniversario especial.
+          Quiero que existan muchos más números,
+          muchas más velas, muchas más fotos
+          y muchas más razones para decir:
 
-        <br><br>
+          <br><br>
 
-        Quiero que existan muchos más números,
-        muchas más velas, muchas más fotos
-        y muchas más razones para decir:
+          <strong>
+            "Lo logramos otro año más."
+          </strong>
+        `
+      },
 
-        <br><br>
+      {
+        number: "04",
+        icon: "😂",
+        title: "Reírnos hasta que nos duela el estómago",
+        stamp: "REÍR SIN LÍMITES",
 
-        <strong>
-          "Lo logramos otro año más."
-        </strong>
-      `
-    },
+        text: `
+          Porque seguramente seguiremos haciendo
+          cosas que nadie más entendería.
 
+          <br><br>
 
-    {
-      number: "04",
-      icon: "😂",
-      title: "Reírnos hasta que nos duela el estómago",
-      stamp: "REÍR SIN LÍMITES",
+          Y probablemente seguiremos riéndonos
+          de cosas que solo nosotros encontramos graciosas. 😂
 
-      text: `
-        Porque seguramente seguiremos haciendo
-        cosas que nadie más entendería.
+          <br><br>
 
-        <br><br>
+          Y sinceramente...
 
-        Y probablemente seguiremos riéndonos
-        de cosas que solo nosotros encontramos graciosas. 😂
+          <strong>
+            no quiero que eso cambie.
+          </strong>
+        `
+      },
 
-        <br><br>
+      {
+        number: "05",
+        icon: "📸",
+        title: "Tener muchas más fotos juntos",
+        stamp: "RECUERDO GUARDADO",
 
-        Y sinceramente...
+        text: `
+          Tenemos fotografías de muchos momentos.
 
-        <strong>
-          no quiero que eso cambie.
-        </strong>
-      `
-    },
+          <br><br>
 
+          Pero quiero que algún día tengamos tantas
+          que sea difícil escoger cuáles son nuestras favoritas.
 
-    {
-      number: "05",
-      icon: "📸",
-      title: "Tener muchas más fotos juntos",
-      stamp: "RECUERDO GUARDADO",
+          <br><br>
 
-      text: `
-        Tenemos fotografías de muchos momentos.
+          Quiero llenar una vida contigo
+          de recuerdos que podamos volver a mirar.
+        `
+      },
 
-        <br><br>
+      {
+        number: "06",
+        icon: "🥂",
+        title: "Crear nuestras propias tradiciones",
+        stamp: "TRADICIÓN NUEVA",
 
-        Pero quiero que algún día tengamos tantas
-        que sea difícil escoger cuáles son nuestras favoritas.
+        text: `
+          Quiero que tengamos cosas que solamente sean nuestras.
 
-        <br><br>
+          <br><br>
 
-        Quiero llenar una vida contigo
-        de recuerdos que podamos volver a mirar.
-      `
-    },
+          Planes, lugares, fechas, bromas, costumbres
+          y pequeños rituales que con el tiempo podamos decir:
 
+          <br><br>
 
-    {
-      number: "06",
-      icon: "🥂",
-      title: "Crear nuestras propias tradiciones",
-      stamp: "TRADICIÓN NUEVA",
+          <strong>
+            "Esto empezó con nosotros."
+          </strong>
+        `
+      },
 
-      text: `
-        Quiero que tengamos cosas que solamente sean nuestras.
+      {
+        number: "07",
+        icon: "🌱",
+        title: "Apoyarnos en nuestros sueños",
+        stamp: "MISIÓN: APOYARNOS",
 
-        <br><br>
+        text: `
+          Quiero estar cuando tengas un sueño nuevo.
 
-        Planes, lugares, fechas, bromas, costumbres
-        y pequeños rituales que con el tiempo podamos decir:
+          <br><br>
 
-        <br><br>
+          Quiero verte intentarlo, apoyarte cuando sea difícil
+          y celebrar contigo cuando finalmente lo consigas.
 
-        <strong>
-          "Esto empezó con nosotros."
-        </strong>
-      `
-    },
+          <br><br>
 
+          Y espero que tú también quieras estar
+          en mis sueños. ❤️
+        `
+      },
 
-    {
-      number: "07",
-      icon: "🌱",
-      title: "Apoyarnos en nuestros sueños",
-      stamp: "MISIÓN: APOYARNOS",
+      {
+        number: "08",
+        icon: "🌅",
+        title: "Ver amaneceres juntos",
+        stamp: "AMANECER COMPARTIDO",
 
-      text: `
-        Quiero estar cuando tengas un sueño nuevo.
+        text: `
+          Quiero algún día estar contigo viendo amanecer
+          y pensar que no necesitamos hacer nada extraordinario.
 
-        <br><br>
+          <br><br>
 
-        Quiero verte intentarlo, apoyarte cuando sea difícil
-        y celebrar contigo cuando finalmente lo consigas.
+          <strong>
+            Que estar juntos ya sea suficiente.
+          </strong>
+        `
+      },
 
-        <br><br>
+      {
+        number: "09",
+        icon: "🎉",
+        title: "Celebrar nuestros logros",
+        stamp: "OBJETIVO CUMPLIDO ❤️",
 
-        Y espero que tú también quieras estar
-        en mis sueños. ❤️
-      `
-    },
+        text: `
+          Quiero estar para aplaudir
+          tus pequeñas victorias y tus grandes logros.
 
+          <br><br>
 
-    {
-      number: "08",
-      icon: "🌅",
-      title: "Ver amaneceres juntos",
-      stamp: "AMANECER COMPARTIDO",
+          Porque voy a querer verte crecer,
+          avanzar y cumplir todo aquello
+          que te propongas.
+        `
+      },
 
-      text: `
-        Quiero algún día estar contigo viendo amanecer
-        y pensar que no necesitamos hacer nada extraordinario.
+      {
+        number: "10",
+        icon: "🤝",
+        title: "Superar los días difíciles",
+        stamp: "EQUIPO MARLON & ANDREA",
 
-        <br><br>
+        text: `
+          No todo será perfecto.
 
-        <strong>
-          Que estar juntos ya sea suficiente.
-        </strong>
-      `
-    },
+          <br><br>
 
+          Habrá días complicados, cansancio,
+          preocupaciones y momentos difíciles.
 
-    {
-      number: "09",
-      icon: "🎉",
-      title: "Celebrar nuestros logros",
-      stamp: "OBJETIVO CUMPLIDO ❤️",
+          <br><br>
 
-      text: `
-        Quiero estar para aplaudir
-        tus pequeñas victorias y tus grandes logros.
+          Pero quiero que incluso en esos días
+          podamos seguir diciendo:
 
-        <br><br>
+          <br><br>
 
-        Porque voy a querer verte crecer,
-        avanzar y cumplir todo aquello
-        que te propongas.
-      `
-    },
+          <strong>
+            "Estamos juntos en esto."
+          </strong>
+        `
+      },
 
+      {
+        number: "11",
+        icon: "🥰",
+        title: "Seguir conociéndonos",
+        stamp: "NUEVO RECUERDO",
 
-    {
-      number: "10",
-      icon: "🤝",
-      title: "Superar los días difíciles",
-      stamp: "EQUIPO MARLON & ANDREA",
+        text: `
+          Aunque llevemos tiempo juntos,
+          todavía quiero descubrir nuevas cosas de ti.
 
-      text: `
-        No todo será perfecto.
+          <br><br>
 
-        <br><br>
+          Nuevas historias, nuevas costumbres,
+          nuevas formas de hacerte reír
+          y todas esas pequeñas cosas
+          que hacen que sigas sorprendiéndome.
+        `
+      },
 
-        Habrá días complicados, cansancio,
-        preocupaciones y momentos difíciles.
+      {
+        number: "12",
+        icon: "❤️",
+        title: "Seguir eligiéndonos",
+        stamp: "DESTINO: NOSOTROS",
 
-        <br><br>
+        final: true,
 
-        Pero quiero que incluso en esos días
-        podamos seguir diciendo:
+        text: `
+          De todas las cosas que quiero vivir contigo,
+          hay una que quiero por encima de todas.
 
-        <br><br>
+          <br><br>
 
-        <strong>
-          "Estamos juntos en esto."
-        </strong>
-      `
-    },
+          <strong>
+            Seguir eligiéndonos.
+          </strong>
 
+          <br><br>
 
-    {
-      number: "11",
-      icon: "🥰",
-      title: "Seguir conociéndonos",
-      stamp: "NUEVO RECUERDO",
+          Elegirte cuando todo vaya bien.
+          Elegirte cuando las cosas sean difíciles.
+          Elegirte en los días normales.
+          Elegirte en los días especiales.
 
-      text: `
-        Aunque llevemos tiempo juntos,
-        todavía quiero descubrir nuevas cosas de ti.
+          <br><br>
 
-        <br><br>
+          Porque después de todo lo que hemos vivido,
+          hay algo que tengo muy claro:
 
-        Nuevas historias, nuevas costumbres,
-        nuevas formas de hacerte reír
-        y todas esas pequeñas cosas
-        que hacen que sigas sorprendiéndome.
-      `
-    },
+          <br><br>
 
+          <strong>
+            volvería a elegirte.
+          </strong>
 
-    {
-      number: "12",
-      icon: "❤️",
-      title: "Seguir eligiéndonos",
-      stamp: "DESTINO: NOSOTROS",
+          <br><br>
 
-      final: true,
+          Hoy.
+          <br>
+          Mañana.
+          <br>
+          Y en todos los capítulos
+          que todavía nos falten escribir. ❤️
+        `
+      }
 
-      text: `
-        De todas las cosas que quiero vivir contigo,
-        hay una que quiero por encima de todas.
-
-        <br><br>
-
-        <strong>
-          Seguir eligiéndonos.
-        </strong>
-
-        <br><br>
-
-        Elegirte cuando todo vaya bien.
-        Elegirte cuando las cosas sean difíciles.
-        Elegirte en los días normales.
-        Elegirte en los días especiales.
-
-        <br><br>
-
-        Porque después de todo lo que hemos vivido,
-        hay algo que tengo muy claro:
-
-        <br><br>
-
-        <strong>
-          volvería a elegirte.
-        </strong>
-
-        <br><br>
-
-        Hoy.
-        <br>
-        Mañana.
-        <br>
-        Y en todos los capítulos
-        que todavía nos falten escribir. ❤️
-      `
-    }
-
-  ]
-},
+    ]
+  },
 
 
   // =======================================================
@@ -990,11 +988,19 @@ const surprises = [
 
 
 // =========================================================
-// VARIABLES DEL CARRUSEL
+// VARIABLES GLOBALES
 // =========================================================
 
 window.currentCarouselSlides = [];
 window.currentCarouselIndex = 0;
+
+window.passportState = {
+  page: 0,
+  opened: false,
+  stamped: false
+};
+
+window.wordSearchState = null;
 
 
 // =========================================================
@@ -1013,50 +1019,38 @@ function getEcuadorDate() {
     }
   );
 
-  return formatter.format(
-    new Date()
-  );
-
+  return formatter.format(new Date());
 }
 
 
 // =========================================================
-// CONVERTIR FECHA YYYY-MM-DD A UTC
+// CONVERTIR FECHA A UTC
 // =========================================================
 
-function dateToUTC(
-  dateString
-) {
+function dateToUTC(dateString) {
 
   const [y, m, d] =
-    dateString
-      .split("-")
-      .map(Number);
+    dateString.split("-").map(Number);
 
   return Date.UTC(
     y,
     m - 1,
     d
   );
-
 }
 
 
 // =========================================================
-// DÍA ACTUAL DEL CALENDARIO
+// DÍA ACTUAL
 // =========================================================
 
 function getCurrentDay() {
 
   const params =
-    new URLSearchParams(
-      window.location.search
-    );
+    new URLSearchParams(window.location.search);
 
   const previewDay =
-    Number(
-      params.get("preview")
-    );
+    Number(params.get("preview"));
 
 
   if (
@@ -1076,32 +1070,23 @@ function getCurrentDay() {
 
   const difference =
     Math.floor(
-
       (
         dateToUTC(today) -
         dateToUTC(START_DATE)
-
       ) / 86400000
-
     );
 
 
   return Math.min(
-
-    Math.max(
-      difference + 1,
-      0
-    ),
-
+    Math.max(difference + 1, 0),
     TOTAL_DAYS
-
   );
 
 }
 
 
 // =========================================================
-// FECHA EXACTA DEL ANIVERSARIO
+// FECHA ANIVERSARIO
 // =========================================================
 
 function getAnniversaryDate() {
@@ -1114,13 +1099,12 @@ function getAnniversaryDate() {
 
 
 // =========================================================
-// CONTADOR REGRESIVO
+// CONTADOR
 // =========================================================
 
 function updateCountdown() {
 
-  const now =
-    new Date();
+  const now = new Date();
 
   const anniversary =
     getAnniversaryDate();
@@ -1130,103 +1114,80 @@ function updateCountdown() {
     now.getTime();
 
 
+  const label =
+    document.getElementById("countdown-label");
+
+  const days =
+    document.getElementById("days");
+
+  const hours =
+    document.getElementById("hours");
+
+  const minutes =
+    document.getElementById("minutes");
+
+  const seconds =
+    document.getElementById("seconds");
+
+
   if (
-    diff <= 0
+    !label ||
+    !days ||
+    !hours ||
+    !minutes ||
+    !seconds
   ) {
-
-    document.getElementById(
-      "countdown-label"
-    ).textContent =
-      "❤️ Hoy es nuestro día ❤️";
-
-
-    document.getElementById(
-      "days"
-    ).textContent =
-      "00";
-
-    document.getElementById(
-      "hours"
-    ).textContent =
-      "00";
-
-    document.getElementById(
-      "minutes"
-    ).textContent =
-      "00";
-
-    document.getElementById(
-      "seconds"
-    ).textContent =
-      "00";
-
 
     return;
 
   }
 
 
-  const days =
+  if (diff <= 0) {
+
+    label.textContent =
+      "❤️ Hoy es nuestro día ❤️";
+
+    days.textContent = "00";
+    hours.textContent = "00";
+    minutes.textContent = "00";
+    seconds.textContent = "00";
+
+    return;
+
+  }
+
+
+  const d =
+    Math.floor(diff / 86400000);
+
+  const h =
     Math.floor(
-      diff / 86400000
+      (diff % 86400000) / 3600000
     );
 
-
-  const hours =
+  const m =
     Math.floor(
-      (diff % 86400000) /
-      3600000
+      (diff % 3600000) / 60000
     );
 
-
-  const minutes =
+  const s =
     Math.floor(
-      (diff % 3600000) /
-      60000
+      (diff % 60000) / 1000
     );
 
 
-  const seconds =
-    Math.floor(
-      (diff % 60000) /
-      1000
-    );
+  days.textContent =
+    String(d).padStart(2, "0");
 
+  hours.textContent =
+    String(h).padStart(2, "0");
 
-  document.getElementById(
-    "days"
-  ).textContent =
-    String(days).padStart(
-      2,
-      "0"
-    );
+  minutes.textContent =
+    String(m).padStart(2, "0");
 
-
-  document.getElementById(
-    "hours"
-  ).textContent =
-    String(hours).padStart(
-      2,
-      "0"
-    );
-
-
-  document.getElementById(
-    "minutes"
-  ).textContent =
-    String(minutes).padStart(
-      2,
-      "0"
-    );
-
-
-  document.getElementById(
-    "seconds"
-  ).textContent =
-    String(seconds).padStart(
-      2,
-      "0"
-    );
+  seconds.textContent =
+    String(s).padStart(2, "0");
 
 }
 
@@ -1238,49 +1199,48 @@ function updateCountdown() {
 function renderCalendar() {
 
   const calendar =
-    document.getElementById(
-      "calendar"
-    );
+    document.getElementById("calendar");
+
+  if (!calendar) {
+    return;
+  }
 
 
   const currentDay =
     getCurrentDay();
 
 
-  if (
-    currentDay === 0
-  ) {
+  const status =
+    document.getElementById("status-text");
 
-    document.getElementById(
-      "status-text"
-    ).textContent =
-      "La cuenta regresiva comienza el 1 de septiembre ❤️";
 
-  }
+  if (status) {
 
-  else if (
-    currentDay >= TOTAL_DAYS
-  ) {
+    if (currentDay === 0) {
 
-    document.getElementById(
-      "status-text"
-    ).textContent =
-      "Hoy es nuestro día. ❤️";
+      status.textContent =
+        "La cuenta regresiva comienza el 1 de septiembre ❤️";
 
-  }
+    }
 
-  else {
+    else if (currentDay >= TOTAL_DAYS) {
 
-    document.getElementById(
-      "status-text"
-    ).textContent =
-      `Hoy está disponible el detalle del día ${currentDay}. Los demás se desbloquearán automáticamente.`;
+      status.textContent =
+        "Hoy es nuestro día. ❤️";
+
+    }
+
+    else {
+
+      status.textContent =
+        `Hoy está disponible el detalle del día ${currentDay}. Los demás se desbloquearán automáticamente.`;
+
+    }
 
   }
 
 
-  calendar.innerHTML =
-    "";
+  calendar.innerHTML = "";
 
 
   for (
@@ -1292,39 +1252,29 @@ function renderCalendar() {
     const unlocked =
       day <= currentDay;
 
-
     const isToday =
       day === currentDay;
 
 
     const card =
-      document.createElement(
-        "button"
-      );
+      document.createElement("button");
+
+
+    card.type = "button";
 
 
     card.className =
       `day-card ${
-        unlocked
-          ? "unlocked"
-          : "locked"
+        unlocked ? "unlocked" : "locked"
       } ${
-        isToday
-          ? "today"
-          : ""
+        isToday ? "today" : ""
       }`;
 
 
     const date =
       new Date(
-
-        dateToUTC(
-          START_DATE
-        ) +
-
-        (day - 1) *
-        86400000
-
+        dateToUTC(START_DATE) +
+        (day - 1) * 86400000
       );
 
 
@@ -1339,9 +1289,7 @@ function renderCalendar() {
       );
 
 
-    if (
-      unlocked
-    ) {
+    if (unlocked) {
 
       card.innerHTML = `
 
@@ -1365,8 +1313,7 @@ function renderCalendar() {
 
 
       card.onclick =
-        () =>
-          openSurprise(day);
+        () => openSurprise(day);
 
     }
 
@@ -1398,15 +1345,12 @@ function renderCalendar() {
 
 
       card.onclick =
-        () =>
-          showLockedMessage(day);
+        () => showLockedMessage(day);
 
     }
 
 
-    calendar.appendChild(
-      card
-    );
+    calendar.appendChild(card);
 
   }
 
@@ -1417,29 +1361,18 @@ function renderCalendar() {
 // NORMALIZAR SLIDES
 // =========================================================
 
-function normalizeSlides(
-  surprise
-) {
+function normalizeSlides(surprise) {
 
   if (
-    Array.isArray(
-      surprise.slides
-    ) &&
+    Array.isArray(surprise.slides) &&
     surprise.slides.length > 0
   ) {
 
     return surprise.slides.map(
       slide => ({
-
-        image:
-          slide.image || null,
-
-        title:
-          slide.title || "",
-
-        text:
-          slide.text || ""
-
+        image: slide.image || null,
+        title: slide.title || "",
+        text: slide.text || ""
       })
     );
 
@@ -1447,49 +1380,29 @@ function normalizeSlides(
 
 
   if (
-    Array.isArray(
-      surprise.images
-    ) &&
+    Array.isArray(surprise.images) &&
     surprise.images.length > 0
   ) {
 
     return surprise.images.map(
       image => ({
-
-        image:
-          image,
-
-        title:
-          "",
-
-        text:
-          ""
-
+        image,
+        title: "",
+        text: ""
       })
     );
 
   }
 
 
-  if (
-    surprise.image
-  ) {
+  if (surprise.image) {
 
     return [
-
       {
-
-        image:
-          surprise.image,
-
-        title:
-          "",
-
-        text:
-          ""
-
+        image: surprise.image,
+        title: "",
+        text: ""
       }
-
     ];
 
   }
@@ -1504,20 +1417,51 @@ function normalizeSlides(
 // ABRIR SORPRESA
 // =========================================================
 
-function openSurprise(
-  day
-) {
+function openSurprise(day) {
 
   const currentDay =
     getCurrentDay();
 
 
+  if (day > currentDay) {
+
+    showLockedMessage(day);
+    return;
+
+  }
+
+
+  const surprise =
+    surprises[day - 1];
+
+
+  if (!surprise) {
+    return;
+  }
+
+
+  const modalDay =
+    document.getElementById("modal-day");
+
+  const modalTitle =
+    document.getElementById("modal-title");
+
+  const modalIcon =
+    document.getElementById("modal-icon");
+
+  const modalBody =
+    document.getElementById("modal-body");
+
+
   if (
-    day > currentDay
+    !modalDay ||
+    !modalTitle ||
+    !modalIcon ||
+    !modalBody
   ) {
 
-    showLockedMessage(
-      day
+    console.error(
+      "No se encontraron los elementos del modal."
     );
 
     return;
@@ -1525,65 +1469,56 @@ function openSurprise(
   }
 
 
-  const surprise =
-    surprises[
-      day - 1
-    ];
-
-
-  document.getElementById(
-    "modal-day"
-  ).textContent =
+  modalDay.textContent =
     `Día ${String(day).padStart(2, "0")} · ${getDayLabel(day)}`;
 
-
-  document.getElementById(
-    "modal-title"
-  ).textContent =
+  modalTitle.textContent =
     surprise.title;
 
-
-  document.getElementById(
-    "modal-icon"
-  ).textContent =
+  modalIcon.textContent =
     surprise.icon;
 
 
-  let body =
-    "";
+  // -------------------------------------------------------
+  // REINICIAR ESTADOS
+  // -------------------------------------------------------
+
+  window.currentCarouselSlides = [];
+  window.currentCarouselIndex = 0;
+
+
+  window.passportState = {
+    page: 0,
+    opened: false,
+    stamped: false
+  };
+
+
+  let body = "";
 
 
   const slides =
-    normalizeSlides(
-      surprise
-    );
+    normalizeSlides(surprise);
 
 
   window.currentCarouselSlides =
     slides;
 
 
-  window.currentCarouselIndex =
-    0;
+  // =======================================================
+  // DÍA 12 - PASAPORTE
+  // =======================================================
 
-  // =====================================================
-  // PASAPORTE INTERACTIVO - DÍA 12
-  // =====================================================
+  if (surprise.passport) {
 
-  if (
-    surprise.passport
-  ) {
-
-    body += `
+    body = `
 
       <div
         id="passport-container"
         class="passport-container"
       >
 
-        <!-- =========================================
-             PORTADA
-             ========================================= -->
+        <!-- PORTADA -->
 
         <div
           id="passport-cover"
@@ -1624,6 +1559,7 @@ function openSurprise(
           </div>
 
           <button
+            type="button"
             class="passport-open-button"
             onclick="openPassport()"
           >
@@ -1633,9 +1569,7 @@ function openSurprise(
         </div>
 
 
-        <!-- =========================================
-             CONTENIDO INTERIOR
-             ========================================= -->
+        <!-- INTERIOR -->
 
         <div
           id="passport-inside"
@@ -1650,7 +1584,7 @@ function openSurprise(
             </span>
 
             <span id="passport-page-counter">
-              1 / 12
+              INTRO
             </span>
 
           </div>
@@ -1710,27 +1644,26 @@ function openSurprise(
           </div>
 
 
-          <!-- =====================================
-               CONTROLES
-               ===================================== -->
-
           <div class="passport-controls">
 
             <button
+              type="button"
               id="passport-prev"
               class="passport-nav-button"
               onclick="changePassportPage(-1)"
+              disabled
             >
               ← Anterior
             </button>
 
 
             <button
+              type="button"
               id="passport-next"
               class="passport-nav-button primary"
               onclick="changePassportPage(1)"
             >
-              Siguiente →
+              COMENZAR →
             </button>
 
           </div>
@@ -1743,6 +1676,7 @@ function openSurprise(
           >
 
             <button
+              type="button"
               onclick="stampPassport()"
             >
               ❤️ ESTAMPAR NUESTRO PASAPORTE
@@ -1750,10 +1684,6 @@ function openSurprise(
 
           </div>
 
-
-          <!-- =====================================
-               SELLO FINAL
-               ===================================== -->
 
           <div
             id="passport-final-message"
@@ -1812,19 +1742,12 @@ function openSurprise(
 
   }
 
-  // =====================================================
-  // CARRUSEL DE TEXTO - DÍA 9
-  // =====================================================
 
-  if (
-    surprise.textCarousel &&
-    slides.length > 0
-  ) {
-  // =====================================================
-  // CARRUSEL DE TEXTO - DÍA 9
-  // =====================================================
+  // =======================================================
+  // DÍA 9 - CARRUSEL DE TEXTO
+  // =======================================================
 
-  if (
+  else if (
     surprise.textCarousel &&
     slides.length > 0
   ) {
@@ -1834,6 +1757,7 @@ function openSurprise(
       <div class="text-carousel">
 
         <button
+          type="button"
           class="carousel-button carousel-prev"
           onclick="changeTextCarousel(-1)"
           aria-label="Confesión anterior"
@@ -1863,9 +1787,7 @@ function openSurprise(
 
           <div class="text-carousel-number">
 
-            <span
-              id="text-carousel-counter"
-            >
+            <span id="text-carousel-counter">
               1 / ${slides.length}
             </span>
 
@@ -1878,9 +1800,7 @@ function openSurprise(
               💛
             </div>
 
-            <h3
-              id="text-carousel-title"
-            >
+            <h3 id="text-carousel-title">
               ${slides[0].title}
             </h3>
 
@@ -1901,6 +1821,7 @@ function openSurprise(
 
 
         <button
+          type="button"
           class="carousel-button carousel-next"
           onclick="changeTextCarousel(1)"
           aria-label="Siguiente confesión"
@@ -1916,22 +1837,15 @@ function openSurprise(
 
 
     slides.forEach(
-      (
-        slide,
-        index
-      ) => {
+      (slide, index) => {
 
         body += `
 
           <button
-            class="
-              carousel-dot
-              ${
-                index === 0
-                  ? "active"
-                  : ""
-              }
-            "
+            type="button"
+            class="carousel-dot ${
+              index === 0 ? "active" : ""
+            }"
             onclick="goToTextCarousel(${index})"
             aria-label="Ir a confesión ${index + 1}"
           >
@@ -1944,21 +1858,17 @@ function openSurprise(
 
 
     body += `
-
       </div>
-
     `;
 
   }
 
 
-  // =====================================================
-  // SOPA DE LETRAS - DÍA 11
-  // =====================================================
+  // =======================================================
+  // DÍA 11 - SOPA DE LETRAS
+  // =======================================================
 
-  if (
-    surprise.wordSearch
-  ) {
+  if (surprise.wordSearch) {
 
     body += `
 
@@ -1985,9 +1895,7 @@ function openSurprise(
             0
           </span>
 
-          <span>
-            /
-          </span>
+          <span>/</span>
 
           <span id="word-search-total">
             ${surprise.words.length}
@@ -2003,8 +1911,7 @@ function openSurprise(
         <div
           id="word-search-word-list"
           class="word-search-word-list"
-        >
-        </div>
+        ></div>
 
 
         <div class="word-search-board-container">
@@ -2013,8 +1920,7 @@ function openSurprise(
             id="word-search-board"
             class="word-search-board"
             aria-label="Sopa de letras"
-          >
-          </div>
+          ></div>
 
         </div>
 
@@ -2053,12 +1959,10 @@ function openSurprise(
           </p>
 
           <p>
-
             <strong>
               Tú eres una de las partes
               más bonitas de mi vida.
             </strong>
-
           </p>
 
           <p>
@@ -2080,17 +1984,15 @@ function openSurprise(
   }
 
 
-  // =====================================================
-  // CARRUSEL NORMAL DE FOTOS
-  // =====================================================
+  // =======================================================
+  // FOTOS
+  // =======================================================
 
   else if (
     slides.length > 0
   ) {
 
-    if (
-      slides.length === 1
-    ) {
+    if (slides.length === 1) {
 
       body += `
 
@@ -2107,16 +2009,12 @@ function openSurprise(
       `;
 
 
-      if (
-        slides[0].text
-      ) {
+      if (slides[0].text) {
 
         body += `
 
           <div class="photo-description">
-
             ${slides[0].text}
-
           </div>
 
         `;
@@ -2125,7 +2023,6 @@ function openSurprise(
 
     }
 
-
     else {
 
       body += `
@@ -2133,6 +2030,7 @@ function openSurprise(
         <div class="photo-carousel">
 
           <button
+            type="button"
             class="carousel-button carousel-prev"
             onclick="changeCarousel(-1)"
             aria-label="Foto anterior"
@@ -2153,6 +2051,7 @@ function openSurprise(
 
 
           <button
+            type="button"
             class="carousel-button carousel-next"
             onclick="changeCarousel(1)"
             aria-label="Foto siguiente"
@@ -2180,22 +2079,15 @@ function openSurprise(
 
 
       slides.forEach(
-        (
-          slide,
-          index
-        ) => {
+        (slide, index) => {
 
           body += `
 
             <button
-              class="
-                carousel-dot
-                ${
-                  index === 0
-                    ? "active"
-                    : ""
-                }
-              "
+              type="button"
+              class="carousel-dot ${
+                index === 0 ? "active" : ""
+              }"
               onclick="goToCarousel(${index})"
               aria-label="Ir a foto ${index + 1}"
             >
@@ -2216,9 +2108,7 @@ function openSurprise(
           id="carousel-description"
           class="photo-description"
         >
-
           ${slides[0].text || ""}
-
         </div>
 
       `;
@@ -2228,9 +2118,9 @@ function openSurprise(
   }
 
 
-  // =====================================================
+  // =======================================================
   // TEXTO PRINCIPAL
-  // =====================================================
+  // =======================================================
 
   if (
     surprise.text &&
@@ -2240,9 +2130,7 @@ function openSurprise(
     body += `
 
       <div class="surprise-text">
-
         ${surprise.text}
-
       </div>
 
     `;
@@ -2250,48 +2138,49 @@ function openSurprise(
   }
 
 
-  // =====================================================
-  // INSERTAR CONTENIDO
-  // =====================================================
+  // =======================================================
+  // INSERTAR
+  // =======================================================
 
-  document.getElementById(
-    "modal-body"
-  ).innerHTML =
+  modalBody.innerHTML =
     body;
 
 
-  // =====================================================
+  // =======================================================
   // ABRIR MODAL
-  // =====================================================
+  // =======================================================
 
   const modal =
-    document.getElementById(
-      "modal"
+    document.getElementById("modal");
+
+
+  if (!modal) {
+
+    console.error(
+      "No existe #modal en el HTML."
     );
 
+    return;
 
-  modal.classList.add(
-    "open"
-  );
+  }
 
+
+  modal.classList.add("open");
 
   modal.setAttribute(
     "aria-hidden",
     "false"
   );
 
-
   document.body.style.overflow =
     "hidden";
 
 
-  // =====================================================
-  // INICIAR SOPA DE LETRAS
-  // =====================================================
+  // =======================================================
+  // INICIAR SOPA
+  // =======================================================
 
-  if (
-    surprise.wordSearch
-  ) {
+  if (surprise.wordSearch) {
 
     setTimeout(
       initializeWordSearch,
@@ -2301,17 +2190,13 @@ function openSurprise(
   }
 
 
-  // =====================================================
-  // CORAZONES DEL DÍA 22
-  // =====================================================
+  // =======================================================
+  // DÍA 22
+  // =======================================================
 
-  if (
-    day === 22
-  ) {
+  if (day === 22) {
 
-    createHearts(
-      28
-    );
+    createHearts(28);
 
   }
 
@@ -2319,12 +2204,10 @@ function openSurprise(
 
 
 // =========================================================
-// CAMBIAR FOTO DEL CARRUSEL
+// CARRUSEL DE FOTOS
 // =========================================================
 
-function changeCarousel(
-  direction
-) {
+function changeCarousel(direction) {
 
   if (
     !window.currentCarouselSlides ||
@@ -2345,12 +2228,10 @@ function changeCarousel(
 
 
   if (
-    window.currentCarouselIndex >=
-    total
+    window.currentCarouselIndex >= total
   ) {
 
-    window.currentCarouselIndex =
-      0;
+    window.currentCarouselIndex = 0;
 
   }
 
@@ -2371,12 +2252,10 @@ function changeCarousel(
 
 
 // =========================================================
-// IR DIRECTAMENTE A UNA FOTO
+// IR A FOTO
 // =========================================================
 
-function goToCarousel(
-  index
-) {
+function goToCarousel(index) {
 
   if (
     !window.currentCarouselSlides ||
@@ -2390,8 +2269,7 @@ function goToCarousel(
 
   if (
     index < 0 ||
-    index >=
-      window.currentCarouselSlides.length
+    index >= window.currentCarouselSlides.length
   ) {
 
     return;
@@ -2409,28 +2287,19 @@ function goToCarousel(
 
 
 // =========================================================
-// ACTUALIZAR CARRUSEL DE FOTOS
+// ACTUALIZAR FOTO
 // =========================================================
 
 function updateCarousel() {
 
   const image =
-    document.getElementById(
-      "carousel-image"
-    );
-
+    document.getElementById("carousel-image");
 
   const counter =
-    document.getElementById(
-      "carousel-counter"
-    );
-
+    document.getElementById("carousel-counter");
 
   const description =
-    document.getElementById(
-      "carousel-description"
-    );
-
+    document.getElementById("carousel-description");
 
   const dots =
     document.querySelectorAll(
@@ -2438,40 +2307,27 @@ function updateCarousel() {
     );
 
 
-  if (
-    !image
-  ) {
-
+  if (!image) {
     return;
-
   }
 
 
   const index =
     window.currentCarouselIndex;
 
-
   const slides =
     window.currentCarouselSlides;
-
 
   const currentSlide =
     slides[index];
 
 
-  if (
-    !currentSlide
-  ) {
-
+  if (!currentSlide) {
     return;
-
   }
 
 
-  image.classList.remove(
-    "carousel-fade"
-  );
-
+  image.classList.remove("carousel-fade");
 
   void image.offsetWidth;
 
@@ -2479,19 +2335,13 @@ function updateCarousel() {
   image.src =
     currentSlide.image;
 
-
   image.alt =
     `Recuerdo ${index + 1}`;
 
-
-  image.classList.add(
-    "carousel-fade"
-  );
+  image.classList.add("carousel-fade");
 
 
-  if (
-    counter
-  ) {
+  if (counter) {
 
     counter.textContent =
       `${index + 1} / ${slides.length}`;
@@ -2499,9 +2349,7 @@ function updateCarousel() {
   }
 
 
-  if (
-    description
-  ) {
+  if (description) {
 
     description.innerHTML =
       currentSlide.text || "";
@@ -2510,10 +2358,7 @@ function updateCarousel() {
 
 
   dots.forEach(
-    (
-      dot,
-      i
-    ) => {
+    (dot, i) => {
 
       dot.classList.toggle(
         "active",
@@ -2527,12 +2372,10 @@ function updateCarousel() {
 
 
 // =========================================================
-// CARRUSEL DE CONFESIONES - DÍA 9
+// CARRUSEL DÍA 9
 // =========================================================
 
-function changeTextCarousel(
-  direction
-) {
+function changeTextCarousel(direction) {
 
   if (
     !window.currentCarouselSlides ||
@@ -2553,12 +2396,10 @@ function changeTextCarousel(
 
 
   if (
-    window.currentCarouselIndex >=
-    total
+    window.currentCarouselIndex >= total
   ) {
 
-    window.currentCarouselIndex =
-      0;
+    window.currentCarouselIndex = 0;
 
   }
 
@@ -2579,12 +2420,10 @@ function changeTextCarousel(
 
 
 // =========================================================
-// IR A UNA CONFESIÓN
+// IR A CONFESIÓN
 // =========================================================
 
-function goToTextCarousel(
-  index
-) {
+function goToTextCarousel(index) {
 
   if (
     !window.currentCarouselSlides ||
@@ -2598,8 +2437,7 @@ function goToTextCarousel(
 
   if (
     index < 0 ||
-    index >=
-      window.currentCarouselSlides.length
+    index >= window.currentCarouselSlides.length
   ) {
 
     return;
@@ -2623,22 +2461,13 @@ function goToTextCarousel(
 function updateTextCarousel() {
 
   const title =
-    document.getElementById(
-      "text-carousel-title"
-    );
-
+    document.getElementById("text-carousel-title");
 
   const text =
-    document.getElementById(
-      "text-carousel-text"
-    );
-
+    document.getElementById("text-carousel-text");
 
   const counter =
-    document.getElementById(
-      "text-carousel-counter"
-    );
-
+    document.getElementById("text-carousel-counter");
 
   const dots =
     document.querySelectorAll(
@@ -2669,17 +2498,13 @@ function updateTextCarousel() {
     );
 
 
-  if (
-    content
-  ) {
+  if (content) {
 
     content.classList.remove(
       "text-carousel-animation"
     );
 
-
     void content.offsetWidth;
-
 
     content.classList.add(
       "text-carousel-animation"
@@ -2691,14 +2516,11 @@ function updateTextCarousel() {
   title.textContent =
     slide.title || "";
 
-
   text.innerHTML =
     slide.text || "";
 
 
-  if (
-    counter
-  ) {
+  if (counter) {
 
     counter.textContent =
       `${window.currentCarouselIndex + 1} / ${window.currentCarouselSlides.length}`;
@@ -2707,15 +2529,11 @@ function updateTextCarousel() {
 
 
   dots.forEach(
-    (
-      dot,
-      index
-    ) => {
+    (dot, index) => {
 
       dot.classList.toggle(
         "active",
-        index ===
-          window.currentCarouselIndex
+        index === window.currentCarouselIndex
       );
 
     }
@@ -2723,47 +2541,36 @@ function updateTextCarousel() {
 
 }
 
-// =========================================================
-// ✈️ PASAPORTE INTERACTIVO - DÍA 12
-// =========================================================
-
-window.passportState = {
-
-  page: 0,
-
-  opened: false,
-
-  stamped: false
-
-};
-
 
 // =========================================================
-// ABRIR PASAPORTE
+// ✈️ PASAPORTE DÍA 12
 // =========================================================
 
 function openPassport() {
 
   const cover =
-    document.getElementById(
-      "passport-cover"
-    );
-
+    document.getElementById("passport-cover");
 
   const inside =
-    document.getElementById(
-      "passport-inside"
+    document.getElementById("passport-inside");
+
+
+  if (!cover || !inside) {
+
+    console.error(
+      "No se encontró el contenido del pasaporte."
     );
-
-
-  if (
-    !cover ||
-    !inside
-  ) {
 
     return;
 
   }
+
+
+  window.passportState = {
+    page: 0,
+    opened: true,
+    stamped: false
+  };
 
 
   cover.classList.add(
@@ -2777,18 +2584,8 @@ function openPassport() {
       cover.style.display =
         "none";
 
-
       inside.style.display =
         "block";
-
-
-      window.passportState.page =
-        0;
-
-
-      window.passportState.opened =
-        true;
-
 
       renderPassportPage();
 
@@ -2800,7 +2597,7 @@ function openPassport() {
 
 
 // =========================================================
-// RENDERIZAR PÁGINA
+// RENDERIZAR PASAPORTE
 // =========================================================
 
 function renderPassportPage() {
@@ -2825,7 +2622,7 @@ function renderPassportPage() {
 
   if (
     !surprise ||
-    !surprise.destinations
+    !Array.isArray(surprise.destinations)
   ) {
 
     return;
@@ -2838,36 +2635,30 @@ function renderPassportPage() {
       "passport-destination-content"
     );
 
-
   const intro =
     document.getElementById(
       "passport-page-intro"
     );
-
 
   const counter =
     document.getElementById(
       "passport-page-counter"
     );
 
-
   const stamp =
     document.getElementById(
       "passport-stamp"
     );
-
 
   const previous =
     document.getElementById(
       "passport-prev"
     );
 
-
   const next =
     document.getElementById(
       "passport-next"
     );
-
 
   const finalButton =
     document.getElementById(
@@ -2875,26 +2666,20 @@ function renderPassportPage() {
     );
 
 
-  if (
-    !content
-  ) {
+  if (!content) {
 
     return;
 
   }
 
 
-  // =====================================================
-  // PORTADA INTERIOR
-  // =====================================================
+  // =======================================================
+  // INTRO
+  // =======================================================
 
-  if (
-    state.page === 0
-  ) {
+  if (state.page === 0) {
 
-    if (
-      intro
-    ) {
+    if (intro) {
 
       intro.style.display =
         "block";
@@ -2902,16 +2687,12 @@ function renderPassportPage() {
     }
 
 
-    content.innerHTML =
-      "";
+    content.innerHTML = "";
 
 
-    if (
-      stamp
-    ) {
+    if (stamp) {
 
-      stamp.innerHTML =
-        "";
+      stamp.innerHTML = "";
 
       stamp.classList.remove(
         "passport-stamp-visible"
@@ -2920,9 +2701,7 @@ function renderPassportPage() {
     }
 
 
-    if (
-      counter
-    ) {
+    if (counter) {
 
       counter.textContent =
         "INTRO";
@@ -2930,9 +2709,7 @@ function renderPassportPage() {
     }
 
 
-    if (
-      previous
-    ) {
+    if (previous) {
 
       previous.disabled =
         true;
@@ -2940,9 +2717,7 @@ function renderPassportPage() {
     }
 
 
-    if (
-      next
-    ) {
+    if (next) {
 
       next.style.display =
         "inline-flex";
@@ -2953,9 +2728,7 @@ function renderPassportPage() {
     }
 
 
-    if (
-      finalButton
-    ) {
+    if (finalButton) {
 
       finalButton.style.display =
         "none";
@@ -2968,9 +2741,9 @@ function renderPassportPage() {
   }
 
 
-  // =====================================================
+  // =======================================================
   // DESTINO
-  // =====================================================
+  // =======================================================
 
   const destination =
     surprise.destinations[
@@ -2978,18 +2751,14 @@ function renderPassportPage() {
     ];
 
 
-  if (
-    !destination
-  ) {
+  if (!destination) {
 
     return;
 
   }
 
 
-  if (
-    intro
-  ) {
+  if (intro) {
 
     intro.style.display =
       "none";
@@ -3001,9 +2770,7 @@ function renderPassportPage() {
     "passport-page-animation"
   );
 
-
   void content.offsetWidth;
-
 
   content.classList.add(
     "passport-page-animation"
@@ -3022,16 +2789,12 @@ function renderPassportPage() {
 
 
     <div class="passport-destination-icon">
-
       ${destination.icon}
-
     </div>
 
 
     <h3 class="passport-destination-title">
-
       ${destination.title}
-
     </h3>
 
 
@@ -3040,9 +2803,7 @@ function renderPassportPage() {
 
 
     <div class="passport-destination-text">
-
       ${destination.text}
-
     </div>
 
 
@@ -3050,16 +2811,12 @@ function renderPassportPage() {
       destination.final
         ? `
           <div class="passport-final-decoration">
-            🌻
-            ❤️
-            🌻
+            🌻 ❤️ 🌻
           </div>
         `
         : `
           <div class="passport-destination-decoration">
-            ✈️
-            🌍
-            ❤️
+            ✈️ 🌍 ❤️
           </div>
         `
     }
@@ -3067,13 +2824,11 @@ function renderPassportPage() {
   `;
 
 
-  // =====================================================
+  // =======================================================
   // CONTADOR
-  // =====================================================
+  // =======================================================
 
-  if (
-    counter
-  ) {
+  if (counter) {
 
     counter.textContent =
       `${state.page} / 12`;
@@ -3081,13 +2836,11 @@ function renderPassportPage() {
   }
 
 
-  // =====================================================
+  // =======================================================
   // SELLO
-  // =====================================================
+  // =======================================================
 
-  if (
-    stamp
-  ) {
+  if (stamp) {
 
     stamp.innerHTML = `
 
@@ -3117,13 +2870,11 @@ function renderPassportPage() {
   }
 
 
-  // =====================================================
-  // BOTÓN ANTERIOR
-  // =====================================================
+  // =======================================================
+  // ANTERIOR
+  // =======================================================
 
-  if (
-    previous
-  ) {
+  if (previous) {
 
     previous.disabled =
       state.page <= 1;
@@ -3131,17 +2882,13 @@ function renderPassportPage() {
   }
 
 
-  // =====================================================
-  // BOTÓN SIGUIENTE
-  // =====================================================
+  // =======================================================
+  // SIGUIENTE
+  // =======================================================
 
-  if (
-    next
-  ) {
+  if (next) {
 
-    if (
-      state.page >= 12
-    ) {
+    if (state.page >= 12) {
 
       next.style.display =
         "none";
@@ -3161,29 +2908,16 @@ function renderPassportPage() {
   }
 
 
-  // =====================================================
+  // =======================================================
   // BOTÓN FINAL
-  // =====================================================
+  // =======================================================
 
-  if (
-    finalButton
-  ) {
+  if (finalButton) {
 
-    if (
+    finalButton.style.display =
       state.page === 12
-    ) {
-
-      finalButton.style.display =
-        "block";
-
-    }
-
-    else {
-
-      finalButton.style.display =
-        "none";
-
-    }
+        ? "block"
+        : "none";
 
   }
 
@@ -3191,12 +2925,10 @@ function renderPassportPage() {
 
 
 // =========================================================
-// CAMBIAR PÁGINA
+// CAMBIAR PÁGINA DEL PASAPORTE
 // =========================================================
 
-function changePassportPage(
-  direction
-) {
+function changePassportPage(direction) {
 
   const state =
     window.passportState;
@@ -3213,20 +2945,11 @@ function changePassportPage(
 
 
   const nextPage =
-    state.page +
-    direction;
+    state.page + direction;
 
 
   if (
-    nextPage < 0
-  ) {
-
-    return;
-
-  }
-
-
-  if (
+    nextPage < 0 ||
     nextPage > 12
   ) {
 
@@ -3255,12 +2978,10 @@ function stampPassport() {
       "passport-final-message"
     );
 
-
   const finalButton =
     document.getElementById(
       "passport-final-button"
     );
-
 
   const controls =
     document.querySelector(
@@ -3268,26 +2989,18 @@ function stampPassport() {
     );
 
 
-  const state =
-    window.passportState;
-
-
-  if (
-    !finalMessage
-  ) {
+  if (!finalMessage) {
 
     return;
 
   }
 
 
-  state.stamped =
+  window.passportState.stamped =
     true;
 
 
-  if (
-    finalButton
-  ) {
+  if (finalButton) {
 
     finalButton.style.display =
       "none";
@@ -3295,9 +3008,7 @@ function stampPassport() {
   }
 
 
-  if (
-    controls
-  ) {
+  if (controls) {
 
     controls.style.display =
       "none";
@@ -3321,10 +3032,7 @@ function stampPassport() {
   );
 
 
-  createHearts(
-    18
-  );
-
+  createHearts(18);
 
   createPassportFlowers();
 
@@ -3332,20 +3040,16 @@ function stampPassport() {
 
 
 // =========================================================
-// GIRASOLES FINALES
+// FLORES DEL PASAPORTE
 // =========================================================
 
 function createPassportFlowers() {
 
   const container =
-    document.getElementById(
-      "hearts"
-    );
+    document.getElementById("hearts");
 
 
-  if (
-    !container
-  ) {
+  if (!container) {
 
     return;
 
@@ -3359,56 +3063,44 @@ function createPassportFlowers() {
   ) {
 
     const flower =
-      document.createElement(
-        "span"
-      );
+      document.createElement("span");
 
 
     flower.className =
       "floating-passport-flower";
 
-
     flower.textContent =
       "🌻";
-
 
     flower.style.left =
       `${Math.random() * 100}%`;
 
-
     flower.style.fontSize =
       `${18 + Math.random() * 18}px`;
 
-
     flower.style.animationDuration =
       `${5 + Math.random() * 5}s`;
-
 
     flower.style.animationDelay =
       `${Math.random() * 1.5}s`;
 
 
-    container.appendChild(
-      flower
-    );
+    container.appendChild(flower);
 
 
     setTimeout(
-      () =>
-        flower.remove(),
+      () => flower.remove(),
       12000
     );
 
   }
 
 }
-// =========================================================
-// 🔎 SOPA DE LETRAS - DÍA 11
-// =========================================================
 
-window.wordSearchState =
-  null;
 
+// =========================================================
+// SOPA DE LETRAS
+// =========================================================
 
 const WORD_SEARCH_DIRECTIONS = [
 
@@ -3428,7 +3120,7 @@ const WORD_SEARCH_DIRECTIONS = [
 
 
 // =========================================================
-// GENERAR SOPA DE LETRAS
+// GENERAR SOPA
 // =========================================================
 
 function generateWordSearch(
@@ -3461,16 +3153,12 @@ function generateWordSearch(
 
   const board =
     Array.from(
-      {
-        length: size
-      },
-      () =>
-        Array(size).fill("")
+      { length: size },
+      () => Array(size).fill("")
     );
 
 
-  const placements =
-    {};
+  const placements = {};
 
 
   function shuffledDirections() {
@@ -3478,38 +3166,27 @@ function generateWordSearch(
     return [
       ...WORD_SEARCH_DIRECTIONS
     ].sort(
-      () =>
-        Math.random() -
-        0.5
+      () => Math.random() - 0.5
     );
 
   }
 
 
   const sortedWords =
-    [
-      ...cleanWords
-    ].sort(
-      (
-        a,
-        b
-      ) =>
-        b.length -
-        a.length
+    [...cleanWords].sort(
+      (a, b) => b.length - a.length
     );
 
 
   sortedWords.forEach(
     word => {
 
-      let placed =
-        false;
+      let placed = false;
 
 
       for (
         let attempt = 0;
-        attempt < 1500 &&
-        !placed;
+        attempt < 1500 && !placed;
         attempt++
       ) {
 
@@ -3519,15 +3196,13 @@ function generateWordSearch(
 
         const startRow =
           Math.floor(
-            Math.random() *
-            size
+            Math.random() * size
           );
 
 
         const startCol =
           Math.floor(
-            Math.random() *
-            size
+            Math.random() * size
           );
 
 
@@ -3555,8 +3230,7 @@ function generateWordSearch(
         }
 
 
-        let valid =
-          true;
+        let valid = true;
 
 
         for (
@@ -3567,14 +3241,11 @@ function generateWordSearch(
 
           const row =
             startRow +
-            direction.row *
-            i;
-
+            direction.row * i;
 
           const col =
             startCol +
-            direction.col *
-            i;
+            direction.col * i;
 
 
           const current =
@@ -3586,9 +3257,7 @@ function generateWordSearch(
             current !== word[i]
           ) {
 
-            valid =
-              false;
-
+            valid = false;
             break;
 
           }
@@ -3597,14 +3266,11 @@ function generateWordSearch(
 
 
         if (!valid) {
-
           continue;
-
         }
 
 
-        const cells =
-          [];
+        const cells = [];
 
 
         for (
@@ -3615,14 +3281,11 @@ function generateWordSearch(
 
           const row =
             startRow +
-            direction.row *
-            i;
-
+            direction.row * i;
 
           const col =
             startCol +
-            direction.col *
-            i;
+            direction.col * i;
 
 
           board[row][col] =
@@ -3639,9 +3302,7 @@ function generateWordSearch(
         placements[word] =
           cells;
 
-
-        placed =
-          true;
+        placed = true;
 
       }
 
@@ -3685,16 +3346,10 @@ function generateWordSearch(
 
 
   return {
-
     board,
-
     placements,
-
-    words:
-      cleanWords,
-
+    words: cleanWords,
     size
-
   };
 
 }
@@ -3725,7 +3380,6 @@ function initializeWordSearch() {
       "word-search-board"
     );
 
-
   const listElement =
     document.getElementById(
       "word-search-word-list"
@@ -3753,11 +3407,9 @@ function initializeWordSearch() {
 
     ...state,
 
-    selectedStart:
-      null,
+    selectedStart: null,
 
-    foundWords:
-      new Set()
+    foundWords: new Set()
 
   };
 
@@ -3781,7 +3433,6 @@ function renderWordSearchBoard() {
     document.getElementById(
       "word-search-board"
     );
-
 
   const state =
     window.wordSearchState;
@@ -3826,18 +3477,14 @@ function renderWordSearchBoard() {
       cell.type =
         "button";
 
-
       cell.className =
         "word-search-cell";
-
 
       cell.textContent =
         state.board[row][col];
 
-
       cell.dataset.row =
         row;
-
 
       cell.dataset.col =
         col;
@@ -3852,16 +3499,11 @@ function renderWordSearchBoard() {
       cell.addEventListener(
         "click",
         () =>
-          handleWordSearchCell(
-            row,
-            col
-          )
+          handleWordSearchCell(row, col)
       );
 
 
-      boardElement.appendChild(
-        cell
-      );
+      boardElement.appendChild(cell);
 
     }
 
@@ -3880,7 +3522,6 @@ function renderWordSearchWordList() {
     document.getElementById(
       "word-search-word-list"
     );
-
 
   const state =
     window.wordSearchState;
@@ -3912,7 +3553,6 @@ function renderWordSearchWordList() {
       item.className =
         "word-search-word";
 
-
       item.dataset.word =
         word;
 
@@ -3934,9 +3574,7 @@ function renderWordSearchWordList() {
       `;
 
 
-      listElement.appendChild(
-        item
-      );
+      listElement.appendChild(item);
 
     }
   );
@@ -3958,25 +3596,15 @@ function handleWordSearchCell(
 
 
   if (!state) {
-
     return;
-
   }
 
 
-  // -------------------------------------------------------
-  // PRIMERA LETRA
-  // -------------------------------------------------------
-
-  if (
-    !state.selectedStart
-  ) {
+  if (!state.selectedStart) {
 
     state.selectedStart = {
-
       row,
       col
-
     };
 
 
@@ -3984,15 +3612,10 @@ function handleWordSearchCell(
 
 
     const cell =
-      getWordSearchCell(
-        row,
-        col
-      );
+      getWordSearchCell(row, col);
 
 
-    if (
-      cell
-    ) {
+    if (cell) {
 
       cell.classList.add(
         "word-search-selected"
@@ -4005,10 +3628,6 @@ function handleWordSearchCell(
 
   }
 
-
-  // -------------------------------------------------------
-  // SEGUNDA LETRA
-  // -------------------------------------------------------
 
   const start =
     state.selectedStart;
@@ -4023,15 +3642,11 @@ function handleWordSearchCell(
     );
 
 
-  if (
-    selectedCells.length === 0
-  ) {
+  if (selectedCells.length === 0) {
 
     state.selectedStart = {
-
       row,
       col
-
     };
 
 
@@ -4039,15 +3654,10 @@ function handleWordSearchCell(
 
 
     const cell =
-      getWordSearchCell(
-        row,
-        col
-      );
+      getWordSearchCell(row, col);
 
 
-    if (
-      cell
-    ) {
+    if (cell) {
 
       cell.classList.add(
         "word-search-selected"
@@ -4065,11 +3675,7 @@ function handleWordSearchCell(
     selectedCells
       .map(
         cell =>
-          state.board[
-            cell.row
-          ][
-            cell.col
-          ]
+          state.board[cell.row][cell.col]
       )
       .join("");
 
@@ -4081,17 +3687,14 @@ function handleWordSearchCell(
       .join("");
 
 
-  let foundWord =
-    null;
+  let foundWord = null;
 
 
   state.words.forEach(
     word => {
 
       if (
-        state.foundWords.has(
-          word
-        )
+        state.foundWords.has(word)
       ) {
 
         return;
@@ -4113,9 +3716,7 @@ function handleWordSearchCell(
   );
 
 
-  if (
-    foundWord
-  ) {
+  if (foundWord) {
 
     markFoundWord(
       selectedCells,
@@ -4138,7 +3739,7 @@ function handleWordSearchCell(
 
 
 // =========================================================
-// OBTENER CELDAS
+// CELDAS ENTRE DOS PUNTOS
 // =========================================================
 
 function getCellsBetween(
@@ -4149,13 +3750,10 @@ function getCellsBetween(
 ) {
 
   const rowDifference =
-    endRow -
-    startRow;
-
+    endRow - startRow;
 
   const colDifference =
-    endCol -
-    startCol;
+    endCol - startCol;
 
 
   const rowStep =
@@ -4177,36 +3775,23 @@ function getCellsBetween(
   const straightLine =
     rowDifference === 0 ||
     colDifference === 0 ||
-    Math.abs(
-      rowDifference
-    ) ===
-      Math.abs(
-        colDifference
-      );
+    Math.abs(rowDifference) ===
+      Math.abs(colDifference);
 
 
-  if (
-    !straightLine
-  ) {
-
+  if (!straightLine) {
     return [];
-
   }
 
 
   const steps =
     Math.max(
-      Math.abs(
-        rowDifference
-      ),
-      Math.abs(
-        colDifference
-      )
+      Math.abs(rowDifference),
+      Math.abs(colDifference)
     );
 
 
-  const cells =
-    [];
+  const cells = [];
 
 
   for (
@@ -4219,13 +3804,11 @@ function getCellsBetween(
 
       row:
         startRow +
-        rowStep *
-        i,
+        rowStep * i,
 
       col:
         startCol +
-        colStep *
-        i
+        colStep * i
 
     });
 
@@ -4251,40 +3834,25 @@ function markFoundWord(
 
 
   if (!state) {
-
     return;
-
   }
 
 
-  state.foundWords.add(
-    word
-  );
+  state.foundWords.add(word);
 
 
   cells.forEach(
-    (
-      {
-        row,
-        col
-      }
-    ) => {
+    ({ row, col }) => {
 
       const element =
-        getWordSearchCell(
-          row,
-          col
-        );
+        getWordSearchCell(row, col);
 
 
-      if (
-        element
-      ) {
+      if (element) {
 
         element.classList.remove(
           "word-search-selected"
         );
-
 
         element.classList.add(
           "word-search-found"
@@ -4307,9 +3875,7 @@ function markFoundWord(
     );
 
 
-  if (
-    wordElement
-  ) {
+  if (wordElement) {
 
     wordElement.classList.add(
       "found"
@@ -4337,7 +3903,7 @@ function markFoundWord(
 
 
 // =========================================================
-// ACTUALIZAR CONTADOR
+// CONTADOR SOPA
 // =========================================================
 
 function updateWordSearchCounter() {
@@ -4346,7 +3912,6 @@ function updateWordSearchCounter() {
     document.getElementById(
       "word-search-found"
     );
-
 
   const state =
     window.wordSearchState;
@@ -4400,12 +3965,8 @@ function showInvalidWord() {
     );
 
 
-  if (
-    !board
-  ) {
-
+  if (!board) {
     return;
-
   }
 
 
@@ -4463,12 +4024,8 @@ function createWordSearchSparkle(
   element
 ) {
 
-  if (
-    !element
-  ) {
-
+  if (!element) {
     return;
-
   }
 
 
@@ -4481,7 +4038,6 @@ function createWordSearchSparkle(
   sparkle.className =
     "word-search-sparkle";
 
-
   sparkle.textContent =
     "✨";
 
@@ -4492,8 +4048,7 @@ function createWordSearchSparkle(
 
 
   setTimeout(
-    () =>
-      sparkle.remove(),
+    () => sparkle.remove(),
     800
   );
 
@@ -4501,7 +4056,7 @@ function createWordSearchSparkle(
 
 
 // =========================================================
-// MENSAJE FINAL
+// ÉXITO SOPA
 // =========================================================
 
 function showWordSearchSuccess() {
@@ -4512,12 +4067,8 @@ function showWordSearchSuccess() {
     );
 
 
-  if (
-    !success
-  ) {
-
+  if (!success) {
     return;
-
   }
 
 
@@ -4528,19 +4079,14 @@ function showWordSearchSuccess() {
   setTimeout(
     () => {
 
-      success.classList.add(
-        "show"
-      );
+      success.classList.add("show");
 
     },
     50
   );
 
 
-  createHearts(
-    18
-  );
-
+  createHearts(18);
 
   createSunflowerCelebration();
 
@@ -4559,12 +4105,8 @@ function createSunflowerCelebration() {
     );
 
 
-  if (
-    !container
-  ) {
-
+  if (!container) {
     return;
-
   }
 
 
@@ -4582,7 +4124,6 @@ function createSunflowerCelebration() {
 
     flower.className =
       "floating-sunflower";
-
 
     flower.textContent =
       "🌻";
@@ -4610,8 +4151,7 @@ function createSunflowerCelebration() {
 
 
     setTimeout(
-      () =>
-        flower.remove(),
+      () => flower.remove(),
       12000
     );
 
@@ -4621,23 +4161,15 @@ function createSunflowerCelebration() {
 
 
 // =========================================================
-// MENSAJE DÍA BLOQUEADO
+// DÍA BLOQUEADO
 // =========================================================
 
-function showLockedMessage(
-  day
-) {
+function showLockedMessage(day) {
 
   const date =
     new Date(
-
-      dateToUTC(
-        START_DATE
-      ) +
-
-      (day - 1) *
-      86400000
-
+      dateToUTC(START_DATE) +
+      (day - 1) * 86400000
     );
 
 
@@ -4652,27 +4184,48 @@ function showLockedMessage(
     );
 
 
-  document.getElementById(
-    "modal-day"
-  ).textContent =
+  const modalDay =
+    document.getElementById("modal-day");
+
+  const modalIcon =
+    document.getElementById("modal-icon");
+
+  const modalTitle =
+    document.getElementById("modal-title");
+
+  const modalBody =
+    document.getElementById("modal-body");
+
+  const modal =
+    document.getElementById("modal");
+
+
+  if (
+    !modalDay ||
+    !modalIcon ||
+    !modalTitle ||
+    !modalBody ||
+    !modal
+  ) {
+
+    return;
+
+  }
+
+
+  modalDay.textContent =
     "🔒 Sorpresa bloqueada";
 
 
-  document.getElementById(
-    "modal-icon"
-  ).textContent =
+  modalIcon.textContent =
     "🤫";
 
 
-  document.getElementById(
-    "modal-title"
-  ).textContent =
+  modalTitle.textContent =
     "Todavía no...";
 
 
-  document.getElementById(
-    "modal-body"
-  ).innerHTML = `
+  modalBody.innerHTML = `
 
     Este detalle está reservado para el
     <strong>${dateText}</strong>.
@@ -4691,15 +4244,7 @@ function showLockedMessage(
   `;
 
 
-  const modal =
-    document.getElementById(
-      "modal"
-    );
-
-
-  modal.classList.add(
-    "open"
-  );
+  modal.classList.add("open");
 
 
   modal.setAttribute(
@@ -4715,28 +4260,18 @@ function showLockedMessage(
 
 
 // =========================================================
-// ETIQUETA DEL DÍA
+// ETIQUETA DÍA
 // =========================================================
 
-function getDayLabel(
-  day
-) {
+function getDayLabel(day) {
 
-  if (
-    day === 22
-  ) {
-
+  if (day === 22) {
     return "Nuestro día";
-
   }
 
 
-  if (
-    day === getCurrentDay()
-  ) {
-
+  if (day === getCurrentDay()) {
     return "Disponible hoy";
-
   }
 
 
@@ -4755,6 +4290,11 @@ function closeModal() {
     document.getElementById(
       "modal"
     );
+
+
+  if (!modal) {
+    return;
+  }
 
 
   modal.classList.remove(
@@ -4780,13 +4320,19 @@ function closeModal() {
 
 function scrollToCalendar() {
 
-  document.getElementById(
-    "calendar-section"
-  ).scrollIntoView({
+  const section =
+    document.getElementById(
+      "calendar-section"
+    );
 
-    behavior:
-      "smooth"
 
+  if (!section) {
+    return;
+  }
+
+
+  section.scrollIntoView({
+    behavior: "smooth"
   });
 
 }
@@ -4806,12 +4352,8 @@ function createHearts(
     );
 
 
-  if (
-    !container
-  ) {
-
+  if (!container) {
     return;
-
   }
 
 
@@ -4859,8 +4401,7 @@ function createHearts(
 
 
     setTimeout(
-      () =>
-        heart.remove(),
+      () => heart.remove(),
       14000
     );
 
@@ -4870,14 +4411,13 @@ function createHearts(
 
 
 // =========================================================
-// ANIMACIÓN DE CORAZONES
+// ANIMACIÓN CORAZONES
 // =========================================================
 
 function startHeartAnimation() {
 
   setInterval(
-    () =>
-      createHearts(1),
+    () => createHearts(1),
     1800
   );
 
@@ -4895,28 +4435,20 @@ async function toggleMusic() {
       "bg-music"
     );
 
-
   const button =
     document.getElementById(
       "music-btn"
     );
 
 
-  if (
-    !audio ||
-    !button
-  ) {
-
+  if (!audio || !button) {
     return;
-
   }
 
 
   try {
 
-    if (
-      audio.paused
-    ) {
+    if (audio.paused) {
 
       await audio.play();
 
@@ -4946,12 +4478,16 @@ async function toggleMusic() {
 
   }
 
-  catch (
-    error
-  ) {
+  catch (error) {
+
+    console.error(
+      "No se pudo reproducir la música:",
+      error
+    );
+
 
     alert(
-      "Primero coloca tu canción en la carpeta music/nuestra-cancion.mp3"
+      "No se pudo reproducir la música. Revisa que el archivo exista y que la ruta del audio en tu HTML sea correcta."
     );
 
   }
@@ -4960,18 +4496,15 @@ async function toggleMusic() {
 
 
 // =========================================================
-// TECLA ESCAPE
+// ESCAPE
 // =========================================================
 
 document.addEventListener(
   "keydown",
-  (
-    event
-  ) => {
+  event => {
 
     if (
-      event.key ===
-      "Escape"
+      event.key === "Escape"
     ) {
 
       closeModal();
@@ -4983,18 +4516,25 @@ document.addEventListener(
 
 
 // =========================================================
-// INICIAR PÁGINA
+// INICIAR
 // =========================================================
 
-renderCalendar();
+document.addEventListener(
+  "DOMContentLoaded",
+  () => {
 
-updateCountdown();
+    renderCalendar();
 
-startHeartAnimation();
+    updateCountdown();
+
+    startHeartAnimation();
+
+  }
+);
 
 
 // =========================================================
-// ACTUALIZAR CONTADOR CADA SEGUNDO
+// ACTUALIZAR CONTADOR
 // =========================================================
 
 setInterval(
@@ -5004,7 +4544,7 @@ setInterval(
 
 
 // =========================================================
-// ACTUALIZAR CALENDARIO CADA 30 SEGUNDOS
+// ACTUALIZAR CALENDARIO
 // =========================================================
 
 setInterval(
