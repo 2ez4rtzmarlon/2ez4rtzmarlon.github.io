@@ -1371,3 +1371,699 @@ h1 span {
   }
 
 }
+
+
+
+/* ==========================================================
+   🔎 DÍA 11 - SOPA DE LETRAS
+   ========================================================== */
+
+.word-search-wrapper {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+
+/* ==========================================================
+   INTRO
+   ========================================================== */
+
+.word-search-intro {
+  margin-bottom: 15px;
+}
+
+.word-search-sunflowers {
+  font-size: 30px;
+  letter-spacing: 5px;
+  margin-bottom: 8px;
+
+  animation:
+    wordFlowerFloat
+    3s
+    ease-in-out
+    infinite;
+}
+
+@keyframes wordFlowerFloat {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+}
+
+.word-search-instruction {
+  margin: 0 auto;
+
+  max-width: 520px;
+
+  color: #69473b;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+}
+
+
+/* ==========================================================
+   CONTADOR
+   ========================================================== */
+
+.word-search-counter {
+  display: inline-flex;
+
+  align-items: baseline;
+
+  gap: 5px;
+
+  margin: 10px auto 12px;
+
+  padding: 7px 16px;
+
+  border-radius: 30px;
+
+  background:
+    rgba(255, 208, 91, 0.22);
+
+  color: #8f641e;
+
+  font-size: 20px;
+
+  font-weight: 700;
+}
+
+.word-search-counter-label {
+  font-size: 12px;
+
+  font-weight: 500;
+
+  margin-left: 3px;
+}
+
+
+/* ==========================================================
+   LISTA DE PALABRAS
+   ========================================================== */
+
+.word-search-word-list {
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      4,
+      minmax(0, 1fr)
+    );
+
+  gap: 7px;
+
+  margin-bottom: 15px;
+}
+
+.word-search-word {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 4px;
+
+  min-height: 34px;
+
+  padding: 6px 5px;
+
+  border-radius: 10px;
+
+  background:
+    rgba(255, 250, 241, 0.95);
+
+  border:
+    1px solid
+    rgba(184, 137, 52, 0.18);
+
+  color: #6b5142;
+
+  font-size: 11px;
+
+  font-weight: 700;
+
+  transition:
+    0.25s ease;
+}
+
+.word-search-word-icon {
+  font-size: 12px;
+}
+
+.word-search-word-check {
+  display: none;
+
+  color: #6d9b51;
+
+  font-size: 15px;
+}
+
+.word-search-word.found {
+  background:
+    rgba(218, 238, 196, 0.65);
+
+  border-color:
+    rgba(104, 151, 73, 0.35);
+
+  color: #52703f;
+
+  text-decoration:
+    line-through;
+}
+
+.word-search-word.found
+.word-search-word-icon {
+  opacity: 0.45;
+}
+
+.word-search-word.found
+.word-search-word-check {
+  display: inline;
+}
+
+
+/* ==========================================================
+   TABLERO
+   ========================================================== */
+
+.word-search-board-container {
+  display: flex;
+
+  justify-content: center;
+
+  width: 100%;
+
+  margin: 0 auto;
+}
+
+.word-search-board {
+  display: grid;
+
+  width: min(
+    100%,
+    560px
+  );
+
+  padding: 10px;
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #fffdf8,
+      #fff5dc
+    );
+
+  border:
+    1px solid
+    rgba(201, 155, 75, 0.25);
+
+  box-shadow:
+    0 14px 30px
+    rgba(91, 61, 25, 0.12);
+}
+
+
+/* ==========================================================
+   CELDAS
+   ========================================================== */
+
+.word-search-cell {
+  position: relative;
+
+  aspect-ratio: 1 / 1;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border:
+    1px solid
+    rgba(152, 113, 66, 0.12);
+
+  background:
+    rgba(255, 255, 255, 0.72);
+
+  color: #574033;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size: clamp(
+    12px,
+    2.8vw,
+    19px
+  );
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  user-select: none;
+
+  -webkit-user-select: none;
+
+  -webkit-tap-highlight-color:
+    transparent;
+
+  padding: 0;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.word-search-cell:hover {
+  background:
+    rgba(255, 224, 137, 0.5);
+
+  transform:
+    scale(1.04);
+
+  z-index: 2;
+}
+
+.word-search-cell.word-search-selected {
+  background:
+    #f9ca64;
+
+  color: #5c3b22;
+
+  transform:
+    scale(1.06);
+
+  box-shadow:
+    0 0 0 2px
+    rgba(190, 132, 26, 0.35);
+
+  z-index: 3;
+}
+
+.word-search-cell.word-search-found {
+  background:
+    rgba(213, 233, 173, 0.88);
+
+  color: #4f6d3f;
+
+  box-shadow:
+    inset 0 0 0 1px
+    rgba(91, 132, 59, 0.20);
+
+}
+
+.word-search-cell.word-search-found::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 3px;
+
+  border-radius: 4px;
+
+  border:
+    1px solid
+    rgba(100, 145, 67, 0.25);
+
+  pointer-events: none;
+}
+
+
+/* ==========================================================
+   ANIMACIÓN ERROR
+   ========================================================== */
+
+.word-search-invalid {
+  animation:
+    wordSearchShake
+    0.45s
+    ease;
+}
+
+@keyframes wordSearchShake {
+
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  25% {
+    transform: translateX(-5px);
+  }
+
+  50% {
+    transform: translateX(5px);
+  }
+
+  75% {
+    transform: translateX(-4px);
+  }
+
+}
+
+
+/* ==========================================================
+   AYUDA
+   ========================================================== */
+
+.word-search-help {
+  margin:
+    13px auto 15px;
+
+  max-width: 470px;
+
+  padding: 9px 14px;
+
+  border-radius: 12px;
+
+  background:
+    rgba(255, 249, 233, 0.85);
+
+  color: #806450;
+
+  font-size: 12px;
+
+  line-height: 1.5;
+}
+
+
+/* ==========================================================
+   DESTELLO
+   ========================================================== */
+
+.word-search-sparkle {
+  position: absolute;
+
+  left: 50%;
+  top: 50%;
+
+  transform:
+    translate(-50%, -50%);
+
+  pointer-events: none;
+
+  z-index: 20;
+
+  animation:
+    sparklePop
+    0.8s
+    ease forwards;
+}
+
+@keyframes sparklePop {
+
+  0% {
+    opacity: 0;
+    transform:
+      translate(-50%, -50%)
+      scale(0.4);
+  }
+
+  30% {
+    opacity: 1;
+    transform:
+      translate(-50%, -50%)
+      scale(1.2);
+  }
+
+  100% {
+    opacity: 0;
+    transform:
+      translate(-50%, -80px)
+      scale(0.6);
+  }
+
+}
+
+
+/* ==========================================================
+   MENSAJE FINAL
+   ========================================================== */
+
+.word-search-success {
+  position: relative;
+
+  margin: 20px auto 5px;
+
+  padding:
+    28px
+    22px;
+
+  border-radius: 22px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #fff8df,
+      #fffdf7
+    );
+
+  border:
+    1px solid
+    rgba(206, 157, 58, 0.32);
+
+  box-shadow:
+    0 12px 30px
+    rgba(96, 64, 24, 0.12);
+
+  opacity: 0;
+
+  transform:
+    translateY(20px)
+    scale(0.96);
+
+  transition:
+    opacity 0.5s ease,
+    transform 0.5s ease;
+
+  overflow: hidden;
+}
+
+.word-search-success.show {
+
+  opacity: 1;
+
+  transform:
+    translateY(0)
+    scale(1);
+
+}
+
+.success-sunflowers {
+  font-size: 27px;
+
+  letter-spacing: 4px;
+
+  margin-bottom: 6px;
+}
+
+.success-heart {
+  font-size: 32px;
+
+  margin-bottom: 4px;
+
+  animation:
+    successHeart
+    1.5s
+    ease-in-out
+    infinite;
+}
+
+@keyframes successHeart {
+
+  0%,
+  100% {
+    transform:
+      scale(1);
+  }
+
+  50% {
+    transform:
+      scale(1.18);
+  }
+
+}
+
+.word-search-success h3 {
+  margin:
+    5px 0 15px;
+
+  color: #70471f;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size: 25px;
+}
+
+.word-search-success p {
+  margin:
+    10px auto;
+
+  max-width: 490px;
+
+  color: #624a3e;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+}
+
+.word-search-success strong {
+  color: #9a6717;
+
+  font-size: 17px;
+}
+
+.success-final-message {
+  margin-top: 18px;
+
+  color: #9a6717;
+
+  font-family:
+    Georgia,
+    serif;
+
+  font-size: 21px;
+
+  font-weight: 700;
+}
+
+
+/* ==========================================================
+   GIRASOLES FLOTANTES
+   ========================================================== */
+
+.floating-sunflower {
+  position: fixed;
+
+  bottom: -40px;
+
+  z-index: 9999;
+
+  pointer-events: none;
+
+  animation:
+    sunflowerFloat
+    linear
+    forwards;
+}
+
+@keyframes sunflowerFloat {
+
+  0% {
+    transform:
+      translateY(0)
+      rotate(0deg);
+
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  100% {
+    transform:
+      translateY(-110vh)
+      rotate(360deg);
+
+    opacity: 0;
+  }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVE - CELULAR
+   ========================================================== */
+
+@media (max-width: 600px) {
+
+  .word-search-wrapper {
+    padding:
+      0 2px;
+  }
+
+  .word-search-sunflowers {
+    font-size: 25px;
+    letter-spacing: 2px;
+  }
+
+  .word-search-instruction {
+    font-size: 13px;
+  }
+
+  .word-search-word-list {
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 6px;
+  }
+
+  .word-search-word {
+    font-size: 10px;
+
+    min-height: 32px;
+  }
+
+  .word-search-board {
+    width: 100%;
+
+    padding: 6px;
+
+    border-radius: 15px;
+  }
+
+  .word-search-cell {
+    font-size:
+      clamp(
+        10px,
+        4vw,
+        16px
+      );
+  }
+
+  .word-search-help {
+    font-size: 11px;
+
+    padding:
+      8px 10px;
+  }
+
+  .word-search-success {
+    padding:
+      23px 17px;
+  }
+
+  .word-search-success h3 {
+    font-size: 22px;
+  }
+
+  .word-search-success p {
+    font-size: 14px;
+  }
+
+  .success-final-message {
+    font-size: 18px;
+  }
+
+}
