@@ -441,62 +441,314 @@ const surprises = [
   },
 
 
-  // =======================================================
-  // DÍA 12
-  // =======================================================
+ // =======================================================
+// DÍA 12
+// =======================================================
 
-  {
-    icon: "💭",
-    title: "12 cosas que quiero vivir contigo",
+{
+  icon: "✈️",
 
-    text: `
-      1. Viajar juntos.
+  title: "Pasaporte para nuestro futuro",
 
-      <br><br>
+  passport: true,
 
-      2. Conocer lugares nuevos.
+  destinations: [
 
-      <br><br>
+    {
+      number: "01",
+      icon: "✈️",
+      title: "Viajar juntos",
+      stamp: "DESTINO: AVENTURA",
 
-      3. Celebrar muchos aniversarios.
+      text: `
+        Quiero conocer nuevos lugares contigo,
+        perdernos un poquito, descubrir algo inesperado
+        y terminar diciendo:
 
-      <br><br>
+        <br><br>
 
-      4. Reírnos hasta que nos duela el estómago.
+        <strong>
+          "Valió la pena venir."
+        </strong>
+      `
+    },
 
-      <br><br>
 
-      5. Tener más fotografías juntos.
+    {
+      number: "02",
+      icon: "🗺️",
+      title: "Conocer lugares nuevos",
+      stamp: "NUEVO DESTINO ❤️",
 
-      <br><br>
+      text: `
+        Quiero que algún día podamos mirar un mapa
+        y decir:
 
-      6. Crear nuevas tradiciones.
+        <br><br>
 
-      <br><br>
+        <strong>
+          "Aquí todavía no hemos estado."
+        </strong>
 
-      7. Apoyarnos en nuestros sueños.
+        <br><br>
 
-      <br><br>
+        Y convertirlo en nuestro próximo plan.
+      `
+    },
 
-      8. Ver amaneceres juntos.
 
-      <br><br>
+    {
+      number: "03",
+      icon: "❤️",
+      title: "Celebrar muchos aniversarios",
+      stamp: "AÑO 01 ❤️",
 
-      9. Celebrar nuestros logros.
+      text: `
+        No quiero que este sea nuestro único aniversario especial.
 
-      <br><br>
+        <br><br>
 
-      10. Superar los días difíciles.
+        Quiero que existan muchos más números,
+        muchas más velas, muchas más fotos
+        y muchas más razones para decir:
 
-      <br><br>
+        <br><br>
 
-      11. Seguir aprendiendo del otro.
+        <strong>
+          "Lo logramos otro año más."
+        </strong>
+      `
+    },
 
-      <br><br>
 
-      12. Seguir escogiendo estar juntos. ❤️
-    `
-  },
+    {
+      number: "04",
+      icon: "😂",
+      title: "Reírnos hasta que nos duela el estómago",
+      stamp: "REÍR SIN LÍMITES",
+
+      text: `
+        Porque seguramente seguiremos haciendo
+        cosas que nadie más entendería.
+
+        <br><br>
+
+        Y probablemente seguiremos riéndonos
+        de cosas que solo nosotros encontramos graciosas. 😂
+
+        <br><br>
+
+        Y sinceramente...
+
+        <strong>
+          no quiero que eso cambie.
+        </strong>
+      `
+    },
+
+
+    {
+      number: "05",
+      icon: "📸",
+      title: "Tener muchas más fotos juntos",
+      stamp: "RECUERDO GUARDADO",
+
+      text: `
+        Tenemos fotografías de muchos momentos.
+
+        <br><br>
+
+        Pero quiero que algún día tengamos tantas
+        que sea difícil escoger cuáles son nuestras favoritas.
+
+        <br><br>
+
+        Quiero llenar una vida contigo
+        de recuerdos que podamos volver a mirar.
+      `
+    },
+
+
+    {
+      number: "06",
+      icon: "🥂",
+      title: "Crear nuestras propias tradiciones",
+      stamp: "TRADICIÓN NUEVA",
+
+      text: `
+        Quiero que tengamos cosas que solamente sean nuestras.
+
+        <br><br>
+
+        Planes, lugares, fechas, bromas, costumbres
+        y pequeños rituales que con el tiempo podamos decir:
+
+        <br><br>
+
+        <strong>
+          "Esto empezó con nosotros."
+        </strong>
+      `
+    },
+
+
+    {
+      number: "07",
+      icon: "🌱",
+      title: "Apoyarnos en nuestros sueños",
+      stamp: "MISIÓN: APOYARNOS",
+
+      text: `
+        Quiero estar cuando tengas un sueño nuevo.
+
+        <br><br>
+
+        Quiero verte intentarlo, apoyarte cuando sea difícil
+        y celebrar contigo cuando finalmente lo consigas.
+
+        <br><br>
+
+        Y espero que tú también quieras estar
+        en mis sueños. ❤️
+      `
+    },
+
+
+    {
+      number: "08",
+      icon: "🌅",
+      title: "Ver amaneceres juntos",
+      stamp: "AMANECER COMPARTIDO",
+
+      text: `
+        Quiero algún día estar contigo viendo amanecer
+        y pensar que no necesitamos hacer nada extraordinario.
+
+        <br><br>
+
+        <strong>
+          Que estar juntos ya sea suficiente.
+        </strong>
+      `
+    },
+
+
+    {
+      number: "09",
+      icon: "🎉",
+      title: "Celebrar nuestros logros",
+      stamp: "OBJETIVO CUMPLIDO ❤️",
+
+      text: `
+        Quiero estar para aplaudir
+        tus pequeñas victorias y tus grandes logros.
+
+        <br><br>
+
+        Porque voy a querer verte crecer,
+        avanzar y cumplir todo aquello
+        que te propongas.
+      `
+    },
+
+
+    {
+      number: "10",
+      icon: "🤝",
+      title: "Superar los días difíciles",
+      stamp: "EQUIPO MARLON & ANDREA",
+
+      text: `
+        No todo será perfecto.
+
+        <br><br>
+
+        Habrá días complicados, cansancio,
+        preocupaciones y momentos difíciles.
+
+        <br><br>
+
+        Pero quiero que incluso en esos días
+        podamos seguir diciendo:
+
+        <br><br>
+
+        <strong>
+          "Estamos juntos en esto."
+        </strong>
+      `
+    },
+
+
+    {
+      number: "11",
+      icon: "🥰",
+      title: "Seguir conociéndonos",
+      stamp: "NUEVO RECUERDO",
+
+      text: `
+        Aunque llevemos tiempo juntos,
+        todavía quiero descubrir nuevas cosas de ti.
+
+        <br><br>
+
+        Nuevas historias, nuevas costumbres,
+        nuevas formas de hacerte reír
+        y todas esas pequeñas cosas
+        que hacen que sigas sorprendiéndome.
+      `
+    },
+
+
+    {
+      number: "12",
+      icon: "❤️",
+      title: "Seguir eligiéndonos",
+      stamp: "DESTINO: NOSOTROS",
+
+      final: true,
+
+      text: `
+        De todas las cosas que quiero vivir contigo,
+        hay una que quiero por encima de todas.
+
+        <br><br>
+
+        <strong>
+          Seguir eligiéndonos.
+        </strong>
+
+        <br><br>
+
+        Elegirte cuando todo vaya bien.
+        Elegirte cuando las cosas sean difíciles.
+        Elegirte en los días normales.
+        Elegirte en los días especiales.
+
+        <br><br>
+
+        Porque después de todo lo que hemos vivido,
+        hay algo que tengo muy claro:
+
+        <br><br>
+
+        <strong>
+          volvería a elegirte.
+        </strong>
+
+        <br><br>
+
+        Hoy.
+        <br>
+        Mañana.
+        <br>
+        Y en todos los capítulos
+        que todavía nos falten escribir. ❤️
+      `
+    }
+
+  ]
+},
 
 
   // =======================================================
@@ -1314,7 +1566,260 @@ function openSurprise(
   window.currentCarouselIndex =
     0;
 
+  // =====================================================
+  // PASAPORTE INTERACTIVO - DÍA 12
+  // =====================================================
 
+  if (
+    surprise.passport
+  ) {
+
+    body += `
+
+      <div
+        id="passport-container"
+        class="passport-container"
+      >
+
+        <!-- =========================================
+             PORTADA
+             ========================================= -->
+
+        <div
+          id="passport-cover"
+          class="passport-cover"
+        >
+
+          <div class="passport-sunflowers">
+            🌻
+          </div>
+
+          <div class="passport-small-title">
+            PASAPORTE
+          </div>
+
+          <div class="passport-main-title">
+            PARA NUESTRO
+            <br>
+            FUTURO
+          </div>
+
+          <div class="passport-heart">
+            ❤️
+          </div>
+
+          <div class="passport-names">
+            MARLON
+            <span>♥</span>
+            ANDREA
+          </div>
+
+          <div class="passport-destination">
+            DESTINO:
+            <strong>NOSOTROS</strong>
+          </div>
+
+          <div class="passport-number">
+            Nº 22 · 2026
+          </div>
+
+          <button
+            class="passport-open-button"
+            onclick="openPassport()"
+          >
+            ✈️ ABRIR PASAPORTE
+          </button>
+
+        </div>
+
+
+        <!-- =========================================
+             CONTENIDO INTERIOR
+             ========================================= -->
+
+        <div
+          id="passport-inside"
+          class="passport-inside"
+          style="display:none;"
+        >
+
+          <div class="passport-page-header">
+
+            <span>
+              PASAPORTE PARA NUESTRO FUTURO
+            </span>
+
+            <span id="passport-page-counter">
+              1 / 12
+            </span>
+
+          </div>
+
+
+          <div class="passport-page">
+
+            <div
+              id="passport-page-intro"
+              class="passport-page-intro"
+            >
+
+              <div class="passport-intro-icon">
+                🌍
+              </div>
+
+              <h3>
+                Nuestro próximo destino
+              </h3>
+
+              <p>
+                Ya tenemos muchos recuerdos que guardar,
+                muchas historias que contar y momentos
+                que nunca quiero olvidar.
+              </p>
+
+              <p>
+                Pero todavía hay algo que me gusta más:
+              </p>
+
+              <strong>
+                todo lo que todavía nos falta vivir. ❤️
+              </strong>
+
+              <p>
+                Este pasaporte guarda sueños,
+                aventuras y pequeños momentos
+                que quiero compartir contigo.
+              </p>
+
+            </div>
+
+
+            <div
+              id="passport-destination-content"
+              class="passport-destination-content"
+            >
+            </div>
+
+
+            <div
+              id="passport-stamp"
+              class="passport-stamp"
+            >
+            </div>
+
+          </div>
+
+
+          <!-- =====================================
+               CONTROLES
+               ===================================== -->
+
+          <div class="passport-controls">
+
+            <button
+              id="passport-prev"
+              class="passport-nav-button"
+              onclick="changePassportPage(-1)"
+            >
+              ← Anterior
+            </button>
+
+
+            <button
+              id="passport-next"
+              class="passport-nav-button primary"
+              onclick="changePassportPage(1)"
+            >
+              Siguiente →
+            </button>
+
+          </div>
+
+
+          <div
+            id="passport-final-button"
+            class="passport-final-button"
+            style="display:none;"
+          >
+
+            <button
+              onclick="stampPassport()"
+            >
+              ❤️ ESTAMPAR NUESTRO PASAPORTE
+            </button>
+
+          </div>
+
+
+          <!-- =====================================
+               SELLO FINAL
+               ===================================== -->
+
+          <div
+            id="passport-final-message"
+            class="passport-final-message"
+            style="display:none;"
+          >
+
+            <div class="final-passport-stamp">
+
+              <div>
+                ❤️ VISADO
+              </div>
+
+              <strong>
+                APROBADO
+              </strong>
+
+              <span>
+                DESTINO:
+              </span>
+
+              <b>
+                NOSOTROS
+              </b>
+
+              <small>
+                MARLON ♥ ANDREA
+              </small>
+
+              <small>
+                2026
+              </small>
+
+            </div>
+
+
+            <div class="passport-final-text">
+
+              <p>
+                Este viaje todavía no termina.
+              </p>
+
+              <strong>
+                Apenas estamos empezando. 🌻
+              </strong>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    `;
+
+  }
+
+  // =====================================================
+  // CARRUSEL DE TEXTO - DÍA 9
+  // =====================================================
+
+  if (
+    surprise.textCarousel &&
+    slides.length > 0
+  ) {
   // =====================================================
   // CARRUSEL DE TEXTO - DÍA 9
   // =====================================================
@@ -2218,7 +2723,685 @@ function updateTextCarousel() {
 
 }
 
+// =========================================================
+// ✈️ PASAPORTE INTERACTIVO - DÍA 12
+// =========================================================
 
+window.passportState = {
+
+  page: 0,
+
+  opened: false,
+
+  stamped: false
+
+};
+
+
+// =========================================================
+// ABRIR PASAPORTE
+// =========================================================
+
+function openPassport() {
+
+  const cover =
+    document.getElementById(
+      "passport-cover"
+    );
+
+
+  const inside =
+    document.getElementById(
+      "passport-inside"
+    );
+
+
+  if (
+    !cover ||
+    !inside
+  ) {
+
+    return;
+
+  }
+
+
+  cover.classList.add(
+    "passport-cover-opening"
+  );
+
+
+  setTimeout(
+    () => {
+
+      cover.style.display =
+        "none";
+
+
+      inside.style.display =
+        "block";
+
+
+      window.passportState.page =
+        0;
+
+
+      window.passportState.opened =
+        true;
+
+
+      renderPassportPage();
+
+    },
+    550
+  );
+
+}
+
+
+// =========================================================
+// RENDERIZAR PÁGINA
+// =========================================================
+
+function renderPassportPage() {
+
+  const state =
+    window.passportState;
+
+
+  if (
+    !state ||
+    !state.opened
+  ) {
+
+    return;
+
+  }
+
+
+  const surprise =
+    surprises[11];
+
+
+  if (
+    !surprise ||
+    !surprise.destinations
+  ) {
+
+    return;
+
+  }
+
+
+  const content =
+    document.getElementById(
+      "passport-destination-content"
+    );
+
+
+  const intro =
+    document.getElementById(
+      "passport-page-intro"
+    );
+
+
+  const counter =
+    document.getElementById(
+      "passport-page-counter"
+    );
+
+
+  const stamp =
+    document.getElementById(
+      "passport-stamp"
+    );
+
+
+  const previous =
+    document.getElementById(
+      "passport-prev"
+    );
+
+
+  const next =
+    document.getElementById(
+      "passport-next"
+    );
+
+
+  const finalButton =
+    document.getElementById(
+      "passport-final-button"
+    );
+
+
+  if (
+    !content
+  ) {
+
+    return;
+
+  }
+
+
+  // =====================================================
+  // PORTADA INTERIOR
+  // =====================================================
+
+  if (
+    state.page === 0
+  ) {
+
+    if (
+      intro
+    ) {
+
+      intro.style.display =
+        "block";
+
+    }
+
+
+    content.innerHTML =
+      "";
+
+
+    if (
+      stamp
+    ) {
+
+      stamp.innerHTML =
+        "";
+
+      stamp.classList.remove(
+        "passport-stamp-visible"
+      );
+
+    }
+
+
+    if (
+      counter
+    ) {
+
+      counter.textContent =
+        "INTRO";
+
+    }
+
+
+    if (
+      previous
+    ) {
+
+      previous.disabled =
+        true;
+
+    }
+
+
+    if (
+      next
+    ) {
+
+      next.style.display =
+        "inline-flex";
+
+      next.textContent =
+        "COMENZAR →";
+
+    }
+
+
+    if (
+      finalButton
+    ) {
+
+      finalButton.style.display =
+        "none";
+
+    }
+
+
+    return;
+
+  }
+
+
+  // =====================================================
+  // DESTINO
+  // =====================================================
+
+  const destination =
+    surprise.destinations[
+      state.page - 1
+    ];
+
+
+  if (
+    !destination
+  ) {
+
+    return;
+
+  }
+
+
+  if (
+    intro
+  ) {
+
+    intro.style.display =
+      "none";
+
+  }
+
+
+  content.classList.remove(
+    "passport-page-animation"
+  );
+
+
+  void content.offsetWidth;
+
+
+  content.classList.add(
+    "passport-page-animation"
+  );
+
+
+  content.innerHTML = `
+
+    <div class="passport-destination-number">
+
+      DESTINO
+      ${destination.number}
+      / 12
+
+    </div>
+
+
+    <div class="passport-destination-icon">
+
+      ${destination.icon}
+
+    </div>
+
+
+    <h3 class="passport-destination-title">
+
+      ${destination.title}
+
+    </h3>
+
+
+    <div class="passport-destination-line">
+    </div>
+
+
+    <div class="passport-destination-text">
+
+      ${destination.text}
+
+    </div>
+
+
+    ${
+      destination.final
+        ? `
+          <div class="passport-final-decoration">
+            🌻
+            ❤️
+            🌻
+          </div>
+        `
+        : `
+          <div class="passport-destination-decoration">
+            ✈️
+            🌍
+            ❤️
+          </div>
+        `
+    }
+
+  `;
+
+
+  // =====================================================
+  // CONTADOR
+  // =====================================================
+
+  if (
+    counter
+  ) {
+
+    counter.textContent =
+      `${state.page} / 12`;
+
+  }
+
+
+  // =====================================================
+  // SELLO
+  // =====================================================
+
+  if (
+    stamp
+  ) {
+
+    stamp.innerHTML = `
+
+      <span>
+        ${destination.stamp}
+      </span>
+
+    `;
+
+
+    stamp.classList.remove(
+      "passport-stamp-visible"
+    );
+
+
+    setTimeout(
+      () => {
+
+        stamp.classList.add(
+          "passport-stamp-visible"
+        );
+
+      },
+      250
+    );
+
+  }
+
+
+  // =====================================================
+  // BOTÓN ANTERIOR
+  // =====================================================
+
+  if (
+    previous
+  ) {
+
+    previous.disabled =
+      state.page <= 1;
+
+  }
+
+
+  // =====================================================
+  // BOTÓN SIGUIENTE
+  // =====================================================
+
+  if (
+    next
+  ) {
+
+    if (
+      state.page >= 12
+    ) {
+
+      next.style.display =
+        "none";
+
+    }
+
+    else {
+
+      next.style.display =
+        "inline-flex";
+
+      next.textContent =
+        "Siguiente →";
+
+    }
+
+  }
+
+
+  // =====================================================
+  // BOTÓN FINAL
+  // =====================================================
+
+  if (
+    finalButton
+  ) {
+
+    if (
+      state.page === 12
+    ) {
+
+      finalButton.style.display =
+        "block";
+
+    }
+
+    else {
+
+      finalButton.style.display =
+        "none";
+
+    }
+
+  }
+
+}
+
+
+// =========================================================
+// CAMBIAR PÁGINA
+// =========================================================
+
+function changePassportPage(
+  direction
+) {
+
+  const state =
+    window.passportState;
+
+
+  if (
+    !state ||
+    !state.opened
+  ) {
+
+    return;
+
+  }
+
+
+  const nextPage =
+    state.page +
+    direction;
+
+
+  if (
+    nextPage < 0
+  ) {
+
+    return;
+
+  }
+
+
+  if (
+    nextPage > 12
+  ) {
+
+    return;
+
+  }
+
+
+  state.page =
+    nextPage;
+
+
+  renderPassportPage();
+
+}
+
+
+// =========================================================
+// ESTAMPAR PASAPORTE
+// =========================================================
+
+function stampPassport() {
+
+  const finalMessage =
+    document.getElementById(
+      "passport-final-message"
+    );
+
+
+  const finalButton =
+    document.getElementById(
+      "passport-final-button"
+    );
+
+
+  const controls =
+    document.querySelector(
+      ".passport-controls"
+    );
+
+
+  const state =
+    window.passportState;
+
+
+  if (
+    !finalMessage
+  ) {
+
+    return;
+
+  }
+
+
+  state.stamped =
+    true;
+
+
+  if (
+    finalButton
+  ) {
+
+    finalButton.style.display =
+      "none";
+
+  }
+
+
+  if (
+    controls
+  ) {
+
+    controls.style.display =
+      "none";
+
+  }
+
+
+  finalMessage.style.display =
+    "block";
+
+
+  setTimeout(
+    () => {
+
+      finalMessage.classList.add(
+        "passport-final-show"
+      );
+
+    },
+    100
+  );
+
+
+  createHearts(
+    18
+  );
+
+
+  createPassportFlowers();
+
+}
+
+
+// =========================================================
+// GIRASOLES FINALES
+// =========================================================
+
+function createPassportFlowers() {
+
+  const container =
+    document.getElementById(
+      "hearts"
+    );
+
+
+  if (
+    !container
+  ) {
+
+    return;
+
+  }
+
+
+  for (
+    let i = 0;
+    i < 8;
+    i++
+  ) {
+
+    const flower =
+      document.createElement(
+        "span"
+      );
+
+
+    flower.className =
+      "floating-passport-flower";
+
+
+    flower.textContent =
+      "🌻";
+
+
+    flower.style.left =
+      `${Math.random() * 100}%`;
+
+
+    flower.style.fontSize =
+      `${18 + Math.random() * 18}px`;
+
+
+    flower.style.animationDuration =
+      `${5 + Math.random() * 5}s`;
+
+
+    flower.style.animationDelay =
+      `${Math.random() * 1.5}s`;
+
+
+    container.appendChild(
+      flower
+    );
+
+
+    setTimeout(
+      () =>
+        flower.remove(),
+      12000
+    );
+
+  }
+
+}
 // =========================================================
 // 🔎 SOPA DE LETRAS - DÍA 11
 // =========================================================
