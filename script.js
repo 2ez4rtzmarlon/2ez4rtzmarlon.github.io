@@ -471,7 +471,7 @@ const surprises = [
 
         text: `
           Quiero conocer nuevos lugares contigo,
-          perdernos un poquito, descubrir algo inesperado
+          perdernos un poquito descubrir algo inesperado
           y terminar diciendo:
 
           <br><br>
@@ -489,7 +489,7 @@ const surprises = [
         stamp: "NUEVO DESTINO ❤️",
 
         text: `
-          Quiero que algún día podamos mirar un mapa
+          Quiero que algún día podamos salir en un nuevo Gabriel
           y decir:
 
           <br><br>
@@ -508,15 +508,15 @@ const surprises = [
         number: "03",
         icon: "❤️",
         title: "Celebrar muchos aniversarios",
-        stamp: "AÑO 01 ❤️",
+        stamp: "AÑO 03 ❤️",
 
         text: `
-          No quiero que este sea nuestro único aniversario especial.
+          No quiero que este sea nuestro último aniversario especial.
 
           <br><br>
 
           Quiero que existan muchos más números,
-          muchas más velas, muchas más fotos
+           muchas más fotos oficiales
           y muchas más razones para decir:
 
           <br><br>
@@ -559,7 +559,7 @@ const surprises = [
         stamp: "RECUERDO GUARDADO",
 
         text: `
-          Tenemos fotografías de muchos momentos.
+          Tenemos fotografías de muchas chocoaventuras.
 
           <br><br>
 
@@ -643,6 +643,7 @@ const surprises = [
         text: `
           Quiero estar para aplaudir
           tus pequeñas victorias y tus grandes logros.
+          Estamos cerca de celebrar uno.
 
           <br><br>
 
@@ -663,7 +664,7 @@ const surprises = [
 
           <br><br>
 
-          Habrá días complicados, cansancio,
+          Habrá días complicados, 
           preocupaciones y momentos difíciles.
 
           <br><br>
