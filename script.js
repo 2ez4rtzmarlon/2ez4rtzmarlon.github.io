@@ -750,27 +750,302 @@ const surprises = [
   },
 
 
-  // =======================================================
-  // DÍA 13
-  // =======================================================
+ // =======================================================
+// DÍA 13
+// =======================================================
 
-  {
-    icon: "🌙",
-    title: "Si estuvieras aquí...",
+{
+  icon: "🧭",
 
-    text: `
-      Si estuvieras aquí ahora mismo,
-      probablemente no necesitaría decir demasiado.
+  title: "Elige una aventura conmigo",
 
-      <br><br>
+  text: `
 
-      Solo quisiera tenerte cerca,
-      abrazarte y disfrutar uno de esos momentos sencillos
-      que terminan siendo los más importantes.
-    `
-  },
+    <div class="day13-adventure">
+
+      <!-- INTRODUCCIÓN -->
+
+      <div class="day13-intro">
+
+        <div class="day13-sunflower">
+          🌻
+        </div>
+
+        <h3>
+          Hoy no quiero contarte un recuerdo...
+        </h3>
+
+        <p>
+          Hoy quiero imaginar uno contigo. ❤️
+        </p>
+
+        <p class="day13-small-text">
+          Elige una de estas aventuras
+          que te gustaría vivir conmigo.
+        </p>
+
+      </div>
 
 
+      <!-- OPCIONES -->
+
+      <div class="day13-options">
+
+
+        <!-- OPCIÓN 1 -->
+
+        <button
+          class="day13-option"
+          onclick="selectAdventure(1)"
+        >
+
+          <div class="day13-option-icon">
+            🌅
+          </div>
+
+          <div class="day13-option-content">
+
+            <h4>
+              Una escapada
+            </h4>
+
+            <p>
+              Perdernos juntos.
+            </p>
+
+            <span>
+              Un lugar nuevo, sin preocuparnos
+              demasiado por el destino.
+            </span>
+
+          </div>
+
+          <div class="day13-option-arrow">
+            →
+          </div>
+
+        </button>
+
+
+        <!-- OPCIÓN 2 -->
+
+        <button
+          class="day13-option"
+          onclick="selectAdventure(2)"
+        >
+
+          <div class="day13-option-icon">
+            ❤️
+          </div>
+
+          <div class="day13-option-content">
+
+            <h4>
+              Un día solo para nosotros
+            </h4>
+
+            <p>
+              Sin apuros.
+            </p>
+
+            <span>
+              Comer algo rico, caminar,
+              conversar de cualquier cosa
+              y terminar abrazados.
+            </span>
+
+          </div>
+
+          <div class="day13-option-arrow">
+            →
+          </div>
+
+        </button>
+
+
+        <!-- OPCIÓN 3 -->
+
+        <button
+          class="day13-option"
+          onclick="selectAdventure(3)"
+        >
+
+          <div class="day13-option-icon">
+            🗺️
+          </div>
+
+          <div class="day13-option-content">
+
+            <h4>
+              Una nueva aventura
+            </h4>
+
+            <p>
+              Hagamos algo que nunca hemos hecho.
+            </p>
+
+            <span>
+              Elegir un lugar al azar
+              y descubrir juntos qué nos espera.
+            </span>
+
+          </div>
+
+          <div class="day13-option-arrow">
+            →
+          </div>
+
+        </button>
+
+
+      </div>
+
+
+      <!-- RESULTADO -->
+
+      <div
+        id="day13-result"
+        class="day13-result"
+      >
+
+        <div class="day13-result-icon">
+          💖
+        </div>
+
+        <h3>
+          Entonces queda decidido...
+        </h3>
+
+        <p
+          id="day13-result-title"
+          class="day13-result-title"
+        ></p>
+
+        <p>
+          Aunque todavía no sepamos cuándo
+          ni dónde será...
+        </p>
+
+        <p class="day13-final-message">
+
+          quiero que seas tú
+          quien esté a mi lado. ❤️
+
+        </p>
+
+
+        <!-- BOLETO -->
+
+        <div class="day13-ticket">
+
+          <div class="day13-ticket-top">
+
+            <span>
+              🎫 VIAJE PARA DOS
+            </span>
+
+            <span>
+              DÍA 13
+            </span>
+
+          </div>
+
+
+          <div class="day13-ticket-line"></div>
+
+
+          <div class="day13-ticket-body">
+
+            <div>
+              <small>
+                DESTINO
+              </small>
+
+              <strong>
+                Por descubrir
+              </strong>
+            </div>
+
+
+            <div>
+              <small>
+                COMPAÑERA
+              </small>
+
+              <strong>
+                Andrea ❤️
+              </strong>
+            </div>
+
+
+            <div>
+              <small>
+                ACOMPAÑANTE
+              </small>
+
+              <strong>
+                Marlon
+              </strong>
+            </div>
+
+
+            <div>
+              <small>
+                EQUIPAJE
+              </small>
+
+              <strong>
+                Muchas ganas de estar juntos
+              </strong>
+            </div>
+
+          </div>
+
+
+          <div class="day13-ticket-line"></div>
+
+
+          <div class="day13-ticket-footer">
+
+            <span>
+              DESTINO CONFIRMADO
+            </span>
+
+            <span>
+              ❤️
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <button
+          class="day13-again"
+          onclick="resetAdventure()"
+        >
+          🔄 Elegir otra aventura
+        </button>
+
+      </div>
+
+
+      <!-- DECORACIÓN -->
+
+      <div class="day13-decoration">
+
+        <span>🌻</span>
+        <span>🌻</span>
+        <span>🌻</span>
+        <span>❤️</span>
+        <span>🌻</span>
+
+      </div>
+
+    </div>
+
+  `
+},
   // =======================================================
   // DÍA 14
   // =======================================================
@@ -2190,7 +2465,187 @@ function openSurprise(day) {
 
   }
 
+// =========================================================
+// DÍA 13 — AVENTURA
+// =========================================================
 
+function selectAdventure(option) {
+
+  const result =
+    document.getElementById(
+      "day13-result"
+    );
+
+  const resultTitle =
+    document.getElementById(
+      "day13-result-title"
+    );
+
+
+  if (!result || !resultTitle) {
+
+    return;
+
+  }
+
+
+  let title = "";
+
+
+  // =====================================================
+  // OPCIÓN 1
+  // =====================================================
+
+  if (option === 1) {
+
+    title =
+      "🌅 Nuestra escapada juntos";
+
+  }
+
+
+  // =====================================================
+  // OPCIÓN 2
+  // =====================================================
+
+  else if (option === 2) {
+
+    title =
+      "❤️ Un día solamente para nosotros";
+
+  }
+
+
+  // =====================================================
+  // OPCIÓN 3
+  // =====================================================
+
+  else if (option === 3) {
+
+    title =
+      "🗺️ Nuestra próxima aventura";
+
+  }
+
+
+  // =====================================================
+  // MOSTRAR RESULTADO
+  // =====================================================
+
+  resultTitle.textContent =
+    title;
+
+
+  result.classList.add(
+    "show"
+  );
+
+
+  // =====================================================
+  // OCULTAR OPCIONES
+  // =====================================================
+
+  const options =
+    document.querySelector(
+      ".day13-options"
+    );
+
+
+  if (options) {
+
+    options.classList.add(
+      "hidden"
+    );
+
+  }
+
+
+  // =====================================================
+  // ANIMACIÓN DE CORAZONES
+  // =====================================================
+
+  createHearts(10);
+
+
+  // =====================================================
+  // SCROLL SUAVE
+  // =====================================================
+
+  setTimeout(
+    () => {
+
+      result.scrollIntoView({
+
+        behavior: "smooth",
+
+        block: "center"
+
+      });
+
+    },
+    200
+  );
+
+}
+
+
+// =========================================================
+// VOLVER A ELEGIR
+// =========================================================
+
+function resetAdventure() {
+
+  const result =
+    document.getElementById(
+      "day13-result"
+    );
+
+
+  const options =
+    document.querySelector(
+      ".day13-options"
+    );
+
+
+  if (result) {
+
+    result.classList.remove(
+      "show"
+    );
+
+  }
+
+
+  if (options) {
+
+    options.classList.remove(
+      "hidden"
+    );
+
+  }
+
+
+  // Volver arriba del Día 13
+
+  const adventure =
+    document.querySelector(
+      ".day13-adventure"
+    );
+
+
+  if (adventure) {
+
+    adventure.scrollIntoView({
+
+      behavior: "smooth",
+
+      block: "start"
+
+    });
+
+  }
+
+}
   // =======================================================
   // DÍA 22
   // =======================================================
