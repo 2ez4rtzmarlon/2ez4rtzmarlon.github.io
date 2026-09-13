@@ -471,7 +471,7 @@ const surprises = [
 
         text: `
           Quiero conocer nuevos lugares contigo,
-          perdernos un poquito descubrir algo inesperado
+          perdernos un poquito, descubrir algo inesperado
           y terminar diciendo:
 
           <br><br>
@@ -489,7 +489,7 @@ const surprises = [
         stamp: "NUEVO DESTINO ❤️",
 
         text: `
-          Quiero que algún día podamos salir en un nuevo Gabriel
+          Quiero que algún día podamos salir a un nuevo lugar
           y decir:
 
           <br><br>
@@ -516,7 +516,7 @@ const surprises = [
           <br><br>
 
           Quiero que existan muchos más números,
-           muchas más fotos oficiales
+          muchas más fotos oficiales
           y muchas más razones para decir:
 
           <br><br>
@@ -664,7 +664,7 @@ const surprises = [
 
           <br><br>
 
-          Habrá días complicados, 
+          Habrá días complicados,
           preocupaciones y momentos difíciles.
 
           <br><br>
@@ -750,302 +750,291 @@ const surprises = [
   },
 
 
- // =======================================================
-// DÍA 13
-// =======================================================
+  // =======================================================
+  // DÍA 13
+  // AVENTURA
+  // =======================================================
 
-{
-  icon: "🧭",
+  {
+    icon: "🧭",
 
-  title: "Elige una aventura conmigo",
+    title: "Elige una aventura conmigo",
 
-  text: `
+    text: `
 
-    <div class="day13-adventure">
+      <div class="day13-adventure">
 
-      <!-- INTRODUCCIÓN -->
+        <div class="day13-intro">
 
-      <div class="day13-intro">
+          <div class="day13-sunflower">
+            🌻
+          </div>
 
-        <div class="day13-sunflower">
-          🌻
+          <h3>
+            Hoy no quiero contarte un recuerdo...
+          </h3>
+
+          <p>
+            Hoy quiero imaginar uno contigo. ❤️
+          </p>
+
+          <p class="day13-small-text">
+            Elige una de estas aventuras
+            que te gustaría vivir conmigo.
+          </p>
+
         </div>
 
-        <h3>
-          Hoy no quiero contarte un recuerdo...
-        </h3>
 
-        <p>
-          Hoy quiero imaginar uno contigo. ❤️
-        </p>
+        <div class="day13-options">
 
-        <p class="day13-small-text">
-          Elige una de estas aventuras
-          que te gustaría vivir conmigo.
-        </p>
 
-      </div>
+          <button
+            type="button"
+            class="day13-option"
+            onclick="selectAdventure(1)"
+          >
 
-
-      <!-- OPCIONES -->
-
-      <div class="day13-options">
-
-
-        <!-- OPCIÓN 1 -->
-
-        <button
-          class="day13-option"
-          onclick="selectAdventure(1)"
-        >
-
-          <div class="day13-option-icon">
-            🌅
-          </div>
-
-          <div class="day13-option-content">
-
-            <h4>
-              Una escapada
-            </h4>
-
-            <p>
-              Perdernos juntos.
-            </p>
-
-            <span>
-              Un lugar nuevo, sin preocuparnos
-              demasiado por el destino.
-            </span>
-
-          </div>
-
-          <div class="day13-option-arrow">
-            →
-          </div>
-
-        </button>
-
-
-        <!-- OPCIÓN 2 -->
-
-        <button
-          class="day13-option"
-          onclick="selectAdventure(2)"
-        >
-
-          <div class="day13-option-icon">
-            ❤️
-          </div>
-
-          <div class="day13-option-content">
-
-            <h4>
-              Un día solo para nosotros
-            </h4>
-
-            <p>
-              Sin apuros.
-            </p>
-
-            <span>
-              Comer algo rico, caminar,
-              conversar de cualquier cosa
-              y terminar abrazados.
-            </span>
-
-          </div>
-
-          <div class="day13-option-arrow">
-            →
-          </div>
-
-        </button>
-
-
-        <!-- OPCIÓN 3 -->
-
-        <button
-          class="day13-option"
-          onclick="selectAdventure(3)"
-        >
-
-          <div class="day13-option-icon">
-            🗺️
-          </div>
-
-          <div class="day13-option-content">
-
-            <h4>
-              Una nueva aventura
-            </h4>
-
-            <p>
-              Hagamos algo que nunca hemos hecho.
-            </p>
-
-            <span>
-              Elegir un lugar al azar
-              y descubrir juntos qué nos espera.
-            </span>
-
-          </div>
-
-          <div class="day13-option-arrow">
-            →
-          </div>
-
-        </button>
-
-
-      </div>
-
-
-      <!-- RESULTADO -->
-
-      <div
-        id="day13-result"
-        class="day13-result"
-      >
-
-        <div class="day13-result-icon">
-          💖
-        </div>
-
-        <h3>
-          Entonces queda decidido...
-        </h3>
-
-        <p
-          id="day13-result-title"
-          class="day13-result-title"
-        ></p>
-
-        <p>
-          Aunque todavía no sepamos cuándo
-          ni dónde será...
-        </p>
-
-        <p class="day13-final-message">
-
-          quiero que seas tú
-          quien esté a mi lado. ❤️
-
-        </p>
-
-
-        <!-- BOLETO -->
-
-        <div class="day13-ticket">
-
-          <div class="day13-ticket-top">
-
-            <span>
-              🎫 VIAJE PARA DOS
-            </span>
-
-            <span>
-              DÍA 13
-            </span>
-
-          </div>
-
-
-          <div class="day13-ticket-line"></div>
-
-
-          <div class="day13-ticket-body">
-
-            <div>
-              <small>
-                DESTINO
-              </small>
-
-              <strong>
-                Por descubrir
-              </strong>
+            <div class="day13-option-icon">
+              🌅
             </div>
 
+            <div class="day13-option-content">
 
-            <div>
-              <small>
-                COMPAÑERA
-              </small>
+              <h4>
+                Una escapada
+              </h4>
 
-              <strong>
-                Andrea ❤️
-              </strong>
+              <p>
+                Perdernos juntos.
+              </p>
+
+              <span>
+                Un lugar nuevo, sin preocuparnos
+                demasiado por el destino.
+              </span>
+
             </div>
 
-
-            <div>
-              <small>
-                ACOMPAÑANTE
-              </small>
-
-              <strong>
-                Marlon
-              </strong>
+            <div class="day13-option-arrow">
+              →
             </div>
 
-
-            <div>
-              <small>
-                EQUIPAJE
-              </small>
-
-              <strong>
-                Muchas ganas de estar juntos
-              </strong>
-            </div>
-
-          </div>
+          </button>
 
 
-          <div class="day13-ticket-line"></div>
+          <button
+            type="button"
+            class="day13-option"
+            onclick="selectAdventure(2)"
+          >
 
-
-          <div class="day13-ticket-footer">
-
-            <span>
-              DESTINO CONFIRMADO
-            </span>
-
-            <span>
+            <div class="day13-option-icon">
               ❤️
-            </span>
+            </div>
 
-          </div>
+            <div class="day13-option-content">
+
+              <h4>
+                Un día solo para nosotros
+              </h4>
+
+              <p>
+                Sin apuros.
+              </p>
+
+              <span>
+                Comer algo rico, caminar,
+                conversar de cualquier cosa
+                y terminar abrazados.
+              </span>
+
+            </div>
+
+            <div class="day13-option-arrow">
+              →
+            </div>
+
+          </button>
+
+
+          <button
+            type="button"
+            class="day13-option"
+            onclick="selectAdventure(3)"
+          >
+
+            <div class="day13-option-icon">
+              🗺️
+            </div>
+
+            <div class="day13-option-content">
+
+              <h4>
+                Una nueva aventura
+              </h4>
+
+              <p>
+                Hagamos algo que nunca hemos hecho.
+              </p>
+
+              <span>
+                Elegir un lugar al azar
+                y descubrir juntos qué nos espera.
+              </span>
+
+            </div>
+
+            <div class="day13-option-arrow">
+              →
+            </div>
+
+          </button>
+
 
         </div>
 
 
-        <button
-          class="day13-again"
-          onclick="resetAdventure()"
+        <div
+          id="day13-result"
+          class="day13-result"
         >
-          🔄 Elegir otra aventura
-        </button>
+
+          <div class="day13-result-icon">
+            💖
+          </div>
+
+          <h3>
+            Entonces queda decidido...
+          </h3>
+
+          <p
+            id="day13-result-title"
+            class="day13-result-title"
+          ></p>
+
+          <p>
+            Aunque todavía no sepamos cuándo
+            ni dónde será...
+          </p>
+
+          <p class="day13-final-message">
+            quiero que seas tú
+            quien esté a mi lado. ❤️
+          </p>
+
+
+          <div class="day13-ticket">
+
+            <div class="day13-ticket-top">
+
+              <span>
+                🎫 VIAJE PARA DOS
+              </span>
+
+              <span>
+                DÍA 13
+              </span>
+
+            </div>
+
+
+            <div class="day13-ticket-line"></div>
+
+
+            <div class="day13-ticket-body">
+
+              <div>
+                <small>
+                  DESTINO
+                </small>
+
+                <strong>
+                  Por descubrir
+                </strong>
+              </div>
+
+
+              <div>
+                <small>
+                  COMPAÑERA
+                </small>
+
+                <strong>
+                  Andrea ❤️
+                </strong>
+              </div>
+
+
+              <div>
+                <small>
+                  ACOMPAÑANTE
+                </small>
+
+                <strong>
+                  Marlon
+                </strong>
+              </div>
+
+
+              <div>
+                <small>
+                  EQUIPAJE
+                </small>
+
+                <strong>
+                  Muchas ganas de estar juntos
+                </strong>
+              </div>
+
+            </div>
+
+
+            <div class="day13-ticket-line"></div>
+
+
+            <div class="day13-ticket-footer">
+
+              <span>
+                DESTINO CONFIRMADO
+              </span>
+
+              <span>
+                ❤️
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <button
+            type="button"
+            class="day13-again"
+            onclick="resetAdventure()"
+          >
+            🔄 Elegir otra aventura
+          </button>
+
+        </div>
+
+
+        <div class="day13-decoration">
+
+          <span>🌻</span>
+          <span>🌻</span>
+          <span>🌻</span>
+          <span>❤️</span>
+          <span>🌻</span>
+
+        </div>
 
       </div>
 
+    `
+  },
 
-      <!-- DECORACIÓN -->
 
-      <div class="day13-decoration">
-
-        <span>🌻</span>
-        <span>🌻</span>
-        <span>🌻</span>
-        <span>❤️</span>
-        <span>🌻</span>
-
-      </div>
-
-    </div>
-
-  `
-},
   // =======================================================
   // DÍA 14
   // =======================================================
@@ -1296,6 +1285,7 @@ function getEcuadorDate() {
   );
 
   return formatter.format(new Date());
+
 }
 
 
@@ -1313,6 +1303,7 @@ function dateToUTC(dateString) {
     m - 1,
     d
   );
+
 }
 
 
@@ -1323,10 +1314,14 @@ function dateToUTC(dateString) {
 function getCurrentDay() {
 
   const params =
-    new URLSearchParams(window.location.search);
+    new URLSearchParams(
+      window.location.search
+    );
 
   const previewDay =
-    Number(params.get("preview"));
+    Number(
+      params.get("preview")
+    );
 
 
   if (
@@ -1354,7 +1349,10 @@ function getCurrentDay() {
 
 
   return Math.min(
-    Math.max(difference + 1, 0),
+    Math.max(
+      difference + 1,
+      0
+    ),
     TOTAL_DAYS
   );
 
@@ -1380,7 +1378,8 @@ function getAnniversaryDate() {
 
 function updateCountdown() {
 
-  const now = new Date();
+  const now =
+    new Date();
 
   const anniversary =
     getAnniversaryDate();
@@ -1391,19 +1390,29 @@ function updateCountdown() {
 
 
   const label =
-    document.getElementById("countdown-label");
+    document.getElementById(
+      "countdown-label"
+    );
 
   const days =
-    document.getElementById("days");
+    document.getElementById(
+      "days"
+    );
 
   const hours =
-    document.getElementById("hours");
+    document.getElementById(
+      "hours"
+    );
 
   const minutes =
-    document.getElementById("minutes");
+    document.getElementById(
+      "minutes"
+    );
 
   const seconds =
-    document.getElementById("seconds");
+    document.getElementById(
+      "seconds"
+    );
 
 
   if (
@@ -1424,10 +1433,17 @@ function updateCountdown() {
     label.textContent =
       "❤️ Hoy es nuestro día ❤️";
 
-    days.textContent = "00";
-    hours.textContent = "00";
-    minutes.textContent = "00";
-    seconds.textContent = "00";
+    days.textContent =
+      "00";
+
+    hours.textContent =
+      "00";
+
+    minutes.textContent =
+      "00";
+
+    seconds.textContent =
+      "00";
 
     return;
 
@@ -1435,35 +1451,52 @@ function updateCountdown() {
 
 
   const d =
-    Math.floor(diff / 86400000);
+    Math.floor(
+      diff / 86400000
+    );
 
   const h =
     Math.floor(
-      (diff % 86400000) / 3600000
+      (diff % 86400000) /
+      3600000
     );
 
   const m =
     Math.floor(
-      (diff % 3600000) / 60000
+      (diff % 3600000) /
+      60000
     );
 
   const s =
     Math.floor(
-      (diff % 60000) / 1000
+      (diff % 60000) /
+      1000
     );
 
 
   days.textContent =
-    String(d).padStart(2, "0");
+    String(d).padStart(
+      2,
+      "0"
+    );
 
   hours.textContent =
-    String(h).padStart(2, "0");
+    String(h).padStart(
+      2,
+      "0"
+    );
 
   minutes.textContent =
-    String(m).padStart(2, "0");
+    String(m).padStart(
+      2,
+      "0"
+    );
 
   seconds.textContent =
-    String(s).padStart(2, "0");
+    String(s).padStart(
+      2,
+      "0"
+    );
 
 }
 
@@ -1475,7 +1508,10 @@ function updateCountdown() {
 function renderCalendar() {
 
   const calendar =
-    document.getElementById("calendar");
+    document.getElementById(
+      "calendar"
+    );
+
 
   if (!calendar) {
     return;
@@ -1487,7 +1523,9 @@ function renderCalendar() {
 
 
   const status =
-    document.getElementById("status-text");
+    document.getElementById(
+      "status-text"
+    );
 
 
   if (status) {
@@ -1499,7 +1537,9 @@ function renderCalendar() {
 
     }
 
-    else if (currentDay >= TOTAL_DAYS) {
+    else if (
+      currentDay >= TOTAL_DAYS
+    ) {
 
       status.textContent =
         "Hoy es nuestro día. ❤️";
@@ -1516,7 +1556,8 @@ function renderCalendar() {
   }
 
 
-  calendar.innerHTML = "";
+  calendar.innerHTML =
+    "";
 
 
   for (
@@ -1533,24 +1574,34 @@ function renderCalendar() {
 
 
     const card =
-      document.createElement("button");
+      document.createElement(
+        "button"
+      );
 
 
-    card.type = "button";
+    card.type =
+      "button";
 
 
     card.className =
       `day-card ${
-        unlocked ? "unlocked" : "locked"
+        unlocked
+          ? "unlocked"
+          : "locked"
       } ${
-        isToday ? "today" : ""
+        isToday
+          ? "today"
+          : ""
       }`;
 
 
     const date =
       new Date(
-        dateToUTC(START_DATE) +
-        (day - 1) * 86400000
+        dateToUTC(
+          START_DATE
+        ) +
+        (day - 1) *
+        86400000
       );
 
 
@@ -1589,7 +1640,8 @@ function renderCalendar() {
 
 
       card.onclick =
-        () => openSurprise(day);
+        () =>
+          openSurprise(day);
 
     }
 
@@ -1621,7 +1673,8 @@ function renderCalendar() {
 
 
       card.onclick =
-        () => showLockedMessage(day);
+        () =>
+          showLockedMessage(day);
 
     }
 
@@ -1637,18 +1690,27 @@ function renderCalendar() {
 // NORMALIZAR SLIDES
 // =========================================================
 
-function normalizeSlides(surprise) {
+function normalizeSlides(
+  surprise
+) {
 
   if (
-    Array.isArray(surprise.slides) &&
+    Array.isArray(
+      surprise.slides
+    ) &&
     surprise.slides.length > 0
   ) {
 
     return surprise.slides.map(
       slide => ({
-        image: slide.image || null,
-        title: slide.title || "",
-        text: slide.text || ""
+        image:
+          slide.image || null,
+
+        title:
+          slide.title || "",
+
+        text:
+          slide.text || ""
       })
     );
 
@@ -1656,14 +1718,18 @@ function normalizeSlides(surprise) {
 
 
   if (
-    Array.isArray(surprise.images) &&
+    Array.isArray(
+      surprise.images
+    ) &&
     surprise.images.length > 0
   ) {
 
     return surprise.images.map(
       image => ({
         image,
+
         title: "",
+
         text: ""
       })
     );
@@ -1675,8 +1741,11 @@ function normalizeSlides(surprise) {
 
     return [
       {
-        image: surprise.image,
+        image:
+          surprise.image,
+
         title: "",
+
         text: ""
       }
     ];
@@ -1699,9 +1768,12 @@ function openSurprise(day) {
     getCurrentDay();
 
 
-  if (day > currentDay) {
+  if (
+    day > currentDay
+  ) {
 
     showLockedMessage(day);
+
     return;
 
   }
@@ -1717,16 +1789,24 @@ function openSurprise(day) {
 
 
   const modalDay =
-    document.getElementById("modal-day");
+    document.getElementById(
+      "modal-day"
+    );
 
   const modalTitle =
-    document.getElementById("modal-title");
+    document.getElementById(
+      "modal-title"
+    );
 
   const modalIcon =
-    document.getElementById("modal-icon");
+    document.getElementById(
+      "modal-icon"
+    );
 
   const modalBody =
-    document.getElementById("modal-body");
+    document.getElementById(
+      "modal-body"
+    );
 
 
   if (
@@ -1759,8 +1839,11 @@ function openSurprise(day) {
   // REINICIAR ESTADOS
   // -------------------------------------------------------
 
-  window.currentCarouselSlides = [];
-  window.currentCarouselIndex = 0;
+  window.currentCarouselSlides =
+    [];
+
+  window.currentCarouselIndex =
+    0;
 
 
   window.passportState = {
@@ -1770,11 +1853,18 @@ function openSurprise(day) {
   };
 
 
-  let body = "";
+  window.wordSearchState =
+    null;
+
+
+  let body =
+    "";
 
 
   const slides =
-    normalizeSlides(surprise);
+    normalizeSlides(
+      surprise
+    );
 
 
   window.currentCarouselSlides =
@@ -1793,8 +1883,6 @@ function openSurprise(day) {
         id="passport-container"
         class="passport-container"
       >
-
-        <!-- PORTADA -->
 
         <div
           id="passport-cover"
@@ -1844,8 +1932,6 @@ function openSurprise(day) {
 
         </div>
 
-
-        <!-- INTERIOR -->
 
         <div
           id="passport-inside"
@@ -2120,7 +2206,9 @@ function openSurprise(day) {
           <button
             type="button"
             class="carousel-dot ${
-              index === 0 ? "active" : ""
+              index === 0
+                ? "active"
+                : ""
             }"
             onclick="goToTextCarousel(${index})"
             aria-label="Ir a confesión ${index + 1}"
@@ -2268,7 +2356,9 @@ function openSurprise(day) {
     slides.length > 0
   ) {
 
-    if (slides.length === 1) {
+    if (
+      slides.length === 1
+    ) {
 
       body += `
 
@@ -2362,7 +2452,9 @@ function openSurprise(day) {
             <button
               type="button"
               class="carousel-dot ${
-                index === 0 ? "active" : ""
+                index === 0
+                  ? "active"
+                  : ""
               }"
               onclick="goToCarousel(${index})"
               aria-label="Ir a foto ${index + 1}"
@@ -2427,7 +2519,9 @@ function openSurprise(day) {
   // =======================================================
 
   const modal =
-    document.getElementById("modal");
+    document.getElementById(
+      "modal"
+    );
 
 
   if (!modal) {
@@ -2441,7 +2535,9 @@ function openSurprise(day) {
   }
 
 
-  modal.classList.add("open");
+  modal.classList.add(
+    "open"
+  );
 
   modal.setAttribute(
     "aria-hidden",
@@ -2465,6 +2561,20 @@ function openSurprise(day) {
 
   }
 
+
+  // =======================================================
+  // DÍA 22
+  // =======================================================
+
+  if (day === 22) {
+
+    createHearts(28);
+
+  }
+
+}
+
+
 // =========================================================
 // DÍA 13 — AVENTURA
 // =========================================================
@@ -2482,19 +2592,19 @@ function selectAdventure(option) {
     );
 
 
-  if (!result || !resultTitle) {
+  if (
+    !result ||
+    !resultTitle
+  ) {
 
     return;
 
   }
 
 
-  let title = "";
+  let title =
+    "";
 
-
-  // =====================================================
-  // OPCIÓN 1
-  // =====================================================
 
   if (option === 1) {
 
@@ -2503,22 +2613,12 @@ function selectAdventure(option) {
 
   }
 
-
-  // =====================================================
-  // OPCIÓN 2
-  // =====================================================
-
   else if (option === 2) {
 
     title =
       "❤️ Un día solamente para nosotros";
 
   }
-
-
-  // =====================================================
-  // OPCIÓN 3
-  // =====================================================
 
   else if (option === 3) {
 
@@ -2528,10 +2628,6 @@ function selectAdventure(option) {
   }
 
 
-  // =====================================================
-  // MOSTRAR RESULTADO
-  // =====================================================
-
   resultTitle.textContent =
     title;
 
@@ -2540,10 +2636,6 @@ function selectAdventure(option) {
     "show"
   );
 
-
-  // =====================================================
-  // OCULTAR OPCIONES
-  // =====================================================
 
   const options =
     document.querySelector(
@@ -2560,26 +2652,15 @@ function selectAdventure(option) {
   }
 
 
-  // =====================================================
-  // ANIMACIÓN DE CORAZONES
-  // =====================================================
-
   createHearts(10);
 
-
-  // =====================================================
-  // SCROLL SUAVE
-  // =====================================================
 
   setTimeout(
     () => {
 
       result.scrollIntoView({
-
         behavior: "smooth",
-
         block: "center"
-
       });
 
     },
@@ -2590,7 +2671,7 @@ function selectAdventure(option) {
 
 
 // =========================================================
-// VOLVER A ELEGIR
+// VOLVER A ELEGIR DÍA 13
 // =========================================================
 
 function resetAdventure() {
@@ -2599,7 +2680,6 @@ function resetAdventure() {
     document.getElementById(
       "day13-result"
     );
-
 
   const options =
     document.querySelector(
@@ -2625,8 +2705,6 @@ function resetAdventure() {
   }
 
 
-  // Volver arriba del Día 13
-
   const adventure =
     document.querySelector(
       ".day13-adventure"
@@ -2636,23 +2714,9 @@ function resetAdventure() {
   if (adventure) {
 
     adventure.scrollIntoView({
-
       behavior: "smooth",
-
       block: "start"
-
     });
-
-  }
-
-}
-  // =======================================================
-  // DÍA 22
-  // =======================================================
-
-  if (day === 22) {
-
-    createHearts(28);
 
   }
 
@@ -2663,7 +2727,9 @@ function resetAdventure() {
 // CARRUSEL DE FOTOS
 // =========================================================
 
-function changeCarousel(direction) {
+function changeCarousel(
+  direction
+) {
 
   if (
     !window.currentCarouselSlides ||
@@ -2684,10 +2750,12 @@ function changeCarousel(direction) {
 
 
   if (
-    window.currentCarouselIndex >= total
+    window.currentCarouselIndex >=
+    total
   ) {
 
-    window.currentCarouselIndex = 0;
+    window.currentCarouselIndex =
+      0;
 
   }
 
@@ -2725,7 +2793,8 @@ function goToCarousel(index) {
 
   if (
     index < 0 ||
-    index >= window.currentCarouselSlides.length
+    index >=
+    window.currentCarouselSlides.length
   ) {
 
     return;
@@ -2749,13 +2818,19 @@ function goToCarousel(index) {
 function updateCarousel() {
 
   const image =
-    document.getElementById("carousel-image");
+    document.getElementById(
+      "carousel-image"
+    );
 
   const counter =
-    document.getElementById("carousel-counter");
+    document.getElementById(
+      "carousel-counter"
+    );
 
   const description =
-    document.getElementById("carousel-description");
+    document.getElementById(
+      "carousel-description"
+    );
 
   const dots =
     document.querySelectorAll(
@@ -2783,7 +2858,9 @@ function updateCarousel() {
   }
 
 
-  image.classList.remove("carousel-fade");
+  image.classList.remove(
+    "carousel-fade"
+  );
 
   void image.offsetWidth;
 
@@ -2794,7 +2871,9 @@ function updateCarousel() {
   image.alt =
     `Recuerdo ${index + 1}`;
 
-  image.classList.add("carousel-fade");
+  image.classList.add(
+    "carousel-fade"
+  );
 
 
   if (counter) {
@@ -2831,7 +2910,9 @@ function updateCarousel() {
 // CARRUSEL DÍA 9
 // =========================================================
 
-function changeTextCarousel(direction) {
+function changeTextCarousel(
+  direction
+) {
 
   if (
     !window.currentCarouselSlides ||
@@ -2852,10 +2933,12 @@ function changeTextCarousel(direction) {
 
 
   if (
-    window.currentCarouselIndex >= total
+    window.currentCarouselIndex >=
+    total
   ) {
 
-    window.currentCarouselIndex = 0;
+    window.currentCarouselIndex =
+      0;
 
   }
 
@@ -2879,7 +2962,9 @@ function changeTextCarousel(direction) {
 // IR A CONFESIÓN
 // =========================================================
 
-function goToTextCarousel(index) {
+function goToTextCarousel(
+  index
+) {
 
   if (
     !window.currentCarouselSlides ||
@@ -2893,7 +2978,8 @@ function goToTextCarousel(index) {
 
   if (
     index < 0 ||
-    index >= window.currentCarouselSlides.length
+    index >=
+    window.currentCarouselSlides.length
   ) {
 
     return;
@@ -2917,13 +3003,19 @@ function goToTextCarousel(index) {
 function updateTextCarousel() {
 
   const title =
-    document.getElementById("text-carousel-title");
+    document.getElementById(
+      "text-carousel-title"
+    );
 
   const text =
-    document.getElementById("text-carousel-text");
+    document.getElementById(
+      "text-carousel-text"
+    );
 
   const counter =
-    document.getElementById("text-carousel-counter");
+    document.getElementById(
+      "text-carousel-counter"
+    );
 
   const dots =
     document.querySelectorAll(
@@ -2989,7 +3081,8 @@ function updateTextCarousel() {
 
       dot.classList.toggle(
         "active",
-        index === window.currentCarouselIndex
+        index ===
+        window.currentCarouselIndex
       );
 
     }
@@ -2999,19 +3092,26 @@ function updateTextCarousel() {
 
 
 // =========================================================
-// ✈️ PASAPORTE DÍA 12
+// PASAPORTE DÍA 12
 // =========================================================
 
 function openPassport() {
 
   const cover =
-    document.getElementById("passport-cover");
+    document.getElementById(
+      "passport-cover"
+    );
 
   const inside =
-    document.getElementById("passport-inside");
+    document.getElementById(
+      "passport-inside"
+    );
 
 
-  if (!cover || !inside) {
+  if (
+    !cover ||
+    !inside
+  ) {
 
     console.error(
       "No se encontró el contenido del pasaporte."
@@ -3078,7 +3178,9 @@ function renderPassportPage() {
 
   if (
     !surprise ||
-    !Array.isArray(surprise.destinations)
+    !Array.isArray(
+      surprise.destinations
+    )
   ) {
 
     return;
@@ -3123,9 +3225,7 @@ function renderPassportPage() {
 
 
   if (!content) {
-
     return;
-
   }
 
 
@@ -3133,7 +3233,9 @@ function renderPassportPage() {
   // INTRO
   // =======================================================
 
-  if (state.page === 0) {
+  if (
+    state.page === 0
+  ) {
 
     if (intro) {
 
@@ -3143,12 +3245,14 @@ function renderPassportPage() {
     }
 
 
-    content.innerHTML = "";
+    content.innerHTML =
+      "";
 
 
     if (stamp) {
 
-      stamp.innerHTML = "";
+      stamp.innerHTML =
+        "";
 
       stamp.classList.remove(
         "passport-stamp-visible"
@@ -3208,9 +3312,7 @@ function renderPassportPage() {
 
 
   if (!destination) {
-
     return;
-
   }
 
 
@@ -3236,11 +3338,9 @@ function renderPassportPage() {
   content.innerHTML = `
 
     <div class="passport-destination-number">
-
       DESTINO
       ${destination.number}
       / 12
-
     </div>
 
 
@@ -3344,7 +3444,9 @@ function renderPassportPage() {
 
   if (next) {
 
-    if (state.page >= 12) {
+    if (
+      state.page >= 12
+    ) {
 
       next.style.display =
         "none";
@@ -3384,7 +3486,9 @@ function renderPassportPage() {
 // CAMBIAR PÁGINA DEL PASAPORTE
 // =========================================================
 
-function changePassportPage(direction) {
+function changePassportPage(
+  direction
+) {
 
   const state =
     window.passportState;
@@ -3446,9 +3550,7 @@ function stampPassport() {
 
 
   if (!finalMessage) {
-
     return;
-
   }
 
 
@@ -3502,13 +3604,13 @@ function stampPassport() {
 function createPassportFlowers() {
 
   const container =
-    document.getElementById("hearts");
+    document.getElementById(
+      "hearts"
+    );
 
 
   if (!container) {
-
     return;
-
   }
 
 
@@ -3519,7 +3621,9 @@ function createPassportFlowers() {
   ) {
 
     const flower =
-      document.createElement("span");
+      document.createElement(
+        "span"
+      );
 
 
     flower.className =
@@ -3541,7 +3645,9 @@ function createPassportFlowers() {
       `${Math.random() * 1.5}s`;
 
 
-    container.appendChild(flower);
+    container.appendChild(
+      flower
+    );
 
 
     setTimeout(
@@ -3560,17 +3666,45 @@ function createPassportFlowers() {
 
 const WORD_SEARCH_DIRECTIONS = [
 
-  { row: 0, col: 1 },
-  { row: 0, col: -1 },
+  {
+    row: 0,
+    col: 1
+  },
 
-  { row: 1, col: 0 },
-  { row: -1, col: 0 },
+  {
+    row: 0,
+    col: -1
+  },
 
-  { row: 1, col: 1 },
-  { row: 1, col: -1 },
+  {
+    row: 1,
+    col: 0
+  },
 
-  { row: -1, col: 1 },
-  { row: -1, col: -1 }
+  {
+    row: -1,
+    col: 0
+  },
+
+  {
+    row: 1,
+    col: 1
+  },
+
+  {
+    row: 1,
+    col: -1
+  },
+
+  {
+    row: -1,
+    col: 1
+  },
+
+  {
+    row: -1,
+    col: -1
+  }
 
 ];
 
@@ -3609,8 +3743,11 @@ function generateWordSearch(
 
   const board =
     Array.from(
-      { length: size },
-      () => Array(size).fill("")
+      {
+        length: size
+      },
+      () =>
+        Array(size).fill("")
     );
 
 
@@ -3622,7 +3759,8 @@ function generateWordSearch(
     return [
       ...WORD_SEARCH_DIRECTIONS
     ].sort(
-      () => Math.random() - 0.5
+      () =>
+        Math.random() - 0.5
     );
 
   }
@@ -3630,19 +3768,22 @@ function generateWordSearch(
 
   const sortedWords =
     [...cleanWords].sort(
-      (a, b) => b.length - a.length
+      (a, b) =>
+        b.length - a.length
     );
 
 
   sortedWords.forEach(
     word => {
 
-      let placed = false;
+      let placed =
+        false;
 
 
       for (
         let attempt = 0;
-        attempt < 1500 && !placed;
+        attempt < 1500 &&
+        !placed;
         attempt++
       ) {
 
@@ -3686,7 +3827,8 @@ function generateWordSearch(
         }
 
 
-        let valid = true;
+        let valid =
+          true;
 
 
         for (
@@ -3713,7 +3855,9 @@ function generateWordSearch(
             current !== word[i]
           ) {
 
-            valid = false;
+            valid =
+              false;
+
             break;
 
           }
@@ -3726,7 +3870,8 @@ function generateWordSearch(
         }
 
 
-        const cells = [];
+        const cells =
+          [];
 
 
         for (
@@ -3758,7 +3903,8 @@ function generateWordSearch(
         placements[word] =
           cells;
 
-        placed = true;
+        placed =
+          true;
 
       }
 
@@ -3863,9 +4009,11 @@ function initializeWordSearch() {
 
     ...state,
 
-    selectedStart: null,
+    selectedStart:
+      null,
 
-    foundWords: new Set()
+    foundWords:
+      new Set()
 
   };
 
@@ -3955,11 +4103,16 @@ function renderWordSearchBoard() {
       cell.addEventListener(
         "click",
         () =>
-          handleWordSearchCell(row, col)
+          handleWordSearchCell(
+            row,
+            col
+          )
       );
 
 
-      boardElement.appendChild(cell);
+      boardElement.appendChild(
+        cell
+      );
 
     }
 
@@ -4030,7 +4183,9 @@ function renderWordSearchWordList() {
       `;
 
 
-      listElement.appendChild(item);
+      listElement.appendChild(
+        item
+      );
 
     }
   );
@@ -4056,7 +4211,9 @@ function handleWordSearchCell(
   }
 
 
-  if (!state.selectedStart) {
+  if (
+    !state.selectedStart
+  ) {
 
     state.selectedStart = {
       row,
@@ -4068,7 +4225,10 @@ function handleWordSearchCell(
 
 
     const cell =
-      getWordSearchCell(row, col);
+      getWordSearchCell(
+        row,
+        col
+      );
 
 
     if (cell) {
@@ -4098,7 +4258,9 @@ function handleWordSearchCell(
     );
 
 
-  if (selectedCells.length === 0) {
+  if (
+    selectedCells.length === 0
+  ) {
 
     state.selectedStart = {
       row,
@@ -4110,7 +4272,10 @@ function handleWordSearchCell(
 
 
     const cell =
-      getWordSearchCell(row, col);
+      getWordSearchCell(
+        row,
+        col
+      );
 
 
     if (cell) {
@@ -4131,7 +4296,11 @@ function handleWordSearchCell(
     selectedCells
       .map(
         cell =>
-          state.board[cell.row][cell.col]
+          state.board[
+            cell.row
+          ][
+            cell.col
+          ]
       )
       .join("");
 
@@ -4143,14 +4312,17 @@ function handleWordSearchCell(
       .join("");
 
 
-  let foundWord = null;
+  let foundWord =
+    null;
 
 
   state.words.forEach(
     word => {
 
       if (
-        state.foundWords.has(word)
+        state.foundWords.has(
+          word
+        )
       ) {
 
         return;
@@ -4231,8 +4403,12 @@ function getCellsBetween(
   const straightLine =
     rowDifference === 0 ||
     colDifference === 0 ||
-    Math.abs(rowDifference) ===
-      Math.abs(colDifference);
+    Math.abs(
+      rowDifference
+    ) ===
+      Math.abs(
+        colDifference
+      );
 
 
   if (!straightLine) {
@@ -4242,12 +4418,17 @@ function getCellsBetween(
 
   const steps =
     Math.max(
-      Math.abs(rowDifference),
-      Math.abs(colDifference)
+      Math.abs(
+        rowDifference
+      ),
+      Math.abs(
+        colDifference
+      )
     );
 
 
-  const cells = [];
+  const cells =
+    [];
 
 
   for (
@@ -4294,14 +4475,19 @@ function markFoundWord(
   }
 
 
-  state.foundWords.add(word);
+  state.foundWords.add(
+    word
+  );
 
 
   cells.forEach(
     ({ row, col }) => {
 
       const element =
-        getWordSearchCell(row, col);
+        getWordSearchCell(
+          row,
+          col
+        );
 
 
       if (element) {
@@ -4504,7 +4690,8 @@ function createWordSearchSparkle(
 
 
   setTimeout(
-    () => sparkle.remove(),
+    () =>
+      sparkle.remove(),
     800
   );
 
@@ -4535,7 +4722,9 @@ function showWordSearchSuccess() {
   setTimeout(
     () => {
 
-      success.classList.add("show");
+      success.classList.add(
+        "show"
+      );
 
     },
     50
@@ -4607,7 +4796,8 @@ function createSunflowerCelebration() {
 
 
     setTimeout(
-      () => flower.remove(),
+      () =>
+        flower.remove(),
       12000
     );
 
@@ -4620,12 +4810,17 @@ function createSunflowerCelebration() {
 // DÍA BLOQUEADO
 // =========================================================
 
-function showLockedMessage(day) {
+function showLockedMessage(
+  day
+) {
 
   const date =
     new Date(
-      dateToUTC(START_DATE) +
-      (day - 1) * 86400000
+      dateToUTC(
+        START_DATE
+      ) +
+      (day - 1) *
+      86400000
     );
 
 
@@ -4641,19 +4836,29 @@ function showLockedMessage(day) {
 
 
   const modalDay =
-    document.getElementById("modal-day");
+    document.getElementById(
+      "modal-day"
+    );
 
   const modalIcon =
-    document.getElementById("modal-icon");
+    document.getElementById(
+      "modal-icon"
+    );
 
   const modalTitle =
-    document.getElementById("modal-title");
+    document.getElementById(
+      "modal-title"
+    );
 
   const modalBody =
-    document.getElementById("modal-body");
+    document.getElementById(
+      "modal-body"
+    );
 
   const modal =
-    document.getElementById("modal");
+    document.getElementById(
+      "modal"
+    );
 
 
   if (
@@ -4700,7 +4905,9 @@ function showLockedMessage(day) {
   `;
 
 
-  modal.classList.add("open");
+  modal.classList.add(
+    "open"
+  );
 
 
   modal.setAttribute(
@@ -4719,15 +4926,23 @@ function showLockedMessage(day) {
 // ETIQUETA DÍA
 // =========================================================
 
-function getDayLabel(day) {
+function getDayLabel(
+  day
+) {
 
   if (day === 22) {
+
     return "Nuestro día";
+
   }
 
 
-  if (day === getCurrentDay()) {
+  if (
+    day === getCurrentDay()
+  ) {
+
     return "Disponible hoy";
+
   }
 
 
@@ -4857,7 +5072,8 @@ function createHearts(
 
 
     setTimeout(
-      () => heart.remove(),
+      () =>
+        heart.remove(),
       14000
     );
 
@@ -4873,7 +5089,8 @@ function createHearts(
 function startHeartAnimation() {
 
   setInterval(
-    () => createHearts(1),
+    () =>
+      createHearts(1),
     1800
   );
 
@@ -4897,14 +5114,21 @@ async function toggleMusic() {
     );
 
 
-  if (!audio || !button) {
+  if (
+    !audio ||
+    !button
+  ) {
+
     return;
+
   }
 
 
   try {
 
-    if (audio.paused) {
+    if (
+      audio.paused
+    ) {
 
       await audio.play();
 
