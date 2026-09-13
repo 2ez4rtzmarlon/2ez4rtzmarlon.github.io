@@ -3227,3 +3227,812 @@ h1 span {
   }
 
 }
+/* =========================================================
+   DÍA 13 — ELIGE UNA AVENTURA
+   ========================================================= */
+
+.day13-adventure {
+
+  position: relative;
+
+  width: 100%;
+
+  max-width: 720px;
+
+  margin: 0 auto;
+
+  padding: 10px 5px 20px;
+
+  overflow: hidden;
+
+}
+
+
+/* =========================================================
+   INTRODUCCIÓN
+   ========================================================= */
+
+.day13-intro {
+
+  text-align: center;
+
+  padding: 10px 15px 25px;
+
+}
+
+
+.day13-sunflower {
+
+  font-size: 55px;
+
+  margin-bottom: 8px;
+
+  animation:
+    day13Sunflower 3s ease-in-out infinite;
+
+}
+
+
+.day13-intro h3 {
+
+  margin: 5px 0 8px;
+
+  font-size: 24px;
+
+  line-height: 1.3;
+
+}
+
+
+.day13-intro p {
+
+  margin: 6px 0;
+
+  font-size: 18px;
+
+}
+
+
+.day13-small-text {
+
+  font-size: 14px !important;
+
+  opacity: 0.75;
+
+  margin-top: 14px !important;
+
+}
+
+
+/* =========================================================
+   OPCIONES
+   ========================================================= */
+
+.day13-options {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 14px;
+
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
+
+}
+
+
+.day13-options.hidden {
+
+  opacity: 0;
+
+  transform:
+    translateY(-20px);
+
+  pointer-events: none;
+
+  position: absolute;
+
+}
+
+
+/* =========================================================
+   TARJETA DE OPCIÓN
+   ========================================================= */
+
+.day13-option {
+
+  width: 100%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  padding: 17px;
+
+  border: 1px solid rgba(255, 193, 7, 0.35);
+
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      rgba(255,255,255,0.95),
+      rgba(255,248,220,0.95)
+    );
+
+  box-shadow:
+    0 8px 22px rgba(0,0,0,0.08);
+
+  cursor: pointer;
+
+  text-align: left;
+
+  font-family: inherit;
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+
+}
+
+
+/* =========================================================
+   EFECTO AL PASAR EL MOUSE
+   ========================================================= */
+
+.day13-option:hover {
+
+  transform:
+    translateY(-4px);
+
+  box-shadow:
+    0 14px 30px rgba(0,0,0,0.13);
+
+  border-color:
+    rgba(255, 193, 7, 0.75);
+
+}
+
+
+.day13-option:active {
+
+  transform:
+    scale(0.98);
+
+}
+
+
+/* =========================================================
+   ICONO
+   ========================================================= */
+
+.day13-option-icon {
+
+  flex-shrink: 0;
+
+  width: 55px;
+
+  height: 55px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background:
+    rgba(255, 193, 7, 0.13);
+
+  font-size: 30px;
+
+}
+
+
+/* =========================================================
+   CONTENIDO
+   ========================================================= */
+
+.day13-option-content {
+
+  flex: 1;
+
+}
+
+
+.day13-option-content h4 {
+
+  margin: 0 0 5px;
+
+  font-size: 18px;
+
+}
+
+
+.day13-option-content p {
+
+  margin: 0 0 5px;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+}
+
+
+.day13-option-content span {
+
+  display: block;
+
+  font-size: 13px;
+
+  line-height: 1.45;
+
+  opacity: 0.72;
+
+}
+
+
+/* =========================================================
+   FLECHA
+   ========================================================= */
+
+.day13-option-arrow {
+
+  flex-shrink: 0;
+
+  font-size: 24px;
+
+  opacity: 0.45;
+
+  transition:
+    transform 0.3s ease,
+    opacity 0.3s ease;
+
+}
+
+
+.day13-option:hover
+.day13-option-arrow {
+
+  transform:
+    translateX(5px);
+
+  opacity: 1;
+
+}
+
+
+/* =========================================================
+   RESULTADO
+   ========================================================= */
+
+.day13-result {
+
+  display: none;
+
+  text-align: center;
+
+  padding: 20px 5px;
+
+  animation:
+    day13ResultAppear 0.7s ease forwards;
+
+}
+
+
+.day13-result.show {
+
+  display: block;
+
+}
+
+
+.day13-result-icon {
+
+  font-size: 60px;
+
+  margin-bottom: 10px;
+
+  animation:
+    day13HeartBeat 1.4s ease-in-out infinite;
+
+}
+
+
+.day13-result h3 {
+
+  font-size: 24px;
+
+  margin: 5px 0 10px;
+
+}
+
+
+.day13-result p {
+
+  font-size: 15px;
+
+  line-height: 1.55;
+
+  margin: 8px 0;
+
+}
+
+
+.day13-result-title {
+
+  font-size: 20px !important;
+
+  font-weight: bold;
+
+  margin: 15px 0 !important;
+
+}
+
+
+.day13-final-message {
+
+  font-size: 18px !important;
+
+  font-weight: 600;
+
+  margin-top: 15px !important;
+
+}
+
+
+/* =========================================================
+   BOLETO
+   ========================================================= */
+
+.day13-ticket {
+
+  position: relative;
+
+  max-width: 560px;
+
+  margin: 25px auto 20px;
+
+  padding: 0;
+
+  overflow: hidden;
+
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #fffdf5,
+      #fff8dc
+    );
+
+  border:
+    1px solid rgba(190, 145, 20, 0.35);
+
+  box-shadow:
+    0 12px 30px rgba(0,0,0,0.10);
+
+  text-align: left;
+
+}
+
+
+/* =========================================================
+   PARTE SUPERIOR DEL BOLETO
+   ========================================================= */
+
+.day13-ticket-top {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 16px 18px;
+
+  font-size: 13px;
+
+  font-weight: bold;
+
+  letter-spacing: 0.5px;
+
+}
+
+
+/* =========================================================
+   LÍNEA
+   ========================================================= */
+
+.day13-ticket-line {
+
+  height: 1px;
+
+  border-top:
+    2px dashed rgba(150,120,30,0.35);
+
+  margin: 0 14px;
+
+}
+
+
+/* =========================================================
+   CUERPO
+   ========================================================= */
+
+.day13-ticket-body {
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(2, 1fr);
+
+  gap: 18px;
+
+  padding: 20px 18px;
+
+}
+
+
+.day13-ticket-body div {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+
+}
+
+
+.day13-ticket-body small {
+
+  font-size: 10px;
+
+  letter-spacing: 1px;
+
+  opacity: 0.55;
+
+}
+
+
+.day13-ticket-body strong {
+
+  font-size: 14px;
+
+  line-height: 1.35;
+
+}
+
+
+/* =========================================================
+   PIE DEL BOLETO
+   ========================================================= */
+
+.day13-ticket-footer {
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  padding: 14px 18px;
+
+  font-size: 12px;
+
+  font-weight: bold;
+
+  letter-spacing: 1px;
+
+}
+
+
+/* =========================================================
+   BOTÓN VOLVER A ELEGIR
+   ========================================================= */
+
+.day13-again {
+
+  display: inline-block;
+
+  border: none;
+
+  padding: 11px 18px;
+
+  border-radius: 25px;
+
+  background:
+    rgba(255, 193, 7, 0.15);
+
+  font-family: inherit;
+
+  font-size: 13px;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    background 0.25s ease;
+
+}
+
+
+.day13-again:hover {
+
+  transform:
+    translateY(-2px);
+
+  background:
+    rgba(255, 193, 7, 0.28);
+
+}
+
+
+/* =========================================================
+   GIRASOLES DECORATIVOS
+   ========================================================= */
+
+.day13-decoration {
+
+  display: flex;
+
+  justify-content: space-around;
+
+  align-items: center;
+
+  margin-top: 25px;
+
+  opacity: 0.75;
+
+  pointer-events: none;
+
+}
+
+
+.day13-decoration span {
+
+  display: inline-block;
+
+  font-size: 23px;
+
+  animation:
+    day13Float 3s ease-in-out infinite;
+
+}
+
+
+.day13-decoration span:nth-child(2) {
+
+  animation-delay:
+    0.5s;
+
+}
+
+
+.day13-decoration span:nth-child(3) {
+
+  animation-delay:
+    1s;
+
+}
+
+
+.day13-decoration span:nth-child(4) {
+
+  animation-delay:
+    1.5s;
+
+}
+
+
+.day13-decoration span:nth-child(5) {
+
+  animation-delay:
+    2s;
+
+}
+
+
+/* =========================================================
+   ANIMACIONES
+   ========================================================= */
+
+@keyframes day13Sunflower {
+
+  0%,
+  100% {
+
+    transform:
+      rotate(-4deg)
+      scale(1);
+
+  }
+
+  50% {
+
+    transform:
+      rotate(4deg)
+      scale(1.08);
+
+  }
+
+}
+
+
+@keyframes day13Float {
+
+  0%,
+  100% {
+
+    transform:
+      translateY(0)
+      rotate(-3deg);
+
+  }
+
+  50% {
+
+    transform:
+      translateY(-8px)
+      rotate(3deg);
+
+  }
+
+}
+
+
+@keyframes day13HeartBeat {
+
+  0%,
+  100% {
+
+    transform:
+      scale(1);
+
+  }
+
+  50% {
+
+    transform:
+      scale(1.12);
+
+  }
+
+}
+
+
+@keyframes day13ResultAppear {
+
+  from {
+
+    opacity: 0;
+
+    transform:
+      translateY(25px)
+      scale(0.96);
+
+  }
+
+  to {
+
+    opacity: 1;
+
+    transform:
+      translateY(0)
+      scale(1);
+
+  }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — CELULAR
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .day13-adventure {
+
+    padding-left: 0;
+
+    padding-right: 0;
+
+  }
+
+
+  .day13-intro h3 {
+
+    font-size: 21px;
+
+  }
+
+
+  .day13-intro p {
+
+    font-size: 16px;
+
+  }
+
+
+  .day13-option {
+
+    padding: 14px;
+
+    gap: 11px;
+
+    border-radius: 16px;
+
+  }
+
+
+  .day13-option-icon {
+
+    width: 48px;
+
+    height: 48px;
+
+    font-size: 25px;
+
+  }
+
+
+  .day13-option-content h4 {
+
+    font-size: 16px;
+
+  }
+
+
+  .day13-option-content span {
+
+    font-size: 12px;
+
+  }
+
+
+  .day13-option-arrow {
+
+    font-size: 20px;
+
+  }
+
+
+  .day13-ticket-body {
+
+    grid-template-columns: 1fr;
+
+    gap: 13px;
+
+  }
+
+
+  .day13-ticket-top {
+
+    font-size: 11px;
+
+  }
+
+
+  .day13-result h3 {
+
+    font-size: 21px;
+
+  }
+
+
+  .day13-final-message {
+
+    font-size: 16px !important;
+
+  }
+
+}
