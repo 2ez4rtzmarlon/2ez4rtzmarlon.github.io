@@ -1062,18 +1062,51 @@ const surprises = [
 
 
   // =======================================================
-  // DÍA 15
-  // =======================================================
+// DÍA 15
+// =======================================================
 
-  {
-    icon: "🎶",
-    title: "Una playlist para nosotros",
+{
+  icon: "🌻",
 
-    text: `
-      Puedes reemplazar este texto por 5 canciones
-      que representen diferentes momentos de nuestra relación.
-    `
-  },
+  title: "Si pudiera regalarte el mundo…",
+
+  petals: true,
+
+  text: `
+    Si pudiera regalarte el mundo,
+    probablemente empezaría por regalarte
+    todos los amaneceres bonitos,
+    todos los lugares que todavía nos faltan conocer
+    y todos los momentos que aún nos quedan por vivir.
+    
+    <br><br>
+
+    Pero después pensaría que nada de eso tendría sentido
+    si no pudiera compartirlo contigo.
+    
+    <br><br>
+
+    Así que mejor te regalo algo mucho más sencillo:
+    
+    <br><br>
+
+    <strong>mi tiempo, mis abrazos,
+    mis locuras y todos los días que pueda vivir a tu lado.</strong>
+    
+    <br><br>
+
+    Porque si pudiera pedir algo para nuestro futuro,
+    pediría que sigamos encontrándonos,
+    riéndonos y eligiéndonos una y otra vez.
+    
+    <br><br>
+
+    <strong>Y si pudiera regalarte el mundo…
+    te llevaría conmigo a recorrerlo. 🌻❤️</strong>
+  `
+},
+
+  
 
 
   // =======================================================
@@ -2577,6 +2610,20 @@ function openSurprise(day) {
     createHearts(28);
 
   }
+  // =====================================================
+// PÉTALOS DEL DÍA 15
+// =====================================================
+
+if (day === 15) {
+
+  const audio = document.getElementById("bg-music");
+
+  if (audio) {
+    audio.pause();
+  }
+
+  createPetals(35);
+}
 
 }
 
@@ -5014,7 +5061,68 @@ function scrollToCalendar() {
 
 }
 
+// =========================================================
+// PÉTALOS - DÍA 15
+// =========================================================
 
+function createPetals(amount = 35) {
+
+  if (!document.getElementById("petal-style")) {
+
+    const style = document.createElement("style");
+
+    style.id = "petal-style";
+
+    style.textContent = `
+      .floating-petal {
+        position: fixed;
+        top: -40px;
+        z-index: 9999;
+        pointer-events: none;
+        animation: fallingPetal linear forwards;
+      }
+
+      @keyframes fallingPetal {
+        0% {
+          transform: translateY(-40px) rotate(0deg);
+          opacity: 0;
+        }
+
+        10% {
+          opacity: 1;
+        }
+
+        50% {
+          transform: translateY(50vh) translateX(40px) rotate(180deg);
+        }
+
+        100% {
+          transform: translateY(110vh) translateX(-50px) rotate(360deg);
+          opacity: 0;
+        }
+      }
+    `;
+
+    document.head.appendChild(style);
+  }
+
+  for (let i = 0; i < amount; i++) {
+
+    const petal = document.createElement("span");
+
+    petal.className = "floating-petal";
+    petal.textContent = "🌻";
+
+    petal.style.left = `${Math.random() * 100}%`;
+    petal.style.fontSize = `${12 + Math.random() * 18}px`;
+    petal.style.animationDuration = `${6 + Math.random() * 7}s`;
+    petal.style.animationDelay = `${Math.random() * 5}s`;
+
+    document.body.appendChild(petal);
+
+    setTimeout(() => petal.remove(), 15000);
+  }
+}
 // =========================================================
 // CORAZONES
 // =========================================================
