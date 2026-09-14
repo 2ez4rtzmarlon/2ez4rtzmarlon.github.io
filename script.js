@@ -1044,13 +1044,19 @@ const surprises = [
     title: "Lo que me haces sentir",
 
     text: `
-      Escribe aquí, con tus propias palabras,
-      cómo cambia tu día cuando estás con ella.
+      Gracias por hacerme sentir amado, se que mi caracter no ayuda
+      pero espero de todo corazón que podamos seguir juntos mucho tiempo amor,
+      gracias por ser mia, te amo mucho mi pandita, me encantas, te deseo,
+      gracias amor de mi vida
 
       <br><br>
 
       Hazlo personal:
-      habla de algo que solo ustedes dos entienden.
+      Te amo mi Sucubo personal
+      Te amo mi pandita preciosa peach
+      Te amo mi Andrea
+      Te amo mi Carrión
+      Te amo de todas las formas y amo todo de ti.
     `
   },
 
