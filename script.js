@@ -9,6 +9,10 @@
   Zona horaria:
   Quito, Ecuador = UTC-5
   America/Guayaquil
+
+  El calendario se desbloquea según la fecha de Quito.
+  El contador llega exactamente a cero a las
+  00:00:00 del 22 de septiembre de 2026 en Quito.
 */
 
 
@@ -35,17 +39,14 @@ const surprises = [
 
   {
     icon: "❤️",
+
     title: "Una razón para sonreír",
 
     text: `
       Hoy comienza nuestra cuenta regresiva.
 
-      <br><br>
-
       No necesito una fecha especial para recordarte cuánto
       significas para mí.
-
-      <br><br>
 
       Pero quiero aprovechar estos 22 días para dejarte
       pequeños pedacitos de todo lo que siento por ti
@@ -60,12 +61,11 @@ const surprises = [
 
   {
     icon: "📸",
+
     title: "Varios recuerdos juntos",
 
     text: `
       Gracias por compartir un poquito de tu tiempo junto a mí.
-
-      <br><br>
 
       Espero poder seguir viviendo varias cosas junto a ti
       y que nunca terminen las fotos oficiales. ❤️
@@ -92,6 +92,7 @@ const surprises = [
 
   {
     icon: "💕",
+
     title: "Siete cosas que amo de ti",
 
     text: `
@@ -139,31 +140,20 @@ const surprises = [
 
   {
     icon: "🎵",
+
     title: "Nuestra canción",
 
     text: `
       Hoy quiero que escuches nuestra canción y recuerdes
       lo importante que eres para mi vida y de qué manera
-      eres importante para mí.
-
-      <br><br>
-
-      Gracias por compartir tus gustos y hacerme recordarte
-      a ti en cada segundo de la canción.
-
-      <br><br>
-
-      Antes de darle play piensa en algo lindo que hemos vivido.
-
-      <br><br>
-
-      Te amo. ❤️
+      eres importante para mí, gracias por compartir tus gustos
+      y hacerme recordarte a ti en cada segundo de la canción,
+      antes de darle play piensa en algo lindo que hemos vivido, te amo. ❤️
 
       <br><br>
 
       <strong>Tip:</strong>
-      Usa el botón ♫ de abajo en la esquina derecha
-      para escucharla.
+      Cierra y usa el botón ♫ de abajo en la esquina derecha y ahora cada día puedes escucharla.
     `
   },
 
@@ -174,6 +164,7 @@ const surprises = [
 
   {
     icon: "🥰",
+
     title: "Un momento que nunca olvido",
 
     text: `
@@ -184,8 +175,6 @@ const surprises = [
       <br><br>
 
       Pero me gusta recordar mucho cómo empezó todo:
-
-      <br><br>
 
       con unos deberes, las notitas pequeñas,
       hasta llegar a darte clases donde empezamos algo
@@ -202,6 +191,7 @@ const surprises = [
 
   {
     icon: "💌",
+
     title: "Una pequeña carta",
 
     text: `
@@ -222,12 +212,11 @@ const surprises = [
 
   {
     icon: "😂",
+
     title: "Nuestro momento más gracioso",
 
     text: `
       Igual hay muchos jajaja.
-
-      <br><br>
 
       Pero me gusta cuando íbamos jugando con una piedrita
       por toda la Amazonas hasta llegar a la zona para
@@ -247,6 +236,7 @@ const surprises = [
 
   {
     icon: "🎟️",
+
     title: "Cupón para ti",
 
     text: `
@@ -269,6 +259,7 @@ const surprises = [
 
   {
     icon: "🌻",
+
     title: "Lo que nunca te digo suficiente",
 
     textCarousel: true,
@@ -277,24 +268,22 @@ const surprises = [
 
       {
         title: "Gracias por hacerme reír",
-
         text: `
-          Incluso cuando no estoy teniendo un buen día,
-          siempre encuentras alguna forma de sacarme una sonrisa.
+          Gracias por hacerme reír incluso cuando no estoy
+          teniendo un buen día.
 
           <br><br>
 
-          Gracias por hacerme sentir especial. ❤️
+          Siempre encuentras alguna forma de sacarme una sonrisa
+          y hacer que todo se sienta un poquito mejor. ❤️
         `
       },
 
       {
         title: "Gracias por escucharme",
-
         text: `
-          Gracias por escuchar mis historias del fútbol,
-          de lo que me gusta, mis problemas, mis sueños
-          y hasta mis cosas sin sentido o palabras inventadas.
+          Gracias por escuchar mis historias, mis problemas,
+          mis ideas y hasta mis cosas sin sentido.
 
           <br><br>
 
@@ -305,54 +294,44 @@ const surprises = [
 
       {
         title: "Gracias por confiar en mí",
-
         text: `
-          Gracias por confiar en mí,
-          por contarme tus cosas y por dejarme conocer
-          cada vez más de ti.
+          Gracias por confiar en mí, por contarme tus cosas
+          y por dejarme conocer cada vez más de ti.
 
           <br><br>
 
-          Quiero seguir siendo esa persona
-          en la que puedas confiar. 🤍
+          Quiero seguir siendo esa persona en la que puedas confiar. 🤍
         `
       },
 
       {
         title: "Gracias por dejarme formar parte de tu vida",
-
         text: `
-          Gracias por dejarme compartir contigo
-          tantos momentos, aventuras, risas y recuerdos.
+          Gracias por dejarme compartir contigo tantos momentos,
+          aventuras, risas y recuerdos.
 
           <br><br>
 
-          Me hace feliz saber que nuestras vidas
-          se encontraron y que ahora tenemos
-          nuestra propia historia. 🥹❤️
+          Me hace feliz saber que nuestras vidas se encontraron
+          y que ahora tenemos nuestra propia historia. 🥹❤️
         `
       },
 
       {
         title: "Lo que nunca te digo suficiente",
-
         text: `
-          Quizá no te lo diga todos los días,
-          pero hay muchas cosas que siento por ti
-          que nunca quiero que olvides.
+          Quizá no te lo diga todos los días, pero hay muchas cosas
+          que siento por ti que nunca quiero que olvides.
 
           <br><br>
 
-          Gracias por estar,
-          gracias por quererme,
+          Gracias por estar, gracias por quererme,
           gracias por hacerme parte de tu mundo
           y gracias por ser tú.
 
           <br><br>
 
-          <strong>
-            Te amo mucho con montón. 🌻❤️
-          </strong>
+          <strong>Te quiero muchísimo. 🌻❤️</strong>
         `
       }
 
@@ -370,57 +349,13 @@ const surprises = [
     title: "Si pudiera volver al principio...",
 
     text: `
+      Si pudiera regresar al momento en que comenzó nuestra historia,
+      volvería a elegir conocerte.
 
-      <div class="day10-polaroid">
+      <br><br>
 
-        <div class="day10-photo-wrapper">
-
-          <img
-            src="images/dia10.jpeg"
-            alt="Un recuerdo nuestro"
-            class="day10-photo"
-          >
-
-        </div>
-
-        <div class="day10-photo-caption">
-          Un momento que parecía sencillo...
-        </div>
-
-      </div>
-
-
-      <div class="day10-message">
-
-        <p>
-          Si pudiera regresar al momento en que comenzó
-          nuestra historia, volvería a elegir conocerte.
-        </p>
-
-        <p>
-          Volvería a elegir cada conversación,
-          cada detalle y cada momento que poco a poco
-          nos fue acercando.
-        </p>
-
-        <p>
-          Quizá en ese momento no sabía todo lo que
-          vendría después, pero ahora sé que conocerte
-          fue una de las cosas más bonitas que me pudo pasar.
-        </p>
-
-        <p class="day10-final-message">
-          Y sí… volvería a elegirte. ❤️
-        </p>
-
-      </div>
-
-
-      <div class="day10-sunflower-message">
-        🌻 Algunas historias empiezan sin saber
-        lo importantes que llegarán a ser.
-      </div>
-
+      Volvería a elegir cada conversación
+      y volvería a elegirte a ti. ❤️
     `
   },
 
@@ -430,607 +365,103 @@ const surprises = [
   // =======================================================
 
   {
-    icon: "🔎",
+    icon: "📷",
 
-    title: "Encuentra nuestros nombres",
+    title: "Otra foto, otro recuerdo",
 
-    wordSearch: true,
+    text: `
+      Cada fotografía guarda un momento.
 
-    words: [
-      "MARLON",
-      "ANDREA",
-      "ALMA",
-      "MARALU",
-      "MUU",
-      "SULLY",
-      "LUXANDER",
-      "LOKI"
-    ]
+      Y cada momento contigo se convierte
+      en un recuerdo que quiero conservar.
+    `,
+
+    image: "images/foto02.jpg"
   },
 
 
   // =======================================================
   // DÍA 12
-  // PASAPORTE INTERACTIVO
   // =======================================================
 
   {
-    icon: "✈️",
+    icon: "💭",
 
-    title: "Pasaporte para nuestro futuro",
+    title: "12 cosas que quiero vivir contigo",
 
-    passport: true,
+    text: `
+      1. Viajar juntos.
 
-    destinations: [
+      <br><br>
 
-      {
-        number: "01",
-        icon: "✈️",
-        title: "Viajar juntos",
-        stamp: "DESTINO: AVENTURA",
+      2. Conocer lugares nuevos.
 
-        text: `
-          Quiero conocer nuevos lugares contigo,
-          perdernos un poquito, descubrir algo inesperado
-          y terminar diciendo:
+      <br><br>
 
-          <br><br>
+      3. Celebrar muchos aniversarios.
 
-          <strong>
-            "Valió la pena venir."
-          </strong>
-        `
-      },
+      <br><br>
 
-      {
-        number: "02",
-        icon: "🗺️",
-        title: "Conocer lugares nuevos",
-        stamp: "NUEVO DESTINO ❤️",
+      4. Reírnos hasta que nos duela el estómago.
 
-        text: `
-          Quiero que algún día podamos salir a un nuevo lugar
-          y decir:
+      <br><br>
 
-          <br><br>
+      5. Tener más fotografías juntos.
 
-          <strong>
-            "Aquí todavía no hemos estado."
-          </strong>
+      <br><br>
 
-          <br><br>
+      6. Crear nuevas tradiciones.
 
-          Y convertirlo en nuestro próximo plan.
-        `
-      },
+      <br><br>
 
-      {
-        number: "03",
-        icon: "❤️",
-        title: "Celebrar muchos aniversarios",
-        stamp: "AÑO 03 ❤️",
+      7. Apoyarnos en nuestros sueños.
 
-        text: `
-          No quiero que este sea nuestro último aniversario especial.
+      <br><br>
 
-          <br><br>
+      8. Ver amaneceres juntos.
 
-          Quiero que existan muchos más números,
-          muchas más fotos oficiales
-          y muchas más razones para decir:
+      <br><br>
 
-          <br><br>
+      9. Celebrar nuestros logros.
 
-          <strong>
-            "Lo logramos otro año más."
-          </strong>
-        `
-      },
+      <br><br>
 
-      {
-        number: "04",
-        icon: "😂",
-        title: "Reírnos hasta que nos duela el estómago",
-        stamp: "REÍR SIN LÍMITES",
+      10. Superar los días difíciles.
 
-        text: `
-          Porque seguramente seguiremos haciendo
-          cosas que nadie más entendería.
+      <br><br>
 
-          <br><br>
+      11. Seguir aprendiendo del otro.
 
-          Y probablemente seguiremos riéndonos
-          de cosas que solo nosotros encontramos graciosas. 😂
+      <br><br>
 
-          <br><br>
-
-          Y sinceramente...
-
-          <strong>
-            no quiero que eso cambie.
-          </strong>
-        `
-      },
-
-      {
-        number: "05",
-        icon: "📸",
-        title: "Tener muchas más fotos juntos",
-        stamp: "RECUERDO GUARDADO",
-
-        text: `
-          Tenemos fotografías de muchas chocoaventuras.
-
-          <br><br>
-
-          Pero quiero que algún día tengamos tantas
-          que sea difícil escoger cuáles son nuestras favoritas.
-
-          <br><br>
-
-          Quiero llenar una vida contigo
-          de recuerdos que podamos volver a mirar.
-        `
-      },
-
-      {
-        number: "06",
-        icon: "🥂",
-        title: "Crear nuestras propias tradiciones",
-        stamp: "TRADICIÓN NUEVA",
-
-        text: `
-          Quiero que tengamos cosas que solamente sean nuestras.
-
-          <br><br>
-
-          Planes, lugares, fechas, bromas, costumbres
-          y pequeños rituales que con el tiempo podamos decir:
-
-          <br><br>
-
-          <strong>
-            "Esto empezó con nosotros."
-          </strong>
-        `
-      },
-
-      {
-        number: "07",
-        icon: "🌱",
-        title: "Apoyarnos en nuestros sueños",
-        stamp: "MISIÓN: APOYARNOS",
-
-        text: `
-          Quiero estar cuando tengas un sueño nuevo.
-
-          <br><br>
-
-          Quiero verte intentarlo, apoyarte cuando sea difícil
-          y celebrar contigo cuando finalmente lo consigas.
-
-          <br><br>
-
-          Y espero que tú también quieras estar
-          en mis sueños. ❤️
-        `
-      },
-
-      {
-        number: "08",
-        icon: "🌅",
-        title: "Ver amaneceres juntos",
-        stamp: "AMANECER COMPARTIDO",
-
-        text: `
-          Quiero algún día estar contigo viendo amanecer
-          y pensar que no necesitamos hacer nada extraordinario.
-
-          <br><br>
-
-          <strong>
-            Que estar juntos ya sea suficiente.
-          </strong>
-        `
-      },
-
-      {
-        number: "09",
-        icon: "🎉",
-        title: "Celebrar nuestros logros",
-        stamp: "OBJETIVO CUMPLIDO ❤️",
-
-        text: `
-          Quiero estar para aplaudir
-          tus pequeñas victorias y tus grandes logros.
-          Estamos cerca de celebrar uno.
-
-          <br><br>
-
-          Porque voy a querer verte crecer,
-          avanzar y cumplir todo aquello
-          que te propongas.
-        `
-      },
-
-      {
-        number: "10",
-        icon: "🤝",
-        title: "Superar los días difíciles",
-        stamp: "EQUIPO MARLON & ANDREA",
-
-        text: `
-          No todo será perfecto.
-
-          <br><br>
-
-          Habrá días complicados,
-          preocupaciones y momentos difíciles.
-
-          <br><br>
-
-          Pero quiero que incluso en esos días
-          podamos seguir diciendo:
-
-          <br><br>
-
-          <strong>
-            "Estamos juntos en esto."
-          </strong>
-        `
-      },
-
-      {
-        number: "11",
-        icon: "🥰",
-        title: "Seguir conociéndonos",
-        stamp: "NUEVO RECUERDO",
-
-        text: `
-          Aunque llevemos tiempo juntos,
-          todavía quiero descubrir nuevas cosas de ti.
-
-          <br><br>
-
-          Nuevas historias, nuevas costumbres,
-          nuevas formas de hacerte reír
-          y todas esas pequeñas cosas
-          que hacen que sigas sorprendiéndome.
-        `
-      },
-
-      {
-        number: "12",
-        icon: "❤️",
-        title: "Seguir eligiéndonos",
-        stamp: "DESTINO: NOSOTROS",
-
-        final: true,
-
-        text: `
-          De todas las cosas que quiero vivir contigo,
-          hay una que quiero por encima de todas.
-
-          <br><br>
-
-          <strong>
-            Seguir eligiéndonos.
-          </strong>
-
-          <br><br>
-
-          Elegirte cuando todo vaya bien.
-          Elegirte cuando las cosas sean difíciles.
-          Elegirte en los días normales.
-          Elegirte en los días especiales.
-
-          <br><br>
-
-          Porque después de todo lo que hemos vivido,
-          hay algo que tengo muy claro:
-
-          <br><br>
-
-          <strong>
-            volvería a elegirte.
-          </strong>
-
-          <br><br>
-
-          Hoy.
-          <br>
-          Mañana.
-          <br>
-          Y en todos los capítulos
-          que todavía nos falten escribir. ❤️
-        `
-      }
-
-    ]
+      12. Seguir escogiendo estar juntos. ❤️
+    `
   },
 
 
   // =======================================================
   // DÍA 13
-  // AVENTURA
   // =======================================================
 
   {
-    icon: "🧭",
+    icon: "🌙",
 
-    title: "Elige una aventura conmigo",
+    title: "Si estuvieras aquí...",
 
     text: `
+      Si estuvieras aquí ahora mismo,
+      probablemente no necesitaría decir demasiado.
 
-      <div class="day13-adventure">
+      <br><br>
 
-        <div class="day13-intro">
+      Solo quisiera tenerte cerca,
+      abrazarte y disfrutar uno de esos momentos sencillos
+      que terminan siendo los más importantes.
 
-          <div class="day13-sunflower">
-            🌻
-          </div>
+      <br><br>
 
-          <h3>
-            Hoy no quiero contarte un recuerdo...
-          </h3>
-
-          <p>
-            Hoy quiero imaginar uno contigo. ❤️
-          </p>
-
-          <p class="day13-small-text">
-            Elige una de estas aventuras
-            que te gustaría vivir conmigo.
-          </p>
-
-        </div>
-
-
-        <div class="day13-options">
-
-
-          <button
-            type="button"
-            class="day13-option"
-            onclick="selectAdventure(1)"
-          >
-
-            <div class="day13-option-icon">
-              🌅
-            </div>
-
-            <div class="day13-option-content">
-
-              <h4>
-                Una escapada
-              </h4>
-
-              <p>
-                Perdernos juntos.
-              </p>
-
-              <span>
-                Un lugar nuevo, sin preocuparnos
-                demasiado por el destino.
-              </span>
-
-            </div>
-
-            <div class="day13-option-arrow">
-              →
-            </div>
-
-          </button>
-
-
-          <button
-            type="button"
-            class="day13-option"
-            onclick="selectAdventure(2)"
-          >
-
-            <div class="day13-option-icon">
-              ❤️
-            </div>
-
-            <div class="day13-option-content">
-
-              <h4>
-                Un día solo para nosotros
-              </h4>
-
-              <p>
-                Sin apuros.
-              </p>
-
-              <span>
-                Comer algo rico, caminar,
-                conversar de cualquier cosa
-                y terminar abrazados.
-              </span>
-
-            </div>
-
-            <div class="day13-option-arrow">
-              →
-            </div>
-
-          </button>
-
-
-          <button
-            type="button"
-            class="day13-option"
-            onclick="selectAdventure(3)"
-          >
-
-            <div class="day13-option-icon">
-              🗺️
-            </div>
-
-            <div class="day13-option-content">
-
-              <h4>
-                Una nueva aventura
-              </h4>
-
-              <p>
-                Hagamos algo que nunca hemos hecho.
-              </p>
-
-              <span>
-                Elegir un lugar al azar
-                y descubrir juntos qué nos espera.
-              </span>
-
-            </div>
-
-            <div class="day13-option-arrow">
-              →
-            </div>
-
-          </button>
-
-
-        </div>
-
-
-        <div
-          id="day13-result"
-          class="day13-result"
-        >
-
-          <div class="day13-result-icon">
-            💖
-          </div>
-
-          <h3>
-            Entonces queda decidido...
-          </h3>
-
-          <p
-            id="day13-result-title"
-            class="day13-result-title"
-          ></p>
-
-          <p>
-            Aunque todavía no sepamos cuándo
-            ni dónde será...
-          </p>
-
-          <p class="day13-final-message">
-            quiero que seas tú
-            quien esté a mi lado. ❤️
-          </p>
-
-
-          <div class="day13-ticket">
-
-            <div class="day13-ticket-top">
-
-              <span>
-                🎫 VIAJE PARA DOS
-              </span>
-
-              <span>
-                DÍA 13
-              </span>
-
-            </div>
-
-
-            <div class="day13-ticket-line"></div>
-
-
-            <div class="day13-ticket-body">
-
-              <div>
-                <small>
-                  DESTINO
-                </small>
-
-                <strong>
-                  Por descubrir
-                </strong>
-              </div>
-
-
-              <div>
-                <small>
-                  COMPAÑERA
-                </small>
-
-                <strong>
-                  Andrea ❤️
-                </strong>
-              </div>
-
-
-              <div>
-                <small>
-                  ACOMPAÑANTE
-                </small>
-
-                <strong>
-                  Marlon
-                </strong>
-              </div>
-
-
-              <div>
-                <small>
-                  EQUIPAJE
-                </small>
-
-                <strong>
-                  Muchas ganas de estar juntos
-                </strong>
-              </div>
-
-            </div>
-
-
-            <div class="day13-ticket-line"></div>
-
-
-            <div class="day13-ticket-footer">
-
-              <span>
-                DESTINO CONFIRMADO
-              </span>
-
-              <span>
-                ❤️
-              </span>
-
-            </div>
-
-          </div>
-
-
-          <button
-            type="button"
-            class="day13-again"
-            onclick="resetAdventure()"
-          >
-            🔄 Elegir otra aventura
-          </button>
-
-        </div>
-
-
-        <div class="day13-decoration">
-
-          <span>🌻</span>
-          <span>🌻</span>
-          <span>🌻</span>
-          <span>❤️</span>
-          <span>🌻</span>
-
-        </div>
-
-      </div>
-
+      A veces no necesitamos hacer nada especial.
+      Solo estar juntos ya hace que mi día sea mejor. ❤️
     `
   },
 
@@ -1040,18 +471,29 @@ const surprises = [
   // =======================================================
 
   {
-    icon: "💗",
-    title: "Lo que me haces sentir",
+    icon: "🗺️",
+
+    title: "Nuestro pequeño viaje",
 
     text: `
-      Escribe aquí, con tus propias palabras,
-      cómo cambia tu día cuando estás con ella.
+      Hoy quiero que hagamos algo diferente.
 
       <br><br>
 
-      Hazlo personal:
-      habla de algo que solo ustedes dos entienden.
-    `
+      En lugar de recordar solamente un momento,
+      quiero que recorramos un pequeño camino por nuestra historia.
+
+      <br><br>
+
+      Desde cómo comenzó todo hasta todo lo que todavía
+      quiero vivir contigo.
+
+      <br><br>
+
+      <strong>Bienvenida a nuestro pequeño viaje. ❤️</strong>
+    `,
+
+    customContent: "day14"
   },
 
 
@@ -1060,12 +502,21 @@ const surprises = [
   // =======================================================
 
   {
-    icon: "🎶",
-    title: "Una playlist para nosotros",
+    icon: "🌻",
+
+    title: "Si fueras una flor...",
 
     text: `
-      Puedes reemplazar este texto por 5 canciones
-      que representen diferentes momentos de nuestra relación.
+      Serías un girasol.
+
+      Porque tienes esa forma de iluminar los momentos,
+      de hacer que todo se sienta un poquito más bonito
+      y porque sé cuánto te gustan.
+
+      <br><br>
+
+      Y si pudiera regalarte uno todos los días,
+      lo haría sin pensarlo. 🌻❤️
     `
   },
 
@@ -1075,16 +526,27 @@ const surprises = [
   // =======================================================
 
   {
-    icon: "📝",
-    title: "Una promesa",
+    icon: "🐼🐺",
+
+    title: "Tú y yo",
 
     text: `
-      No prometo que todos los días serán perfectos.
+      Si tuviera que elegir dos animales para representarnos,
+      elegiría un panda y un lobo.
 
       <br><br>
 
-      Sí quiero prometerte que seguiré valorando nuestra historia,
-      escuchándote y cuidando cada momento que construyamos juntos.
+      Tú, mi panda 🐼:
+      tierna, bonita y con ese lado adorable que me encanta.
+
+      <br><br>
+
+      Yo, tu lobo 🐺:
+      siempre queriendo estar a tu lado y cuidar lo que tenemos.
+
+      <br><br>
+
+      Diferentes, pero juntos hacemos nuestro propio equipo. ❤️
     `
   },
 
@@ -1094,21 +556,28 @@ const surprises = [
   // =======================================================
 
   {
-    icon: "🌟",
-    title: "Lo que quiero que nunca olvides",
+    icon: "😂",
+
+    title: "Una de esas cosas que solo nosotros entendemos",
 
     text: `
-      <div class="quote">
+      Nuestra relación está llena de pequeños momentos,
+      frases, bromas y situaciones que probablemente
+      no tendrían sentido para nadie más.
 
-        Nunca olvides que eres importante para mí.
+      <br><br>
 
-        <br><br>
+      Y justamente eso me encanta.
 
-        Incluso en los días en que no pueda estar cerca,
-        quiero que recuerdes que tienes un lugar enorme
-        en mi corazón.
+      <br><br>
 
-      </div>
+      Tenemos nuestro propio idioma,
+      nuestras propias bromas
+      y nuestros propios recuerdos.
+
+      <br><br>
+
+      Y espero que sigamos acumulando muchos más. 😂❤️
     `
   },
 
@@ -1119,14 +588,24 @@ const surprises = [
 
   {
     icon: "📸",
-    title: "Un recuerdo que quiero repetir",
+
+    title: "Otro recuerdo nuestro",
 
     text: `
-      Hay momentos que no solamente quiero recordar.
+      Una foto puede parecer solamente una imagen.
 
       <br><br>
 
-      Quiero volver a vivirlos contigo.
+      Pero cuando es una foto contigo,
+      para mí guarda muchísimo más:
+
+      el lugar, el momento,
+      lo que estábamos haciendo
+      y todo lo que sentía en ese instante.
+
+      <br><br>
+
+      Quiero llenar nuestra historia de muchos recuerdos así. ❤️
     `,
 
     image: "images/foto03.jpg"
@@ -1138,19 +617,25 @@ const surprises = [
   // =======================================================
 
   {
-    icon: "❤️",
-    title: "Ya casi llega nuestro día",
+    icon: "💖",
+
+    title: "Lo que quiero que nunca cambie",
 
     text: `
-      Faltan muy pocos días.
+      Quiero que nunca cambie nuestra capacidad
+      de reírnos juntos.
 
       <br><br>
 
-      Gracias por haber llegado hasta aquí conmigo.
+      Que podamos seguir hablando de cualquier cosa,
+      haciendo bromas tontas,
+      compartiendo nuestros problemas
+      y apoyándonos.
 
       <br><br>
 
-      Mañana habrá otro pequeño detalle para ti. ❤️
+      Porque más allá de ser pareja,
+      quiero seguir siendo tu compañero. ❤️
     `
   },
 
@@ -1160,26 +645,28 @@ const surprises = [
   // =======================================================
 
   {
-    icon: "💌",
-    title: "La víspera",
+    icon: "✈️",
+
+    title: "Todavía nos falta mucho por conocer",
 
     text: `
-      Mañana es nuestro día.
+      Hay muchos lugares que todavía no hemos visitado.
 
       <br><br>
 
-      Pero quería que supieras algo:
+      Muchos caminos que todavía no hemos recorrido.
 
       <br><br>
 
-      Para mí, nuestra historia no se celebra solamente
-      en una fecha.
+      Muchas fotografías que todavía no existen.
 
       <br><br>
 
-      Se celebra en cada conversación,
-      cada abrazo, cada risa y cada momento
-      en que seguimos eligiéndonos.
+      Y muchas historias que todavía no hemos vivido.
+
+      <br><br>
+
+      Espero poder descubrirlas contigo. ❤️
     `
   },
 
@@ -1189,21 +676,26 @@ const surprises = [
   // =======================================================
 
   {
-    icon: "🥹",
-    title: "Mañana...",
+    icon: "⏳",
+
+    title: "Ya casi llega nuestro día",
 
     text: `
-      Mañana llega el día 22.
+      Después de tantos recuerdos,
+      estamos a un paso de nuestro aniversario.
 
       <br><br>
 
-      Guarda este momento,
-      porque todo lo que hemos preparado hasta aquí
-      nos lleva a nuestra sorpresa final.
+      Estos días fueron solamente una pequeña forma
+      de recordarte cuánto te amo.
 
       <br><br>
 
-      ❤️
+      Pero mañana será diferente.
+
+      <br><br>
+
+      Mañana celebramos nosotros. ❤️
     `
   },
 
@@ -1213,59 +705,52 @@ const surprises = [
   // =======================================================
 
   {
-    icon: "💖",
-    title: "Feliz aniversario, mi amor",
+    icon: "💍",
+
+    title: "Feliz aniversario",
 
     text: `
-      <img
-        src="images/foto-final.jpg"
-        alt="Nuestro recuerdo"
-        class="final-photo"
-      >
+      Llegamos al día que estaba esperando.
 
-      <div class="quote">
+      <br><br>
 
-        Hoy, 22 de septiembre,
-        celebro nuestra historia.
+      Feliz aniversario, mi amor. ❤️
 
-        <br><br>
+      <br><br>
 
-        Gracias por cada momento,
-        por cada sonrisa y por formar parte de mi vida.
+      Gracias por cada momento,
+      cada risa,
+      cada abrazo,
+      cada aventura
+      y cada recuerdo.
 
-        <br><br>
+      <br><br>
 
-        Si pudiera volver al principio,
-        volvería a elegirte.
+      Gracias por ser parte de mi vida.
 
-        <br><br>
+      <br><br>
 
-        <strong>
-          Feliz aniversario.
-          Te amo. ❤️
-        </strong>
+      Y si estos 22 días me enseñaron algo,
+      es que todavía quiero escribir muchísimas páginas
+      más de nuestra historia.
 
-      </div>
-    `
+      <br><br>
+
+      <strong>Te amo. ❤️</strong>
+    `,
+
+    image: "images/foto-final.jpg"
   }
 
 ];
 
 
 // =========================================================
-// VARIABLES GLOBALES
+// VARIABLES DEL CARRUSEL
 // =========================================================
 
 window.currentCarouselSlides = [];
 window.currentCarouselIndex = 0;
-
-window.passportState = {
-  page: 0,
-  opened: false,
-  stamped: false
-};
-
-window.wordSearchState = null;
 
 
 // =========================================================
@@ -1274,63 +759,83 @@ window.wordSearchState = null;
 
 function getEcuadorDate() {
 
-  const formatter = new Intl.DateTimeFormat(
-    "en-CA",
-    {
-      timeZone: ECUADOR_TIME_ZONE,
-      year: "numeric",
-      month: "2-digit",
-      day: "2-digit"
+  const now = new Date();
+
+  const parts =
+    new Intl.DateTimeFormat(
+      "en-CA",
+      {
+        timeZone: ECUADOR_TIME_ZONE,
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit"
+      }
+    ).formatToParts(now);
+
+  const values = {};
+
+  parts.forEach(
+    part => {
+      if (part.type !== "literal") {
+        values[part.type] = part.value;
+      }
     }
   );
 
-  return formatter.format(new Date());
-
+  return `${values.year}-${values.month}-${values.day}`;
 }
 
 
 // =========================================================
-// CONVERTIR FECHA A UTC
+// CONVERTIR FECHA YYYY-MM-DD A UTC
 // =========================================================
 
 function dateToUTC(dateString) {
 
-  const [y, m, d] =
-    dateString.split("-").map(Number);
+  const [
+    year,
+    month,
+    day
+  ] = dateString
+    .split("-")
+    .map(Number);
 
   return Date.UTC(
-    y,
-    m - 1,
-    d
+    year,
+    month - 1,
+    day
   );
-
 }
 
 
 // =========================================================
-// DÍA ACTUAL
+// DÍA ACTUAL DEL CALENDARIO
 // =========================================================
 
 function getCurrentDay() {
 
-  const params =
+  const preview =
     new URLSearchParams(
       window.location.search
-    );
+    ).get("preview");
 
-  const previewDay =
-    Number(
-      params.get("preview")
-    );
+  if (preview !== null) {
 
+    const previewDay =
+      parseInt(
+        preview,
+        10
+      );
 
-  if (
-    Number.isInteger(previewDay) &&
-    previewDay >= 1 &&
-    previewDay <= TOTAL_DAYS
-  ) {
+    if (
+      !Number.isNaN(previewDay) &&
+      previewDay >= 1 &&
+      previewDay <= TOTAL_DAYS
+    ) {
 
-    return previewDay;
+      return previewDay;
+
+    }
 
   }
 
@@ -1338,29 +843,42 @@ function getCurrentDay() {
   const today =
     getEcuadorDate();
 
-
-  const difference =
-    Math.floor(
-      (
-        dateToUTC(today) -
-        dateToUTC(START_DATE)
-      ) / 86400000
+  const start =
+    dateToUTC(
+      START_DATE
     );
 
+  const current =
+    dateToUTC(
+      today
+    );
 
-  return Math.min(
-    Math.max(
-      difference + 1,
-      0
-    ),
-    TOTAL_DAYS
-  );
+  const diff =
+    Math.floor(
+      (current - start) /
+      86400000
+    );
 
+  const day =
+    diff + 1;
+
+
+  if (day < 1) {
+    return 0;
+  }
+
+
+  if (day > TOTAL_DAYS) {
+    return TOTAL_DAYS;
+  }
+
+
+  return day;
 }
 
 
 // =========================================================
-// FECHA ANIVERSARIO
+// FECHA EXACTA DEL ANIVERSARIO
 // =========================================================
 
 function getAnniversaryDate() {
@@ -1373,130 +891,116 @@ function getAnniversaryDate() {
 
 
 // =========================================================
-// CONTADOR
+// CONTADOR REGRESIVO
 // =========================================================
 
 function updateCountdown() {
 
+  const countdown =
+    document.getElementById(
+      "countdown"
+    );
+
+  if (!countdown) {
+    return;
+  }
+
+
+  const target =
+    getAnniversaryDate();
+
   const now =
     new Date();
 
-  const anniversary =
-    getAnniversaryDate();
-
-  const diff =
-    anniversary.getTime() -
+  let difference =
+    target.getTime() -
     now.getTime();
 
 
-  const label =
-    document.getElementById(
-      "countdown-label"
-    );
+  if (difference <= 0) {
+
+    countdown.innerHTML = `
+      <div class="countdown-finished">
+        ❤️ ¡Hoy es nuestro aniversario! ❤️
+      </div>
+    `;
+
+    return;
+  }
+
 
   const days =
-    document.getElementById(
-      "days"
+    Math.floor(
+      difference /
+      86400000
     );
+
+  difference %=
+    86400000;
+
 
   const hours =
-    document.getElementById(
-      "hours"
-    );
-
-  const minutes =
-    document.getElementById(
-      "minutes"
-    );
-
-  const seconds =
-    document.getElementById(
-      "seconds"
-    );
-
-
-  if (
-    !label ||
-    !days ||
-    !hours ||
-    !minutes ||
-    !seconds
-  ) {
-
-    return;
-
-  }
-
-
-  if (diff <= 0) {
-
-    label.textContent =
-      "❤️ Hoy es nuestro día ❤️";
-
-    days.textContent =
-      "00";
-
-    hours.textContent =
-      "00";
-
-    minutes.textContent =
-      "00";
-
-    seconds.textContent =
-      "00";
-
-    return;
-
-  }
-
-
-  const d =
     Math.floor(
-      diff / 86400000
-    );
-
-  const h =
-    Math.floor(
-      (diff % 86400000) /
+      difference /
       3600000
     );
 
-  const m =
+  difference %=
+    3600000;
+
+
+  const minutes =
     Math.floor(
-      (diff % 3600000) /
+      difference /
       60000
     );
 
-  const s =
+  difference %=
+    60000;
+
+
+  const seconds =
     Math.floor(
-      (diff % 60000) /
+      difference /
       1000
     );
 
 
-  days.textContent =
-    String(d).padStart(
-      2,
-      "0"
-    );
+  const pad =
+    number =>
+      String(number)
+        .padStart(2, "0");
 
-  hours.textContent =
-    String(h).padStart(
-      2,
-      "0"
-    );
 
-  minutes.textContent =
-    String(m).padStart(
-      2,
-      "0"
-    );
+  countdown.innerHTML = `
 
-  seconds.textContent =
-    String(s).padStart(
-      2,
-      "0"
-    );
+    <div class="countdown-item">
+      <span>${days}</span>
+      <small>Días</small>
+    </div>
+
+    <div class="countdown-separator">:</div>
+
+    <div class="countdown-item">
+      <span>${pad(hours)}</span>
+      <small>Horas</small>
+    </div>
+
+    <div class="countdown-separator">:</div>
+
+    <div class="countdown-item">
+      <span>${pad(minutes)}</span>
+      <small>Minutos</small>
+    </div>
+
+    <div class="countdown-separator">:</div>
+
+    <div class="countdown-item">
+      <span>${pad(seconds)}</span>
+      <small>Segundos</small>
+    </div>
+
+  `;
 
 }
 
@@ -1512,7 +1016,6 @@ function renderCalendar() {
       "calendar"
     );
 
-
   if (!calendar) {
     return;
   }
@@ -1522,42 +1025,7 @@ function renderCalendar() {
     getCurrentDay();
 
 
-  const status =
-    document.getElementById(
-      "status-text"
-    );
-
-
-  if (status) {
-
-    if (currentDay === 0) {
-
-      status.textContent =
-        "La cuenta regresiva comienza el 1 de septiembre ❤️";
-
-    }
-
-    else if (
-      currentDay >= TOTAL_DAYS
-    ) {
-
-      status.textContent =
-        "Hoy es nuestro día. ❤️";
-
-    }
-
-    else {
-
-      status.textContent =
-        `Hoy está disponible el detalle del día ${currentDay}. Los demás se desbloquearán automáticamente.`;
-
-    }
-
-  }
-
-
-  calendar.innerHTML =
-    "";
+  calendar.innerHTML = "";
 
 
   for (
@@ -1566,11 +1034,8 @@ function renderCalendar() {
     day++
   ) {
 
-    const unlocked =
-      day <= currentDay;
-
-    const isToday =
-      day === currentDay;
+    const surprise =
+      surprises[day - 1];
 
 
     const card =
@@ -1584,102 +1049,100 @@ function renderCalendar() {
 
 
     card.className =
-      `day-card ${
-        unlocked
-          ? "unlocked"
-          : "locked"
-      } ${
-        isToday
-          ? "today"
-          : ""
-      }`;
+      "calendar-day";
 
 
-    const date =
-      new Date(
-        dateToUTC(
-          START_DATE
-        ) +
-        (day - 1) *
-        86400000
-      );
-
-
-    const dateText =
-      date.toLocaleDateString(
-        "es-EC",
-        {
-          day: "numeric",
-          month: "short",
-          timeZone: "UTC"
-        }
-      );
+    const unlocked =
+      day <= currentDay;
 
 
     if (unlocked) {
 
-      card.innerHTML = `
-
-        <span class="day-number">
-          Día ${String(day).padStart(2, "0")}
-        </span>
-
-        <span class="day-date">
-          ${dateText}
-        </span>
-
-        <div class="day-icon">
-          ${surprises[day - 1].icon}
-        </div>
-
-        <div class="day-title">
-          ${surprises[day - 1].title}
-        </div>
-
-      `;
-
-
-      card.onclick =
-        () =>
-          openSurprise(day);
+      card.classList.add(
+        "unlocked"
+      );
 
     }
-
     else {
 
-      card.innerHTML = `
-
-        <span class="day-number">
-          Día ${String(day).padStart(2, "0")}
-        </span>
-
-        <span class="day-date">
-          ${dateText}
-        </span>
-
-        <div class="day-icon">
-          🔒
-        </div>
-
-        <div class="day-title">
-          Todavía no...
-        </div>
-
-        <span class="lock">
-          ♥
-        </span>
-
-      `;
-
-
-      card.onclick =
-        () =>
-          showLockedMessage(day);
+      card.classList.add(
+        "locked"
+      );
 
     }
 
 
-    calendar.appendChild(card);
+    if (
+      day === currentDay
+    ) {
+
+      card.classList.add(
+        "today"
+      );
+
+    }
+
+
+    if (
+      day === 22
+    ) {
+
+      card.classList.add(
+        "anniversary"
+      );
+
+    }
+
+
+    card.innerHTML = `
+
+      <span class="day-number">
+        ${day}
+      </span>
+
+      <span class="day-icon">
+        ${
+          unlocked
+            ? surprise.icon
+            : "🔒"
+        }
+      </span>
+
+      <span class="day-label">
+        ${
+          day === 22
+            ? "Nuestro día"
+            : unlocked
+              ? "Abrir"
+              : "Bloqueado"
+        }
+      </span>
+
+    `;
+
+
+    card.addEventListener(
+      "click",
+      () => {
+
+        if (unlocked) {
+
+          openSurprise(day);
+
+        }
+        else {
+
+          showLockedMessage(day);
+
+        }
+
+      }
+    );
+
+
+    calendar.appendChild(
+      card
+    );
 
   }
 
@@ -1687,7 +1150,7 @@ function renderCalendar() {
 
 
 // =========================================================
-// NORMALIZAR SLIDES
+// NORMALIZAR IMÁGENES
 // =========================================================
 
 function normalizeSlides(
@@ -1695,22 +1158,28 @@ function normalizeSlides(
 ) {
 
   if (
+    surprise.slides &&
     Array.isArray(
       surprise.slides
-    ) &&
-    surprise.slides.length > 0
+    )
   ) {
 
-    return surprise.slides.map(
-      slide => ({
-        image:
-          slide.image || null,
+    return surprise.slides;
 
-        title:
-          slide.title || "",
+  }
 
-        text:
-          slide.text || ""
+
+  if (
+    surprise.images &&
+    Array.isArray(
+      surprise.images
+    )
+  ) {
+
+    return surprise.images.map(
+      image => ({
+        image,
+        text: ""
       })
     );
 
@@ -1718,35 +1187,16 @@ function normalizeSlides(
 
 
   if (
-    Array.isArray(
-      surprise.images
-    ) &&
-    surprise.images.length > 0
+    surprise.image
   ) {
-
-    return surprise.images.map(
-      image => ({
-        image,
-
-        title: "",
-
-        text: ""
-      })
-    );
-
-  }
-
-
-  if (surprise.image) {
 
     return [
       {
         image:
           surprise.image,
 
-        title: "",
-
-        text: ""
+        text:
+          ""
       }
     ];
 
@@ -1762,22 +1212,9 @@ function normalizeSlides(
 // ABRIR SORPRESA
 // =========================================================
 
-function openSurprise(day) {
-
-  const currentDay =
-    getCurrentDay();
-
-
-  if (
-    day > currentDay
-  ) {
-
-    showLockedMessage(day);
-
-    return;
-
-  }
-
+function openSurprise(
+  day
+) {
 
   const surprise =
     surprises[day - 1];
@@ -1788,20 +1225,29 @@ function openSurprise(day) {
   }
 
 
+  const modal =
+    document.getElementById(
+      "modal"
+    );
+
+
   const modalDay =
     document.getElementById(
       "modal-day"
     );
+
+
+  const modalIcon =
+    document.getElementById(
+      "modal-icon"
+    );
+
 
   const modalTitle =
     document.getElementById(
       "modal-title"
     );
 
-  const modalIcon =
-    document.getElementById(
-      "modal-icon"
-    );
 
   const modalBody =
     document.getElementById(
@@ -1809,35 +1255,24 @@ function openSurprise(day) {
     );
 
 
-  if (
-    !modalDay ||
-    !modalTitle ||
-    !modalIcon ||
-    !modalBody
-  ) {
-
-    console.error(
-      "No se encontraron los elementos del modal."
-    );
-
+  if (!modal) {
     return;
-
   }
 
 
   modalDay.textContent =
-    `Día ${String(day).padStart(2, "0")} · ${getDayLabel(day)}`;
+    `Día ${day}`;
 
-  modalTitle.textContent =
-    surprise.title;
 
   modalIcon.textContent =
-    surprise.icon;
+    surprise.icon ||
+    "❤️";
 
 
-  // -------------------------------------------------------
-  // REINICIAR ESTADOS
-  // -------------------------------------------------------
+  modalTitle.textContent =
+    surprise.title ||
+    `Sorpresa del día ${day}`;
+
 
   window.currentCarouselSlides =
     [];
@@ -1846,19 +1281,63 @@ function openSurprise(day) {
     0;
 
 
-  window.passportState = {
-    page: 0,
-    opened: false,
-    stamped: false
-  };
+  if (
+    surprise.customContent ===
+    "day14"
+  ) {
+
+    modalBody.innerHTML = `
+      ${surprise.text}
+
+      ${buildDay14Journey()}
+    `;
+
+    modal.classList.add("open");
+
+    modal.setAttribute(
+      "aria-hidden",
+      "false"
+    );
+
+    document.body.style.overflow =
+      "hidden";
+
+    renderDay14Journey(0);
+
+    return;
+
+  }
 
 
-  window.wordSearchState =
-    null;
+  if (
+    surprise.textCarousel
+  ) {
 
+    modalBody.innerHTML =
+      buildTextCarousel(
+        surprise
+      );
 
-  let body =
-    "";
+    modal.classList.add(
+      "open"
+    );
+
+    modal.setAttribute(
+      "aria-hidden",
+      "false"
+    );
+
+    document.body.style.overflow =
+      "hidden";
+
+    window.currentTextCarouselIndex =
+      0;
+
+    updateTextCarousel();
+
+    return;
+
+  }
 
 
   const slides =
@@ -1867,670 +1346,69 @@ function openSurprise(day) {
     );
 
 
-  window.currentCarouselSlides =
-    slides;
-
-
-  // =======================================================
-  // DÍA 12 - PASAPORTE
-  // =======================================================
-
-  if (surprise.passport) {
-
-    body = `
-
-      <div
-        id="passport-container"
-        class="passport-container"
-      >
-
-        <div
-          id="passport-cover"
-          class="passport-cover"
-        >
-
-          <div class="passport-sunflowers">
-            🌻
-          </div>
-
-          <div class="passport-small-title">
-            PASAPORTE
-          </div>
-
-          <div class="passport-main-title">
-            PARA NUESTRO
-            <br>
-            FUTURO
-          </div>
-
-          <div class="passport-heart">
-            ❤️
-          </div>
-
-          <div class="passport-names">
-            MARLON
-            <span>♥</span>
-            ANDREA
-          </div>
-
-          <div class="passport-destination">
-            DESTINO:
-            <strong>NOSOTROS</strong>
-          </div>
-
-          <div class="passport-number">
-            Nº 22 · 2026
-          </div>
-
-          <button
-            type="button"
-            class="passport-open-button"
-            onclick="openPassport()"
-          >
-            ✈️ ABRIR PASAPORTE
-          </button>
-
-        </div>
-
-
-        <div
-          id="passport-inside"
-          class="passport-inside"
-          style="display:none;"
-        >
-
-          <div class="passport-page-header">
-
-            <span>
-              PASAPORTE PARA NUESTRO FUTURO
-            </span>
-
-            <span id="passport-page-counter">
-              INTRO
-            </span>
-
-          </div>
-
-
-          <div class="passport-page">
-
-            <div
-              id="passport-page-intro"
-              class="passport-page-intro"
-            >
-
-              <div class="passport-intro-icon">
-                🌍
-              </div>
-
-              <h3>
-                Nuestro próximo destino
-              </h3>
-
-              <p>
-                Ya tenemos muchos recuerdos que guardar,
-                muchas historias que contar y momentos
-                que nunca quiero olvidar.
-              </p>
-
-              <p>
-                Pero todavía hay algo que me gusta más:
-              </p>
-
-              <strong>
-                todo lo que todavía nos falta vivir. ❤️
-              </strong>
-
-              <p>
-                Este pasaporte guarda sueños,
-                aventuras y pequeños momentos
-                que quiero compartir contigo.
-              </p>
-
-            </div>
-
-
-            <div
-              id="passport-destination-content"
-              class="passport-destination-content"
-            >
-            </div>
-
-
-            <div
-              id="passport-stamp"
-              class="passport-stamp"
-            >
-            </div>
-
-          </div>
-
-
-          <div class="passport-controls">
-
-            <button
-              type="button"
-              id="passport-prev"
-              class="passport-nav-button"
-              onclick="changePassportPage(-1)"
-              disabled
-            >
-              ← Anterior
-            </button>
-
-
-            <button
-              type="button"
-              id="passport-next"
-              class="passport-nav-button primary"
-              onclick="changePassportPage(1)"
-            >
-              COMENZAR →
-            </button>
-
-          </div>
-
-
-          <div
-            id="passport-final-button"
-            class="passport-final-button"
-            style="display:none;"
-          >
-
-            <button
-              type="button"
-              onclick="stampPassport()"
-            >
-              ❤️ ESTAMPAR NUESTRO PASAPORTE
-            </button>
-
-          </div>
-
-
-          <div
-            id="passport-final-message"
-            class="passport-final-message"
-            style="display:none;"
-          >
-
-            <div class="final-passport-stamp">
-
-              <div>
-                ❤️ VISADO
-              </div>
-
-              <strong>
-                APROBADO
-              </strong>
-
-              <span>
-                DESTINO:
-              </span>
-
-              <b>
-                NOSOTROS
-              </b>
-
-              <small>
-                MARLON ♥ ANDREA
-              </small>
-
-              <small>
-                2026
-              </small>
-
-            </div>
-
-
-            <div class="passport-final-text">
-
-              <p>
-                Este viaje todavía no termina.
-              </p>
-
-              <strong>
-                Apenas estamos empezando. 🌻
-              </strong>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    `;
-
-  }
-
-
-  // =======================================================
-  // DÍA 9 - CARRUSEL DE TEXTO
-  // =======================================================
-
-  else if (
-    surprise.textCarousel &&
+  if (
     slides.length > 0
   ) {
 
-    body += `
+    window.currentCarouselSlides =
+      slides;
 
-      <div class="text-carousel">
+
+    modalBody.innerHTML = `
+
+      <div class="surprise-text">
+        ${
+          surprise.text ||
+          ""
+        }
+      </div>
+
+      <div class="carousel">
 
         <button
           type="button"
           class="carousel-button carousel-prev"
-          onclick="changeTextCarousel(-1)"
-          aria-label="Confesión anterior"
+          onclick="changeCarousel(-1)"
+          aria-label="Anterior"
         >
-          ‹
+          ❮
         </button>
 
-
-        <div class="text-carousel-card">
-
-          <div class="text-carousel-flower flower-one">
-            🌻
-          </div>
-
-          <div class="text-carousel-flower flower-two">
-            🌻
-          </div>
-
-          <div class="text-carousel-small-flower flower-three">
-            🌻
-          </div>
-
-          <div class="text-carousel-small-flower flower-four">
-            🌼
-          </div>
-
-
-          <div class="text-carousel-number">
-
-            <span id="text-carousel-counter">
-              1 / ${slides.length}
-            </span>
-
-          </div>
-
-
-          <div class="text-carousel-content">
-
-            <div class="text-carousel-icon">
-              💛
-            </div>
-
-            <h3 id="text-carousel-title">
-              ${slides[0].title}
-            </h3>
-
-            <div
-              id="text-carousel-text"
-              class="text-carousel-message"
-            >
-              ${slides[0].text}
-            </div>
-
-            <div class="text-carousel-heart">
-              ♡
-            </div>
-
-          </div>
-
-        </div>
-
+        <div
+          class="carousel-content"
+          id="carousel-content"
+        ></div>
 
         <button
           type="button"
           class="carousel-button carousel-next"
-          onclick="changeTextCarousel(1)"
-          aria-label="Siguiente confesión"
+          onclick="changeCarousel(1)"
+          aria-label="Siguiente"
         >
-          ›
+          ❯
         </button>
 
       </div>
 
-
-      <div class="carousel-dots text-carousel-dots">
-    `;
-
-
-    slides.forEach(
-      (slide, index) => {
-
-        body += `
-
-          <button
-            type="button"
-            class="carousel-dot ${
-              index === 0
-                ? "active"
-                : ""
-            }"
-            onclick="goToTextCarousel(${index})"
-            aria-label="Ir a confesión ${index + 1}"
-          >
-          </button>
-
-        `;
-
-      }
-    );
-
-
-    body += `
-      </div>
-    `;
-
-  }
-
-
-  // =======================================================
-  // DÍA 11 - SOPA DE LETRAS
-  // =======================================================
-
-  if (surprise.wordSearch) {
-
-    body += `
-
-      <div class="word-search-wrapper">
-
-        <div class="word-search-intro">
-
-          <div class="word-search-sunflowers">
-            🌻 🌻 🌻
-          </div>
-
-          <p class="word-search-instruction">
-            Hay 8 palabras escondidas.
-            Encuéntralas todas y descubre
-            el mensaje final. ❤️
-          </p>
-
-        </div>
-
-
-        <div class="word-search-counter">
-
-          <span id="word-search-found">
-            0
-          </span>
-
-          <span>/</span>
-
-          <span id="word-search-total">
-            ${surprise.words.length}
-          </span>
-
-          <span class="word-search-counter-label">
-            encontradas
-          </span>
-
-        </div>
-
-
-        <div
-          id="word-search-word-list"
-          class="word-search-word-list"
-        ></div>
-
-
-        <div class="word-search-board-container">
-
-          <div
-            id="word-search-board"
-            class="word-search-board"
-            aria-label="Sopa de letras"
-          ></div>
-
-        </div>
-
-
-        <div class="word-search-help">
-
-          💡 Selecciona la primera y la última
-          letra de cada palabra.
-
-        </div>
-
-
-        <div
-          id="word-search-success"
-          class="word-search-success"
-          style="display:none;"
-        >
-
-          <div class="success-sunflowers">
-            🌻 🌻 🌻
-          </div>
-
-          <div class="success-heart">
-            ❤️
-          </div>
-
-          <h3>
-            ¡Encontraste todas!
-          </h3>
-
-          <p>
-            Entre todos estos nombres,
-            recuerdos y pequeños pedacitos
-            de nuestra historia,
-            hay algo que quiero que nunca olvides.
-          </p>
-
-          <p>
-            <strong>
-              Tú eres una de las partes
-              más bonitas de mi vida.
-            </strong>
-          </p>
-
-          <p>
-            Gracias por compartir conmigo
-            tantos momentos y por formar
-            parte de mi historia.
-          </p>
-
-          <div class="success-final-message">
-            Te amo, Andrea. ❤️🌻
-          </div>
-
-        </div>
-
-      </div>
+      <div
+        class="carousel-dots"
+        id="carousel-dots"
+      ></div>
 
     `;
 
-  }
 
-
-  // =======================================================
-  // FOTOS
-  // =======================================================
-
-  else if (
-    slides.length > 0
-  ) {
-
-    if (
-      slides.length === 1
-    ) {
-
-      body += `
-
-        <div class="single-photo">
-
-          <img
-            src="${slides[0].image}"
-            alt="${surprise.title}"
-            class="surprise-image"
-          >
-
-        </div>
-
-      `;
-
-
-      if (slides[0].text) {
-
-        body += `
-
-          <div class="photo-description">
-            ${slides[0].text}
-          </div>
-
-        `;
-
-      }
-
-    }
-
-    else {
-
-      body += `
-
-        <div class="photo-carousel">
-
-          <button
-            type="button"
-            class="carousel-button carousel-prev"
-            onclick="changeCarousel(-1)"
-            aria-label="Foto anterior"
-          >
-            ‹
-          </button>
-
-
-          <div class="carousel-image-container">
-
-            <img
-              id="carousel-image"
-              src="${slides[0].image}"
-              alt="Recuerdo 1"
-            >
-
-          </div>
-
-
-          <button
-            type="button"
-            class="carousel-button carousel-next"
-            onclick="changeCarousel(1)"
-            aria-label="Foto siguiente"
-          >
-            ›
-          </button>
-
-        </div>
-
-
-        <div class="carousel-counter">
-
-          <span id="carousel-counter">
-            1 / ${slides.length}
-          </span>
-
-        </div>
-
-
-        <div
-          class="carousel-dots"
-          id="carousel-dots"
-        >
-      `;
-
-
-      slides.forEach(
-        (slide, index) => {
-
-          body += `
-
-            <button
-              type="button"
-              class="carousel-dot ${
-                index === 0
-                  ? "active"
-                  : ""
-              }"
-              onclick="goToCarousel(${index})"
-              aria-label="Ir a foto ${index + 1}"
-            >
-            </button>
-
-          `;
-
-        }
-      );
-
-
-      body += `
-
-        </div>
-
-
-        <div
-          id="carousel-description"
-          class="photo-description"
-        >
-          ${slides[0].text || ""}
-        </div>
-
-      `;
-
-    }
+    updateCarousel();
 
   }
 
+  else {
 
-  // =======================================================
-  // TEXTO PRINCIPAL
-  // =======================================================
-
-  if (
-    surprise.text &&
-    !surprise.textCarousel
-  ) {
-
-    body += `
-
+    modalBody.innerHTML = `
       <div class="surprise-text">
-        ${surprise.text}
+        ${surprise.text || ""}
       </div>
-
     `;
-
-  }
-
-
-  // =======================================================
-  // INSERTAR
-  // =======================================================
-
-  modalBody.innerHTML =
-    body;
-
-
-  // =======================================================
-  // ABRIR MODAL
-  // =======================================================
-
-  const modal =
-    document.getElementById(
-      "modal"
-    );
-
-
-  if (!modal) {
-
-    console.error(
-      "No existe #modal en el HTML."
-    );
-
-    return;
 
   }
 
@@ -2539,306 +1417,50 @@ function openSurprise(day) {
     "open"
   );
 
+
   modal.setAttribute(
     "aria-hidden",
     "false"
   );
 
+
   document.body.style.overflow =
     "hidden";
 
-
-  // =======================================================
-  // INICIAR SOPA
-  // =======================================================
-
-  if (surprise.wordSearch) {
-
-    setTimeout(
-      initializeWordSearch,
-      100
-    );
-
-  }
-
-
-  // =======================================================
-  // DÍA 22
-  // =======================================================
-
-  if (day === 22) {
-
-    createHearts(28);
-
-  }
-
 }
-
-
 // =========================================================
-// DÍA 13 — AVENTURA
-// =========================================================
-
-function selectAdventure(option) {
-
-  const result =
-    document.getElementById(
-      "day13-result"
-    );
-
-  const resultTitle =
-    document.getElementById(
-      "day13-result-title"
-    );
-
-
-  if (
-    !result ||
-    !resultTitle
-  ) {
-
-    return;
-
-  }
-
-
-  let title =
-    "";
-
-
-  if (option === 1) {
-
-    title =
-      "🌅 Nuestra escapada juntos";
-
-  }
-
-  else if (option === 2) {
-
-    title =
-      "❤️ Un día solamente para nosotros";
-
-  }
-
-  else if (option === 3) {
-
-    title =
-      "🗺️ Nuestra próxima aventura";
-
-  }
-
-
-  resultTitle.textContent =
-    title;
-
-
-  result.classList.add(
-    "show"
-  );
-
-
-  const options =
-    document.querySelector(
-      ".day13-options"
-    );
-
-
-  if (options) {
-
-    options.classList.add(
-      "hidden"
-    );
-
-  }
-
-
-  createHearts(10);
-
-
-  setTimeout(
-    () => {
-
-      result.scrollIntoView({
-        behavior: "smooth",
-        block: "center"
-      });
-
-    },
-    200
-  );
-
-}
-
-
-// =========================================================
-// VOLVER A ELEGIR DÍA 13
-// =========================================================
-
-function resetAdventure() {
-
-  const result =
-    document.getElementById(
-      "day13-result"
-    );
-
-  const options =
-    document.querySelector(
-      ".day13-options"
-    );
-
-
-  if (result) {
-
-    result.classList.remove(
-      "show"
-    );
-
-  }
-
-
-  if (options) {
-
-    options.classList.remove(
-      "hidden"
-    );
-
-  }
-
-
-  const adventure =
-    document.querySelector(
-      ".day13-adventure"
-    );
-
-
-  if (adventure) {
-
-    adventure.scrollIntoView({
-      behavior: "smooth",
-      block: "start"
-    });
-
-  }
-
-}
-
-
-// =========================================================
-// CARRUSEL DE FOTOS
-// =========================================================
-
-function changeCarousel(
-  direction
-) {
-
-  if (
-    !window.currentCarouselSlides ||
-    window.currentCarouselSlides.length <= 1
-  ) {
-
-    return;
-
-  }
-
-
-  const total =
-    window.currentCarouselSlides.length;
-
-
-  window.currentCarouselIndex +=
-    direction;
-
-
-  if (
-    window.currentCarouselIndex >=
-    total
-  ) {
-
-    window.currentCarouselIndex =
-      0;
-
-  }
-
-
-  if (
-    window.currentCarouselIndex < 0
-  ) {
-
-    window.currentCarouselIndex =
-      total - 1;
-
-  }
-
-
-  updateCarousel();
-
-}
-
-
-// =========================================================
-// IR A FOTO
-// =========================================================
-
-function goToCarousel(index) {
-
-  if (
-    !window.currentCarouselSlides ||
-    window.currentCarouselSlides.length === 0
-  ) {
-
-    return;
-
-  }
-
-
-  if (
-    index < 0 ||
-    index >=
-    window.currentCarouselSlides.length
-  ) {
-
-    return;
-
-  }
-
-
-  window.currentCarouselIndex =
-    index;
-
-
-  updateCarousel();
-
-}
-
-
-// =========================================================
-// ACTUALIZAR FOTO
+// CARRUSEL DE IMÁGENES
 // =========================================================
 
 function updateCarousel() {
 
-  const image =
+  const content =
     document.getElementById(
-      "carousel-image"
-    );
-
-  const counter =
-    document.getElementById(
-      "carousel-counter"
-    );
-
-  const description =
-    document.getElementById(
-      "carousel-description"
+      "carousel-content"
     );
 
   const dots =
-    document.querySelectorAll(
-      ".carousel-dots .carousel-dot"
+    document.getElementById(
+      "carousel-dots"
     );
 
 
-  if (!image) {
+  if (
+    !content ||
+    !dots
+  ) {
+    return;
+  }
+
+
+  const slides =
+    window.currentCarouselSlides;
+
+
+  if (
+    !slides ||
+    slides.length === 0
+  ) {
     return;
   }
 
@@ -2846,86 +1468,93 @@ function updateCarousel() {
   const index =
     window.currentCarouselIndex;
 
-  const slides =
-    window.currentCarouselSlides;
 
-  const currentSlide =
+  const slide =
     slides[index];
 
 
-  if (!currentSlide) {
-    return;
-  }
+  let imageHTML =
+    "";
 
 
-  image.classList.remove(
-    "carousel-fade"
-  );
+  if (
+    slide.image
+  ) {
 
-  void image.offsetWidth;
-
-
-  image.src =
-    currentSlide.image;
-
-  image.alt =
-    `Recuerdo ${index + 1}`;
-
-  image.classList.add(
-    "carousel-fade"
-  );
-
-
-  if (counter) {
-
-    counter.textContent =
-      `${index + 1} / ${slides.length}`;
+    imageHTML = `
+      <img
+        src="${slide.image}"
+        alt="Recuerdo"
+        class="carousel-image"
+        loading="lazy"
+        onerror="this.style.display='none';"
+      >
+    `;
 
   }
 
 
-  if (description) {
+  content.innerHTML = `
 
-    description.innerHTML =
-      currentSlide.text || "";
+    <div class="carousel-slide">
 
-  }
+      ${imageHTML}
+
+      ${
+        slide.text
+          ? `
+            <div class="carousel-caption">
+              ${slide.text}
+            </div>
+          `
+          : ""
+      }
+
+    </div>
+
+  `;
 
 
-  dots.forEach(
-    (dot, i) => {
+  dots.innerHTML = slides
+    .map(
+      (_, i) => `
 
-      dot.classList.toggle(
-        "active",
-        i === index
-      );
+        <button
+          type="button"
+          class="carousel-dot ${
+            i === index
+              ? "active"
+              : ""
+          }"
+          onclick="goToCarousel(${i})"
+          aria-label="Ir a imagen ${i + 1}"
+        ></button>
 
-    }
-  );
+      `
+    )
+    .join("");
 
 }
 
 
 // =========================================================
-// CARRUSEL DÍA 9
+// CAMBIAR CARRUSEL
 // =========================================================
 
-function changeTextCarousel(
+function changeCarousel(
   direction
 ) {
 
+  const slides =
+    window.currentCarouselSlides;
+
+
   if (
-    !window.currentCarouselSlides ||
-    window.currentCarouselSlides.length <= 1
+    !slides ||
+    slides.length === 0
   ) {
-
     return;
-
   }
-
-
-  const total =
-    window.currentCarouselSlides.length;
 
 
   window.currentCarouselIndex +=
@@ -2933,8 +1562,18 @@ function changeTextCarousel(
 
 
   if (
+    window.currentCarouselIndex < 0
+  ) {
+
+    window.currentCarouselIndex =
+      slides.length - 1;
+
+  }
+
+
+  if (
     window.currentCarouselIndex >=
-    total
+    slides.length
   ) {
 
     window.currentCarouselIndex =
@@ -2943,12 +1582,228 @@ function changeTextCarousel(
   }
 
 
+  updateCarousel();
+
+}
+
+
+// =========================================================
+// IR A UNA IMAGEN ESPECÍFICA
+// =========================================================
+
+function goToCarousel(
+  index
+) {
+
+  const slides =
+    window.currentCarouselSlides;
+
+
   if (
-    window.currentCarouselIndex < 0
+    !slides ||
+    index < 0 ||
+    index >= slides.length
+  ) {
+    return;
+  }
+
+
+  window.currentCarouselIndex =
+    index;
+
+
+  updateCarousel();
+
+}
+
+
+// =========================================================
+// CARRUSEL DE TEXTO
+// =========================================================
+
+function buildTextCarousel(
+  surprise
+) {
+
+  window.currentTextSlides =
+    surprise.slides || [];
+
+
+  return `
+
+    <div class="text-carousel">
+
+      <button
+        type="button"
+        class="text-carousel-arrow"
+        onclick="changeTextCarousel(-1)"
+        aria-label="Anterior"
+      >
+        ❮
+      </button>
+
+      <div
+        class="text-carousel-content"
+        id="text-carousel-content"
+      ></div>
+
+      <button
+        type="button"
+        class="text-carousel-arrow"
+        onclick="changeTextCarousel(1)"
+        aria-label="Siguiente"
+      >
+        ❯
+      </button>
+
+    </div>
+
+    <div
+      class="text-carousel-dots"
+      id="text-carousel-dots"
+    ></div>
+
+  `;
+
+}
+
+
+// =========================================================
+// ACTUALIZAR CARRUSEL DE TEXTO
+// =========================================================
+
+function updateTextCarousel() {
+
+  const content =
+    document.getElementById(
+      "text-carousel-content"
+    );
+
+  const dots =
+    document.getElementById(
+      "text-carousel-dots"
+    );
+
+
+  if (
+    !content ||
+    !dots
+  ) {
+    return;
+  }
+
+
+  const slides =
+    window.currentTextSlides || [];
+
+
+  if (
+    slides.length === 0
+  ) {
+    return;
+  }
+
+
+  const index =
+    window.currentTextCarouselIndex || 0;
+
+
+  const slide =
+    slides[index];
+
+
+  content.innerHTML = `
+
+    <div class="text-carousel-card">
+
+      ${
+        slide.title
+          ? `
+            <h3>
+              ${slide.title}
+            </h3>
+          `
+          : ""
+      }
+
+      <div class="text-carousel-message">
+
+        ${
+          slide.text ||
+          ""
+        }
+
+      </div>
+
+    </div>
+
+  `;
+
+
+  dots.innerHTML =
+    slides
+      .map(
+        (_, i) => `
+
+          <button
+            type="button"
+            class="carousel-dot ${
+              i === index
+                ? "active"
+                : ""
+            }"
+            onclick="goToTextCarousel(${i})"
+            aria-label="Ir a mensaje ${i + 1}"
+          ></button>
+
+        `
+      )
+      .join("");
+
+}
+
+
+// =========================================================
+// CAMBIAR CARRUSEL DE TEXTO
+// =========================================================
+
+function changeTextCarousel(
+  direction
+) {
+
+  const slides =
+    window.currentTextSlides || [];
+
+
+  if (
+    slides.length === 0
+  ) {
+    return;
+  }
+
+
+  window.currentTextCarouselIndex =
+    (window.currentTextCarouselIndex || 0) +
+    direction;
+
+
+  if (
+    window.currentTextCarouselIndex < 0
   ) {
 
-    window.currentCarouselIndex =
-      total - 1;
+    window.currentTextCarouselIndex =
+      slides.length - 1;
+
+  }
+
+
+  if (
+    window.currentTextCarouselIndex >=
+    slides.length
+  ) {
+
+    window.currentTextCarouselIndex =
+      0;
 
   }
 
@@ -2959,35 +1814,26 @@ function changeTextCarousel(
 
 
 // =========================================================
-// IR A CONFESIÓN
+// IR A MENSAJE ESPECÍFICO
 // =========================================================
 
 function goToTextCarousel(
   index
 ) {
 
-  if (
-    !window.currentCarouselSlides ||
-    window.currentCarouselSlides.length === 0
-  ) {
-
-    return;
-
-  }
+  const slides =
+    window.currentTextSlides || [];
 
 
   if (
     index < 0 ||
-    index >=
-    window.currentCarouselSlides.length
+    index >= slides.length
   ) {
-
     return;
-
   }
 
 
-  window.currentCarouselIndex =
+  window.currentTextCarouselIndex =
     index;
 
 
@@ -2997,83 +1843,606 @@ function goToTextCarousel(
 
 
 // =========================================================
-// ACTUALIZAR CONFESIÓN
+// DÍA 14 — VIAJE POR NUESTRA HISTORIA
 // =========================================================
 
-function updateTextCarousel() {
+function buildDay14Journey() {
 
-  const title =
+  return `
+
+    <section
+      class="day14-journey"
+      id="day14-journey"
+    >
+
+      <div class="day14-progress">
+
+        <span
+          class="day14-progress-dot active"
+          data-step="0"
+        ></span>
+
+        <span
+          class="day14-progress-line"
+        ></span>
+
+        <span
+          class="day14-progress-dot"
+          data-step="1"
+        ></span>
+
+        <span
+          class="day14-progress-line"
+        ></span>
+
+        <span
+          class="day14-progress-dot"
+          data-step="2"
+        ></span>
+
+      </div>
+
+
+      <div
+        class="day14-stage"
+        id="day14-stage"
+      ></div>
+
+
+      <div class="day14-navigation">
+
+        <button
+          type="button"
+          class="day14-nav-button secondary"
+          id="day14-prev"
+          onclick="changeDay14Step(-1)"
+        >
+          ← Anterior
+        </button>
+
+        <button
+          type="button"
+          class="day14-nav-button primary"
+          id="day14-next"
+          onclick="changeDay14Step(1)"
+        >
+          Continuar →
+        </button>
+
+      </div>
+
+
+      <div
+        class="day14-secret-container"
+        id="day14-secret-container"
+      ></div>
+
+    </section>
+
+  `;
+
+}
+
+
+// =========================================================
+// CONTENIDO DE LAS ETAPAS DEL DÍA 14
+// =========================================================
+
+const day14Steps = [
+
+  {
+
+    number: 1,
+
+    icon: "📝",
+
+    title: "El comienzo",
+
+    subtitle:
+      "Todo empezó de una manera muy sencilla.",
+
+    content: `
+
+      <p>
+        A veces las historias más bonitas
+        no empiezan como uno se imagina.
+      </p>
+
+      <div class="day14-memory">
+
+        <div class="day14-memory-icon">
+          📚
+        </div>
+
+        <div>
+
+          <h4>Unos deberes</h4>
+
+          <p>
+            Todo comenzó con algo tan simple
+            como unos deberes.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="day14-memory">
+
+        <div class="day14-memory-icon">
+          💌
+        </div>
+
+        <div>
+
+          <h4>Las pequeñas notitas</h4>
+
+          <p>
+            Después llegaron esas pequeñas notas
+            que poco a poco fueron haciendo
+            que nuestra historia fuera diferente.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="day14-memory">
+
+        <div class="day14-memory-icon">
+          ❤️
+        </div>
+
+        <div>
+
+          <h4>Y después...</h4>
+
+          <p>
+            Llegaron las clases que te daba,
+            las conversaciones,
+            los momentos juntos
+            y algo comenzó entre nosotros.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="day14-highlight">
+
+        <span>
+          ✨
+        </span>
+
+        <p>
+          Y mira hasta dónde nos llevó
+          algo que parecía tan pequeño.
+        </p>
+
+      </div>
+
+    `
+
+  },
+
+
+  {
+
+    number: 2,
+
+    icon: "🗺️",
+
+    title: "Nuestras locuras",
+
+    subtitle:
+      "Porque contigo hasta perdernos se convierte en un recuerdo.",
+
+    content: `
+
+      <p>
+        Si algo caracteriza nuestra historia
+        son todos esos momentos que probablemente
+        nadie más entendería como nosotros.
+      </p>
+
+
+      <div class="day14-adventure">
+
+        <div class="day14-adventure-icon">
+          🧭
+        </div>
+
+        <div>
+
+          <h4>
+            Perdernos en el sur
+          </h4>
+
+          <p>
+            No siempre necesitamos saber exactamente
+            hacia dónde vamos.
+          </p>
+
+          <p>
+            A veces simplemente estar juntos
+            hace que el camino valga la pena.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="day14-adventure">
+
+        <div class="day14-adventure-icon">
+          😂
+        </div>
+
+        <div>
+
+          <h4>
+            2 o 3 días perdidos
+          </h4>
+
+          <p>
+            Esos momentos en los que terminamos
+            pasando días juntos,
+            haciendo nuestras propias locuras
+            y creando recuerdos.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="day14-adventure">
+
+        <div class="day14-adventure-icon">
+          🪨
+        </div>
+
+        <div>
+
+          <h4>
+            La famosa piedrita
+          </h4>
+
+          <p>
+            Incluso una simple piedra en la Amazonas
+            terminó convirtiéndose en parte
+            de una de esas historias que solo
+            nosotros recordamos.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <div class="day14-highlight">
+
+        <span>
+          😂❤️
+        </span>
+
+        <p>
+          Nuestra historia no necesita ser perfecta.
+          Solo necesita seguir siendo nuestra.
+        </p>
+
+      </div>
+
+    `
+
+  },
+
+
+  {
+
+    number: 3,
+
+    icon: "❤️",
+
+    title: "Hoy",
+
+    subtitle:
+      "Y todavía nos queda muchísimo por vivir.",
+
+    content: `
+
+      <p>
+        Cuando miro todo lo que hemos vivido,
+        hay algo que me hace sonreír:
+      </p>
+
+
+      <div class="day14-big-message">
+
+        <span class="day14-big-heart">
+          ❤️
+        </span>
+
+        <p>
+          Todo eso fue solamente
+          el comienzo.
+        </p>
+
+      </div>
+
+
+      <div class="day14-future-grid">
+
+        <div>
+          ✈️
+          <span>
+            Más viajes
+          </span>
+        </div>
+
+        <div>
+          📸
+          <span>
+            Más recuerdos
+          </span>
+        </div>
+
+        <div>
+          😂
+          <span>
+            Más risas
+          </span>
+        </div>
+
+        <div>
+          ❤️
+          <span>
+            Más nosotros
+          </span>
+        </div>
+
+      </div>
+
+
+      <p>
+        Quiero seguir conociendo lugares contigo,
+        seguir perdiéndonos,
+        seguir riéndonos de cosas que solamente
+        nosotros entendemos
+        y seguir creando recuerdos.
+      </p>
+
+
+      <div class="day14-final-question">
+
+        <span>
+          🌎
+        </span>
+
+        <strong>
+          ¿Te imaginas todo lo que todavía
+          nos falta por vivir?
+        </strong>
+
+      </div>
+
+    `
+
+  }
+
+];
+
+
+// =========================================================
+// RENDERIZAR ETAPA DEL DÍA 14
+// =========================================================
+
+function renderDay14Journey(
+  step
+) {
+
+  const stage =
     document.getElementById(
-      "text-carousel-title"
-    );
-
-  const text =
-    document.getElementById(
-      "text-carousel-text"
-    );
-
-  const counter =
-    document.getElementById(
-      "text-carousel-counter"
-    );
-
-  const dots =
-    document.querySelectorAll(
-      ".text-carousel-dots .carousel-dot"
+      "day14-stage"
     );
 
 
-  const slide =
-    window.currentCarouselSlides[
-      window.currentCarouselIndex
-    ];
+  if (!stage) {
+    return;
+  }
 
 
   if (
-    !slide ||
-    !title ||
-    !text
+    step < 0 ||
+    step >= day14Steps.length
+  ) {
+    return;
+  }
+
+
+  window.day14CurrentStep =
+    step;
+
+
+  const data =
+    day14Steps[step];
+
+
+  stage.classList.remove(
+    "day14-stage-enter"
+  );
+
+
+  void stage.offsetWidth;
+
+
+  stage.innerHTML = `
+
+    <div
+      class="day14-stage-header"
+    >
+
+      <div class="day14-stage-icon">
+        ${data.icon}
+      </div>
+
+      <div>
+
+        <span class="day14-step-number">
+          ETAPA ${data.number} DE 3
+        </span>
+
+        <h3>
+          ${data.title}
+        </h3>
+
+        <p>
+          ${data.subtitle}
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="day14-stage-content">
+
+      ${data.content}
+
+    </div>
+
+  `;
+
+
+  stage.classList.add(
+    "day14-stage-enter"
+  );
+
+
+  updateDay14Navigation();
+
+
+  updateDay14Progress();
+
+
+  if (
+    step ===
+    day14Steps.length - 1
   ) {
 
+    showDay14SecretButton();
+
+  }
+  else {
+
+    hideDay14Secret();
+
+  }
+
+}
+
+
+// =========================================================
+// NAVEGACIÓN DÍA 14
+// =========================================================
+
+function changeDay14Step(
+  direction
+) {
+
+  const current =
+    window.day14CurrentStep || 0;
+
+
+  const next =
+    current + direction;
+
+
+  if (
+    next < 0 ||
+    next >= day14Steps.length
+  ) {
     return;
+  }
+
+
+  renderDay14Journey(
+    next
+  );
+
+}
+
+
+// =========================================================
+// ACTUALIZAR BOTONES DÍA 14
+// =========================================================
+
+function updateDay14Navigation() {
+
+  const previous =
+    document.getElementById(
+      "day14-prev"
+    );
+
+  const next =
+    document.getElementById(
+      "day14-next"
+    );
+
+
+  const current =
+    window.day14CurrentStep || 0;
+
+
+  if (previous) {
+
+    previous.disabled =
+      current === 0;
 
   }
 
 
-  const content =
-    document.querySelector(
-      ".text-carousel-content"
-    );
+  if (next) {
 
+    if (
+      current ===
+      day14Steps.length - 1
+    ) {
 
-  if (content) {
+      next.textContent =
+        "❤️ Terminar";
 
-    content.classList.remove(
-      "text-carousel-animation"
-    );
+    }
+    else {
 
-    void content.offsetWidth;
+      next.textContent =
+        "Continuar →";
 
-    content.classList.add(
-      "text-carousel-animation"
-    );
-
-  }
-
-
-  title.textContent =
-    slide.title || "";
-
-  text.innerHTML =
-    slide.text || "";
-
-
-  if (counter) {
-
-    counter.textContent =
-      `${window.currentCarouselIndex + 1} / ${window.currentCarouselSlides.length}`;
+    }
 
   }
+
+}
+
+
+// =========================================================
+// ACTUALIZAR PROGRESO DÍA 14
+// =========================================================
+
+function updateDay14Progress() {
+
+  const dots =
+    document.querySelectorAll(
+      ".day14-progress-dot"
+    );
+
+
+  const current =
+    window.day14CurrentStep || 0;
 
 
   dots.forEach(
@@ -3081,8 +2450,7 @@ function updateTextCarousel() {
 
       dot.classList.toggle(
         "active",
-        index ===
-        window.currentCarouselIndex
+        index <= current
       );
 
     }
@@ -3092,567 +2460,221 @@ function updateTextCarousel() {
 
 
 // =========================================================
-// PASAPORTE DÍA 12
+// BOTÓN SECRETO DÍA 14
 // =========================================================
 
-function openPassport() {
+function showDay14SecretButton() {
 
-  const cover =
+  const container =
     document.getElementById(
-      "passport-cover"
-    );
-
-  const inside =
-    document.getElementById(
-      "passport-inside"
+      "day14-secret-container"
     );
 
 
-  if (
-    !cover ||
-    !inside
-  ) {
-
-    console.error(
-      "No se encontró el contenido del pasaporte."
-    );
-
+  if (!container) {
     return;
-
   }
 
 
-  window.passportState = {
-    page: 0,
-    opened: true,
-    stamped: false
-  };
+  container.innerHTML = `
 
+    <button
+      type="button"
+      class="day14-secret-button"
+      onclick="revealDay14Secret()"
+    >
 
-  cover.classList.add(
-    "passport-cover-opening"
-  );
+      💌
+      Hay algo más...
 
+    </button>
 
-  setTimeout(
-    () => {
-
-      cover.style.display =
-        "none";
-
-      inside.style.display =
-        "block";
-
-      renderPassportPage();
-
-    },
-    550
-  );
+  `;
 
 }
 
 
 // =========================================================
-// RENDERIZAR PASAPORTE
+// OCULTAR SECRETO
 // =========================================================
 
-function renderPassportPage() {
+function hideDay14Secret() {
 
-  const state =
-    window.passportState;
-
-
-  if (
-    !state ||
-    !state.opened
-  ) {
-
-    return;
-
-  }
-
-
-  const surprise =
-    surprises[11];
-
-
-  if (
-    !surprise ||
-    !Array.isArray(
-      surprise.destinations
-    )
-  ) {
-
-    return;
-
-  }
-
-
-  const content =
+  const container =
     document.getElementById(
-      "passport-destination-content"
-    );
-
-  const intro =
-    document.getElementById(
-      "passport-page-intro"
-    );
-
-  const counter =
-    document.getElementById(
-      "passport-page-counter"
-    );
-
-  const stamp =
-    document.getElementById(
-      "passport-stamp"
-    );
-
-  const previous =
-    document.getElementById(
-      "passport-prev"
-    );
-
-  const next =
-    document.getElementById(
-      "passport-next"
-    );
-
-  const finalButton =
-    document.getElementById(
-      "passport-final-button"
+      "day14-secret-container"
     );
 
 
-  if (!content) {
+  if (!container) {
     return;
   }
 
 
-  // =======================================================
-  // INTRO
-  // =======================================================
+  container.innerHTML = "";
 
-  if (
-    state.page === 0
-  ) {
-
-    if (intro) {
-
-      intro.style.display =
-        "block";
-
-    }
+}
 
 
-    content.innerHTML =
-      "";
+// =========================================================
+// REVELAR SECRETO DÍA 14
+// =========================================================
+
+function revealDay14Secret() {
+
+  const container =
+    document.getElementById(
+      "day14-secret-container"
+    );
 
 
-    if (stamp) {
-
-      stamp.innerHTML =
-        "";
-
-      stamp.classList.remove(
-        "passport-stamp-visible"
-      );
-
-    }
-
-
-    if (counter) {
-
-      counter.textContent =
-        "INTRO";
-
-    }
-
-
-    if (previous) {
-
-      previous.disabled =
-        true;
-
-    }
-
-
-    if (next) {
-
-      next.style.display =
-        "inline-flex";
-
-      next.textContent =
-        "COMENZAR →";
-
-    }
-
-
-    if (finalButton) {
-
-      finalButton.style.display =
-        "none";
-
-    }
-
-
-    return;
-
-  }
-
-
-  // =======================================================
-  // DESTINO
-  // =======================================================
-
-  const destination =
-    surprise.destinations[
-      state.page - 1
-    ];
-
-
-  if (!destination) {
+  if (!container) {
     return;
   }
 
 
-  if (intro) {
+  container.innerHTML = `
 
-    intro.style.display =
-      "none";
+    <div class="day14-secret-message">
 
-  }
+      <div class="day14-secret-hearts">
+        ❤️ ❤️ ❤️
+      </div>
 
+      <h3>
+        Y si me preguntas qué quiero
+        para nuestra próxima etapa...
+      </h3>
 
-  content.classList.remove(
-    "passport-page-animation"
-  );
+      <p>
+        Quiero seguir escribiendo esta historia contigo.
+      </p>
 
-  void content.offsetWidth;
+      <p>
+        Quiero más viajes,
+        más fotografías,
+        más conversaciones,
+        más bromas,
+        más momentos inesperados
+        y más días en los que simplemente
+        podamos estar juntos.
+      </p>
 
-  content.classList.add(
-    "passport-page-animation"
-  );
+      <p>
+        Porque si todo comenzó con unos deberes
+        y unas pequeñas notitas,
+        quién sabe hasta dónde podemos llegar.
+      </p>
 
+      <div class="day14-secret-final">
+        <strong>
+          Tú y yo todavía tenemos
+          muchas páginas por escribir. ❤️
+        </strong>
+      </div>
 
-  content.innerHTML = `
+      <button
+        type="button"
+        class="day14-heart-button"
+        onclick="createDay14Hearts()"
+      >
+        ❤️ Te amo
+      </button>
 
-    <div class="passport-destination-number">
-      DESTINO
-      ${destination.number}
-      / 12
+      <div
+        id="day14-floating-hearts"
+        class="day14-floating-hearts"
+      ></div>
+
     </div>
-
-
-    <div class="passport-destination-icon">
-      ${destination.icon}
-    </div>
-
-
-    <h3 class="passport-destination-title">
-      ${destination.title}
-    </h3>
-
-
-    <div class="passport-destination-line">
-    </div>
-
-
-    <div class="passport-destination-text">
-      ${destination.text}
-    </div>
-
-
-    ${
-      destination.final
-        ? `
-          <div class="passport-final-decoration">
-            🌻 ❤️ 🌻
-          </div>
-        `
-        : `
-          <div class="passport-destination-decoration">
-            ✈️ 🌍 ❤️
-          </div>
-        `
-    }
 
   `;
 
 
-  // =======================================================
-  // CONTADOR
-  // =======================================================
+  container.scrollIntoView({
+    behavior: "smooth",
+    block: "center"
+  });
 
-  if (counter) {
+}
 
-    counter.textContent =
-      `${state.page} / 12`;
 
+// =========================================================
+// CORAZONES FLOTANTES DÍA 14
+// =========================================================
+
+function createDay14Hearts() {
+
+  const container =
+    document.getElementById(
+      "day14-floating-hearts"
+    );
+
+
+  if (!container) {
+    return;
   }
 
 
-  // =======================================================
-  // SELLO
-  // =======================================================
-
-  if (stamp) {
-
-    stamp.innerHTML = `
-
-      <span>
-        ${destination.stamp}
-      </span>
-
-    `;
+  const hearts = [
+    "❤️",
+    "💕",
+    "💖",
+    "💗",
+    "💓",
+    "💘"
+  ];
 
 
-    stamp.classList.remove(
-      "passport-stamp-visible"
+  for (
+    let i = 0;
+    i < 18;
+    i++
+  ) {
+
+    const heart =
+      document.createElement(
+        "span"
+      );
+
+
+    heart.className =
+      "day14-floating-heart";
+
+
+    heart.textContent =
+      hearts[
+        Math.floor(
+          Math.random() *
+          hearts.length
+        )
+      ];
+
+
+    heart.style.left =
+      `${Math.random() * 100}%`;
+
+
+    heart.style.animationDelay =
+      `${Math.random() * 1.5}s`;
+
+
+    heart.style.animationDuration =
+      `${2 + Math.random() * 2}s`;
+
+
+    container.appendChild(
+      heart
     );
 
 
     setTimeout(
       () => {
 
-        stamp.classList.add(
-          "passport-stamp-visible"
-        );
+        heart.remove();
 
       },
-      250
-    );
-
-  }
-
-
-  // =======================================================
-  // ANTERIOR
-  // =======================================================
-
-  if (previous) {
-
-    previous.disabled =
-      state.page <= 1;
-
-  }
-
-
-  // =======================================================
-  // SIGUIENTE
-  // =======================================================
-
-  if (next) {
-
-    if (
-      state.page >= 12
-    ) {
-
-      next.style.display =
-        "none";
-
-    }
-
-    else {
-
-      next.style.display =
-        "inline-flex";
-
-      next.textContent =
-        "Siguiente →";
-
-    }
-
-  }
-
-
-  // =======================================================
-  // BOTÓN FINAL
-  // =======================================================
-
-  if (finalButton) {
-
-    finalButton.style.display =
-      state.page === 12
-        ? "block"
-        : "none";
-
-  }
-
-}
-
-
-// =========================================================
-// CAMBIAR PÁGINA DEL PASAPORTE
-// =========================================================
-
-function changePassportPage(
-  direction
-) {
-
-  const state =
-    window.passportState;
-
-
-  if (
-    !state ||
-    !state.opened
-  ) {
-
-    return;
-
-  }
-
-
-  const nextPage =
-    state.page + direction;
-
-
-  if (
-    nextPage < 0 ||
-    nextPage > 12
-  ) {
-
-    return;
-
-  }
-
-
-  state.page =
-    nextPage;
-
-
-  renderPassportPage();
-
-}
-
-
-// =========================================================
-// ESTAMPAR PASAPORTE
-// =========================================================
-
-function stampPassport() {
-
-  const finalMessage =
-    document.getElementById(
-      "passport-final-message"
-    );
-
-  const finalButton =
-    document.getElementById(
-      "passport-final-button"
-    );
-
-  const controls =
-    document.querySelector(
-      ".passport-controls"
-    );
-
-
-  if (!finalMessage) {
-    return;
-  }
-
-
-  window.passportState.stamped =
-    true;
-
-
-  if (finalButton) {
-
-    finalButton.style.display =
-      "none";
-
-  }
-
-
-  if (controls) {
-
-    controls.style.display =
-      "none";
-
-  }
-
-
-  finalMessage.style.display =
-    "block";
-
-
-  setTimeout(
-    () => {
-
-      finalMessage.classList.add(
-        "passport-final-show"
-      );
-
-    },
-    100
-  );
-
-
-  createHearts(18);
-
-  createPassportFlowers();
-
-}
-
-
-// =========================================================
-// FLORES DEL PASAPORTE
-// =========================================================
-
-function createPassportFlowers() {
-
-  const container =
-    document.getElementById(
-      "hearts"
-    );
-
-
-  if (!container) {
-    return;
-  }
-
-
-  for (
-    let i = 0;
-    i < 8;
-    i++
-  ) {
-
-    const flower =
-      document.createElement(
-        "span"
-      );
-
-
-    flower.className =
-      "floating-passport-flower";
-
-    flower.textContent =
-      "🌻";
-
-    flower.style.left =
-      `${Math.random() * 100}%`;
-
-    flower.style.fontSize =
-      `${18 + Math.random() * 18}px`;
-
-    flower.style.animationDuration =
-      `${5 + Math.random() * 5}s`;
-
-    flower.style.animationDelay =
-      `${Math.random() * 1.5}s`;
-
-
-    container.appendChild(
-      flower
-    );
-
-
-    setTimeout(
-      () => flower.remove(),
-      12000
+      5000
     );
 
   }
@@ -3661,1177 +2683,16 @@ function createPassportFlowers() {
 
 
 // =========================================================
-// SOPA DE LETRAS
-// =========================================================
-
-const WORD_SEARCH_DIRECTIONS = [
-
-  {
-    row: 0,
-    col: 1
-  },
-
-  {
-    row: 0,
-    col: -1
-  },
-
-  {
-    row: 1,
-    col: 0
-  },
-
-  {
-    row: -1,
-    col: 0
-  },
-
-  {
-    row: 1,
-    col: 1
-  },
-
-  {
-    row: 1,
-    col: -1
-  },
-
-  {
-    row: -1,
-    col: 1
-  },
-
-  {
-    row: -1,
-    col: -1
-  }
-
-];
-
-
-// =========================================================
-// GENERAR SOPA
-// =========================================================
-
-function generateWordSearch(
-  words,
-  size = 12
-) {
-
-  const cleanWords =
-    words
-      .map(
-        word =>
-          word
-            .toUpperCase()
-            .normalize("NFD")
-            .replace(
-              /[\u0300-\u036f]/g,
-              ""
-            )
-            .replace(
-              /[^A-Z]/g,
-              ""
-            )
-      )
-      .filter(
-        word =>
-          word.length > 0 &&
-          word.length <= size
-      );
-
-
-  const board =
-    Array.from(
-      {
-        length: size
-      },
-      () =>
-        Array(size).fill("")
-    );
-
-
-  const placements = {};
-
-
-  function shuffledDirections() {
-
-    return [
-      ...WORD_SEARCH_DIRECTIONS
-    ].sort(
-      () =>
-        Math.random() - 0.5
-    );
-
-  }
-
-
-  const sortedWords =
-    [...cleanWords].sort(
-      (a, b) =>
-        b.length - a.length
-    );
-
-
-  sortedWords.forEach(
-    word => {
-
-      let placed =
-        false;
-
-
-      for (
-        let attempt = 0;
-        attempt < 1500 &&
-        !placed;
-        attempt++
-      ) {
-
-        const direction =
-          shuffledDirections()[0];
-
-
-        const startRow =
-          Math.floor(
-            Math.random() * size
-          );
-
-
-        const startCol =
-          Math.floor(
-            Math.random() * size
-          );
-
-
-        const endRow =
-          startRow +
-          direction.row *
-          (word.length - 1);
-
-
-        const endCol =
-          startCol +
-          direction.col *
-          (word.length - 1);
-
-
-        if (
-          endRow < 0 ||
-          endRow >= size ||
-          endCol < 0 ||
-          endCol >= size
-        ) {
-
-          continue;
-
-        }
-
-
-        let valid =
-          true;
-
-
-        for (
-          let i = 0;
-          i < word.length;
-          i++
-        ) {
-
-          const row =
-            startRow +
-            direction.row * i;
-
-          const col =
-            startCol +
-            direction.col * i;
-
-
-          const current =
-            board[row][col];
-
-
-          if (
-            current !== "" &&
-            current !== word[i]
-          ) {
-
-            valid =
-              false;
-
-            break;
-
-          }
-
-        }
-
-
-        if (!valid) {
-          continue;
-        }
-
-
-        const cells =
-          [];
-
-
-        for (
-          let i = 0;
-          i < word.length;
-          i++
-        ) {
-
-          const row =
-            startRow +
-            direction.row * i;
-
-          const col =
-            startCol +
-            direction.col * i;
-
-
-          board[row][col] =
-            word[i];
-
-
-          cells.push(
-            `${row}-${col}`
-          );
-
-        }
-
-
-        placements[word] =
-          cells;
-
-        placed =
-          true;
-
-      }
-
-    }
-  );
-
-
-  const letters =
-    "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-
-
-  for (
-    let row = 0;
-    row < size;
-    row++
-  ) {
-
-    for (
-      let col = 0;
-      col < size;
-      col++
-    ) {
-
-      if (
-        board[row][col] === ""
-      ) {
-
-        board[row][col] =
-          letters[
-            Math.floor(
-              Math.random() *
-              letters.length
-            )
-          ];
-
-      }
-
-    }
-
-  }
-
-
-  return {
-    board,
-    placements,
-    words: cleanWords,
-    size
-  };
-
-}
-
-
-// =========================================================
-// INICIALIZAR SOPA
-// =========================================================
-
-function initializeWordSearch() {
-
-  const surprise =
-    surprises[10];
-
-
-  if (
-    !surprise ||
-    !surprise.wordSearch
-  ) {
-
-    return;
-
-  }
-
-
-  const boardElement =
-    document.getElementById(
-      "word-search-board"
-    );
-
-  const listElement =
-    document.getElementById(
-      "word-search-word-list"
-    );
-
-
-  if (
-    !boardElement ||
-    !listElement
-  ) {
-
-    return;
-
-  }
-
-
-  const state =
-    generateWordSearch(
-      surprise.words,
-      12
-    );
-
-
-  window.wordSearchState = {
-
-    ...state,
-
-    selectedStart:
-      null,
-
-    foundWords:
-      new Set()
-
-  };
-
-
-  renderWordSearchBoard();
-
-  renderWordSearchWordList();
-
-  updateWordSearchCounter();
-
-}
-
-
-// =========================================================
-// RENDERIZAR TABLERO
-// =========================================================
-
-function renderWordSearchBoard() {
-
-  const boardElement =
-    document.getElementById(
-      "word-search-board"
-    );
-
-  const state =
-    window.wordSearchState;
-
-
-  if (
-    !boardElement ||
-    !state
-  ) {
-
-    return;
-
-  }
-
-
-  boardElement.innerHTML =
-    "";
-
-
-  boardElement.style.gridTemplateColumns =
-    `repeat(${state.size}, 1fr)`;
-
-
-  for (
-    let row = 0;
-    row < state.size;
-    row++
-  ) {
-
-    for (
-      let col = 0;
-      col < state.size;
-      col++
-    ) {
-
-      const cell =
-        document.createElement(
-          "button"
-        );
-
-
-      cell.type =
-        "button";
-
-      cell.className =
-        "word-search-cell";
-
-      cell.textContent =
-        state.board[row][col];
-
-      cell.dataset.row =
-        row;
-
-      cell.dataset.col =
-        col;
-
-
-      cell.setAttribute(
-        "aria-label",
-        `Fila ${row + 1}, columna ${col + 1}, letra ${state.board[row][col]}`
-      );
-
-
-      cell.addEventListener(
-        "click",
-        () =>
-          handleWordSearchCell(
-            row,
-            col
-          )
-      );
-
-
-      boardElement.appendChild(
-        cell
-      );
-
-    }
-
-  }
-
-}
-
-
-// =========================================================
-// LISTA DE PALABRAS
-// =========================================================
-
-function renderWordSearchWordList() {
-
-  const listElement =
-    document.getElementById(
-      "word-search-word-list"
-    );
-
-  const state =
-    window.wordSearchState;
-
-
-  if (
-    !listElement ||
-    !state
-  ) {
-
-    return;
-
-  }
-
-
-  listElement.innerHTML =
-    "";
-
-
-  state.words.forEach(
-    word => {
-
-      const item =
-        document.createElement(
-          "div"
-        );
-
-
-      item.className =
-        "word-search-word";
-
-      item.dataset.word =
-        word;
-
-
-      item.innerHTML = `
-
-        <span class="word-search-word-icon">
-          🌻
-        </span>
-
-        <span class="word-search-word-text">
-          ${word}
-        </span>
-
-        <span class="word-search-word-check">
-          ✓
-        </span>
-
-      `;
-
-
-      listElement.appendChild(
-        item
-      );
-
-    }
-  );
-
-}
-
-
-// =========================================================
-// MANEJAR SELECCIÓN
-// =========================================================
-
-function handleWordSearchCell(
-  row,
-  col
-) {
-
-  const state =
-    window.wordSearchState;
-
-
-  if (!state) {
-    return;
-  }
-
-
-  if (
-    !state.selectedStart
-  ) {
-
-    state.selectedStart = {
-      row,
-      col
-    };
-
-
-    clearWordSearchSelection();
-
-
-    const cell =
-      getWordSearchCell(
-        row,
-        col
-      );
-
-
-    if (cell) {
-
-      cell.classList.add(
-        "word-search-selected"
-      );
-
-    }
-
-
-    return;
-
-  }
-
-
-  const start =
-    state.selectedStart;
-
-
-  const selectedCells =
-    getCellsBetween(
-      start.row,
-      start.col,
-      row,
-      col
-    );
-
-
-  if (
-    selectedCells.length === 0
-  ) {
-
-    state.selectedStart = {
-      row,
-      col
-    };
-
-
-    clearWordSearchSelection();
-
-
-    const cell =
-      getWordSearchCell(
-        row,
-        col
-      );
-
-
-    if (cell) {
-
-      cell.classList.add(
-        "word-search-selected"
-      );
-
-    }
-
-
-    return;
-
-  }
-
-
-  const selectedWord =
-    selectedCells
-      .map(
-        cell =>
-          state.board[
-            cell.row
-          ][
-            cell.col
-          ]
-      )
-      .join("");
-
-
-  const reversedWord =
-    selectedWord
-      .split("")
-      .reverse()
-      .join("");
-
-
-  let foundWord =
-    null;
-
-
-  state.words.forEach(
-    word => {
-
-      if (
-        state.foundWords.has(
-          word
-        )
-      ) {
-
-        return;
-
-      }
-
-
-      if (
-        word === selectedWord ||
-        word === reversedWord
-      ) {
-
-        foundWord =
-          word;
-
-      }
-
-    }
-  );
-
-
-  if (foundWord) {
-
-    markFoundWord(
-      selectedCells,
-      foundWord
-    );
-
-  }
-
-  else {
-
-    showInvalidWord();
-
-  }
-
-
-  state.selectedStart =
-    null;
-
-}
-
-
-// =========================================================
-// CELDAS ENTRE DOS PUNTOS
-// =========================================================
-
-function getCellsBetween(
-  startRow,
-  startCol,
-  endRow,
-  endCol
-) {
-
-  const rowDifference =
-    endRow - startRow;
-
-  const colDifference =
-    endCol - startCol;
-
-
-  const rowStep =
-    rowDifference === 0
-      ? 0
-      : rowDifference > 0
-        ? 1
-        : -1;
-
-
-  const colStep =
-    colDifference === 0
-      ? 0
-      : colDifference > 0
-        ? 1
-        : -1;
-
-
-  const straightLine =
-    rowDifference === 0 ||
-    colDifference === 0 ||
-    Math.abs(
-      rowDifference
-    ) ===
-      Math.abs(
-        colDifference
-      );
-
-
-  if (!straightLine) {
-    return [];
-  }
-
-
-  const steps =
-    Math.max(
-      Math.abs(
-        rowDifference
-      ),
-      Math.abs(
-        colDifference
-      )
-    );
-
-
-  const cells =
-    [];
-
-
-  for (
-    let i = 0;
-    i <= steps;
-    i++
-  ) {
-
-    cells.push({
-
-      row:
-        startRow +
-        rowStep * i,
-
-      col:
-        startCol +
-        colStep * i
-
-    });
-
-  }
-
-
-  return cells;
-
-}
-
-
-// =========================================================
-// MARCAR PALABRA
-// =========================================================
-
-function markFoundWord(
-  cells,
-  word
-) {
-
-  const state =
-    window.wordSearchState;
-
-
-  if (!state) {
-    return;
-  }
-
-
-  state.foundWords.add(
-    word
-  );
-
-
-  cells.forEach(
-    ({ row, col }) => {
-
-      const element =
-        getWordSearchCell(
-          row,
-          col
-        );
-
-
-      if (element) {
-
-        element.classList.remove(
-          "word-search-selected"
-        );
-
-        element.classList.add(
-          "word-search-found"
-        );
-
-
-        createWordSearchSparkle(
-          element
-        );
-
-      }
-
-    }
-  );
-
-
-  const wordElement =
-    document.querySelector(
-      `.word-search-word[data-word="${word}"]`
-    );
-
-
-  if (wordElement) {
-
-    wordElement.classList.add(
-      "found"
-    );
-
-  }
-
-
-  updateWordSearchCounter();
-
-
-  if (
-    state.foundWords.size ===
-    state.words.length
-  ) {
-
-    setTimeout(
-      showWordSearchSuccess,
-      500
-    );
-
-  }
-
-}
-
-
-// =========================================================
-// CONTADOR SOPA
-// =========================================================
-
-function updateWordSearchCounter() {
-
-  const found =
-    document.getElementById(
-      "word-search-found"
-    );
-
-  const state =
-    window.wordSearchState;
-
-
-  if (
-    found &&
-    state
-  ) {
-
-    found.textContent =
-      state.foundWords.size;
-
-  }
-
-}
-
-
-// =========================================================
-// LIMPIAR SELECCIÓN
-// =========================================================
-
-function clearWordSearchSelection() {
-
-  document
-    .querySelectorAll(
-      ".word-search-selected"
-    )
-    .forEach(
-      cell => {
-
-        cell.classList.remove(
-          "word-search-selected"
-        );
-
-      }
-    );
-
-}
-
-
-// =========================================================
-// PALABRA INCORRECTA
-// =========================================================
-
-function showInvalidWord() {
-
-  const board =
-    document.getElementById(
-      "word-search-board"
-    );
-
-
-  if (!board) {
-    return;
-  }
-
-
-  board.classList.remove(
-    "word-search-invalid"
-  );
-
-
-  void board.offsetWidth;
-
-
-  board.classList.add(
-    "word-search-invalid"
-  );
-
-
-  clearWordSearchSelection();
-
-
-  setTimeout(
-    () => {
-
-      board.classList.remove(
-        "word-search-invalid"
-      );
-
-    },
-    500
-  );
-
-}
-
-
-// =========================================================
-// OBTENER CELDA
-// =========================================================
-
-function getWordSearchCell(
-  row,
-  col
-) {
-
-  return document.querySelector(
-    `.word-search-cell[data-row="${row}"][data-col="${col}"]`
-  );
-
-}
-
-
-// =========================================================
-// DESTELLO
-// =========================================================
-
-function createWordSearchSparkle(
-  element
-) {
-
-  if (!element) {
-    return;
-  }
-
-
-  const sparkle =
-    document.createElement(
-      "span"
-    );
-
-
-  sparkle.className =
-    "word-search-sparkle";
-
-  sparkle.textContent =
-    "✨";
-
-
-  element.appendChild(
-    sparkle
-  );
-
-
-  setTimeout(
-    () =>
-      sparkle.remove(),
-    800
-  );
-
-}
-
-
-// =========================================================
-// ÉXITO SOPA
-// =========================================================
-
-function showWordSearchSuccess() {
-
-  const success =
-    document.getElementById(
-      "word-search-success"
-    );
-
-
-  if (!success) {
-    return;
-  }
-
-
-  success.style.display =
-    "block";
-
-
-  setTimeout(
-    () => {
-
-      success.classList.add(
-        "show"
-      );
-
-    },
-    50
-  );
-
-
-  createHearts(18);
-
-  createSunflowerCelebration();
-
-}
-
-
-// =========================================================
-// CELEBRACIÓN
-// =========================================================
-
-function createSunflowerCelebration() {
-
-  const container =
-    document.getElementById(
-      "hearts"
-    );
-
-
-  if (!container) {
-    return;
-  }
-
-
-  for (
-    let i = 0;
-    i < 10;
-    i++
-  ) {
-
-    const flower =
-      document.createElement(
-        "span"
-      );
-
-
-    flower.className =
-      "floating-sunflower";
-
-    flower.textContent =
-      "🌻";
-
-
-    flower.style.left =
-      `${Math.random() * 100}%`;
-
-
-    flower.style.fontSize =
-      `${18 + Math.random() * 18}px`;
-
-
-    flower.style.animationDuration =
-      `${5 + Math.random() * 5}s`;
-
-
-    flower.style.animationDelay =
-      `${Math.random() * 1.5}s`;
-
-
-    container.appendChild(
-      flower
-    );
-
-
-    setTimeout(
-      () =>
-        flower.remove(),
-      12000
-    );
-
-  }
-
-}
-
-
-// =========================================================
-// DÍA BLOQUEADO
+// MENSAJE DE DÍA BLOQUEADO
 // =========================================================
 
 function showLockedMessage(
   day
 ) {
 
-  const date =
-    new Date(
-      dateToUTC(
-        START_DATE
-      ) +
-      (day - 1) *
-      86400000
-    );
-
-
-  const dateText =
-    date.toLocaleDateString(
-      "es-EC",
-      {
-        day: "numeric",
-        month: "long",
-        timeZone: "UTC"
-      }
+  const modal =
+    document.getElementById(
+      "modal"
     );
 
 
@@ -4840,37 +2701,27 @@ function showLockedMessage(
       "modal-day"
     );
 
+
   const modalIcon =
     document.getElementById(
       "modal-icon"
     );
+
 
   const modalTitle =
     document.getElementById(
       "modal-title"
     );
 
+
   const modalBody =
     document.getElementById(
       "modal-body"
     );
 
-  const modal =
-    document.getElementById(
-      "modal"
-    );
 
-
-  if (
-    !modalDay ||
-    !modalIcon ||
-    !modalTitle ||
-    !modalBody ||
-    !modal
-  ) {
-
+  if (!modal) {
     return;
-
   }
 
 
@@ -4879,28 +2730,36 @@ function showLockedMessage(
 
 
   modalIcon.textContent =
-    "🤫";
+    "🔐";
 
 
   modalTitle.textContent =
-    "Todavía no...";
+    `El Día ${day} todavía no está disponible`;
 
 
   modalBody.innerHTML = `
 
-    Este detalle está reservado para el
-    <strong>${dateText}</strong>.
+    <div class="locked-message">
 
-    <br><br>
+      <div class="locked-icon">
+        🔒
+      </div>
 
-    Ten paciencia, mi amor. ❤️
+      <p>
+        Esta sorpresa todavía está esperando
+        su momento.
+      </p>
 
-    <br><br>
+      <p>
+        Vuelve cuando llegue su día
+        y descubre lo que preparé para ti. ❤️
+      </p>
 
-    <em>
-      Las sorpresas bonitas también necesitan
-      esperar su momento.
-    </em>
+      <div class="locked-day">
+        Día ${day}
+      </div>
+
+    </div>
 
   `;
 
@@ -4918,35 +2777,6 @@ function showLockedMessage(
 
   document.body.style.overflow =
     "hidden";
-
-}
-
-
-// =========================================================
-// ETIQUETA DÍA
-// =========================================================
-
-function getDayLabel(
-  day
-) {
-
-  if (day === 22) {
-
-    return "Nuestro día";
-
-  }
-
-
-  if (
-    day === getCurrentDay()
-  ) {
-
-    return "Disponible hoy";
-
-  }
-
-
-  return "Un recuerdo para ti";
 
 }
 
@@ -4986,40 +2816,278 @@ function closeModal() {
 
 
 // =========================================================
-// IR AL CALENDARIO
+// EVENTOS DEL MODAL
 // =========================================================
 
-function scrollToCalendar() {
+function setupModalEvents() {
 
-  const section =
+  const modal =
     document.getElementById(
-      "calendar-section"
+      "modal"
     );
 
 
-  if (!section) {
+  if (!modal) {
     return;
   }
 
 
-  section.scrollIntoView({
-    behavior: "smooth"
-  });
+  const closeButtons =
+    modal.querySelectorAll(
+      ".modal-close, [data-close-modal]"
+    );
+
+
+  closeButtons.forEach(
+    button => {
+
+      button.addEventListener(
+        "click",
+        closeModal
+      );
+
+    }
+  );
+
+
+  modal.addEventListener(
+    "click",
+    event => {
+
+      if (
+        event.target === modal
+      ) {
+
+        closeModal();
+
+      }
+
+    }
+  );
+
+
+  document.addEventListener(
+    "keydown",
+    event => {
+
+      if (
+        event.key === "Escape"
+      ) {
+
+        closeModal();
+
+      }
+
+    }
+  );
 
 }
 
 
 // =========================================================
-// CORAZONES
+// MÚSICA
 // =========================================================
 
-function createHearts(
-  amount = 8
-) {
+let musicPlayer = null;
+
+let musicPlaying = false;
+
+
+// =========================================================
+// CONFIGURAR MÚSICA
+// =========================================================
+
+function setupMusic() {
+
+  const audio =
+    document.getElementById(
+      "background-music"
+    );
+
+
+  if (!audio) {
+    return;
+  }
+
+
+  musicPlayer =
+    audio;
+
+
+  const musicButton =
+    document.getElementById(
+      "music-button"
+    );
+
+
+  if (
+    musicButton
+  ) {
+
+    musicButton.addEventListener(
+      "click",
+      toggleMusic
+    );
+
+  }
+
+}
+
+
+// =========================================================
+// REPRODUCIR / PAUSAR MÚSICA
+// =========================================================
+
+function toggleMusic() {
+
+  if (!musicPlayer) {
+    return;
+  }
+
+
+  if (
+    musicPlayer.paused
+  ) {
+
+    musicPlayer
+      .play()
+      .then(
+        () => {
+
+          musicPlaying =
+            true;
+
+          updateMusicButton();
+
+        }
+      )
+      .catch(
+        error => {
+
+          console.warn(
+            "No se pudo reproducir la música:",
+            error
+          );
+
+        }
+      );
+
+  }
+  else {
+
+    musicPlayer.pause();
+
+    musicPlaying =
+      false;
+
+    updateMusicButton();
+
+  }
+
+}
+
+
+// =========================================================
+// ACTUALIZAR BOTÓN DE MÚSICA
+// =========================================================
+
+function updateMusicButton() {
+
+  const button =
+    document.getElementById(
+      "music-button"
+    );
+
+
+  if (!button) {
+    return;
+  }
+
+
+  if (
+    musicPlaying
+  ) {
+
+    button.textContent =
+      "❚❚";
+
+    button.setAttribute(
+      "aria-label",
+      "Pausar música"
+    );
+
+    button.classList.add(
+      "playing"
+    );
+
+  }
+  else {
+
+    button.textContent =
+      "♫";
+
+    button.setAttribute(
+      "aria-label",
+      "Reproducir música"
+    );
+
+    button.classList.remove(
+      "playing"
+    );
+
+  }
+
+}
+
+
+// =========================================================
+// DETECTAR CAMBIO DE ESTADO DE AUDIO
+// =========================================================
+
+function setupAudioEvents() {
+
+  if (!musicPlayer) {
+    return;
+  }
+
+
+  musicPlayer.addEventListener(
+    "play",
+    () => {
+
+      musicPlaying =
+        true;
+
+      updateMusicButton();
+
+    }
+  );
+
+
+  musicPlayer.addEventListener(
+    "pause",
+    () => {
+
+      musicPlaying =
+        false;
+
+      updateMusicButton();
+
+    }
+  );
+
+}
+
+
+// =========================================================
+// ANIMACIÓN DE CORAZONES DEL FONDO
+// =========================================================
+
+function createBackgroundHearts() {
 
   const container =
-    document.getElementById(
-      "hearts"
+    document.querySelector(
+      ".hearts-container"
     );
 
 
@@ -5028,9 +3096,17 @@ function createHearts(
   }
 
 
+  const heartSymbols = [
+    "❤",
+    "♡",
+    "💕",
+    "💗"
+  ];
+
+
   for (
     let i = 0;
-    i < amount;
+    i < 16;
     i++
   ) {
 
@@ -5041,193 +3117,1450 @@ function createHearts(
 
 
     heart.className =
-      "floating-heart";
+      "background-heart";
 
 
     heart.textContent =
-      Math.random() > 0.25
-        ? "♥"
-        : "❤";
+      heartSymbols[
+        Math.floor(
+          Math.random() *
+          heartSymbols.length
+        )
+      ];
 
 
     heart.style.left =
       `${Math.random() * 100}%`;
 
 
-    heart.style.fontSize =
-      `${12 + Math.random() * 22}px`;
+    heart.style.animationDelay =
+      `${Math.random() * 8}s`;
 
 
     heart.style.animationDuration =
-      `${5 + Math.random() * 7}s`;
+      `${7 + Math.random() * 8}s`;
 
 
-    heart.style.animationDelay =
-      `${Math.random() * 2}s`;
+    heart.style.fontSize =
+      `${12 + Math.random() * 20}px`;
 
 
     container.appendChild(
       heart
     );
 
-
-    setTimeout(
-      () =>
-        heart.remove(),
-      14000
-    );
-
   }
 
 }
 
 
 // =========================================================
-// ANIMACIÓN CORAZONES
+// ACTUALIZAR TEXTO DEL DÍA ACTUAL
 // =========================================================
 
-function startHeartAnimation() {
+function updateCurrentDayText() {
 
-  setInterval(
-    () =>
-      createHearts(1),
-    1800
-  );
-
-}
-
-
-// =========================================================
-// MÚSICA
-// =========================================================
-
-async function toggleMusic() {
-
-  const audio =
+  const element =
     document.getElementById(
-      "bg-music"
+      "current-day"
     );
 
-  const button =
-    document.getElementById(
-      "music-btn"
-    );
+
+  if (!element) {
+    return;
+  }
+
+
+  const currentDay =
+    getCurrentDay();
 
 
   if (
-    !audio ||
-    !button
+    currentDay <= 0
   ) {
+
+    element.textContent =
+      "Nuestra historia comienza pronto...";
 
     return;
 
   }
 
 
-  try {
+  if (
+    currentDay >= TOTAL_DAYS
+  ) {
 
-    if (
-      audio.paused
-    ) {
+    element.textContent =
+      "❤️ ¡Feliz aniversario! ❤️";
 
-      await audio.play();
-
-
-      button.textContent =
-        "❚❚";
-
-
-      button.title =
-        "Pausar música";
-
-    }
-
-    else {
-
-      audio.pause();
-
-
-      button.textContent =
-        "♫";
-
-
-      button.title =
-        "Reproducir música";
-
-    }
+    return;
 
   }
 
-  catch (error) {
 
-    console.error(
-      "No se pudo reproducir la música:",
-      error
-    );
-
-
-    alert(
-      "No se pudo reproducir la música. Revisa que el archivo exista y que la ruta del audio en tu HTML sea correcta."
-    );
-
-  }
+  element.textContent =
+    `Hoy estamos en el Día ${currentDay} de nuestra historia. ❤️`;
 
 }
 
 
 // =========================================================
-// ESCAPE
+// ANIMACIÓN AL HACER SCROLL
 // =========================================================
 
-document.addEventListener(
-  "keydown",
-  event => {
+function setupScrollAnimations() {
 
-    if (
-      event.key === "Escape"
-    ) {
+  const elements =
+    document.querySelectorAll(
+      ".animate-on-scroll"
+    );
 
-      closeModal();
 
-    }
+  if (
+    !("IntersectionObserver" in window)
+  ) {
+
+    elements.forEach(
+      element => {
+
+        element.classList.add(
+          "visible"
+        );
+
+      }
+    );
+
+    return;
 
   }
-);
+
+
+  const observer =
+    new IntersectionObserver(
+      entries => {
+
+        entries.forEach(
+          entry => {
+
+            if (
+              entry.isIntersecting
+            ) {
+
+              entry.target.classList.add(
+                "visible"
+              );
+
+              observer.unobserve(
+                entry.target
+              );
+
+            }
+
+          }
+        );
+
+      },
+      {
+        threshold: 0.15
+      }
+    );
+
+
+  elements.forEach(
+    element => {
+
+      observer.observe(
+        element
+      );
+
+    }
+  );
+
+}
 
 
 // =========================================================
-// INICIAR
+// ACTUALIZAR TODO
+// =========================================================
+
+function updatePage() {
+
+  updateCountdown();
+
+  renderCalendar();
+
+  updateCurrentDayText();
+
+}
+
+
+// =========================================================
+// INICIALIZACIÓN
 // =========================================================
 
 document.addEventListener(
   "DOMContentLoaded",
   () => {
 
-    renderCalendar();
+    updatePage();
 
-    updateCountdown();
+    setupModalEvents();
 
-    startHeartAnimation();
+    setupMusic();
+
+    setupAudioEvents();
+
+    createBackgroundHearts();
+
+    setupScrollAnimations();
+
+
+    setInterval(
+      updateCountdown,
+      1000
+    );
+
+
+    setInterval(
+      () => {
+
+        const previousDay =
+          window.lastKnownDay;
+
+
+        const currentDay =
+          getCurrentDay();
+
+
+        if (
+          previousDay !==
+          currentDay
+        ) {
+
+          updatePage();
+
+        }
+
+
+        window.lastKnownDay =
+          currentDay;
+
+      },
+      10000
+    );
 
   }
 );
 
 
 // =========================================================
-// ACTUALIZAR CONTADOR
+// FUNCIONES GLOBALES
 // =========================================================
 
-setInterval(
-  updateCountdown,
-  1000
-);
+window.openSurprise =
+  openSurprise;
+
+window.closeModal =
+  closeModal;
+
+window.changeCarousel =
+  changeCarousel;
+
+window.goToCarousel =
+  goToCarousel;
+
+window.changeTextCarousel =
+  changeTextCarousel;
+
+window.goToTextCarousel =
+  goToTextCarousel;
+
+window.changeDay14Step =
+  changeDay14Step;
+
+window.renderDay14Journey =
+  renderDay14Journey;
+
+window.revealDay14Secret =
+  revealDay14Secret;
+
+window.createDay14Hearts =
+  createDay14Hearts;
+
+window.toggleMusic =
+  toggleMusic;
+// =========================================================
+// ESTILOS DEL DÍA 14
+// =========================================================
+
+function injectDay14Styles() {
+
+  if (
+    document.getElementById(
+      "day14-dynamic-styles"
+    )
+  ) {
+    return;
+  }
+
+
+  const style =
+    document.createElement(
+      "style"
+    );
+
+
+  style.id =
+    "day14-dynamic-styles";
+
+
+  style.textContent = `
+
+    /* ==============================================
+       DÍA 14
+       ============================================== */
+
+    .day14-journey {
+      width: 100%;
+      max-width: 850px;
+      margin: 35px auto 10px;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+
+
+    .day14-progress {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto 30px;
+    }
+
+
+    .day14-progress-dot {
+      width: 16px;
+      height: 16px;
+      min-width: 16px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.25);
+      border: 2px solid rgba(255, 255, 255, 0.35);
+      transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+    }
+
+
+    .day14-progress-dot.active {
+      background: #ff5c8a;
+      border-color: #ff8fb0;
+      transform: scale(1.25);
+      box-shadow:
+        0 0 15px rgba(255, 92, 138, 0.55);
+    }
+
+
+    .day14-progress-line {
+      flex: 1;
+      height: 3px;
+      background: rgba(255, 255, 255, 0.18);
+      max-width: 150px;
+      transition: background 0.3s ease;
+    }
+
+
+    .day14-stage {
+      background:
+        linear-gradient(
+          145deg,
+          rgba(255, 255, 255, 0.10),
+          rgba(255, 255, 255, 0.04)
+        );
+
+      border:
+        1px solid rgba(255, 255, 255, 0.15);
+
+      border-radius: 25px;
+
+      padding: 30px;
+
+      box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.20);
+
+      backdrop-filter:
+        blur(10px);
+
+      overflow: hidden;
+    }
+
+
+    .day14-stage-enter {
+      animation:
+        day14StageEnter
+        0.55s ease both;
+    }
+
+
+    @keyframes day14StageEnter {
+
+      from {
+        opacity: 0;
+        transform:
+          translateX(25px)
+          scale(0.98);
+      }
+
+      to {
+        opacity: 1;
+        transform:
+          translateX(0)
+          scale(1);
+      }
+
+    }
+
+
+    .day14-stage-header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      margin-bottom: 25px;
+    }
+
+
+    .day14-stage-icon {
+      width: 70px;
+      height: 70px;
+      min-width: 70px;
+      border-radius: 20px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      font-size: 34px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(255, 105, 150, 0.25),
+          rgba(255, 255, 255, 0.10)
+        );
+
+      box-shadow:
+        0 10px 25px
+        rgba(0, 0, 0, 0.15);
+    }
+
+
+    .day14-step-number {
+      display: block;
+
+      font-size: 11px;
+      letter-spacing: 2px;
+      font-weight: 700;
+
+      opacity: 0.65;
+
+      margin-bottom: 5px;
+    }
+
+
+    .day14-stage-header h3 {
+      margin: 0 0 5px;
+
+      font-size: 28px;
+      line-height: 1.15;
+    }
+
+
+    .day14-stage-header p {
+      margin: 0;
+      opacity: 0.72;
+      font-size: 14px;
+    }
+
+
+    .day14-stage-content {
+      font-size: 16px;
+      line-height: 1.75;
+    }
+
+
+    .day14-stage-content > p {
+      margin:
+        0 0 20px;
+    }
+
+
+    .day14-memory,
+    .day14-adventure {
+      display: flex;
+      align-items: flex-start;
+      gap: 18px;
+
+      margin: 16px 0;
+      padding: 18px;
+
+      border-radius: 18px;
+
+      background:
+        rgba(255, 255, 255, 0.07);
+
+      border:
+        1px solid rgba(255, 255, 255, 0.10);
+
+      transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+    }
+
+
+    .day14-memory:hover,
+    .day14-adventure:hover {
+      transform:
+        translateY(-3px);
+
+      background:
+        rgba(255, 255, 255, 0.11);
+    }
+
+
+    .day14-memory-icon,
+    .day14-adventure-icon {
+      width: 48px;
+      height: 48px;
+      min-width: 48px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      border-radius: 14px;
+
+      font-size: 25px;
+
+      background:
+        rgba(255, 92, 138, 0.13);
+    }
+
+
+    .day14-memory h4,
+    .day14-adventure h4 {
+      margin:
+        0 0 5px;
+
+      font-size: 17px;
+    }
+
+
+    .day14-memory p,
+    .day14-adventure p {
+      margin:
+        3px 0;
+
+      font-size: 14px;
+      line-height: 1.6;
+      opacity: 0.82;
+    }
+
+
+    .day14-highlight {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      margin-top: 25px;
+      padding: 20px;
+
+      border-radius: 18px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(255, 92, 138, 0.15),
+          rgba(255, 190, 210, 0.06)
+        );
+
+      border:
+        1px solid
+        rgba(255, 130, 160, 0.22);
+    }
+
+
+    .day14-highlight span {
+      font-size: 28px;
+    }
+
+
+    .day14-highlight p {
+      margin: 0;
+      font-weight: 600;
+    }
+
+
+    .day14-big-message {
+      text-align: center;
+
+      padding:
+        25px 15px;
+
+      margin:
+        20px 0;
+
+      border-radius: 22px;
+
+      background:
+        rgba(255, 255, 255, 0.06);
+    }
+
+
+    .day14-big-heart {
+      display: block;
+
+      font-size: 52px;
+
+      animation:
+        day14Heartbeat
+        1.6s ease-in-out
+        infinite;
+    }
+
+
+    @keyframes day14Heartbeat {
+
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.13);
+      }
+
+    }
+
+
+    .day14-big-message p {
+      margin:
+        10px 0 0;
+
+      font-size: 21px;
+      font-weight: 700;
+    }
+
+
+    .day14-future-grid {
+      display: grid;
+
+      grid-template-columns:
+        repeat(4, 1fr);
+
+      gap: 12px;
+
+      margin:
+        25px 0;
+    }
+
+
+    .day14-future-grid > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      gap: 8px;
+
+      min-height: 100px;
+
+      padding: 12px;
+
+      border-radius: 18px;
+
+      background:
+        rgba(255, 255, 255, 0.07);
+
+      font-size: 30px;
+
+      text-align: center;
+    }
+
+
+    .day14-future-grid span {
+      font-size: 13px;
+      font-weight: 600;
+      opacity: 0.8;
+    }
+
+
+    .day14-final-question {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      gap: 12px;
+
+      text-align: center;
+
+      margin-top: 25px;
+      padding: 25px;
+
+      border-radius: 20px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(255, 105, 150, 0.14),
+          rgba(255, 255, 255, 0.05)
+        );
+    }
+
+
+    .day14-final-question span {
+      font-size: 38px;
+    }
+
+
+    .day14-final-question strong {
+      font-size: 17px;
+      line-height: 1.5;
+    }
+
+
+    .day14-navigation {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+
+      margin-top: 22px;
+    }
+
+
+    .day14-nav-button {
+      border: none;
+
+      border-radius: 13px;
+
+      padding:
+        13px 20px;
+
+      font-size: 14px;
+      font-weight: 700;
+
+      cursor: pointer;
+
+      transition:
+        transform 0.2s ease,
+        opacity 0.2s ease,
+        box-shadow 0.2s ease;
+    }
+
+
+    .day14-nav-button:hover {
+      transform:
+        translateY(-2px);
+    }
+
+
+    .day14-nav-button:disabled {
+      opacity: 0.35;
+      cursor: not-allowed;
+      transform: none;
+    }
+
+
+    .day14-nav-button.primary {
+      color: white;
+
+      background:
+        linear-gradient(
+          135deg,
+          #ff5c8a,
+          #ff86a8
+        );
+
+      box-shadow:
+        0 8px 20px
+        rgba(255, 92, 138, 0.25);
+    }
+
+
+    .day14-nav-button.secondary {
+      color: inherit;
+
+      background:
+        rgba(255, 255, 255, 0.08);
+
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.12);
+    }
+
+
+    .day14-secret-container {
+      margin-top: 18px;
+    }
+
+
+    .day14-secret-button {
+      display: block;
+
+      width: 100%;
+
+      padding:
+        15px 20px;
+
+      border-radius: 15px;
+
+      border:
+        1px dashed
+        rgba(255, 130, 160, 0.45);
+
+      background:
+        rgba(255, 92, 138, 0.08);
+
+      color: inherit;
+
+      font-weight: 700;
+      font-size: 14px;
+
+      cursor: pointer;
+
+      transition:
+        background 0.3s ease,
+        transform 0.3s ease;
+    }
+
+
+    .day14-secret-button:hover {
+      background:
+        rgba(255, 92, 138, 0.15);
+
+      transform:
+        translateY(-2px);
+    }
+
+
+    .day14-secret-message {
+      position: relative;
+
+      overflow: hidden;
+
+      text-align: center;
+
+      padding: 30px 22px;
+
+      border-radius: 24px;
+
+      background:
+        linear-gradient(
+          135deg,
+          rgba(255, 92, 138, 0.16),
+          rgba(255, 255, 255, 0.06)
+        );
+
+      border:
+        1px solid
+        rgba(255, 130, 160, 0.25);
+
+      animation:
+        day14SecretEnter
+        0.6s ease both;
+    }
+
+
+    @keyframes day14SecretEnter {
+
+      from {
+        opacity: 0;
+        transform:
+          translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform:
+          translateY(0);
+      }
+
+    }
+
+
+    .day14-secret-hearts {
+      font-size: 24px;
+      letter-spacing: 5px;
+
+      margin-bottom: 18px;
+
+      animation:
+        day14SecretPulse
+        1.8s ease-in-out
+        infinite;
+    }
+
+
+    @keyframes day14SecretPulse {
+
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.08);
+      }
+
+    }
+
+
+    .day14-secret-message h3 {
+      margin:
+        0 auto 18px;
+
+      max-width: 600px;
+
+      font-size: 21px;
+      line-height: 1.4;
+    }
+
+
+    .day14-secret-message p {
+      max-width: 650px;
+
+      margin:
+        12px auto;
+
+      line-height: 1.7;
+
+      opacity: 0.9;
+    }
+
+
+    .day14-secret-final {
+      margin-top: 22px;
+      padding: 17px;
+
+      border-radius: 15px;
+
+      background:
+        rgba(255, 255, 255, 0.07);
+
+      line-height: 1.5;
+    }
+
+
+    .day14-heart-button {
+      margin-top: 22px;
+
+      border: none;
+
+      border-radius: 999px;
+
+      padding:
+        12px 24px;
+
+      background:
+        linear-gradient(
+          135deg,
+          #ff5c8a,
+          #ff7ca3
+        );
+
+      color: white;
+
+      font-weight: 800;
+
+      cursor: pointer;
+
+      box-shadow:
+        0 8px 25px
+        rgba(255, 92, 138, 0.25);
+
+      transition:
+        transform 0.2s ease;
+    }
+
+
+    .day14-heart-button:hover {
+      transform:
+        scale(1.05);
+    }
+
+
+    .day14-floating-hearts {
+      position: absolute;
+
+      inset: 0;
+
+      pointer-events: none;
+
+      overflow: hidden;
+    }
+
+
+    .day14-floating-heart {
+      position: absolute;
+
+      bottom: 15px;
+
+      font-size: 20px;
+
+      animation:
+        day14FloatHeart
+        3s ease-out
+        forwards;
+    }
+
+
+    @keyframes day14FloatHeart {
+
+      0% {
+        opacity: 0;
+        transform:
+          translateY(0)
+          scale(0.5);
+      }
+
+      15% {
+        opacity: 1;
+      }
+
+      100% {
+        opacity: 0;
+        transform:
+          translateY(-300px)
+          rotate(20deg)
+          scale(1.25);
+      }
+
+    }
+
+
+    /* ==============================================
+       CARRUSEL
+       ============================================== */
+
+    .carousel {
+      position: relative;
+
+      display: flex;
+      align-items: center;
+
+      width: 100%;
+
+      margin:
+        25px auto;
+
+      gap: 10px;
+    }
+
+
+    .carousel-content {
+      flex: 1;
+      min-width: 0;
+    }
+
+
+    .carousel-slide {
+      text-align: center;
+    }
+
+
+    .carousel-image {
+      display: block;
+
+      width: 100%;
+      max-width: 700px;
+
+      max-height: 65vh;
+
+      margin: 0 auto;
+
+      object-fit: contain;
+
+      border-radius: 15px;
+    }
+
+
+    .carousel-caption {
+      margin-top: 15px;
+
+      padding: 12px;
+
+      line-height: 1.6;
+    }
+
+
+    .carousel-button,
+    .text-carousel-arrow {
+      width: 42px;
+      height: 42px;
+
+      min-width: 42px;
+
+      border: none;
+
+      border-radius: 50%;
+
+      background:
+        rgba(255, 255, 255, 0.10);
+
+      color: inherit;
+
+      cursor: pointer;
+
+      font-size: 20px;
+
+      transition:
+        background 0.2s ease,
+        transform 0.2s ease;
+    }
+
+
+    .carousel-button:hover,
+    .text-carousel-arrow:hover {
+      background:
+        rgba(255, 255, 255, 0.18);
+
+      transform:
+        scale(1.05);
+    }
+
+
+    .carousel-dots,
+    .text-carousel-dots {
+      display: flex;
+
+      justify-content: center;
+
+      flex-wrap: wrap;
+
+      gap: 7px;
+
+      margin-top: 15px;
+    }
+
+
+    .carousel-dot {
+      width: 8px;
+      height: 8px;
+
+      padding: 0;
+
+      border: none;
+
+      border-radius: 50%;
+
+      background:
+        rgba(255, 255, 255, 0.30);
+
+      cursor: pointer;
+
+      transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+    }
+
+
+    .carousel-dot.active {
+      transform:
+        scale(1.45);
+
+      background:
+        #ff6b94;
+    }
+
+
+    /* ==============================================
+       CARRUSEL DE TEXTO
+       ============================================== */
+
+    .text-carousel {
+      display: flex;
+      align-items: center;
+
+      gap: 12px;
+
+      margin-top: 20px;
+    }
+
+
+    .text-carousel-content {
+      flex: 1;
+      min-width: 0;
+    }
+
+
+    .text-carousel-card {
+      padding:
+        25px;
+
+      border-radius: 20px;
+
+      background:
+        rgba(255, 255, 255, 0.06);
+
+      border:
+        1px solid
+        rgba(255, 255, 255, 0.10);
+
+      animation:
+        day14StageEnter
+        0.4s ease both;
+    }
+
+
+    .text-carousel-card h3 {
+      margin:
+        0 0 15px;
+
+      font-size: 20px;
+
+      text-align: center;
+    }
+
+
+    .text-carousel-message {
+      line-height: 1.75;
+    }
+
+
+    /* ==============================================
+       MENSAJE BLOQUEADO
+       ============================================== */
+
+    .locked-message {
+      text-align: center;
+
+      padding:
+        20px;
+    }
+
+
+    .locked-icon {
+      font-size: 55px;
+
+      margin-bottom: 15px;
+
+      animation:
+        day14Heartbeat
+        1.8s ease-in-out
+        infinite;
+    }
+
+
+    .locked-message p {
+      line-height: 1.7;
+    }
+
+
+    .locked-day {
+      display: inline-block;
+
+      margin-top: 15px;
+
+      padding:
+        8px 16px;
+
+      border-radius: 999px;
+
+      background:
+        rgba(255, 255, 255, 0.08);
+
+      font-weight: 700;
+    }
+
+
+    /* ==============================================
+       RESPONSIVE
+       ============================================== */
+
+    @media (max-width: 700px) {
+
+      .day14-journey {
+        padding:
+          5px;
+      }
+
+
+      .day14-stage {
+        padding:
+          20px 15px;
+
+        border-radius:
+          20px;
+      }
+
+
+      .day14-stage-header {
+        gap: 13px;
+      }
+
+
+      .day14-stage-icon {
+        width: 55px;
+        height: 55px;
+        min-width: 55px;
+
+        border-radius: 16px;
+
+        font-size: 27px;
+      }
+
+
+      .day14-stage-header h3 {
+        font-size: 22px;
+      }
+
+
+      .day14-stage-header p {
+        font-size: 12px;
+      }
+
+
+      .day14-memory,
+      .day14-adventure {
+        gap: 12px;
+
+        padding:
+          14px;
+      }
+
+
+      .day14-memory-icon,
+      .day14-adventure-icon {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+
+        font-size: 21px;
+      }
+
+
+      .day14-future-grid {
+        grid-template-columns:
+          repeat(2, 1fr);
+      }
+
+
+      .day14-navigation {
+        gap: 10px;
+      }
+
+
+      .day14-nav-button {
+        flex: 1;
+
+        padding:
+          12px 10px;
+
+        font-size: 12px;
+      }
+
+
+      .carousel {
+        gap: 5px;
+      }
+
+
+      .carousel-button,
+      .text-carousel-arrow {
+        width: 34px;
+        height: 34px;
+        min-width: 34px;
+
+        font-size: 16px;
+      }
+
+
+      .text-carousel-card {
+        padding:
+          18px 14px;
+      }
+
+    }
+
+
+    @media (max-width: 430px) {
+
+      .day14-progress-line {
+        max-width: 70px;
+      }
+
+
+      .day14-stage-content {
+        font-size: 14px;
+      }
+
+
+      .day14-memory p,
+      .day14-adventure p {
+        font-size: 13px;
+      }
+
+
+      .day14-secret-message {
+        padding:
+          25px 15px;
+      }
+
+
+      .day14-secret-message h3 {
+        font-size: 18px;
+      }
+
+    }
+
+  `;
+
+
+  document.head.appendChild(
+    style
+  );
+
+}
 
 
 // =========================================================
-// ACTUALIZAR CALENDARIO
+// INYECTAR ESTILOS AL CARGAR
 // =========================================================
 
-setInterval(
-  renderCalendar,
-  30000
-);
+if (
+  document.readyState ===
+  "loading"
+) {
+
+  document.addEventListener(
+    "DOMContentLoaded",
+    injectDay14Styles
+  );
+
+}
+else {
+
+  injectDay14Styles();
+
+}
+
+
+// =========================================================
+// VARIABLES INICIALES
+// =========================================================
+
+window.day14CurrentStep = 0;
+
+window.currentTextSlides = [];
+
+window.currentTextCarouselIndex = 0;
+
+window.lastKnownDay =
+  getCurrentDay();
+
+
+// =========================================================
+// FIN DEL SCRIPT
+// =========================================================
