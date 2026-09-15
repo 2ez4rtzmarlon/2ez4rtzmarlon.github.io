@@ -4036,3 +4036,443 @@ h1 span {
   }
 
 }
+/* =====================================================
+   DÍAS ESPECIALES 16 - 22
+   ===================================================== */
+
+.special-day {
+  text-align: center;
+  padding: 10px 5px 20px;
+}
+
+.special-day h2 {
+  font-family: Georgia, serif;
+  color: #6b4035;
+  margin: 12px 0 18px;
+}
+
+.special-day p {
+  line-height: 1.7;
+  margin: 12px auto;
+  max-width: 560px;
+}
+
+
+/* BOTONES */
+
+.special-btn {
+  border: none;
+  border-radius: 30px;
+  padding: 13px 22px;
+  margin: 18px 5px;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 15px;
+  background: linear-gradient(135deg, #f5c95b, #e9a72d);
+  color: #5b3818;
+  box-shadow: 0 8px 20px rgba(120, 75, 20, .15);
+  transition: .3s;
+}
+
+.special-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+}
+
+
+/* MENSAJES OCULTOS */
+
+.hidden-message {
+  display: none;
+  margin: 22px auto 5px;
+  padding: 20px;
+  max-width: 520px;
+  border-radius: 20px;
+  background: rgba(255, 248, 224, .9);
+  line-height: 1.7;
+  animation: specialAppear .7s ease;
+}
+
+.hidden-message.show {
+  display: block;
+}
+
+@keyframes specialAppear {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* =====================================================
+   DÍA 16 - TESIS
+   ===================================================== */
+
+.thesis-icon {
+  font-size: 65px;
+  animation: thesisFloat 2s ease-in-out infinite;
+}
+
+@keyframes thesisFloat {
+  0%,100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.thesis-words {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin: 20px auto;
+}
+
+.thesis-words span {
+  padding: 7px 13px;
+  border-radius: 20px;
+  background: #fff3ce;
+  font-size: 13px;
+  font-weight: 700;
+  color: #76501e;
+}
+
+
+/* =====================================================
+   DÍA 17 - PANDA Y LOBO
+   ===================================================== */
+
+.animals {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin: 15px 0 20px;
+  transition: .8s;
+}
+
+.animal {
+  font-size: 65px;
+  transition: .8s;
+}
+
+.heart-between {
+  font-size: 30px;
+  animation: heartPulse 1.5s infinite;
+}
+
+.animals.joined .panda {
+  transform: translateX(28px) rotate(-5deg);
+}
+
+.animals.joined .wolf {
+  transform: translateX(-28px) rotate(5deg);
+}
+
+@keyframes heartPulse {
+  0%,100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.25);
+  }
+}
+
+.big-love {
+  display: inline-block;
+  font-size: 30px;
+  font-family: Georgia, serif;
+  color: #b34b61;
+}
+
+
+/* =====================================================
+   DÍA 18
+   ===================================================== */
+
+.memory-line {
+  font-size: 30px;
+  margin: 20px;
+  animation: heartPulse 1.5s infinite;
+}
+
+
+/* =====================================================
+   DÍA 19 - FUTURO
+   ===================================================== */
+
+.future-door {
+  font-size: 90px;
+  margin: 10px;
+  transition: .8s;
+  transform-origin: center bottom;
+}
+
+.future-door.open-door {
+  transform: rotateY(-70deg) scale(1.05);
+}
+
+.future-items {
+  display: grid;
+  gap: 10px;
+}
+
+.future-items span {
+  padding: 10px;
+  border-radius: 15px;
+  background: rgba(255, 246, 213, .8);
+}
+
+
+/* =====================================================
+   DÍA 20 - RAZONES
+   ===================================================== */
+
+.reasons-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  max-width: 430px;
+  margin: 22px auto;
+}
+
+.reasons-grid button {
+  width: 55px;
+  height: 55px;
+  border: none;
+  border-radius: 50%;
+  background: #fff2d0;
+  cursor: pointer;
+  font-size: 22px;
+  transition: .3s;
+}
+
+.reasons-grid button:hover {
+  transform: scale(1.15);
+}
+
+.reason-text {
+  min-height: 60px;
+  max-width: 500px;
+  margin: 15px auto;
+  padding: 15px;
+  border-radius: 18px;
+  background: #fff9e9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1.6;
+}
+
+.reason-show {
+  animation: specialAppear .4s ease;
+}
+
+
+/* =====================================================
+   DÍA 21 - JARDÍN DE FLORES
+   ===================================================== */
+
+.flowers-day {
+  overflow: hidden;
+}
+
+.flower-garden {
+  position: relative;
+  height: 130px;
+  margin: 5px auto 15px;
+  overflow: hidden;
+}
+
+.flower-garden span {
+  position: absolute;
+  bottom: 0;
+  font-size: 30px;
+  opacity: .15;
+  transform: scale(.5);
+  transition: 1s;
+}
+
+.flower-garden span:nth-child(1) { left: 3%; }
+.flower-garden span:nth-child(2) { left: 13%; }
+.flower-garden span:nth-child(3) { left: 23%; }
+.flower-garden span:nth-child(4) { left: 33%; }
+.flower-garden span:nth-child(5) { left: 43%; }
+.flower-garden span:nth-child(6) { left: 53%; }
+.flower-garden span:nth-child(7) { left: 63%; }
+.flower-garden span:nth-child(8) { left: 73%; }
+.flower-garden span:nth-child(9) { left: 83%; }
+.flower-garden span:nth-child(10) { left: 91%; }
+
+.garden-grow span {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.extra-flower {
+  position: absolute;
+  bottom: -20px;
+  font-size: 25px;
+  animation: flowerRise 2s ease forwards;
+}
+
+@keyframes flowerRise {
+  from {
+    transform: translateY(20px) scale(.5);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(-90px) scale(1);
+    opacity: 1;
+  }
+}
+
+.flower-final {
+  display: inline-block;
+  font-size: 30px;
+  margin: 10px;
+  animation: flowerPulse 2s infinite;
+}
+
+@keyframes flowerPulse {
+  0%,100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+
+/* =====================================================
+   DÍA 22 - GRAN FINAL
+   ===================================================== */
+
+.final-day {
+  min-height: 400px;
+}
+
+.final-number {
+  font-family: Georgia, serif;
+  font-size: 75px;
+  font-weight: bold;
+  color: #d49a2a;
+  text-shadow: 0 5px 15px rgba(100,60,20,.15);
+}
+
+.final-btn {
+  margin-top: 25px;
+}
+
+.hidden-final {
+  display: none;
+}
+
+.show-final {
+  display: block;
+  animation: finalAppear 1s ease;
+}
+
+.final-photo {
+  display: block;
+  width: min(100%, 420px);
+  max-height: 420px;
+  object-fit: contain;
+  margin: 10px auto 22px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0,0,0,.15);
+}
+
+.final-love {
+  margin: 25px auto;
+  padding: 22px;
+  border-radius: 20px;
+  background: #fff7df;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.final-heart {
+  font-size: 65px;
+  animation: heartPulse 1.5s infinite;
+}
+
+.final-phrase {
+  margin: 25px auto;
+  padding: 22px;
+  border-radius: 20px;
+  background: #fff7df;
+  font-family: Georgia, serif;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.final-signature {
+  margin-top: 25px;
+  font-family: Georgia, serif;
+  font-size: 28px;
+  color: #b34b61;
+}
+
+@keyframes finalAppear {
+  from {
+    opacity: 0;
+    transform: translateY(35px) scale(.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+
+/* =====================================================
+   CELULAR
+   ===================================================== */
+
+@media (max-width: 600px) {
+
+  .special-day {
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+
+  .animal {
+    font-size: 52px;
+  }
+
+  .animals {
+    gap: 10px;
+  }
+
+  .reasons-grid {
+    gap: 7px;
+  }
+
+  .reasons-grid button {
+    width: 45px;
+    height: 45px;
+    font-size: 18px;
+  }
+
+  .final-number {
+    font-size: 60px;
+  }
+
+  .final-photo {
+    max-height: 350px;
+  }
+}
