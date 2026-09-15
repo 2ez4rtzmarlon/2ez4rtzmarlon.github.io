@@ -5454,7 +5454,143 @@ function createHearts(
 
 }
 
+// =========================================================
+// FUNCIONES DÍAS 16 - 22
+// =========================================================
 
+function revealThesisMessage() {
+  const box = document.getElementById("thesis-message");
+  if (box) box.classList.add("show");
+}
+
+
+function joinUs() {
+  const animals = document.querySelector(".animals");
+  const message = document.getElementById("us-message");
+
+  if (animals) animals.classList.add("joined");
+  if (message) message.classList.add("show");
+}
+
+
+function openFutureDoor() {
+  const door = document.getElementById("future-door");
+  const message = document.getElementById("future-message");
+
+  if (door) door.classList.add("open-door");
+  if (message) message.classList.add("show");
+}
+
+
+function showReason(number) {
+
+  const reasons = {
+    1: "Porque amo tu forma de querer. ❤️",
+
+    2: "Porque contigo puedo ser yo mismo. 🥰",
+
+    3: "Porque tu sonrisa puede cambiar completamente mi día. 😊",
+
+    4: "Porque amo cómo tratas a los animales y el corazón tan bonito que tienes. 🐾",
+
+    5: "Porque incluso tus chistes de doble sentido terminan haciéndome reír. 😂",
+
+    6: "Porque admiro la mujer que eres y todo lo que has conseguido. 🌟",
+
+    7: "Porque amo compartir contigo mis momentos buenos y malos. 🤍",
+
+    8: "Porque contigo he creado recuerdos que no cambiaría por nada. 📸",
+
+    9: "Porque todavía quiero vivir muchísimas cosas contigo. 🌎",
+
+    10: "Porque entre tantas personas en el mundo, te elegiría a ti una y otra vez. ❤️"
+  };
+
+  const box = document.getElementById("reason-text");
+
+  if (!box) return;
+
+  box.classList.remove("reason-show");
+
+  void box.offsetWidth;
+
+  box.innerHTML = reasons[number];
+
+  box.classList.add("reason-show");
+}
+
+
+function growFlowers() {
+
+  const garden = document.getElementById("flower-garden");
+  const message = document.getElementById("flower-message");
+
+  if (garden) {
+    garden.classList.add("garden-grow");
+  }
+
+  if (message) {
+    setTimeout(() => {
+      message.classList.add("show");
+    }, 700);
+  }
+
+  createFlowers();
+}
+
+
+function createFlowers() {
+
+  const container = document.getElementById("flower-garden");
+
+  if (!container) return;
+
+  for (let i = 0; i < 15; i++) {
+
+    const flower = document.createElement("span");
+
+    flower.textContent = "🌻";
+
+    flower.className = "extra-flower";
+
+    flower.style.left = Math.random() * 100 + "%";
+
+    flower.style.animationDelay =
+      Math.random() * 1.5 + "s";
+
+    container.appendChild(flower);
+  }
+}
+
+
+function startFinalStory() {
+
+  const start = document.getElementById("final-start");
+  const story = document.getElementById("final-story");
+
+  if (start) start.style.display = "none";
+
+  if (story) {
+    story.classList.add("show-final");
+  }
+
+  createHearts(30);
+}
+
+
+function showFinalMessage() {
+
+  const story = document.getElementById("final-story");
+  const message = document.getElementById("final-message");
+
+  if (story) story.style.display = "none";
+
+  if (message) {
+    message.classList.add("show-final");
+  }
+
+  createHearts(45);
+}
 // =========================================================
 // ANIMACIÓN CORAZONES
 // =========================================================
