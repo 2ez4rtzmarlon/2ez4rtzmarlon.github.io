@@ -1109,43 +1109,60 @@ const surprises = [
   
 
 
+    // =======================================================
+  // DÍA 16 - TESIS
   // =======================================================
-  // DÍA 16
-  // =======================================================
-
   {
-    icon: "📝",
-    title: "Una promesa",
-
+    icon: "🎓",
+    title: "Estoy orgulloso de ti",
     text: `
-      No prometo que todos los días serán perfectos.
+      <div class="special-day thesis-day">
 
-      <br><br>
+        <div class="thesis-icon">🎓</div>
 
-      Sí quiero prometerte que seguiré valorando nuestra historia,
-      escuchándote y cuidando cada momento que construyamos juntos.
-    `
-  },
+        <h2>Hoy quiero hablar de ti</h2>
 
+        <p>
+          Sé que detrás de tu tesis hay mucho más que páginas,
+          trabajos y una defensa.
+        </p>
 
-  // =======================================================
-  // DÍA 17
-  // =======================================================
+        <div class="thesis-words">
+          <span>Esfuerzo</span>
+          <span>Desvelo</span>
+          <span>Dudas</span>
+          <span>Paciencia</span>
+          <span>Perseverancia</span>
+        </div>
 
-  {
-    icon: "🌟",
-    title: "Lo que quiero que nunca olvides",
+        <p>
+          Y a pesar de todo, seguiste adelante.
+        </p>
 
-    text: `
-      <div class="quote">
+        <button class="special-btn" onclick="revealThesisMessage()">
+          🎓 Tengo algo que decirte
+        </button>
 
-        Nunca olvides que eres importante para mí.
+        <div id="thesis-message" class="hidden-message">
+          <strong>Estoy muy orgulloso de ti. ❤️</strong>
 
-        <br><br>
+          <br><br>
 
-        Incluso en los días en que no pueda estar cerca,
-        quiero que recuerdes que tienes un lugar enorme
-        en mi corazón.
+          Tu tesis es solamente una parte de todo
+          lo que eres capaz de conseguir.
+
+          <br><br>
+
+          Quiero verte cumplir tus sueños,
+          celebrar tus logros y estar ahí cuando
+          llegue cada nueva meta.
+
+          <br><br>
+
+          <strong>
+            Tú puedes con esto y con muchísimo más. 🌟
+          </strong>
+        </div>
 
       </div>
     `
@@ -1153,136 +1170,378 @@ const surprises = [
 
 
   // =======================================================
-  // DÍA 18
+  // DÍA 17 - PANDA Y LOBO
   // =======================================================
+  {
+    icon: "🐼",
+    title: "Tú y yo",
+    text: `
+      <div class="special-day us-day">
 
+        <div class="animals">
+          <div class="animal panda">🐼</div>
+          <div class="heart-between">❤️</div>
+          <div class="animal wolf">🐺</div>
+        </div>
+
+        <h2>Tú y yo</h2>
+
+        <p>
+          Dos personas diferentes.
+        </p>
+
+        <p>
+          Dos formas de ser.
+        </p>
+
+        <p>
+          Dos historias que algún día se encontraron.
+        </p>
+
+        <button class="special-btn" onclick="joinUs()">
+          ❤️ Juntar nuestras historias
+        </button>
+
+        <div id="us-message" class="hidden-message">
+          <strong>Y de alguna manera...</strong>
+
+          <br><br>
+
+          terminamos construyendo algo
+          que solamente nosotros entendemos.
+
+          <br><br>
+
+          <span class="big-love">
+            Nosotros. ❤️
+          </span>
+
+          <br><br>
+
+          El panda y el lobo. 🐼🐺
+        </div>
+
+      </div>
+    `
+  },
+
+
+  // =======================================================
+  // DÍA 18 - FOTO
+  // =======================================================
   {
     icon: "📸",
     title: "Un recuerdo que quiero repetir",
-
     text: `
-      Hay momentos que no solamente quiero recordar.
+      <div class="special-day memory-day">
 
-      <br><br>
+        <p>
+          Hay momentos que no solamente quiero recordar.
+        </p>
 
-      Quiero volver a vivirlos contigo.
+        <p>
+          Quiero volver a vivirlos contigo.
+        </p>
+
+        <div class="memory-line">
+          ❤️
+        </div>
+
+        <p>
+          Y seguir llenando nuestra historia
+          de fotografías que algún día volveremos
+          a mirar juntos.
+        </p>
+
+      </div>
     `,
-
     image: "images/foto03.jpg"
   },
 
 
   // =======================================================
-  // DÍA 19
+  // DÍA 19 - FUTURO
   // =======================================================
+  {
+    icon: "🚪",
+    title: "Tu próxima aventura",
+    text: `
+      <div class="special-day future-day">
 
+        <div class="future-door" id="future-door">
+          🚪
+        </div>
+
+        <h2>Has llegado muy lejos...</h2>
+
+        <p>
+          Pero esto no termina aquí.
+        </p>
+
+        <p>
+          Después de todo el esfuerzo,
+          vienen nuevas etapas, nuevos sueños
+          y nuevas aventuras.
+        </p>
+
+        <button class="special-btn" onclick="openFutureDoor()">
+          🚪 Abrir la puerta
+        </button>
+
+        <div id="future-message" class="hidden-message">
+
+          <div class="future-items">
+            <span>✨ Nuevos sueños</span>
+            <span>🌎 Nuevos lugares</span>
+            <span>🌟 Nuevos logros</span>
+            <span>❤️ Nuevos recuerdos</span>
+          </div>
+
+          <br>
+
+          Y si tú quieres...
+
+          <br><br>
+
+          <strong>
+            quiero estar ahí para acompañarte. ❤️
+          </strong>
+
+        </div>
+
+      </div>
+    `
+  },
+
+
+  // =======================================================
+  // DÍA 20 - 10 RAZONES
+  // =======================================================
   {
     icon: "❤️",
-    title: "Ya casi llega nuestro día",
-
+    title: "10 razones para elegirte",
     text: `
-      Faltan muy pocos días.
+      <div class="special-day reasons-day">
 
-      <br><br>
+        <h2>Hay 10 cosas que quiero recordarte</h2>
 
-      Gracias por haber llegado hasta aquí conmigo.
+        <p>
+          Toca cada corazón para descubrirlas.
+        </p>
 
-      <br><br>
+        <div class="reasons-grid">
 
-      Mañana habrá otro pequeño detalle para ti. ❤️
+          <button onclick="showReason(1)">❤️</button>
+          <button onclick="showReason(2)">❤️</button>
+          <button onclick="showReason(3)">❤️</button>
+          <button onclick="showReason(4)">❤️</button>
+          <button onclick="showReason(5)">❤️</button>
+          <button onclick="showReason(6)">❤️</button>
+          <button onclick="showReason(7)">❤️</button>
+          <button onclick="showReason(8)">❤️</button>
+          <button onclick="showReason(9)">❤️</button>
+          <button onclick="showReason(10)">❤️</button>
+
+        </div>
+
+        <div id="reason-text" class="reason-text">
+          Elige un corazón ❤️
+        </div>
+
+      </div>
     `
   },
 
 
   // =======================================================
-  // DÍA 20
+  // DÍA 21 - FLORES AMARILLAS
   // =======================================================
-
   {
-    icon: "💌",
-    title: "La víspera",
-
+    icon: "🌻",
+    title: "Un jardín para ti",
     text: `
-      Mañana es nuestro día.
+      <div class="special-day flowers-day">
 
-      <br><br>
+        <div id="flower-garden" class="flower-garden">
 
-      Pero quería que supieras algo:
+          <span>🌻</span>
+          <span>🌻</span>
+          <span>🌻</span>
+          <span>🌻</span>
+          <span>🌻</span>
+          <span>🌻</span>
+          <span>🌻</span>
+          <span>🌻</span>
+          <span>🌻</span>
+          <span>🌻</span>
 
-      <br><br>
+        </div>
 
-      Para mí, nuestra historia no se celebra solamente
-      en una fecha.
+        <h2>Mañana es nuestro día...</h2>
 
-      <br><br>
+        <p>
+          Pero no quería esperar hasta mañana
+          para darte algo.
+        </p>
 
-      Se celebra en cada conversación,
-      cada abrazo, cada risa y cada momento
-      en que seguimos eligiéndonos.
+        <p>
+          Sé cuánto te gustan las flores amarillas. 🌻
+        </p>
+
+        <button class="special-btn" onclick="growFlowers()">
+          🌻 Recibir mis flores
+        </button>
+
+        <div id="flower-message" class="hidden-message">
+
+          <strong>
+            Así que hoy quiero regalarte un jardín entero. 🌻
+          </strong>
+
+          <br><br>
+
+          Porque cada vez que veo una flor amarilla
+          pienso en ti.
+
+          <br><br>
+
+          Las flores pueden marchitarse...
+
+          <br><br>
+
+          <strong>
+            pero todo lo que siento por ti
+            sigue creciendo. ❤️
+          </strong>
+
+          <br><br>
+
+          <span class="flower-final">
+            Esta es para ti. 🌻
+          </span>
+
+          <br><br>
+
+          Mañana te entregaré la más importante.
+
+        </div>
+
+      </div>
     `
   },
 
 
   // =======================================================
-  // DÍA 21
+  // DÍA 22 - GRAN FINAL
   // =======================================================
-
-  {
-    icon: "🥹",
-    title: "Mañana...",
-
-    text: `
-      Mañana llega el día 22.
-
-      <br><br>
-
-      Guarda este momento,
-      porque todo lo que hemos preparado hasta aquí
-      nos lleva a nuestra sorpresa final.
-
-      <br><br>
-
-      ❤️
-    `
-  },
-
-
-  // =======================================================
-  // DÍA 22
-  // =======================================================
-
   {
     icon: "💖",
     title: "Feliz aniversario, mi amor",
-
     text: `
-      <img
-        src="images/foto-final.jpg"
-        alt="Nuestro recuerdo"
-        class="final-photo"
-      >
+      <div class="special-day final-day">
 
-      <div class="quote">
+        <div id="final-start">
 
-        Hoy, 22 de septiembre,
-        celebro nuestra historia.
+          <div class="final-number">22</div>
 
-        <br><br>
+          <h2>22 días...</h2>
 
-        Gracias por cada momento,
-        por cada sonrisa y por formar parte de mi vida.
+          <p>
+            22 pequeños momentos.
+          </p>
 
-        <br><br>
+          <p>
+            22 recuerdos.
+          </p>
 
-        Si pudiera volver al principio,
-        volvería a elegirte.
+          <p>
+            22 razones para sonreír.
+          </p>
 
-        <br><br>
+          <button class="special-btn final-btn"
+                  onclick="startFinalStory()">
+            ❤️ Continuar
+          </button>
 
-        <strong>
-          Feliz aniversario.
-          Te amo. ❤️
-        </strong>
+        </div>
+
+
+        <div id="final-story" class="hidden-final">
+
+          <img
+            src="images/foto-final.jpg"
+            alt="Nuestro recuerdo"
+            class="final-photo"
+          >
+
+          <h2>Andrea...</h2>
+
+          <p>
+            Gracias por cada momento,
+            cada sonrisa, cada conversación,
+            cada locura y cada recuerdo.
+          </p>
+
+          <p>
+            Gracias por formar parte de mi vida.
+          </p>
+
+          <p>
+            Y gracias por convertir una historia
+            que comenzó con unos deberes,
+            pequeñas notitas y unas clases,
+            en algo que sigue hasta hoy.
+          </p>
+
+          <div class="final-love">
+            Si pudiera volver al principio...
+            <br><br>
+            <strong>volvería a elegirte.</strong>
+          </div>
+
+          <button class="special-btn final-btn"
+                  onclick="showFinalMessage()">
+            💖 Tengo algo más que decirte
+          </button>
+
+        </div>
+
+
+        <div id="final-message" class="hidden-final">
+
+          <div class="final-heart">
+            ❤️
+          </div>
+
+          <h2>Feliz aniversario</h2>
+
+          <p>
+            Mi amor, espero que estos 22 días
+            te hayan recordado aunque sea un poquito
+            todo lo que significas para mí.
+          </p>
+
+          <p>
+            Quiero seguir creando recuerdos contigo,
+            seguir riéndonos de nuestras tonterías,
+            seguir viajando, perdiéndonos,
+            encontrándonos y viviendo nuestra historia.
+          </p>
+
+          <div class="final-phrase">
+            No quiero solamente recordar
+            nuestra historia.
+            <br><br>
+            <strong>
+              Quiero seguir escribiéndola contigo.
+            </strong>
+          </div>
+
+          <div class="final-signature">
+            Te amo. ❤️
+          </div>
+
+        </div>
 
       </div>
     `
