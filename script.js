@@ -1227,37 +1227,94 @@ const surprises = [
 
 
   // =======================================================
-  // DÍA 18 - FOTO
-  // =======================================================
-  {
-    icon: "📸",
-    title: "Un recuerdo que quiero repetir",
-    text: `
-      <div class="special-day memory-day">
+// DÍA 18 - MINI QUIZ ❤️
+// =======================================================
+
+{
+  icon: "🎮",
+  title: "¿Cuánto sabes de nosotros?",
+  text: `
+    <div class="quiz18">
+
+      <div class="quiz18-intro">
+
+        <div class="quiz18-big-heart">❤️</div>
+
+        <h2>¿Cuánto sabes de nosotros?</h2>
 
         <p>
-          Hay momentos que no solamente quiero recordar.
+          Llegaste al Día 18...
         </p>
 
         <p>
-          Quiero volver a vivirlos contigo.
+          Ahora quiero ponerte a prueba. 😏
         </p>
 
-        <div class="memory-line">
+        <p>
+          Responde 5 preguntas sobre nuestra historia.
+        </p>
+
+        <button
+          class="quiz18-start"
+          onclick="startQuiz18()">
+          💕 Comenzar
+        </button>
+
+      </div>
+
+      <div
+        id="quiz18-game"
+        class="quiz18-game"
+        style="display:none;">
+
+        <div class="quiz18-progress">
+          <span id="quiz18-number">1</span> / 5
+        </div>
+
+        <div class="quiz18-progress-bar">
+          <div id="quiz18-progress-fill"></div>
+        </div>
+
+        <h3 id="quiz18-question"></h3>
+
+        <div id="quiz18-answers"></div>
+
+        <div
+          id="quiz18-feedback"
+          class="quiz18-feedback">
+        </div>
+
+      </div>
+
+      <div
+        id="quiz18-result"
+        class="quiz18-result"
+        style="display:none;">
+
+        <div id="quiz18-result-icon">
           ❤️
         </div>
 
-        <p>
-          Y seguir llenando nuestra historia
-          de fotografías que algún día volveremos
-          a mirar juntos.
-        </p>
+        <h2 id="quiz18-result-title"></h2>
+
+        <p id="quiz18-result-text"></p>
+
+        <div
+          id="quiz18-score"
+          class="quiz18-score">
+        </div>
+
+        <button
+          class="quiz18-restart"
+          onclick="startQuiz18()">
+          🔄 Intentarlo otra vez
+        </button>
 
       </div>
-    `,
-    image: "images/foto03.jpg"
-  },
 
+    </div>
+  `
+},
 
   // =======================================================
   // DÍA 19 - FUTURO
@@ -5590,6 +5647,270 @@ function showFinalMessage() {
   }
 
   createHearts(45);
+}
+// =========================================================
+// DÍA 18 - QUIZ
+// =========================================================
+
+const quiz18Questions = [
+
+  {
+    question: "¿Cómo comenzó nuestra historia?",
+    answers: [
+      "En una fiesta",
+      "Con deberes, pequeñas notitas y luego clases",
+      "Por redes sociales",
+      "Jugando juntos"
+    ],
+    correct: 1
+  },
+
+  {
+    question: "¿Qué flores amarillas sabes que me gusta regalarte?",
+    answers: [
+      "Rosas",
+      "Margaritas",
+      "Girasoles",
+      "Tulipanes"
+    ],
+    correct: 2
+  },
+
+  {
+    question: "¿Qué deporte te gusta tanto que hasta hemos sufrido por Nachito?",
+    answers: [
+      "Fútbol",
+      "Básquet",
+      "Tenis",
+      "Vóley"
+    ],
+    correct: 0
+  },
+
+  {
+    question: "¿Qué recuerdo extraño tenemos relacionado con una piedrita?",
+    answers: [
+      "La encontramos en un parque",
+      "La guardamos como recuerdo",
+      "La usamos para hacer una manualidad",
+      "Jugamos con ella por toda la Amazonas"
+    ],
+    correct: 3
+  },
+
+  {
+    question: "¿Qué quiero seguir haciendo contigo?",
+    answers: [
+      "Vivir solamente momentos tranquilos",
+      "Perdernos juntos, descubrir lugares y crear nuevos recuerdos",
+      "Viajar únicamente cuando tengamos vacaciones",
+      "Dejar de hacer planes"
+    ],
+    correct: 1
+  }
+
+];
+
+let quiz18Current = 0;
+let quiz18Score = 0;
+
+
+// =========================================================
+// COMENZAR QUIZ
+// =========================================================
+
+function startQuiz18() {
+
+  quiz18Current = 0;
+  quiz18Score = 0;
+
+  document.querySelector(".quiz18-intro").style.display = "none";
+
+  document.getElementById("quiz18-result").style.display = "none";
+
+  document.getElementById("quiz18-game").style.display = "block";
+
+  showQuiz18Question();
+
+}
+
+
+// =========================================================
+// MOSTRAR PREGUNTA
+// =========================================================
+
+function showQuiz18Question() {
+
+  const q = quiz18Questions[quiz18Current];
+
+  document.getElementById("quiz18-number").textContent =
+    quiz18Current + 1;
+
+  document.getElementById("quiz18-progress-fill").style.width =
+    ((quiz18Current + 1) / quiz18Questions.length * 100) + "%";
+
+  document.getElementById("quiz18-question").textContent =
+    q.question;
+
+  const answers =
+    document.getElementById("quiz18-answers");
+
+  answers.innerHTML = "";
+
+  document.getElementById("quiz18-feedback").textContent = "";
+
+  q.answers.forEach((answer, index) => {
+
+    const button =
+      document.createElement("button");
+
+    button.className = "quiz18-answer";
+
+    button.textContent = answer;
+
+    button.onclick = () => checkQuiz18(index);
+
+    answers.appendChild(button);
+
+  });
+
+}
+
+
+// =========================================================
+// COMPROBAR RESPUESTA
+// =========================================================
+
+function checkQuiz18(selected) {
+
+  const q = quiz18Questions[quiz18Current];
+
+  const buttons =
+    document.querySelectorAll(".quiz18-answer");
+
+  buttons.forEach(button => {
+    button.disabled = true;
+  });
+
+  const selectedButton = buttons[selected];
+
+  const feedback =
+    document.getElementById("quiz18-feedback");
+
+  if (selected === q.correct) {
+
+    quiz18Score++;
+
+    selectedButton.classList.add("correct");
+
+    feedback.innerHTML =
+      "✨ ¡Correcto! Sabía que lo recordarías ❤️";
+
+    createHearts(5);
+
+  } else {
+
+    selectedButton.classList.add("wrong");
+
+    buttons[q.correct].classList.add("correct");
+
+    feedback.innerHTML =
+      "💕 Casi... pero nuestra historia dice otra cosa.";
+
+  }
+
+  setTimeout(() => {
+
+    quiz18Current++;
+
+    if (quiz18Current < quiz18Questions.length) {
+
+      showQuiz18Question();
+
+    } else {
+
+      finishQuiz18();
+
+    }
+
+  }, 1400);
+
+}
+
+
+// =========================================================
+// RESULTADO FINAL
+// =========================================================
+
+function finishQuiz18() {
+
+  document.getElementById("quiz18-game").style.display =
+    "none";
+
+  document.getElementById("quiz18-result").style.display =
+    "block";
+
+  const icon =
+    document.getElementById("quiz18-result-icon");
+
+  const title =
+    document.getElementById("quiz18-result-title");
+
+  const text =
+    document.getElementById("quiz18-result-text");
+
+  const score =
+    document.getElementById("quiz18-score");
+
+  score.textContent =
+    quiz18Score + " / 5 ❤️";
+
+
+  if (quiz18Score === 5) {
+
+    icon.textContent = "🥰";
+
+    title.textContent =
+      "¡Perfecto!";
+
+    text.innerHTML =
+      "Parece que todavía recuerdas cada pequeño detalle de nosotros.<br><br>" +
+      "<strong>Y eso me encanta. ❤️</strong>";
+
+    createHearts(15);
+
+  }
+
+  else if (quiz18Score >= 3) {
+
+    icon.textContent = "❤️";
+
+    title.textContent =
+      "¡Muy bien!";
+
+    text.innerHTML =
+      "Conoces nuestra historia bastante bien... " +
+      "aunque todavía tenemos muchos recuerdos por crear. 🥰";
+
+    createHearts(10);
+
+  }
+
+  else {
+
+    icon.textContent = "😏";
+
+    title.textContent =
+      "Tenemos que repasar nuestra historia";
+
+    text.innerHTML =
+      "Creo que necesitamos repetir algunas de nuestras aventuras... " +
+      "así tendrás otra oportunidad de recordarlas. ❤️";
+
+    createHearts(5);
+
+  }
+
 }
 // =========================================================
 // ANIMACIÓN CORAZONES
