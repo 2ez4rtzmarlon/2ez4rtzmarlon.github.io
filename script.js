@@ -1114,7 +1114,7 @@ const surprises = [
   // =======================================================
   {
     icon: "🎓",
-    title: "Estoy orgulloso de ti",
+    title: "Estoy muy orgulloso de ti mi vida",
     text: `
       <div class="special-day thesis-day">
 
@@ -1124,7 +1124,7 @@ const surprises = [
 
         <p>
           Sé que detrás de tu tesis hay mucho más que páginas,
-          trabajos y una defensa.
+          malas noches, deberes, trabajos y una defensa.
         </p>
 
         <div class="thesis-words">
@@ -1140,7 +1140,7 @@ const surprises = [
         </p>
 
         <button class="special-btn" onclick="revealThesisMessage()">
-          🎓 Tengo algo que decirte
+          🎓 Tengo algo que decirte mi pandita peach
         </button>
 
         <div id="thesis-message" class="hidden-message">
@@ -1148,19 +1148,19 @@ const surprises = [
 
           <br><br>
 
-          Tu tesis es solamente una parte de todo
+          Tu tesis es solamente una parte de todo lo que has hecho y
           lo que eres capaz de conseguir.
 
           <br><br>
 
           Quiero verte cumplir tus sueños,
           celebrar tus logros y estar ahí cuando
-          llegue cada nueva meta.
+          llegues a una nueva meta.
 
           <br><br>
 
           <strong>
-            Tú puedes con esto y con muchísimo más. 🌟
+            Tú puedes con esto y con muchísimo más mi amor, eres brillante como el sol. 🌟
           </strong>
         </div>
 
