@@ -1195,11 +1195,11 @@ const surprises = [
         </p>
 
         <p>
-          Dos historias que algún día se encontraron.
+          Dos historias que algún día se encontraron entre los deberes.
         </p>
 
         <button class="special-btn" onclick="joinUs()">
-          ❤️ Juntar nuestras historias
+          ❤️ Juntar nuestras vidas e historias
         </button>
 
         <div id="us-message" class="hidden-message">
@@ -1218,7 +1218,7 @@ const surprises = [
 
           <br><br>
 
-          El panda y el lobo. 🐼🐺
+          Una pandita preciosa peach y un lobo poco salvaje. 🐼🐺
         </div>
 
       </div>
@@ -5666,34 +5666,34 @@ const quiz18Questions = [
   },
 
   {
-    question: "¿Qué flores amarillas sabes que me gusta regalarte?",
+    question: "¿Cuál fue nuestro primer viaje juntos?",
     answers: [
-      "Rosas",
-      "Margaritas",
-      "Girasoles",
-      "Tulipanes"
+      "Baños",
+      "Papallacta",
+      "Montañita",
+      "Cuenca"
     ],
-    correct: 2
+    correct: 1
   },
 
   {
-    question: "¿Qué deporte te gusta tanto que hasta hemos sufrido por Nachito?",
+    question: "¿Qué color nos representa?",
     answers: [
-      "Fútbol",
-      "Básquet",
-      "Tenis",
-      "Vóley"
+      "Rojo",
+      "Amarrillo",
+      "Negro",
+      "Azul"
     ],
     correct: 0
   },
 
   {
-    question: "¿Qué recuerdo extraño tenemos relacionado con una piedrita?",
+    question: "¿Qué número usamos en nuestros uniformes de fútbol?",
     answers: [
-      "La encontramos en un parque",
-      "La guardamos como recuerdo",
-      "La usamos para hacer una manualidad",
-      "Jugamos con ella por toda la Amazonas"
+      "22",
+      "20",
+      "7",
+      "21"
     ],
     correct: 3
   },
