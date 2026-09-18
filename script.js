@@ -1,3 +1,4 @@
+
 /*
   =========================================================
   22 DÍAS PARA NOSOTROS
@@ -1489,119 +1490,12 @@ const surprises = [
 
 
   // =======================================================
-  // DÍA 22 - GRAN FINAL
+  // DÍA 22 - GRAN FINAL INTERACTIVO
   // =======================================================
   {
     icon: "💖",
     title: "Feliz aniversario, mi amor",
-    text: `
-      <div class="special-day final-day">
-
-        <div id="final-start">
-
-          <div class="final-number">22</div>
-
-          <h2>22 días...</h2>
-
-          <p>
-            22 pequeños momentos.
-          </p>
-
-          <p>
-            22 recuerdos.
-          </p>
-
-          <p>
-            22 razones para sonreír.
-          </p>
-
-          <button class="special-btn final-btn"
-                  onclick="startFinalStory()">
-            ❤️ Continuar
-          </button>
-
-        </div>
-
-
-        <div id="final-story" class="hidden-final">
-
-          <img
-            src="images/foto-final.jpg"
-            alt="Nuestro recuerdo"
-            class="final-photo"
-          >
-
-          <h2>Andrea...</h2>
-
-          <p>
-            Gracias por cada momento,
-            cada sonrisa, cada conversación,
-            cada locura y cada recuerdo.
-          </p>
-
-          <p>
-            Gracias por formar parte de mi vida.
-          </p>
-
-          <p>
-            Y gracias por convertir una historia
-            que comenzó con unos deberes,
-            pequeñas notitas y unas clases,
-            en algo que sigue hasta hoy.
-          </p>
-
-          <div class="final-love">
-            Si pudiera volver al principio...
-            <br><br>
-            <strong>volvería a elegirte.</strong>
-          </div>
-
-          <button class="special-btn final-btn"
-                  onclick="showFinalMessage()">
-            💖 Tengo algo más que decirte
-          </button>
-
-        </div>
-
-
-        <div id="final-message" class="hidden-final">
-
-          <div class="final-heart">
-            ❤️
-          </div>
-
-          <h2>Feliz aniversario</h2>
-
-          <p>
-            Mi amor, espero que estos 22 días
-            te hayan recordado aunque sea un poquito
-            todo lo que significas para mí.
-          </p>
-
-          <p>
-            Quiero seguir creando recuerdos contigo,
-            seguir riéndonos de nuestras tonterías,
-            seguir viajando, perdiéndonos,
-            encontrándonos y viviendo nuestra historia.
-          </p>
-
-          <div class="final-phrase">
-            No quiero solamente recordar
-            nuestra historia.
-            <br><br>
-            <strong>
-              Quiero seguir escribiéndola contigo.
-            </strong>
-          </div>
-
-          <div class="final-signature">
-            Te amo. ❤️
-          </div>
-
-        </div>
-
-      </div>
-    `
+    day22: true
   }
 
 ];
@@ -2227,10 +2121,23 @@ function openSurprise(day) {
 
 
   // =======================================================
+  // DÍA 22 - GRAN FINAL INTERACTIVO
+  // =======================================================
+
+  if (surprise.day22) {
+
+    body = `
+      <div id="day22" class="day22-container"></div>
+    `;
+
+  }
+
+
+  // =======================================================
   // DÍA 12 - PASAPORTE
   // =======================================================
 
-  if (surprise.passport) {
+  else if (surprise.passport) {
 
     body = `
 
@@ -2918,14 +2825,26 @@ function openSurprise(day) {
 
 
   // =======================================================
-  // DÍA 22
+  // DÍA 22 - INICIAR GRAN FINAL
   // =======================================================
 
   if (day === 22) {
 
-    createHearts(28);
+    const audio =
+      document.getElementById("bg-music");
+
+    if (audio) {
+      audio.pause();
+      audio.currentTime = 0;
+    }
+
+    setTimeout(
+      initDay22,
+      100
+    );
 
   }
+
   // =====================================================
 // PÉTALOS DEL DÍA 15
 // =====================================================
@@ -2941,6 +2860,362 @@ if (day === 15) {
   createPetals(35);
 }
 
+}
+
+
+// =========================================================
+// DÍA 22 — NUESTRO GRAN FINAL
+// =========================================================
+
+function initDay22() {
+
+  const container =
+    document.getElementById("day22");
+
+  if (!container) return;
+
+  container.innerHTML = `
+
+    <section class="d22-screen d22-active" id="d22-screen-1">
+      <div class="d22-flower">🌻</div>
+      <p class="d22-date">22 DE SEPTIEMBRE</p>
+      <h2>Después de 22 días...</h2>
+      <p class="d22-subtitle">llegaste hasta aquí. ❤️</p>
+      <button class="d22-btn" onclick="day22Next(2)">
+        Toca para continuar ❤️
+      </button>
+    </section>
+
+    <section class="d22-screen" id="d22-screen-2">
+      <p class="d22-small-title">NUESTRA HISTORIA</p>
+      <h2>22 días...</h2>
+      <div class="d22-days" id="d22-days"></div>
+      <p>22 días. 22 recuerdos.</p>
+      <button class="d22-btn" onclick="day22Next(3)">
+        Continuar ❤️
+      </button>
+    </section>
+
+    <section class="d22-screen" id="d22-screen-3">
+      <div class="d22-big-heart">❤️</div>
+      <h2>22 días.</h2>
+      <p>22 recuerdos.</p>
+      <p>Una historia.</p>
+      <div class="d22-divider">✦</div>
+      <h3>Y todavía nos quedan muchísimos capítulos.</h3>
+      <button class="d22-btn" onclick="day22Next(4)">
+        Quiero seguir ❤️
+      </button>
+    </section>
+
+    <section class="d22-screen d22-letter-screen" id="d22-screen-4">
+      <p class="d22-small-title">PARA TI</p>
+      <h2>Una última carta 💌</h2>
+
+      <div class="d22-letter">
+        <p><strong>Andrea:</strong></p>
+        <p>Si llegaste hasta aquí, quiero que sepas algo.</p>
+        <p>
+          Estos 22 días fueron mi pequeña manera de recordarte
+          todas esas cosas que a veces no digo lo suficiente.
+        </p>
+        <p>
+          Recordarte nuestras risas, nuestras locuras, nuestros
+          momentos simples y todos esos recuerdos que poco a poco
+          se fueron convirtiendo en nuestra historia.
+        </p>
+        <p>
+          Recuerdo nuestro primer viaje juntos a <strong>Papallacta</strong>,
+          nuestras aventuras, nuestras bromas y todas esas pequeñas
+          cosas que quizás para cualquier otra persona no significarían
+          demasiado.
+        </p>
+        <p>Pero para mí significan muchísimo, porque las viví contigo.</p>
+        <p>
+          El rojo, nuestro número <strong>21</strong>, los momentos de
+          fútbol, nuestras chocoaventuras y todas esas pequeñas cosas
+          que solamente nosotros entendemos.
+        </p>
+        <p>Todo eso forma parte de nosotros.</p>
+        <p>
+          También quiero que sepas que admiro todo lo que estás haciendo
+          y todo lo que estás a punto de conseguir.
+        </p>
+        <p>
+          Estás cerca de defender tu tesis y quiero que nunca olvides
+          lo capaz que eres.
+        </p>
+        <p>Hoy no quiero solamente celebrar nuestro aniversario.</p>
+        <p>Quiero celebrar a la persona que eres.</p>
+        <p class="d22-emphasis">La mujer que amo.</p>
+        <p>
+          La persona con quien quiero seguir compartiendo viajes, risas,
+          problemas, logros, planes y muchísimas aventuras más.
+        </p>
+        <p>Porque estos 22 días no son el final.</p>
+        <p class="d22-final-text">
+          Son solamente el comienzo de todos los días que todavía nos quedan.
+        </p>
+        <p>
+          Y si pudiera volver al primer día en que comenzamos nuestra historia,
+          volvería a elegirte.
+        </p>
+        <p>Una vez.</p>
+        <p>Y otra.</p>
+        <p>Y otra.</p>
+        <p class="d22-always">Siempre tú. ❤️</p>
+        <p>Feliz aniversario, Andrea.</p>
+        <p class="d22-love">Te amo.</p>
+        <p class="d22-signature">— Marlon ❤️</p>
+      </div>
+
+      <button class="d22-btn" onclick="day22Next(5)">
+        Todavía falta algo... 🌻
+      </button>
+    </section>
+
+    <section class="d22-screen" id="d22-screen-5">
+      <p class="d22-small-title">UNA ÚLTIMA SORPRESA</p>
+      <h2>Pero todavía me falta darte algo...</h2>
+      <div class="d22-seed" id="d22-seed">🌱</div>
+      <p class="d22-flower-text">Algo que me recuerda mucho a ti.</p>
+      <button class="d22-btn" onclick="growDay22Flower()">
+        Descubrir 🌱
+      </button>
+    </section>
+
+    <section class="d22-screen" id="d22-screen-6">
+      <div class="d22-sunflower">🌻</div>
+      <h2>Para ti.</h2>
+      <p class="d22-flower-message">Porque sé cuánto te gustan. 💛</p>
+      <img
+        src="images/foto-final.jpg"
+        class="d22-final-image"
+        alt="Nuestro recuerdo"
+      >
+      <button class="d22-btn" onclick="day22Next(7)">
+        Una última pregunta... ❤️
+      </button>
+    </section>
+
+    <section class="d22-screen" id="d22-screen-7">
+      <div class="d22-question-heart">❤️</div>
+      <p class="d22-small-title">Y AHORA SÍ...</p>
+      <h2>Tengo una última pregunta para ti.</h2>
+      <button class="d22-btn d22-ready" onclick="day22ShowQuestion()">
+        Estoy lista ❤️
+      </button>
+    </section>
+
+    <section class="d22-screen" id="d22-screen-8">
+      <div class="d22-big-heart">❤️</div>
+      <h2>¿Quieres seguir escribiendo esta historia conmigo?</h2>
+      <div class="d22-question-buttons">
+        <button class="d22-choice" onclick="day22Final()">
+          ❤️ Sí
+        </button>
+        <button class="d22-choice" onclick="day22Final()">
+          🥰 Obviamente
+        </button>
+      </div>
+    </section>
+
+    <section class="d22-screen d22-final-screen" id="d22-screen-9">
+      <div class="d22-petals-final"></div>
+      <div class="d22-final-content">
+        <div class="d22-final-flower">🌻</div>
+        <p class="d22-final-name">ANDREA</p>
+        <p class="d22-thanks">Gracias por estos años.</p>
+        <p class="d22-thanks">Gracias por cada recuerdo.</p>
+        <p class="d22-thanks">Gracias por cada aventura.</p>
+        <p class="d22-thanks">Gracias por cada risa.</p>
+        <div class="d22-final-line"></div>
+        <h2>Feliz aniversario</h2>
+        <p class="d22-date-final">22 • 09 • 2026</p>
+        <div class="d22-couple">MARLON ❤️ ANDREA</div>
+        <p class="d22-continue">Nuestra historia continúa...</p>
+        <div class="d22-i-love-you">TE AMO ❤️</div>
+      </div>
+    </section>
+
+  `;
+
+  createDay22Days();
+}
+
+
+// =========================================================
+// CREAR LOS 22 DÍAS
+// =========================================================
+
+function createDay22Days() {
+
+  const container =
+    document.getElementById("d22-days");
+
+  if (!container) return;
+
+  container.innerHTML = "";
+
+  for (let i = 1; i <= 22; i++) {
+
+    const item =
+      document.createElement("span");
+
+    item.className = "d22-day";
+
+    if (i === 22) {
+
+      item.innerHTML = "22 🌻";
+      item.classList.add("d22-last-day");
+
+    } else {
+
+      item.innerHTML =
+        String(i).padStart(2, "0") + " ❤️";
+
+    }
+
+    container.appendChild(item);
+
+    setTimeout(() => {
+      item.classList.add("d22-day-show");
+    }, i * 120);
+  }
+}
+
+
+// =========================================================
+// CAMBIAR PANTALLA
+// =========================================================
+
+function day22Next(number) {
+
+  document
+    .querySelectorAll(".d22-screen")
+    .forEach(screen => {
+      screen.classList.remove("d22-active");
+    });
+
+  const next =
+    document.getElementById(
+      "d22-screen-" + number
+    );
+
+  if (!next) return;
+
+  setTimeout(() => {
+    next.classList.add("d22-active");
+  }, 100);
+
+  if (number === 2) {
+    createHearts(8);
+  }
+
+  if (number === 5) {
+    createDay22Petals(12);
+  }
+}
+
+
+// =========================================================
+// HACER CRECER EL GIRASOL
+// =========================================================
+
+function growDay22Flower() {
+
+  const seed =
+    document.getElementById("d22-seed");
+
+  if (!seed) return;
+
+  seed.classList.add("d22-growing");
+
+  setTimeout(() => {
+    createDay22Petals(18);
+  }, 500);
+
+  setTimeout(() => {
+    day22Next(6);
+  }, 1300);
+}
+
+
+// =========================================================
+// MOSTRAR PREGUNTA
+// =========================================================
+
+function day22ShowQuestion() {
+
+  day22Next(8);
+
+  setTimeout(() => {
+    createHearts(12);
+  }, 300);
+}
+
+
+// =========================================================
+// FINAL
+// =========================================================
+
+function day22Final() {
+
+  day22Next(9);
+
+  createDay22Petals(35);
+  createHearts(18);
+
+  setTimeout(() => {
+    createDay22Petals(35);
+  }, 1500);
+
+  setTimeout(() => {
+    createDay22Petals(35);
+  }, 3000);
+}
+
+
+// =========================================================
+// PÉTALOS DEL DÍA 22
+// =========================================================
+
+function createDay22Petals(amount = 20) {
+
+  const containers =
+    document.querySelectorAll(".d22-petals-final");
+
+  if (!containers.length) return;
+
+  const container =
+    containers[containers.length - 1];
+
+  for (let i = 0; i < amount; i++) {
+
+    const petal =
+      document.createElement("span");
+
+    petal.className = "d22-petal";
+    petal.innerHTML = "🌻";
+
+    petal.style.left =
+      Math.random() * 100 + "%";
+
+    petal.style.animationDuration =
+      (4 + Math.random() * 5) + "s";
+
+    petal.style.animationDelay =
+      Math.random() * 2 + "s";
+
+    petal.style.fontSize =
+      (12 + Math.random() * 15) + "px";
+
+    container.appendChild(petal);
+
+    setTimeout(() => {
+      petal.remove();
+    }, 10000);
+  }
 }
 
 
