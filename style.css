@@ -4720,3 +4720,662 @@ h1 span {
   }
 
 }
+/* =========================================================
+   DÍA 22 — GRAN FINAL
+   ========================================================= */
+
+.day22-container {
+  width: 100%;
+  min-height: 600px;
+  position: relative;
+  overflow: hidden;
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(255, 215, 100, 0.15),
+      transparent 45%
+    );
+  border-radius: 20px;
+}
+
+
+/* =========================================================
+   PANTALLAS
+   ========================================================= */
+
+.d22-screen {
+  display: none;
+  width: 100%;
+  min-height: 600px;
+  box-sizing: border-box;
+  padding: 50px 25px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  animation: d22FadeOut .4s ease;
+}
+
+.d22-screen.d22-active {
+  display: flex;
+  animation: d22FadeIn .8s ease;
+}
+
+@keyframes d22FadeIn {
+
+  from {
+    opacity: 0;
+    transform: translateY(25px) scale(.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+}
+
+@keyframes d22FadeOut {
+
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+
+}
+
+
+/* =========================================================
+   TEXTOS
+   ========================================================= */
+
+.d22-date {
+  font-size: .85rem;
+  letter-spacing: 5px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  opacity: .75;
+}
+
+.d22-small-title {
+  font-size: .75rem;
+  letter-spacing: 4px;
+  font-weight: 700;
+  opacity: .65;
+  margin-bottom: 15px;
+}
+
+.d22-screen h2 {
+  font-size: clamp(
+    1.8rem,
+    5vw,
+    3rem
+  );
+  margin: 10px 0 15px;
+  line-height: 1.2;
+}
+
+.d22-screen h3 {
+  max-width: 500px;
+  font-size: 1.35rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.d22-subtitle {
+  font-size: 1.25rem;
+  margin-bottom: 35px;
+}
+
+.d22-divider {
+  font-size: 2rem;
+  margin: 25px 0;
+}
+
+
+/* =========================================================
+   GIRASOL
+   ========================================================= */
+
+.d22-flower {
+  font-size: 5rem;
+  margin-bottom: 25px;
+  animation: d22Float 3s ease-in-out infinite;
+}
+
+@keyframes d22Float {
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(-3deg);
+  }
+
+  50% {
+    transform: translateY(-12px) rotate(3deg);
+  }
+
+}
+
+
+/* =========================================================
+   BOTONES
+   ========================================================= */
+
+.d22-btn {
+  border: none;
+  padding: 14px 25px;
+  margin-top: 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease;
+}
+
+.d22-btn:hover {
+  transform: translateY(-3px) scale(1.03);
+}
+
+.d22-btn:active {
+  transform: scale(.96);
+}
+
+
+/* =========================================================
+   22 DÍAS
+   ========================================================= */
+
+.d22-days {
+  display: grid;
+  grid-template-columns:
+    repeat(4, minmax(65px, 1fr));
+  gap: 12px;
+  width: min(500px, 100%);
+  margin: 30px auto;
+}
+
+.d22-day {
+  padding: 10px 5px;
+  border-radius: 12px;
+  opacity: 0;
+  transform: translateY(15px) scale(.9);
+  transition:
+    opacity .5s ease,
+    transform .5s ease;
+  font-size: .85rem;
+  background: rgba(255,255,255,.08);
+}
+
+.d22-day-show {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.d22-last-day {
+  font-weight: 800;
+  transform: scale(1.05);
+}
+
+
+/* =========================================================
+   CORAZÓN
+   ========================================================= */
+
+.d22-big-heart {
+  font-size: 4rem;
+  animation: d22Heartbeat 1.5s infinite;
+}
+
+@keyframes d22Heartbeat {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  15% {
+    transform: scale(1.18);
+  }
+
+  30% {
+    transform: scale(1);
+  }
+
+  45% {
+    transform: scale(1.12);
+  }
+
+  60% {
+    transform: scale(1);
+  }
+
+}
+
+
+/* =========================================================
+   CARTA
+   ========================================================= */
+
+.d22-letter-screen {
+  justify-content: flex-start;
+}
+
+.d22-letter {
+  width: min(
+    700px,
+    100%
+  );
+
+  max-height: 520px;
+
+  overflow-y: auto;
+
+  padding: 30px;
+
+  box-sizing: border-box;
+
+  border-radius: 18px;
+
+  background: rgba(
+    255,
+    255,
+    255,
+    .07
+  );
+
+  text-align: left;
+
+  line-height: 1.8;
+
+  font-size: 1rem;
+
+  box-shadow:
+    0 10px 40px
+    rgba(0,0,0,.12);
+}
+
+.d22-letter p {
+  margin: 0 0 18px;
+}
+
+.d22-emphasis {
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.d22-final-text {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.d22-always {
+  font-size: 1.6rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.d22-love {
+  font-size: 1.8rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.d22-signature {
+  text-align: right;
+  font-style: italic;
+  font-size: 1.1rem;
+}
+
+
+/* =========================================================
+   SEMILLA
+   ========================================================= */
+
+.d22-seed {
+  font-size: 5rem;
+  margin: 35px 0;
+  transition:
+    transform 1s ease,
+    opacity 1s ease;
+}
+
+.d22-seed.d22-growing {
+  transform:
+    scale(1.8)
+    rotate(8deg);
+}
+
+.d22-flower-text {
+  font-size: 1.1rem;
+}
+
+
+/* =========================================================
+   GIRASOL FINAL
+   ========================================================= */
+
+.d22-sunflower {
+  font-size: 7rem;
+  animation:
+    d22Sunflower 2s ease-in-out infinite;
+}
+
+@keyframes d22Sunflower {
+
+  0%,
+  100% {
+    transform: scale(1) rotate(-2deg);
+  }
+
+  50% {
+    transform: scale(1.08) rotate(2deg);
+  }
+
+}
+
+.d22-flower-message {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+}
+
+
+/* =========================================================
+   FOTO FINAL
+   ========================================================= */
+
+.d22-final-image {
+  display: block;
+
+  width: min(
+    450px,
+    90%
+  );
+
+  max-height: 450px;
+
+  object-fit: contain;
+
+  border-radius: 18px;
+
+  margin: 25px auto;
+
+  box-shadow:
+    0 15px 45px
+    rgba(0,0,0,.25);
+
+  animation:
+    d22PhotoAppear 1.2s ease;
+}
+
+@keyframes d22PhotoAppear {
+
+  from {
+    opacity: 0;
+    transform: scale(.9);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+}
+
+
+/* =========================================================
+   PREGUNTA
+   ========================================================= */
+
+.d22-question-heart {
+  font-size: 5rem;
+  margin-bottom: 25px;
+
+  animation:
+    d22Heartbeat 1.5s infinite;
+}
+
+.d22-question-buttons {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.d22-choice {
+  border: none;
+  border-radius: 50px;
+  padding: 15px 28px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 700;
+
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease;
+}
+
+.d22-choice:hover {
+  transform: translateY(-4px) scale(1.04);
+}
+
+
+/* =========================================================
+   PANTALLA FINAL
+   ========================================================= */
+
+.d22-final-screen {
+  position: relative;
+
+  min-height: 700px;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(
+        255,
+        215,
+        100,
+        .18
+      ),
+      transparent 60%
+    );
+}
+
+.d22-final-content {
+  position: relative;
+  z-index: 5;
+
+  max-width: 600px;
+
+  padding: 40px 20px;
+}
+
+.d22-final-flower {
+  font-size: 5rem;
+
+  animation:
+    d22Float 3s ease-in-out infinite;
+}
+
+.d22-final-name {
+  font-size: 2rem;
+  letter-spacing: 8px;
+  font-weight: 800;
+  margin: 20px 0 30px;
+}
+
+.d22-thanks {
+  margin: 8px 0;
+  font-size: 1rem;
+  opacity: .85;
+}
+
+.d22-final-line {
+  width: 100px;
+  height: 1px;
+  margin: 30px auto;
+  background: currentColor;
+  opacity: .3;
+}
+
+.d22-final-screen h2 {
+  font-size: 2rem;
+}
+
+.d22-date-final {
+  letter-spacing: 5px;
+  font-weight: 700;
+  margin: 20px 0;
+}
+
+.d22-couple {
+  font-size: 1.3rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin: 25px 0;
+}
+
+.d22-continue {
+  font-style: italic;
+  opacity: .7;
+  margin-top: 30px;
+}
+
+.d22-i-love-you {
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-top: 35px;
+
+  animation:
+    d22FinalPulse 2s infinite;
+}
+
+@keyframes d22FinalPulse {
+
+  0%,
+  100% {
+    opacity: .7;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.08);
+  }
+
+}
+
+
+/* =========================================================
+   PÉTALOS
+   ========================================================= */
+
+.d22-petals-final {
+  position: absolute;
+
+  inset: 0;
+
+  overflow: hidden;
+
+  pointer-events: none;
+
+  z-index: 1;
+}
+
+.d22-petal {
+  position: absolute;
+
+  top: -50px;
+
+  animation:
+    d22PetalFall linear forwards;
+
+  pointer-events: none;
+}
+
+@keyframes d22PetalFall {
+
+  0% {
+    transform:
+      translateY(-50px)
+      rotate(0deg);
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  100% {
+    transform:
+      translateY(750px)
+      rotate(360deg);
+    opacity: 0;
+  }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .d22-screen {
+    padding: 35px 15px;
+    min-height: 550px;
+  }
+
+  .d22-days {
+    grid-template-columns:
+      repeat(3, 1fr);
+    gap: 8px;
+  }
+
+  .d22-day {
+    font-size: .75rem;
+    padding: 9px 3px;
+  }
+
+  .d22-letter {
+    padding: 22px;
+    font-size: .95rem;
+    max-height: 450px;
+  }
+
+  .d22-final-image {
+    width: 95%;
+    max-height: 350px;
+  }
+
+  .d22-final-name {
+    font-size: 1.6rem;
+    letter-spacing: 5px;
+  }
+
+  .d22-i-love-you {
+    font-size: 2rem;
+  }
+
+  .d22-question-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .d22-choice {
+    width: 100%;
+  }
+
+}
