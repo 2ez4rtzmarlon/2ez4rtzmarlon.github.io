@@ -2925,15 +2925,15 @@ function initDay22() {
           se fueron convirtiendo en nuestra historia.
         </p>
         <p>
-          Recuerdo nuestro primer viaje juntos a <strong>Papallacta</strong>,
+          Recuerdo nuestro primer viaje juntos
           nuestras aventuras, nuestras bromas y todas esas pequeñas
           cosas que quizás para cualquier otra persona no significarían
           demasiado.
         </p>
-        <p>Pero para mí significan muchísimo, porque las viví contigo.</p>
+        <p>Pero para mí significan muchísimo, porque las viví contigo mi Andrea.</p>
         <p>
-          El rojo, nuestro número <strong>21</strong>, los momentos de
-          fútbol, nuestras chocoaventuras y todas esas pequeñas cosas
+          El rojo, compartir el número 21 en nuestros uniformes, los momentos tomando juntos 
+          , nuestras chocoaventuras y todas esas pequeñas cosas
           que solamente nosotros entendemos.
         </p>
         <p>Todo eso forma parte de nosotros.</p>
@@ -2964,7 +2964,7 @@ function initDay22() {
         <p>Y otra.</p>
         <p>Y otra.</p>
         <p class="d22-always">Siempre tú. ❤️</p>
-        <p>Feliz aniversario, Andrea.</p>
+        <p>Feliz aniversario, Mi Andrea.</p>
         <p class="d22-love">Te amo.</p>
         <p class="d22-signature">— Marlon ❤️</p>
       </div>
