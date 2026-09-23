@@ -23,7 +23,6 @@ const ANNIVERSARY_DATE = "2026-09-22";
 const TOTAL_DAYS = 23;
  
 const DEFENSE_DATE = "2026-09-23";
-const PART_1B_TIME = "10:00";
 const DEFENSE_TIME = "10:15";
 const POST_DEFENSE_TIME = "11:00";
  
@@ -1509,7 +1508,7 @@ const surprises = [
   // =======================================================
   {
     icon: "🎓",
-    title: "Hoy es tu gran día, Mi Andrea",
+    title: "Hoy es tu gran día, Andrea",
     day23: true
   }
  
@@ -3598,7 +3597,7 @@ function initDay23() {
       </div>
  
       <h2 class="d23-title">
-        Hoy es tu gran día, Mi Pandita.
+        Hoy es tu gran día, Mi Andrea.
       </h2>
  
       <p class="d23-subtitle">
@@ -3611,7 +3610,7 @@ function initDay23() {
       </p>
  
       <div class="d23-highlight">
-       Mi Futura Tecnóloga en Big Data e Inteligencia de Negocios. ❤️
+       Mi Tecnóloga en Big Data e Inteligencia de Negocios. ❤️
       </div>
  
       <div class="d23-countdown">
@@ -3624,7 +3623,7 @@ function initDay23() {
       </div>
  
       <p class="d23-subtitle">
-        Tu defensa está cerca.
+        Tu defensa es Hoy
         <br><br>
         Confía en todo lo que sabes.
         Confía en todo lo que has construido.
@@ -3633,76 +3632,7 @@ function initDay23() {
       </p>
  
     </section>
- <!-- PARTE 1B — 10:00 -->
-<section class="d23-screen" id="d23-part1b">
-
-  <div class="d23-moment">
-
-    <div class="d23-moment-icon">❤️</div>
-
-    <div class="d23-date">
-      10:00 · FALTAN 15 MINUTOS
-    </div>
-
-    <h2 class="d23-title">
-      Ya casi es tu momento, Andrea.
-    </h2>
-
-    <p class="d23-subtitle">
-      Mi pandita, llegaste hasta aquí.
-      <br><br>
-      En unos minutos comienza uno de los momentos
-      más importantes de todo este camino.
-      <br><br>
-      Respira.
-      <br>
-      Confía.
-      <br>
-      Recuerda todo lo que has aprendido.
-    </p>
-
-    <div class="d23-breathe">
-
-      <strong>
-        15 minutos.
-      </strong>
-
-      <br><br>
-
-      Quiero que estos últimos minutos los tomes
-      para tranquilizarte y recordar algo:
-      <br><br>
-
-      <strong>
-        Tú sabes hacerlo. ❤️
-      </strong>
-
-      <br><br>
-
-      Yo creo en ti.
-      <br>
-      Y estoy muy orgulloso de ti.
-
-    </div>
-
-    <div class="d23-countdown">
-
-      <span class="d23-countdown-label">
-        FALTAN PARA TU DEFENSA
-      </span>
-
-      <div
-        id="d23-countdown-part1b"
-        class="d23-countdown-time"
-      >
-        00:15:00
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
+ 
     <!-- PARTE 1B — 10:15 -->
     <section class="d23-screen" id="d23-defense">
  
@@ -3752,13 +3682,13 @@ function initDay23() {
           ANÁLISIS COMPLETADO · 100%
         </div>
  
-        <h2>🎓 ¡LO LOGRASTE, ANDREA!</h2>
+        <h2>🎓 ¡LO LOGRASTE, Mi Andreaita!</h2>
  
         <p class="d23-degree">
           Has cerrado una etapa enorme de tu vida.
           <br><br>
           <strong>
-           Mi Tecnóloga en Big Data e Inteligencia de Negocios
+            Tecnóloga en Big Data e Inteligencia de Negocios
           </strong>
         </p>
  
@@ -3864,605 +3794,155 @@ function initDay23() {
 // =========================================================
 // ACTUALIZAR ETAPA DEL DÍA 23
 // =========================================================
-
-// =========================================================
-// ACTUALIZAR ETAPA DEL DÍA 23
-// =========================================================
-
+ 
 function updateDay23() {
-
+ 
   const before =
     document.getElementById("d23-before");
-
-  const part1b =
-    document.getElementById("d23-part1b");
-
+ 
   const defense =
     document.getElementById("d23-defense");
-
+ 
   const after =
     document.getElementById("d23-after");
-
+ 
   const countdown =
     document.getElementById("d23-countdown");
-
-  const countdownPart1B =
-    document.getElementById("d23-countdown-part1b");
-
-
-  if (!before || !part1b || !defense || !after) {
+ 
+  if (!before || !defense || !after) {
     return;
   }
-
-
-  // =======================================================
-  // PREVISUALIZACIÓN
-  // =======================================================
-
+ 
   const params =
     new URLSearchParams(
       window.location.search
     );
-
+ 
   const previewPhase =
     params.get("phase");
-
+ 
   let phase = "";
-
-
+ 
   if (
     getCurrentDay() === 23 &&
     previewPhase
   ) {
-
+ 
     if (previewPhase === "before") {
-
-      phase = "before";
-
-    }
-
-    else if (
-      previewPhase === "part1b"
-    ) {
-
-      phase = "part1b";
-
-    }
-
-    else if (
-      previewPhase === "defense"
-    ) {
-
-      phase = "defense";
-
-    }
-
-    else if (
-      previewPhase === "after"
-    ) {
-
-      phase = "after";
-
-    }
-
-  }
-
-
-  // =======================================================
-  // HORARIO REAL
-  // =======================================================
-
-  if (!phase) {
-
-    const now =
-      new Date();
-
-
-    // -----------------------------------------------
-    // 10:00
-    // -----------------------------------------------
-
-    const part1BTime =
-      new Date(
-        `${DEFENSE_DATE}T10:00:00-05:00`
-      );
-
-
-    // -----------------------------------------------
-    // 10:15
-    // -----------------------------------------------
-
-    const defenseTime =
-      new Date(
-        `${DEFENSE_DATE}T${DEFENSE_TIME}:00-05:00`
-      );
-
-
-    // -----------------------------------------------
-    // 11:00
-    // -----------------------------------------------
-
-    const postDefenseTime =
-      new Date(
-        `${DEFENSE_DATE}T${POST_DEFENSE_TIME}:00-05:00`
-      );
-
-
-    // -----------------------------------------------
-    // ANTES DE LAS 10:00
-    // -----------------------------------------------
-
-    if (
-      now.getTime() <
-      part1BTime.getTime()
-    ) {
-
-      phase = "before";
-
-    }
-
-
-    // -----------------------------------------------
-    // 10:00 → 10:14
-    // -----------------------------------------------
-
-    else if (
-      now.getTime() <
-      defenseTime.getTime()
-    ) {
-
-      phase = "part1b";
-
-    }
-
-
-    // -----------------------------------------------
-    // 10:15 → 10:59
-    // -----------------------------------------------
-
-    else if (
-      now.getTime() <
-      postDefenseTime.getTime()
-    ) {
-
-      phase = "defense";
-
-    }
-
-
-    // -----------------------------------------------
-    // 11:00 EN ADELANTE
-    // -----------------------------------------------
-
-    else {
-
-      phase = "after";
-
-    }
-
-  }
-
-
-  // =======================================================
-  // OCULTAR TODAS LAS PANTALLAS
-  // =======================================================
-
-  before.classList.remove("d23-active");
-
-  part1b.classList.remove("d23-active");
-
-  defense.classList.remove("d23-active");
-
-  after.classList.remove("d23-active");
-
-
-  // =======================================================
-  // PARTE 1A
-  // =======================================================
-
-  if (
-    phase === "before"
-  ) {
-
-    before.classList.add(
-      "d23-active"
-    );
-
-
-    if (countdown) {
-
-      const now =
-        new Date();
-
-      const target =
-        new Date(
-          `${DEFENSE_DATE}T${DEFENSE_TIME}:00-05:00`
-        );
-
-
-      let difference =
-        target.getTime() -
-        now.getTime();
-
-
-      if (
-        difference < 0
-      ) {
-
-        difference = 0;
-
-      }
-
-
-      const totalSeconds =
-        Math.floor(
-          difference / 1000
-        );
-
-
-      const hours =
-        Math.floor(
-          totalSeconds / 3600
-        );
-
-
-      const minutes =
-        Math.floor(
-          (totalSeconds % 3600) / 60
-        );
-
-
-      const seconds =
-        totalSeconds % 60;
-
-
-      countdown.textContent =
-        String(hours).padStart(2, "0") +
-        ":" +
-        String(minutes).padStart(2, "0") +
-        ":" +
-        String(seconds).padStart(2, "0");
-
-    }
-
-  }
-
-
-  // =======================================================
-  // PARTE 1B — 10:00
-  // =======================================================
-
-  else if (
-    phase === "part1b"
-  ) {
-
-    part1b.classList.add(
-      "d23-active"
-    );
-
-
-    if (countdownPart1B) {
-
-      const now =
-        new Date();
-
-
-      const target =
-        new Date(
-          `${DEFENSE_DATE}T${DEFENSE_TIME}:00-05:00`
-        );
-
-
-      let difference =
-        target.getTime() -
-        now.getTime();
-
-
-      if (
-        difference < 0
-      ) {
-
-        difference = 0;
-
-      }
-
-
-      const totalSeconds =
-        Math.floor(
-          difference / 1000
-        );
-
-
-      const minutes =
-        Math.floor(
-          totalSeconds / 60
-        );
-
-
-      const seconds =
-        totalSeconds % 60;
-
-
-      countdownPart1B.textContent =
-        String(minutes).padStart(2, "0") +
-        ":" +
-        String(seconds).padStart(2, "0");
-
-    }
-
-  }
-
-
-  // =======================================================
-  // DEFENSA — 10:15
-  // =======================================================
-
-  else if (
-    phase === "defense"
-  ) {
-
-    defense.classList.add(
-      "d23-active"
-    );
-
-  }
-
-
-  // =======================================================
-  // PARTE 2 — 11:00
-  // =======================================================
-
-  else {
-
-    after.classList.add(
-      "d23-active"
-    );
-
-  }
-
-}
-
-
-  // =======================================================
-  // MODO DE PRUEBA
-  // =======================================================
-
-  const params =
-    new URLSearchParams(
-      window.location.search
-    );
-
-  const previewPhase =
-    params.get("phase");
-
-  let phase = "";
-
-
-  // =======================================================
-  // PRUEBAS MANUALES
-  // =======================================================
-
-  if (
-    getCurrentDay() === 23 &&
-    previewPhase
-  ) {
-
-    if (previewPhase === "part1b") {
       phase = "before";
     }
-
-    else if (previewPhase === "before") {
-      phase = "before";
-    }
-
     else if (previewPhase === "defense") {
       phase = "defense";
     }
-
     else if (previewPhase === "after") {
       phase = "after";
     }
-
+ 
   }
-
-
-  // =======================================================
-  // FUNCIONAMIENTO REAL
-  // =======================================================
-
+ 
   if (!phase) {
-
+ 
     const now =
       new Date();
-
-
-    // -----------------------------------------------------
-    // PARTE 1B COMIENZA A LAS 10:00
-    // -----------------------------------------------------
-
-    const part1BTime =
-      new Date(
-        `${DEFENSE_DATE}T10:00:00-05:00`
-      );
-
-
-    // -----------------------------------------------------
-    // DEFENSA A LAS 10:15
-    // -----------------------------------------------------
-
+ 
     const defenseTime =
       new Date(
         `${DEFENSE_DATE}T${DEFENSE_TIME}:00-05:00`
       );
-
-
-    // -----------------------------------------------------
-    // PARTE 2 A LAS 11:00
-    // -----------------------------------------------------
-
+ 
     const postDefenseTime =
       new Date(
         `${DEFENSE_DATE}T${POST_DEFENSE_TIME}:00-05:00`
       );
-
-
-    // -----------------------------------------------------
-    // ANTES DE LAS 10:00
-    // -----------------------------------------------------
-
+ 
     if (
-      now.getTime() <
-      part1BTime.getTime()
-    ) {
-
-      phase = "before";
-
-    }
-
-
-    // -----------------------------------------------------
-    // 10:00 - 10:14:59
-    // PARTE 1B
-    // -----------------------------------------------------
-
-    else if (
       now.getTime() <
       defenseTime.getTime()
     ) {
-
       phase = "before";
-
     }
-
-
-    // -----------------------------------------------------
-    // 10:15 - 10:59:59
-    // DEFENSA
-    // -----------------------------------------------------
-
     else if (
       now.getTime() <
       postDefenseTime.getTime()
     ) {
-
       phase = "defense";
-
     }
-
-
-    // -----------------------------------------------------
-    // 11:00 EN ADELANTE
-    // PARTE 2
-    // -----------------------------------------------------
-
     else {
-
       phase = "after";
-
     }
-
+ 
   }
-
-
-  // =======================================================
-  // QUITAR ETAPA ACTUAL
-  // =======================================================
-
+ 
   before.classList.remove("d23-active");
-
   defense.classList.remove("d23-active");
-
   after.classList.remove("d23-active");
-
-
-  // =======================================================
-  // PARTE 1A / PARTE 1B
-  // =======================================================
-
+ 
   if (phase === "before") {
-
+ 
     before.classList.add("d23-active");
-
-
-    // =====================================================
-    // CUENTA REGRESIVA HACIA LAS 10:15
-    // =====================================================
-
+ 
     if (countdown) {
-
+ 
       const now =
         new Date();
-
+ 
       const target =
         new Date(
           `${DEFENSE_DATE}T${DEFENSE_TIME}:00-05:00`
         );
-
-
+ 
       let difference =
         target.getTime() -
         now.getTime();
-
-
+ 
       if (difference < 0) {
         difference = 0;
       }
-
-
+ 
       const totalSeconds =
         Math.floor(
           difference / 1000
         );
-
-
+ 
       const hours =
         Math.floor(
           totalSeconds / 3600
         );
-
-
+ 
       const minutes =
         Math.floor(
           (totalSeconds % 3600) / 60
         );
-
-
+ 
       const seconds =
         totalSeconds % 60;
-
-
+ 
       countdown.textContent =
         String(hours).padStart(2, "0") + ":" +
         String(minutes).padStart(2, "0") + ":" +
         String(seconds).padStart(2, "0");
-
+ 
     }
-
+ 
   }
-
-
-  // =======================================================
-  // MOMENTO DE LA DEFENSA
-  // =======================================================
-
   else if (phase === "defense") {
-
+ 
     defense.classList.add("d23-active");
-
+ 
   }
-
-
-  // =======================================================
-  // PARTE 2
-  // =======================================================
-
   else {
-
+ 
     after.classList.add("d23-active");
-
+ 
   }
-
+ 
 }
+ 
+ 
+// =========================================================
+// ANALIZAR NUESTRO FUTURO
+// =========================================================
+ 
 function analyzeOurFuture() {
  
   const analysis =
