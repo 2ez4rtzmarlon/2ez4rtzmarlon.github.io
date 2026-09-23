@@ -3633,7 +3633,76 @@ function initDay23() {
       </p>
  
     </section>
- 
+ <!-- PARTE 1B — 10:00 -->
+<section class="d23-screen" id="d23-part1b">
+
+  <div class="d23-moment">
+
+    <div class="d23-moment-icon">❤️</div>
+
+    <div class="d23-date">
+      10:00 · FALTAN 15 MINUTOS
+    </div>
+
+    <h2 class="d23-title">
+      Ya casi es tu momento, Andrea.
+    </h2>
+
+    <p class="d23-subtitle">
+      Mi pandita, llegaste hasta aquí.
+      <br><br>
+      En unos minutos comienza uno de los momentos
+      más importantes de todo este camino.
+      <br><br>
+      Respira.
+      <br>
+      Confía.
+      <br>
+      Recuerda todo lo que has aprendido.
+    </p>
+
+    <div class="d23-breathe">
+
+      <strong>
+        15 minutos.
+      </strong>
+
+      <br><br>
+
+      Quiero que estos últimos minutos los tomes
+      para tranquilizarte y recordar algo:
+      <br><br>
+
+      <strong>
+        Tú sabes hacerlo. ❤️
+      </strong>
+
+      <br><br>
+
+      Yo creo en ti.
+      <br>
+      Y estoy muy orgulloso de ti.
+
+    </div>
+
+    <div class="d23-countdown">
+
+      <span class="d23-countdown-label">
+        FALTAN PARA TU DEFENSA
+      </span>
+
+      <div
+        id="d23-countdown-part1b"
+        class="d23-countdown-time"
+      >
+        00:15:00
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
     <!-- PARTE 1B — 10:15 -->
     <section class="d23-screen" id="d23-defense">
  
@@ -3796,10 +3865,17 @@ function initDay23() {
 // ACTUALIZAR ETAPA DEL DÍA 23
 // =========================================================
 
+// =========================================================
+// ACTUALIZAR ETAPA DEL DÍA 23
+// =========================================================
+
 function updateDay23() {
 
   const before =
     document.getElementById("d23-before");
+
+  const part1b =
+    document.getElementById("d23-part1b");
 
   const defense =
     document.getElementById("d23-defense");
@@ -3810,9 +3886,341 @@ function updateDay23() {
   const countdown =
     document.getElementById("d23-countdown");
 
-  if (!before || !defense || !after) {
+  const countdownPart1B =
+    document.getElementById("d23-countdown-part1b");
+
+
+  if (!before || !part1b || !defense || !after) {
     return;
   }
+
+
+  // =======================================================
+  // PREVISUALIZACIÓN
+  // =======================================================
+
+  const params =
+    new URLSearchParams(
+      window.location.search
+    );
+
+  const previewPhase =
+    params.get("phase");
+
+  let phase = "";
+
+
+  if (
+    getCurrentDay() === 23 &&
+    previewPhase
+  ) {
+
+    if (previewPhase === "before") {
+
+      phase = "before";
+
+    }
+
+    else if (
+      previewPhase === "part1b"
+    ) {
+
+      phase = "part1b";
+
+    }
+
+    else if (
+      previewPhase === "defense"
+    ) {
+
+      phase = "defense";
+
+    }
+
+    else if (
+      previewPhase === "after"
+    ) {
+
+      phase = "after";
+
+    }
+
+  }
+
+
+  // =======================================================
+  // HORARIO REAL
+  // =======================================================
+
+  if (!phase) {
+
+    const now =
+      new Date();
+
+
+    // -----------------------------------------------
+    // 10:00
+    // -----------------------------------------------
+
+    const part1BTime =
+      new Date(
+        `${DEFENSE_DATE}T10:00:00-05:00`
+      );
+
+
+    // -----------------------------------------------
+    // 10:15
+    // -----------------------------------------------
+
+    const defenseTime =
+      new Date(
+        `${DEFENSE_DATE}T${DEFENSE_TIME}:00-05:00`
+      );
+
+
+    // -----------------------------------------------
+    // 11:00
+    // -----------------------------------------------
+
+    const postDefenseTime =
+      new Date(
+        `${DEFENSE_DATE}T${POST_DEFENSE_TIME}:00-05:00`
+      );
+
+
+    // -----------------------------------------------
+    // ANTES DE LAS 10:00
+    // -----------------------------------------------
+
+    if (
+      now.getTime() <
+      part1BTime.getTime()
+    ) {
+
+      phase = "before";
+
+    }
+
+
+    // -----------------------------------------------
+    // 10:00 → 10:14
+    // -----------------------------------------------
+
+    else if (
+      now.getTime() <
+      defenseTime.getTime()
+    ) {
+
+      phase = "part1b";
+
+    }
+
+
+    // -----------------------------------------------
+    // 10:15 → 10:59
+    // -----------------------------------------------
+
+    else if (
+      now.getTime() <
+      postDefenseTime.getTime()
+    ) {
+
+      phase = "defense";
+
+    }
+
+
+    // -----------------------------------------------
+    // 11:00 EN ADELANTE
+    // -----------------------------------------------
+
+    else {
+
+      phase = "after";
+
+    }
+
+  }
+
+
+  // =======================================================
+  // OCULTAR TODAS LAS PANTALLAS
+  // =======================================================
+
+  before.classList.remove("d23-active");
+
+  part1b.classList.remove("d23-active");
+
+  defense.classList.remove("d23-active");
+
+  after.classList.remove("d23-active");
+
+
+  // =======================================================
+  // PARTE 1A
+  // =======================================================
+
+  if (
+    phase === "before"
+  ) {
+
+    before.classList.add(
+      "d23-active"
+    );
+
+
+    if (countdown) {
+
+      const now =
+        new Date();
+
+      const target =
+        new Date(
+          `${DEFENSE_DATE}T${DEFENSE_TIME}:00-05:00`
+        );
+
+
+      let difference =
+        target.getTime() -
+        now.getTime();
+
+
+      if (
+        difference < 0
+      ) {
+
+        difference = 0;
+
+      }
+
+
+      const totalSeconds =
+        Math.floor(
+          difference / 1000
+        );
+
+
+      const hours =
+        Math.floor(
+          totalSeconds / 3600
+        );
+
+
+      const minutes =
+        Math.floor(
+          (totalSeconds % 3600) / 60
+        );
+
+
+      const seconds =
+        totalSeconds % 60;
+
+
+      countdown.textContent =
+        String(hours).padStart(2, "0") +
+        ":" +
+        String(minutes).padStart(2, "0") +
+        ":" +
+        String(seconds).padStart(2, "0");
+
+    }
+
+  }
+
+
+  // =======================================================
+  // PARTE 1B — 10:00
+  // =======================================================
+
+  else if (
+    phase === "part1b"
+  ) {
+
+    part1b.classList.add(
+      "d23-active"
+    );
+
+
+    if (countdownPart1B) {
+
+      const now =
+        new Date();
+
+
+      const target =
+        new Date(
+          `${DEFENSE_DATE}T${DEFENSE_TIME}:00-05:00`
+        );
+
+
+      let difference =
+        target.getTime() -
+        now.getTime();
+
+
+      if (
+        difference < 0
+      ) {
+
+        difference = 0;
+
+      }
+
+
+      const totalSeconds =
+        Math.floor(
+          difference / 1000
+        );
+
+
+      const minutes =
+        Math.floor(
+          totalSeconds / 60
+        );
+
+
+      const seconds =
+        totalSeconds % 60;
+
+
+      countdownPart1B.textContent =
+        String(minutes).padStart(2, "0") +
+        ":" +
+        String(seconds).padStart(2, "0");
+
+    }
+
+  }
+
+
+  // =======================================================
+  // DEFENSA — 10:15
+  // =======================================================
+
+  else if (
+    phase === "defense"
+  ) {
+
+    defense.classList.add(
+      "d23-active"
+    );
+
+  }
+
+
+  // =======================================================
+  // PARTE 2 — 11:00
+  // =======================================================
+
+  else {
+
+    after.classList.add(
+      "d23-active"
+    );
+
+  }
+
+}
 
 
   // =======================================================
