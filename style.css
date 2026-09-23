@@ -5379,3 +5379,288 @@ h1 span {
   }
 
 }
+.day23-container {
+        width: 100%;
+        min-height: 620px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 25px;
+        background:
+          radial-gradient(
+            circle at top,
+            rgba(255, 215, 80, 0.16),
+            transparent 45%
+          ),
+          linear-gradient(
+            145deg,
+            #111111,
+            #1b1b1b 50%,
+            #101010
+          );
+        color: white;
+        padding: 25px;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+ 
+      .d23-screen {
+        min-height: 570px;
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        animation: d23Fade 0.8s ease;
+      }
+ 
+      .d23-screen.d23-active {
+        display: flex;
+      }
+ 
+      @keyframes d23Fade {
+        from {
+          opacity: 0;
+          transform: translateY(20px) scale(.98);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+ 
+      .d23-graduation-icon {
+        font-size: 75px;
+        margin-bottom: 15px;
+        animation: d23Float 3s ease-in-out infinite;
+      }
+ 
+      @keyframes d23Float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+      }
+ 
+      .d23-date {
+        letter-spacing: 4px;
+        font-size: 13px;
+        font-weight: bold;
+        opacity: .75;
+        margin-bottom: 12px;
+      }
+ 
+      .d23-title {
+        font-size: clamp(30px, 6vw, 52px);
+        margin: 0 0 15px;
+        line-height: 1.1;
+      }
+ 
+      .d23-subtitle {
+        max-width: 650px;
+        font-size: 18px;
+        line-height: 1.7;
+        opacity: .9;
+      }
+ 
+      .d23-highlight {
+        font-size: 28px;
+        font-weight: bold;
+        margin: 20px 0;
+      }
+ 
+      .d23-countdown {
+        margin: 25px 0;
+        padding: 20px 30px;
+        border-radius: 20px;
+        background: rgba(255,255,255,.07);
+        border: 1px solid rgba(255,255,255,.12);
+        backdrop-filter: blur(8px);
+      }
+ 
+      .d23-countdown-label {
+        display: block;
+        font-size: 12px;
+        letter-spacing: 3px;
+        opacity: .7;
+        margin-bottom: 8px;
+      }
+ 
+      .d23-countdown-time {
+        font-size: clamp(32px, 7vw, 58px);
+        font-weight: bold;
+        letter-spacing: 3px;
+        font-variant-numeric: tabular-nums;
+      }
+ 
+      .d23-btn {
+        border: none;
+        border-radius: 999px;
+        padding: 14px 28px;
+        margin-top: 20px;
+        font-size: 15px;
+        font-weight: bold;
+        cursor: pointer;
+        background: linear-gradient(135deg, #ffd95a, #f2b93f);
+        color: #161616;
+        box-shadow: 0 10px 30px rgba(0,0,0,.3);
+        transition: transform .2s ease, box-shadow .2s ease;
+      }
+ 
+      .d23-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 14px 35px rgba(0,0,0,.4);
+      }
+ 
+      .d23-moment {
+        max-width: 650px;
+      }
+ 
+      .d23-moment-icon {
+        font-size: 70px;
+        margin-bottom: 15px;
+      }
+ 
+      .d23-breathe {
+        margin-top: 25px;
+        padding: 20px;
+        border-radius: 18px;
+        background: rgba(255,255,255,.06);
+        line-height: 1.8;
+      }
+ 
+      .d23-dashboard {
+        width: 100%;
+        max-width: 800px;
+        margin-top: 20px;
+      }
+ 
+      .d23-status {
+        display: inline-block;
+        padding: 8px 15px;
+        border-radius: 999px;
+        font-size: 12px;
+        letter-spacing: 2px;
+        background: rgba(255,255,255,.08);
+        margin-bottom: 12px;
+      }
+ 
+      .d23-dashboard h2 {
+        font-size: clamp(28px, 5vw, 44px);
+        margin: 5px 0 10px;
+      }
+ 
+      .d23-degree {
+        font-size: 18px;
+        line-height: 1.6;
+        max-width: 650px;
+        margin: 0 auto 25px;
+      }
+ 
+      .d23-data-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+        gap: 12px;
+        width: 100%;
+      }
+ 
+      .d23-data-card {
+        padding: 18px 12px;
+        border-radius: 18px;
+        background: rgba(255,255,255,.06);
+        border: 1px solid rgba(255,255,255,.08);
+      }
+ 
+      .d23-data-number {
+        display: block;
+        font-size: 27px;
+        font-weight: bold;
+        margin-bottom: 6px;
+      }
+ 
+      .d23-data-label {
+        font-size: 11px;
+        letter-spacing: 1px;
+        opacity: .65;
+        text-transform: uppercase;
+      }
+ 
+      .d23-message {
+        max-width: 680px;
+        margin-top: 25px;
+        padding: 22px;
+        border-radius: 20px;
+        background: rgba(255,255,255,.06);
+        line-height: 1.8;
+        font-size: 16px;
+      }
+ 
+      .d23-message strong {
+        font-size: 20px;
+      }
+ 
+      .d23-analysis {
+        width: 100%;
+        max-width: 700px;
+        margin-top: 25px;
+        padding: 25px;
+        border-radius: 22px;
+        background: rgba(255,255,255,.06);
+        text-align: left;
+        line-height: 1.8;
+        display: none;
+        animation: d23Fade .8s ease;
+      }
+ 
+      .d23-analysis.show {
+        display: block;
+      }
+ 
+      .d23-analysis-title {
+        text-align: center;
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 18px;
+      }
+ 
+      .d23-result {
+        text-align: center;
+        margin-top: 20px;
+        padding: 20px;
+        border-radius: 18px;
+        background: rgba(255,255,255,.05);
+      }
+ 
+      .d23-result-main {
+        font-size: 30px;
+        font-weight: bold;
+        margin: 12px 0;
+      }
+ 
+      .d23-heart {
+        position: absolute;
+        bottom: -30px;
+        font-size: 25px;
+        opacity: .35;
+        animation: d23Heart linear infinite;
+        pointer-events: none;
+      }
+ 
+      @keyframes d23Heart {
+        from {
+          transform: translateY(0) rotate(0deg);
+          opacity: 0;
+        }
+        20% { opacity: .45; }
+        to {
+          transform: translateY(-700px) rotate(25deg);
+          opacity: 0;
+        }
+      }
+ 
+      @media (max-width: 600px) {
+        .day23-container { padding: 15px; }
+        .d23-screen { min-height: 600px; }
+        .d23-title { font-size: 32px; }
+        .d23-subtitle { font-size: 16px; }
+        .d23-countdown-time { font-size: 34px; }
+      }
