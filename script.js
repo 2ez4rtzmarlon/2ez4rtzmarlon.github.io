@@ -23,7 +23,7 @@ const ANNIVERSARY_DATE = "2026-09-22";
 const TOTAL_DAYS = 23;
  
 const DEFENSE_DATE = "2026-09-23";
-const DEFENSE_TIME = "10:15";
+const DEFENSE_TIME = "10:00";
 const POST_DEFENSE_TIME = "11:00";
  
 const ECUADOR_TIME_ZONE = "America/Guayaquil";
