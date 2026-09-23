@@ -1508,7 +1508,7 @@ const surprises = [
   // =======================================================
   {
     icon: "🎓",
-    title: "Hoy es tu gran día, Andrea",
+    title: "Hoy es tu gran día, Mi Andrea",
     day23: true
   }
  
@@ -3597,7 +3597,7 @@ function initDay23() {
       </div>
  
       <h2 class="d23-title">
-        Hoy es tu gran día, Andrea.
+        Hoy es tu gran día, Mi Pandita.
       </h2>
  
       <p class="d23-subtitle">
@@ -3610,7 +3610,7 @@ function initDay23() {
       </p>
  
       <div class="d23-highlight">
-        Tecnóloga en Big Data e Inteligencia de Negocios. ❤️
+       Mi Futura Tecnóloga en Big Data e Inteligencia de Negocios. ❤️
       </div>
  
       <div class="d23-countdown">
@@ -3623,7 +3623,7 @@ function initDay23() {
       </div>
  
       <p class="d23-subtitle">
-        Tu defensa es a las <strong>10:15</strong>.
+        Tu defensa está cerca.
         <br><br>
         Confía en todo lo que sabes.
         Confía en todo lo que has construido.
@@ -3688,7 +3688,7 @@ function initDay23() {
           Has cerrado una etapa enorme de tu vida.
           <br><br>
           <strong>
-            Tecnóloga en Big Data e Inteligencia de Negocios
+           Mi Tecnóloga en Big Data e Inteligencia de Negocios
           </strong>
         </p>
  
